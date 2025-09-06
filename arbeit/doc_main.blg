@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: doc_main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: doc_main-blx.bib
+Database file #2: bibliography.bib
+Biblatex version: 3.19
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Too many commas in name 1 of "4 Park Square, Milton Park, Abingdon, Oxon OX14 4RN" for entry SoundreinforcementforaudioEngineers
+while executing---line 2815 of file biblatex.bst
+You've used 2 entries,
+            6399 wiz_defined-function locations,
+            1212 strings with 9220 characters,
+and the built_in function-call counts, 12361 in all, are:
+= -- 820
+> -- 697
+< -- 97
++ -- 664
+- -- 510
+* -- 583
+:= -- 1568
+add.period$ -- 0
+call.type$ -- 2
+change.case$ -- 68
+chr.to.int$ -- 66
+cite$ -- 2
+duplicate$ -- 785
+empty$ -- 938
+format.name$ -- 49
+if$ -- 2328
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 0
+newline$ -- 49
+num.names$ -- 104
+pop$ -- 384
+preamble$ -- 1
+purify$ -- 70
+quote$ -- 0
+skip$ -- 443
+stack$ -- 0
+substring$ -- 1613
+swap$ -- 214
+text.length$ -- 57
+text.prefix$ -- 1
+top$ -- 1
+type$ -- 56
+warning$ -- 0
+while$ -- 139
+width$ -- 0
+write$ -- 48
+(There was 1 error message)

@@ -1,0 +1,193 @@
+\documentclass{report}
+
+%--- Packages ---
+\usepackage{graphicx}                % Required for inserting images
+	\graphicspath{ {./pictures/} }
+	
+\usepackage{wrapfig}
+\usepackage{fancyhdr}      % Paket für Kopf- und Fusszeilen
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}     % Paket für Hyperlinks
+\hypersetup{
+	colorlinks=true,
+	citecolor=olive,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\renewcommand{\footnoterule}{\vfill\kern -3pt \hrule width 0.4\columnwidth \kern 2.6pt}
+\usepackage{xcolor}                  % Paket für Farbliche Highlights
+\usepackage{float}                   % Im Dokumenten-Präambel hinzufügen
+\usepackage{pdflscape} 
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage[utf8]{inputenc}  % Zeichencodierung für Umlaute und Sonderzeichen
+\usepackage{url}             % Für die korrekte Darstellung von URLs
+
+\usepackage{tabularx}
+\usepackage{arydshln} % Gestrichelte Linien
+
+\usepackage{caption}
+\usepackage{longtable}
+\usepackage{pdfpages}
+\usepackage{multimedia}
+\usepackage{subcaption}
+
+%Line spacing
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.5} 
+
+\usepackage{tocloft}
+\usepackage{etoolbox} % Für Änderungen an \printbibliography
+
+%Font
+\usepackage{fontspec}
+\setmainfont{FiraSans}
+
+% Bibliography
+\usepackage[backend=bibtex,style=authortitle]{biblatex}
+\nocite{*} 
+\addbibresource{bibliography.bib}
+
+\captionsetup{justification=centering}
+
+
+% Language setting
+\usepackage[german]{babel}
+
+% Set page size and margins
+% Papier Format A4
+\usepackage[
+	a4paper,
+	top=2cm,
+	bottom=2cm,
+	left=2.5cm,
+	right=2.5cm,
+	marginparwidth=1.75cm,
+	%headsep=4mm,
+	%voffset=4mm,
+	%tmargin=7mm,
+	headheight=8mm
+	]
+{geometry}
+
+%Nummerierung anpassen
+\renewcommand{\thesection}{\arabic{section}}
+\title{Design und Herstellung eines Beam Steering-fähigen Saiteninstruments}
+\author{Nathanael Gubler}
+\date{\today}
+
+% Fußzeilen definieren
+\pagestyle{fancy}  	% Aktiviert fancyhdr für Kopf- und Fußzeilen
+\fancyhf{}  		% Alle vorherigen Kopf- und Fußzeilen löschen
+
+
+% Logo in der Kopfzeile rechts
+\fancyhead[R]{
+	\includegraphics[width=6cm]{./pictures/JuventusLogo.pdf}
+	%\vspace{3mm}
+	} % Logo rechts
+\fancyfoot[C]{\thepage}
+% Kopfzeilenlinie entfernen
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{2pt}
+
+% Fußzeile: links, mitte und rechts
+\fancyfoot[C]{Seite \thepage~von~\pageref{LastPage}}   	% Fußzeile in der Mitte
+\fancyfoot[R]{\today}           						% Fußzeile rechts
+\fancyfoot[L]{
+	\begin{minipage}{6cm}
+		Design und Herstellung eines \textit{Beam Steering}-fähigen Saiteninstruments
+	\end{minipage}
+	}      				% Fußzeile links
+
+\begin{document}
+%--- Title Page with Image
+\setstretch{1.5}
+\begin{titlepage}
+	\setstretch{3}
+	\thispagestyle{empty} % No footer on the title page
+	\begin{center}
+		 \vspace*{75pt} % Push content to vertical center
+		
+		% Title
+		{ \huge \textbf{Design und Herstellung eines Beam Steering-fähigen Saiteninstruments}} 			\\ [0.5cm]
+		{\Large Nathanael Gubler} 	\\ [1.0cm]
+		\includegraphics[width=6.0cm]{./pictures/JuventusLogo.pdf} 	\\ [0.5cm]
+		{\large Juventus Technikerschule HF\\Betreuer: Martin Burger} 			\\ [0.5cm]
+		{\large \today} 											\\ [1.0cm]
+		\vspace*{-700pt}
+		% Insert the image spacing below the image
+		%\begin{figure}[H]
+		%	\includegraphics[scale=1.2]{pictures/title_drawing.pdf}
+		%\end{figure}
+		
+	\end{center}
+\end{titlepage}
+
+%--- Inhaltsverzeichnis -------------------------------------
+\newpage
+% Inhaltsverzeichnis sichtbar machen
+\setcounter{secnumdepth}{3} % Tiefe der Nummerierung
+\setcounter{tocdepth}{3}    % Tiefe der Anzeige im Inhaltsverzeichnis
+\setlength{\cftbeforetoctitleskip}{5pt} % Abstand vor dem Titel des Inhaltsverzeichnisses
+\setlength{\cftaftertoctitleskip}{15pt} % Abstand nach dem Titel des Inhaltsverzeichnisses
+\tableofcontents
+
+%--- Abbildungsverzeichnis ----------------------------
+\newpage
+\setlength{\cftbeforeloftitleskip}{0pt} % Abstand vor dem Titel des Abbildungsverzeichnisses
+\setlength{\cftafterloftitleskip}{15pt} % Abstand nach dem Titel des Abbildungsverzeichnisses
+\listoffigures
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}  % Fügt es zum Inhaltsverzeichnis hinzu
+
+% Hauptkapitel
+\setstretch{2}
+%--- Projektbeschreibung ------------------------------------
+\newpage
+\vspace{2mm}
+\section{Einleitung}
+\section{System Engineering}
+\input{sys_eng.tex}
+\vspace{-4mm}
+%--- Theory -------------------------------------
+\section{Spieltheorie}
+%\input{doc_gametheory.tex}
+
+%--- Umsetzung -----------------------------------------
+\section{Umsetzung}
+%\input{doc_implementation.tex}
+\subsection{Komponenten}
+%\input{doc_components.tex}
+\subsection{Systemaufbau}
+%\input{doc_systemstructure.tex}
+\section{Tests}
+%\input{doc_tests.tex}
+%--- Fazit --------------------------------------------
+\section{Fazit}
+%\input{doc_fazit.tex}
+%--- Hilfsmittelverzeichnis ---------------------------
+%\newpage
+%\section{Hilfsmittelverzeichnis}
+
+
+%--- Tabellenverzeichnis ------------------------------
+\newpage
+\setlength{\cftbeforelottitleskip}{0pt} % Abstand vor dem Titel des Tabellenverzeichnisses
+\setlength{\cftafterlottitleskip}{15pt} % Abstand nach dem Titel des Tabellenverzeichnisses
+\listoftables
+\addcontentsline{toc}{section}{13 Tabellenverzeichnis}  % Fügt es zum Inhaltsverzeichnis hinzu
+
+% --- Quellenverzeichnis ------------------------------
+%\newpage
+\renewcommand{\bibname}{Quellenverzeichnis}
+\printbibliography[title={Quellenverzeichnis}]
+\addcontentsline{toc}{section}{Quellenverzeichnis}  
+
+\appendix
+
+%\renewcommand{\thechapter}{\alph{chapter}}
+\end{document}
+% <-- end of file
