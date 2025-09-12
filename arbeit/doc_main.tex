@@ -18,7 +18,7 @@
 	pdfpagemode=FullScreen,
 }
 \renewcommand{\footnoterule}{\vfill\kern -3pt \hrule width 0.4\columnwidth \kern 2.6pt}
-\usepackage{xcolor}                  % Paket für Farbliche Highlights
+\usepackage[table]{xcolor}                  % Paket für Farbliche Highlights
 \usepackage{float}                   % Im Dokumenten-Präambel hinzufügen
 \usepackage{pdflscape} 
 \usepackage{amsmath}
@@ -27,6 +27,7 @@
 \usepackage{url}             % Für die korrekte Darstellung von URLs
 
 \usepackage{tabularx}
+\usepackage{booktabs}
 \usepackage{arydshln} % Gestrichelte Linien
 
 \usepackage{caption}
@@ -144,23 +145,24 @@
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}  % Fügt es zum Inhaltsverzeichnis hinzu
 
 % Hauptkapitel
-\setstretch{2}
+%\setstretch{1.5}
+\setstretch{1.6}
+%\setstretch{2}
 %--- Projektbeschreibung ------------------------------------
 \newpage
 \vspace{2mm}
 \section{Einleitung}
+\input{Einleitung.tex}
+\subsection{Vorarbeiten}\label{vorarbeiten}
+\input{vorarbeiten.tex}
 \section{System Engineering}
 \input{sys_eng.tex}
 \vspace{-4mm}
 %--- Theory -------------------------------------
-\section{Spieltheorie}
-%\input{doc_gametheory.tex}
 
 %--- Umsetzung -----------------------------------------
 \section{Umsetzung}
 %\input{doc_implementation.tex}
-\subsection{Komponenten}
-%\input{doc_components.tex}
 \subsection{Systemaufbau}
 %\input{doc_systemstructure.tex}
 \section{Tests}
@@ -171,7 +173,6 @@
 %--- Hilfsmittelverzeichnis ---------------------------
 %\newpage
 %\section{Hilfsmittelverzeichnis}
-
 
 %--- Tabellenverzeichnis ------------------------------
 \newpage

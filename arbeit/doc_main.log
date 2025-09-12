@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2025.1.12)  5 SEP 2025 19:38
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2025.1.12)  11 SEP 2025 11:16
  restricted system commands enabled.
 **doc_main.tex
 (./doc_main.tex
@@ -284,13 +284,29 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty
+) (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+(C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen148
+\ar@mcellbox=\box52
+\extrarowheight=\dimen149
+\NC@list=\toks20
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box53
+)
+\everycr=\toks21
+\minrowclearance=\skip62
+\rownum=\count273
+)
+(C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count273
-\float@exts=\toks20
-\float@box=\box52
-\@float@everytoks=\toks21
-\@floatcapt=\box53
+\c@float@type=\count274
+\float@exts=\toks22
+\float@box=\box54
+\@float@everytoks=\toks23
+\@floatcapt=\box55
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -307,7 +323,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip60
+\@mathmargin=\skip63
 
 For additional information on amsmath, use the `?' option.
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty
@@ -315,61 +331,61 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks22
-\ex@=\dimen148
+\@emptytoks=\toks24
+\ex@=\dimen150
 ))
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen149
+\pmbraise@=\dimen151
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count274
+\inf@bad=\count275
 LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count275
-\leftroot@=\count276
+\uproot@=\count276
+\leftroot@=\count277
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count277
-\DOTSCASE@=\count278
+\classnum@=\count278
+\DOTSCASE@=\count279
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box54
-\strutbox@=\box55
+\Mathstrutbox@=\box56
+\strutbox@=\box57
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen150
+\big@size=\dimen152
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count279
+\macc@depth=\count280
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count280
+\c@MaxMatrixCols=\count281
 \dotsspace@=\muskip17
-\c@parentequation=\count281
-\dspbrk@lvl=\count282
-\tag@help=\toks23
-\row@=\count283
-\column@=\count284
-\maxfields@=\count285
-\andhelp@=\toks24
-\eqnshift@=\dimen151
-\alignsep@=\dimen152
-\tagshift@=\dimen153
-\tagwidth@=\dimen154
-\totwidth@=\dimen155
-\lineht@=\dimen156
-\@envbody=\toks25
-\multlinegap=\skip61
-\multlinetaggap=\skip62
-\mathdisplay@stack=\toks26
+\c@parentequation=\count282
+\dspbrk@lvl=\count283
+\tag@help=\toks25
+\row@=\count284
+\column@=\count285
+\maxfields@=\count286
+\andhelp@=\toks26
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks27
+\multlinegap=\skip64
+\multlinetaggap=\skip65
+\mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
@@ -385,13 +401,13 @@ sty
 y
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil
 -common.tex
-\pgfutil@everybye=\toks27
-\pgfutil@tempdima=\dimen157
-\pgfutil@tempdimb=\dimen158
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen159
+\pgfutil@tempdimb=\dimen160
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil
 -latex.def
-\pgfutil@abb=\box56
+\pgfutil@abb=\box58
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs.
 code.tex
@@ -410,33 +426,33 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks28
-\pgfkeys@temptoks=\toks29
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys
 libraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks30
+\pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen159
-\pgf@y=\dimen160
-\pgf@xa=\dimen161
-\pgf@ya=\dimen162
-\pgf@xb=\dimen163
-\pgf@yb=\dimen164
-\pgf@xc=\dimen165
-\pgf@yc=\dimen166
-\pgf@xd=\dimen167
-\pgf@yd=\dimen168
+\pgf@x=\dimen161
+\pgf@y=\dimen162
+\pgf@xa=\dimen163
+\pgf@ya=\dimen164
+\pgf@xb=\dimen165
+\pgf@yb=\dimen166
+\pgf@xc=\dimen167
+\pgf@yc=\dimen168
+\pgf@xd=\dimen169
+\pgf@yd=\dimen170
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count286
-\c@pgf@countb=\count287
-\c@pgf@countc=\count288
-\c@pgf@countd=\count289
-\t@pgf@toka=\toks31
-\t@pgf@tokb=\toks32
-\t@pgf@tokc=\toks33
-\pgf@sys@id@count=\count290
+\c@pgf@counta=\count287
+\c@pgf@countb=\count288
+\c@pgf@countc=\count289
+\c@pgf@countd=\count290
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count291
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.c
 fg
@@ -455,8 +471,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count291
-\pgfsyssoftpath@bigbuffer@items=\count292
+\pgfsyssoftpath@smallbuffer@items=\count292
+\pgfsyssoftpath@bigbuffer@items=\count293
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsy
 sprotocol.code.tex
@@ -472,12 +488,12 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 code.tex)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen169
-\pgfmath@count=\count293
-\pgfmath@box=\box57
-\pgfmath@toks=\toks34
-\pgfmath@stack@operand=\toks35
-\pgfmath@stack@operation=\toks36
+\pgfmath@dimen=\dimen171
+\pgfmath@count=\count294
+\pgfmath@box=\box59
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
 ions.code.tex)
@@ -501,59 +517,59 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count294
+\c@pgfmathroundto@lastzeros=\count295
 ))
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code.
 tex)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen170
-\pgf@picmaxx=\dimen171
-\pgf@picminy=\dimen172
-\pgf@picmaxy=\dimen173
-\pgf@pathminx=\dimen174
-\pgf@pathmaxx=\dimen175
-\pgf@pathminy=\dimen176
-\pgf@pathmaxy=\dimen177
-\pgf@xx=\dimen178
-\pgf@xy=\dimen179
-\pgf@yx=\dimen180
-\pgf@yy=\dimen181
-\pgf@zx=\dimen182
-\pgf@zy=\dimen183
+\pgf@picminx=\dimen172
+\pgf@picmaxx=\dimen173
+\pgf@picminy=\dimen174
+\pgf@picmaxy=\dimen175
+\pgf@pathminx=\dimen176
+\pgf@pathmaxx=\dimen177
+\pgf@pathminy=\dimen178
+\pgf@pathmaxy=\dimen179
+\pgf@xx=\dimen180
+\pgf@xy=\dimen181
+\pgf@yx=\dimen182
+\pgf@yy=\dimen183
+\pgf@zx=\dimen184
+\pgf@zy=\dimen185
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen184
-\pgf@path@lasty=\dimen185
+\pgf@path@lastx=\dimen186
+\pgf@path@lasty=\dimen187
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen186
-\pgf@shorten@start@additional=\dimen187
+\pgf@shorten@end@additional=\dimen188
+\pgf@shorten@start@additional=\dimen189
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 escopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box58
-\pgf@hbox=\box59
-\pgf@layerbox@main=\box60
-\pgf@picture@serial@count=\count295
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count296
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen188
+\pgflinewidth=\dimen190
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen189
-\pgf@pt@y=\dimen190
-\pgf@pt@temp=\dimen191
+\pgf@pt@x=\dimen191
+\pgf@pt@y=\dimen192
+\pgf@pt@temp=\dimen193
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 equick.code.tex
@@ -570,14 +586,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen192
+\pgfarrowsep=\dimen194
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen193
-\pgf@sys@shading@range@num=\count296
-\pgf@shadingcount=\count297
+\pgf@max=\dimen195
+\pgf@sys@shading@range@num=\count297
+\pgf@shadingcount=\count298
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 eimage.code.tex
@@ -586,7 +602,7 @@ File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 eexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box61
+\pgfexternal@startupbox=\box63
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 elayers.code.tex
@@ -607,7 +623,7 @@ File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
 shapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box62
+\pgfnodeparttextbox=\box64
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
 plot.code.tex
@@ -616,8 +632,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen194
-\pgf@nodesepend=\dimen195
+\pgf@nodesepstart=\dimen196
+\pgf@nodesepend=\dimen197
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfco
 mp-version-1-18.sty
@@ -635,10 +651,10 @@ ty
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgffor.
 code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen196
-\pgffor@skip=\dimen197
-\pgffor@stack=\toks37
-\pgffor@toks=\toks38
+\pgffor@iter=\dimen198
+\pgffor@skip=\dimen199
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
 ))
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/tikz.code.tex
@@ -647,34 +663,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count298
-\pgfplotmarksize=\dimen198
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen256
 )
-\tikz@lastx=\dimen199
-\tikz@lasty=\dimen256
-\tikz@lastxsaved=\dimen257
-\tikz@lastysaved=\dimen258
-\tikz@lastmovetox=\dimen259
-\tikz@lastmovetoy=\dimen260
-\tikzleveldistance=\dimen261
-\tikzsiblingdistance=\dimen262
-\tikz@figbox=\box63
-\tikz@figbox@bg=\box64
-\tikz@tempbox=\box65
-\tikz@tempbox@bg=\box66
-\tikztreelevel=\count299
-\tikznumberofchildren=\count300
-\tikznumberofcurrentchild=\count301
-\tikz@fig@count=\count302
+\tikz@lastx=\dimen257
+\tikz@lasty=\dimen258
+\tikz@lastxsaved=\dimen259
+\tikz@lastysaved=\dimen260
+\tikz@lastmovetox=\dimen261
+\tikz@lastmovetoy=\dimen262
+\tikzleveldistance=\dimen263
+\tikzsiblingdistance=\dimen264
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count303
-\pgfmatrixcurrentcolumn=\count304
-\pgf@matrix@numberofcolumns=\count305
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
 )
-\tikz@expandcount=\count306
+\tikz@expandcount=\count307
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/libraries/tikzlibrarytopaths.code.tex
@@ -686,12 +702,12 @@ e.tex
 .code.tex
 Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
 \pgfplots@luabackend@table=\catcodetable14
-\t@pgfplots@toka=\toks39
-\t@pgfplots@tokb=\toks40
-\t@pgfplots@tokc=\toks41
-\pgfplots@tmpa=\dimen263
-\c@pgfplots@coordindex=\count307
-\c@pgfplots@scanlineindex=\count308
+\t@pgfplots@toka=\toks41
+\t@pgfplots@tokb=\toks42
+\t@pgfplots@tokc=\toks43
+\pgfplots@tmpa=\dimen265
+\c@pgfplots@coordindex=\count308
+\c@pgfplots@scanlineindex=\count309
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/sys/pgfplots
 sysgeneric.code.tex))
@@ -702,9 +718,9 @@ ib/pgfplotsoldpgfsupp_loader.code.tex
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
 aryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks42
-\t@pgf@tokb=\toks43
-\t@pgf@tokc=\toks44
+\t@pgf@toka=\toks44
+\t@pgf@tokb=\toks45
+\t@pgf@tokc=\toks46
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/oldpgfcompat
 ib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)
@@ -724,14 +740,14 @@ e/pgfplotsliststructure.code.tex)
 e/pgfplotsliststructureext.code.tex)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructur
 e/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count309
+\c@pgfplotsarray@tmp=\count310
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructur
 e/pgfplotsmatrix.code.tex)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/numtable/pgf
 plotstableshared.code.tex
-\c@pgfplotstable@counta=\count310
-\t@pgfplotstable@a=\toks45
+\c@pgfplotstable@counta=\count311
+\t@pgfplotstable@a=\toks47
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructur
 e/pgfplotsdeque.code.tex)
@@ -743,7 +759,7 @@ sbinary.data.code.tex))
 sutil.verb.code.tex)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/pgflibr
 arypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count311
+\c@pgfplotslibrarysurf@no=\count312
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/sys/pgflibra
 rypgfplots.surfshading.pgfsys-luatex.def)))
@@ -775,16 +791,16 @@ hs.code.tex)
 z/libraries/tikzlibrarydecorations.code.tex
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
 decorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen264
-\pgfdecoratedremainingdistance=\dimen265
-\pgfdecoratedinputsegmentcompleteddistance=\dimen266
-\pgfdecoratedinputsegmentremainingdistance=\dimen267
-\pgf@decorate@distancetomove=\dimen268
-\pgf@decorate@repeatstate=\count312
-\pgfdecorationsegmentamplitude=\dimen269
-\pgfdecorationsegmentlength=\dimen270
+\pgfdecoratedcompleteddistance=\dimen266
+\pgfdecoratedremainingdistance=\dimen267
+\pgfdecoratedinputsegmentcompleteddistance=\dimen268
+\pgfdecoratedinputsegmentremainingdistance=\dimen269
+\pgf@decorate@distancetomove=\dimen270
+\pgf@decorate@repeatstate=\count313
+\pgfdecorationsegmentamplitude=\dimen271
+\pgfdecorationsegmentlength=\dimen272
 )
-\tikz@lib@dec@box=\box67
+\tikz@lib@dec@box=\box69
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/libraries/tikzlibrarydecorations.pathmorphing.code.tex
@@ -796,13 +812,13 @@ z/libraries/tikzlibrarydecorations.pathreplacing.code.tex
 ions/pgflibrarydecorations.pathreplacing.code.tex))
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/tikzlib
 rarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count313
-\pgfplots@xmin@reg=\dimen271
-\pgfplots@xmax@reg=\dimen272
-\pgfplots@ymin@reg=\dimen273
-\pgfplots@ymax@reg=\dimen274
-\pgfplots@zmin@reg=\dimen275
-\pgfplots@zmax@reg=\dimen276
+\pgfplots@numplots=\count314
+\pgfplots@xmin@reg=\dimen273
+\pgfplots@xmax@reg=\dimen274
+\pgfplots@ymin@reg=\dimen275
+\pgfplots@ymax@reg=\dimen276
+\pgfplots@zmin@reg=\dimen277
+\pgfplots@zmax@reg=\dimen278
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/libraries/tikzlibraryplotmarks.code.tex
@@ -814,95 +830,104 @@ File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks46
-\inpenc@posthook=\toks47
+\inpenc@prehook=\toks48
+\inpenc@posthook=\toks49
 
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
-
-(C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
-Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen277
-\ar@mcellbox=\box68
-\extrarowheight=\dimen278
-\NC@list=\toks48
-\extratabsurround=\skip63
-\backup@length=\skip64
-\ar@cellbox=\box69
-)
 \TX@col@width=\dimen279
 \TX@old@table=\dimen280
 \TX@old@col=\dimen281
 \TX@target=\dimen282
 \TX@delta=\dimen283
-\TX@cols=\count314
-\TX@ftn=\toks49
+\TX@cols=\count315
+\TX@ftn=\toks50
+)
+(C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen284
+\lightrulewidth=\dimen285
+\cmidrulewidth=\dimen286
+\belowrulesep=\dimen287
+\belowbottomsep=\dimen288
+\aboverulesep=\dimen289
+\abovetopsep=\dimen290
+\cmidrulesep=\dimen291
+\cmidrulekern=\dimen292
+\defaultaddspace=\dimen293
+\@cmidla=\count316
+\@cmidlb=\count317
+\@aboverulesep=\dimen294
+\@belowrulesep=\dimen295
+\@thisruleclass=\count318
+\@lastruleclass=\count319
+\@thisrulewidth=\dimen296
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/arydshln/arydshln.sty
 Package: arydshln 2019/02/21 v1.76 
-\dashlinedash=\dimen284
-\dashlinegap=\dimen285
+\dashlinedash=\dimen297
+\dashlinegap=\dimen298
 \adl@box=\box70
-\adl@height=\dimen286
-\adl@heightsave=\dimen287
-\adl@depth=\dimen288
-\adl@depthsave=\dimen289
-\adl@finaldepth=\dimen290
-\adl@columns=\count315
-\adl@ncol=\count316
-\adl@currentcolumn=\count317
-\adl@currentcolumnsave=\count318
-\adl@totalheight=\count319
-\adl@totalheightsave=\count320
-\adl@dash=\count321
-\adl@gap=\count322
-\adl@cla=\count323
-\adl@clb=\count324
-\adl@everyvbox=\toks50
-\adl@LTpagetotal=\dimen291
+\adl@height=\dimen299
+\adl@heightsave=\dimen300
+\adl@depth=\dimen301
+\adl@depthsave=\dimen302
+\adl@finaldepth=\dimen303
+\adl@columns=\count320
+\adl@ncol=\count321
+\adl@currentcolumn=\count322
+\adl@currentcolumnsave=\count323
+\adl@totalheight=\count324
+\adl@totalheightsave=\count325
+\adl@dash=\count326
+\adl@gap=\count327
+\adl@cla=\count328
+\adl@clb=\count329
+\adl@everyvbox=\toks51
+\adl@LTpagetotal=\dimen304
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen292
-\captionmargin=\dimen293
-\caption@leftmargin=\dimen294
-\caption@rightmargin=\dimen295
-\caption@width=\dimen296
-\caption@indent=\dimen297
-\caption@parindent=\dimen298
-\caption@hangindent=\dimen299
+\caption@tempdima=\dimen305
+\captionmargin=\dimen306
+\caption@leftmargin=\dimen307
+\caption@rightmargin=\dimen308
+\caption@width=\dimen309
+\caption@indent=\dimen310
+\caption@parindent=\dimen311
+\caption@hangindent=\dimen312
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count325
-\c@continuedfloat=\count326
+\c@caption@flags=\count330
+\c@continuedfloat=\count331
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
-\LTleft=\skip65
-\LTright=\skip66
-\LTpre=\skip67
-\LTpost=\skip68
-\LTchunksize=\count327
-\LTcapwidth=\dimen300
+\LTleft=\skip66
+\LTright=\skip67
+\LTpre=\skip68
+\LTpost=\skip69
+\LTchunksize=\count332
+\LTcapwidth=\dimen313
 \LT@head=\box71
 \LT@firsthead=\box72
 \LT@foot=\box73
 \LT@lastfoot=\box74
 \LT@gbox=\box75
-\LT@cols=\count328
-\LT@rows=\count329
-\c@LT@tables=\count330
-\c@LT@chunks=\count331
-\LT@p@ftn=\toks51
+\LT@cols=\count333
+\LT@rows=\count334
+\c@LT@tables=\count335
+\c@LT@chunks=\count336
+\LT@p@ftn=\toks52
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2025/03/12 v0.6f Insert pages of external PDF documents (AM)
@@ -912,36 +937,36 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count332
-\calc@Bcount=\count333
-\calc@Adimen=\dimen301
-\calc@Bdimen=\dimen302
-\calc@Askip=\skip69
-\calc@Bskip=\skip70
+\calc@Acount=\count337
+\calc@Bcount=\count338
+\calc@Adimen=\dimen314
+\calc@Bdimen=\dimen315
+\calc@Askip=\skip70
+\calc@Bskip=\skip71
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count334
-\calc@Cskip=\skip71
+\calc@Ccount=\count339
+\calc@Cskip=\skip72
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen303
-\ESO@tempdimb=\dimen304
+\ESO@tempdima=\dimen316
+\ESO@tempdimb=\dimen317
 )
-\AM@pagewidth=\dimen305
-\AM@pageheight=\dimen306
-\AM@fboxrule=\dimen307
+\AM@pagewidth=\dimen318
+\AM@pageheight=\dimen319
+\AM@fboxrule=\dimen320
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/pdfpages/ppluatex.def
 File: ppluatex.def 2025/03/12 v0.6f Pdfpages driver for LuaTeX (AM)
 )
-\pdfpages@includegraphics@status=\count335
+\pdfpages@includegraphics@status=\count340
 \AM@pagebox=\box76
-\AM@global@opts=\toks52
-\AM@pagecnt=\count336
-\AM@toc@title=\toks53
-\AM@lof@heading=\toks54
-\c@AM@survey=\count337
+\AM@global@opts=\toks53
+\AM@pagecnt=\count341
+\AM@toc@title=\toks54
+\AM@lof@heading=\toks55
+\c@AM@survey=\count342
 \AM@templatesizebox=\box77
 ) (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/beamer/multimedia.sty
 Package: multimedia 2012/05/02 ver 0.02
@@ -949,55 +974,55 @@ Package: multimedia 2012/05/02 ver 0.02
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
-\mm@movie=\count338
+\mm@movie=\count343
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count339
+\c@subfigure=\count344
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count340
+\c@subtable=\count345
 ) (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip72
-\cftbeforetoctitleskip=\skip73
-\cftaftertoctitleskip=\skip74
-\cftbeforepartskip=\skip75
-\cftpartnumwidth=\skip76
-\cftpartindent=\skip77
-\cftbeforechapskip=\skip78
-\cftchapindent=\skip79
-\cftchapnumwidth=\skip80
-\cftbeforesecskip=\skip81
-\cftsecindent=\skip82
-\cftsecnumwidth=\skip83
-\cftbeforesubsecskip=\skip84
-\cftsubsecindent=\skip85
-\cftsubsecnumwidth=\skip86
-\cftbeforesubsubsecskip=\skip87
-\cftsubsubsecindent=\skip88
-\cftsubsubsecnumwidth=\skip89
-\cftbeforeparaskip=\skip90
-\cftparaindent=\skip91
-\cftparanumwidth=\skip92
-\cftbeforesubparaskip=\skip93
-\cftsubparaindent=\skip94
-\cftsubparanumwidth=\skip95
-\cftbeforeloftitleskip=\skip96
-\cftafterloftitleskip=\skip97
-\cftbeforefigskip=\skip98
-\cftfigindent=\skip99
-\cftfignumwidth=\skip100
-\c@lofdepth=\count341
-\c@lotdepth=\count342
-\cftbeforelottitleskip=\skip101
-\cftafterlottitleskip=\skip102
-\cftbeforetabskip=\skip103
-\cfttabindent=\skip104
-\cfttabnumwidth=\skip105
+\cftparskip=\skip73
+\cftbeforetoctitleskip=\skip74
+\cftaftertoctitleskip=\skip75
+\cftbeforepartskip=\skip76
+\cftpartnumwidth=\skip77
+\cftpartindent=\skip78
+\cftbeforechapskip=\skip79
+\cftchapindent=\skip80
+\cftchapnumwidth=\skip81
+\cftbeforesecskip=\skip82
+\cftsecindent=\skip83
+\cftsecnumwidth=\skip84
+\cftbeforesubsecskip=\skip85
+\cftsubsecindent=\skip86
+\cftsubsecnumwidth=\skip87
+\cftbeforesubsubsecskip=\skip88
+\cftsubsubsecindent=\skip89
+\cftsubsubsecnumwidth=\skip90
+\cftbeforeparaskip=\skip91
+\cftparaindent=\skip92
+\cftparanumwidth=\skip93
+\cftbeforesubparaskip=\skip94
+\cftsubparaindent=\skip95
+\cftsubparanumwidth=\skip96
+\cftbeforeloftitleskip=\skip97
+\cftafterloftitleskip=\skip98
+\cftbeforefigskip=\skip99
+\cftfigindent=\skip100
+\cftfignumwidth=\skip101
+\c@lofdepth=\count346
+\c@lotdepth=\count347
+\cftbeforelottitleskip=\skip102
+\cftafterlottitleskip=\skip103
+\cftbeforetabskip=\skip104
+\cfttabindent=\skip105
+\cfttabnumwidth=\skip106
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.sty
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xpars
@@ -1008,7 +1033,7 @@ Package: expl3 2024-01-04 L3 programming layer (loader)
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lua
 tex.def
 File: l3backend-luatex.def 2024-01-04 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count343
+\l__color_backend_stack_int=\count348
 Inserting `l3color' in `luaotfload.parse_color'.
 \l__pdf_internal_box=\box78
 ))
@@ -1020,20 +1045,20 @@ Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX
 x.sty
 Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count344
-\l__fontspec_language_int=\count345
-\l__fontspec_strnum_int=\count346
-\l__fontspec_tmp_int=\count347
-\l__fontspec_tmpa_int=\count348
-\l__fontspec_tmpb_int=\count349
-\l__fontspec_tmpc_int=\count350
-\l__fontspec_em_int=\count351
-\l__fontspec_emdef_int=\count352
-\l__fontspec_strong_int=\count353
-\l__fontspec_strongdef_int=\count354
-\l__fontspec_tmpa_dim=\dimen308
-\l__fontspec_tmpb_dim=\dimen309
-\l__fontspec_tmpc_dim=\dimen310
+\l__fontspec_script_int=\count349
+\l__fontspec_language_int=\count350
+\l__fontspec_strnum_int=\count351
+\l__fontspec_tmp_int=\count352
+\l__fontspec_tmpa_int=\count353
+\l__fontspec_tmpb_int=\count354
+\l__fontspec_tmpc_int=\count355
+\l__fontspec_em_int=\count356
+\l__fontspec_emdef_int=\count357
+\l__fontspec_strong_int=\count358
+\l__fontspec_strongdef_int=\count359
+\l__fontspec_tmpa_dim=\dimen321
+\l__fontspec_tmpb_dim=\dimen322
+\l__fontspec_tmpc_dim=\dimen323
  (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.cfg
@@ -1076,68 +1101,68 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count355
+\lrq@indent=\count360
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count356
-\c@listtotal=\count357
-\c@listcount=\count358
-\c@liststart=\count359
-\c@liststop=\count360
-\c@citecount=\count361
-\c@citetotal=\count362
-\c@multicitecount=\count363
-\c@multicitetotal=\count364
-\c@instcount=\count365
-\c@maxnames=\count366
-\c@minnames=\count367
-\c@maxitems=\count368
-\c@minitems=\count369
-\c@citecounter=\count370
-\c@maxcitecounter=\count371
-\c@savedcitecounter=\count372
-\c@uniquelist=\count373
-\c@uniquename=\count374
-\c@refsection=\count375
-\c@refsegment=\count376
-\c@maxextratitle=\count377
-\c@maxextratitleyear=\count378
-\c@maxextraname=\count379
-\c@maxextradate=\count380
-\c@maxextraalpha=\count381
-\c@abbrvpenalty=\count382
-\c@highnamepenalty=\count383
-\c@lownamepenalty=\count384
-\c@maxparens=\count385
-\c@parenlevel=\count386
-\blx@tempcnta=\count387
-\blx@tempcntb=\count388
-\blx@tempcntc=\count389
-\c@blx@maxsection=\count390
-\blx@maxsegment@0=\count391
-\blx@notetype=\count392
-\blx@parenlevel@text=\count393
-\blx@parenlevel@foot=\count394
-\blx@sectionciteorder@0=\count395
-\blx@sectionciteorderinternal@0=\count396
-\blx@entrysetcounter=\count397
-\blx@biblioinstance=\count398
-\labelnumberwidth=\skip106
-\labelalphawidth=\skip107
-\biblabelsep=\skip108
-\bibitemsep=\skip109
-\bibnamesep=\skip110
-\bibinitsep=\skip111
-\bibparsep=\skip112
-\bibhang=\skip113
+\c@tabx@nest=\count361
+\c@listtotal=\count362
+\c@listcount=\count363
+\c@liststart=\count364
+\c@liststop=\count365
+\c@citecount=\count366
+\c@citetotal=\count367
+\c@multicitecount=\count368
+\c@multicitetotal=\count369
+\c@instcount=\count370
+\c@maxnames=\count371
+\c@minnames=\count372
+\c@maxitems=\count373
+\c@minitems=\count374
+\c@citecounter=\count375
+\c@maxcitecounter=\count376
+\c@savedcitecounter=\count377
+\c@uniquelist=\count378
+\c@uniquename=\count379
+\c@refsection=\count380
+\c@refsegment=\count381
+\c@maxextratitle=\count382
+\c@maxextratitleyear=\count383
+\c@maxextraname=\count384
+\c@maxextradate=\count385
+\c@maxextraalpha=\count386
+\c@abbrvpenalty=\count387
+\c@highnamepenalty=\count388
+\c@lownamepenalty=\count389
+\c@maxparens=\count390
+\c@parenlevel=\count391
+\blx@tempcnta=\count392
+\blx@tempcntb=\count393
+\blx@tempcntc=\count394
+\c@blx@maxsection=\count395
+\blx@maxsegment@0=\count396
+\blx@notetype=\count397
+\blx@parenlevel@text=\count398
+\blx@parenlevel@foot=\count399
+\blx@sectionciteorder@0=\count400
+\blx@sectionciteorderinternal@0=\count401
+\blx@entrysetcounter=\count402
+\blx@biblioinstance=\count403
+\labelnumberwidth=\skip107
+\labelalphawidth=\skip108
+\biblabelsep=\skip109
+\bibitemsep=\skip110
+\bibnamesep=\skip111
+\bibinitsep=\skip112
+\bibparsep=\skip113
+\bibhang=\skip114
 \blx@bcfin=\read3
 \blx@bcfout=\write4
 \blx@langwohyphens=\language2
-\c@mincomprange=\count399
-\c@maxcomprange=\count400
-\c@mincompwidth=\count401
+\c@mincomprange=\count404
+\c@maxcomprange=\count405
+\c@mincompwidth=\count406
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1148,88 +1173,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authortitle.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count402
-\c@savedafterword=\count403
-\c@annotator=\count404
-\c@savedannotator=\count405
-\c@author=\count406
-\c@savedauthor=\count407
-\c@bookauthor=\count408
-\c@savedbookauthor=\count409
-\c@commentator=\count410
-\c@savedcommentator=\count411
-\c@editor=\count412
-\c@savededitor=\count413
-\c@editora=\count414
-\c@savededitora=\count415
-\c@editorb=\count416
-\c@savededitorb=\count417
-\c@editorc=\count418
-\c@savededitorc=\count419
-\c@foreword=\count420
-\c@savedforeword=\count421
-\c@holder=\count422
-\c@savedholder=\count423
-\c@introduction=\count424
-\c@savedintroduction=\count425
-\c@namea=\count426
-\c@savednamea=\count427
-\c@nameb=\count428
-\c@savednameb=\count429
-\c@namec=\count430
-\c@savednamec=\count431
-\c@translator=\count432
-\c@savedtranslator=\count433
-\c@shortauthor=\count434
-\c@savedshortauthor=\count435
-\c@shorteditor=\count436
-\c@savedshorteditor=\count437
-\c@labelname=\count438
-\c@savedlabelname=\count439
-\c@institution=\count440
-\c@savedinstitution=\count441
-\c@lista=\count442
-\c@savedlista=\count443
-\c@listb=\count444
-\c@savedlistb=\count445
-\c@listc=\count446
-\c@savedlistc=\count447
-\c@listd=\count448
-\c@savedlistd=\count449
-\c@liste=\count450
-\c@savedliste=\count451
-\c@listf=\count452
-\c@savedlistf=\count453
-\c@location=\count454
-\c@savedlocation=\count455
-\c@organization=\count456
-\c@savedorganization=\count457
-\c@origlocation=\count458
-\c@savedoriglocation=\count459
-\c@origpublisher=\count460
-\c@savedorigpublisher=\count461
-\c@publisher=\count462
-\c@savedpublisher=\count463
-\c@language=\count464
-\c@savedlanguage=\count465
-\c@origlanguage=\count466
-\c@savedoriglanguage=\count467
-\c@pageref=\count468
-\c@savedpageref=\count469
-\shorthandwidth=\skip114
-\shortjournalwidth=\skip115
-\shortserieswidth=\skip116
-\shorttitlewidth=\skip117
-\shortauthorwidth=\skip118
-\shorteditorwidth=\skip119
-\locallabelnumberwidth=\skip120
-\locallabelalphawidth=\skip121
-\localshorthandwidth=\skip122
-\localshortjournalwidth=\skip123
-\localshortserieswidth=\skip124
-\localshorttitlewidth=\skip125
-\localshortauthorwidth=\skip126
-\localshorteditorwidth=\skip127
+\c@afterword=\count407
+\c@savedafterword=\count408
+\c@annotator=\count409
+\c@savedannotator=\count410
+\c@author=\count411
+\c@savedauthor=\count412
+\c@bookauthor=\count413
+\c@savedbookauthor=\count414
+\c@commentator=\count415
+\c@savedcommentator=\count416
+\c@editor=\count417
+\c@savededitor=\count418
+\c@editora=\count419
+\c@savededitora=\count420
+\c@editorb=\count421
+\c@savededitorb=\count422
+\c@editorc=\count423
+\c@savededitorc=\count424
+\c@foreword=\count425
+\c@savedforeword=\count426
+\c@holder=\count427
+\c@savedholder=\count428
+\c@introduction=\count429
+\c@savedintroduction=\count430
+\c@namea=\count431
+\c@savednamea=\count432
+\c@nameb=\count433
+\c@savednameb=\count434
+\c@namec=\count435
+\c@savednamec=\count436
+\c@translator=\count437
+\c@savedtranslator=\count438
+\c@shortauthor=\count439
+\c@savedshortauthor=\count440
+\c@shorteditor=\count441
+\c@savedshorteditor=\count442
+\c@labelname=\count443
+\c@savedlabelname=\count444
+\c@institution=\count445
+\c@savedinstitution=\count446
+\c@lista=\count447
+\c@savedlista=\count448
+\c@listb=\count449
+\c@savedlistb=\count450
+\c@listc=\count451
+\c@savedlistc=\count452
+\c@listd=\count453
+\c@savedlistd=\count454
+\c@liste=\count455
+\c@savedliste=\count456
+\c@listf=\count457
+\c@savedlistf=\count458
+\c@location=\count459
+\c@savedlocation=\count460
+\c@organization=\count461
+\c@savedorganization=\count462
+\c@origlocation=\count463
+\c@savedoriglocation=\count464
+\c@origpublisher=\count465
+\c@savedorigpublisher=\count466
+\c@publisher=\count467
+\c@savedpublisher=\count468
+\c@language=\count469
+\c@savedlanguage=\count470
+\c@origlanguage=\count471
+\c@savedoriglanguage=\count472
+\c@pageref=\count473
+\c@savedpageref=\count474
+\shorthandwidth=\skip115
+\shortjournalwidth=\skip116
+\shortserieswidth=\skip117
+\shorttitlewidth=\skip118
+\shortauthorwidth=\skip119
+\shorteditorwidth=\skip120
+\locallabelnumberwidth=\skip121
+\locallabelalphawidth=\skip122
+\localshorthandwidth=\skip123
+\localshortjournalwidth=\skip124
+\localshortserieswidth=\skip125
+\localshorttitlewidth=\skip126
+\localshortauthorwidth=\skip127
+\localshorteditorwidth=\skip128
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
 
@@ -1255,19 +1280,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count470
-\c@textcitetotal=\count471
-\c@textcitemaxnames=\count472
-\c@biburlbigbreakpenalty=\count473
-\c@biburlbreakpenalty=\count474
-\c@biburlnumpenalty=\count475
-\c@biburlucpenalty=\count476
-\c@biburllcpenalty=\count477
+\c@textcitecount=\count475
+\c@textcitetotal=\count476
+\c@textcitemaxnames=\count477
+\c@biburlbigbreakpenalty=\count478
+\c@biburlbreakpenalty=\count479
+\c@biburlnumpenalty=\count480
+\c@biburlucpenalty=\count481
+\c@biburllcpenalty=\count482
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count478
+\c@smartand=\count483
 )
 Package biblatex Info: Trying to load bibliography style 'authortitle'...
 Package biblatex Info: ... file 'authortitle.bbx' found.
@@ -1281,8 +1306,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/standard.b
 bx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count479
-\c@bbx:relatedtotal=\count480
+\c@bbx:relatedcount=\count484
+\c@bbx:relatedtotal=\count485
 ))
 Package biblatex Info: Trying to load citation style 'authortitle'...
 Package biblatex Info: ... file 'authortitle.cbx' found.
@@ -1402,8 +1427,8 @@ Package babel Info: Non-standard hyphenation setup on input line 118.
 \babelcatcodetablenum=\catcodetable15
 \bbl@pattcodes=\catcodetable16
 )
-\babel@savecnt=\count481
-\U@D=\dimen311
+\babel@savecnt=\count486
+\U@D=\dimen324
 \l@unhyphenated=\language80
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
@@ -1443,70 +1468,70 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count482
-\Gm@cntv=\count483
-\c@Gm@tempcnt=\count484
-\Gm@bindingoffset=\dimen312
-\Gm@wd@mp=\dimen313
-\Gm@odd@mp=\dimen314
-\Gm@even@mp=\dimen315
-\Gm@layoutwidth=\dimen316
-\Gm@layoutheight=\dimen317
-\Gm@layouthoffset=\dimen318
-\Gm@layoutvoffset=\dimen319
-\Gm@dimlist=\toks55
+\Gm@cnth=\count487
+\Gm@cntv=\count488
+\c@Gm@tempcnt=\count489
+\Gm@bindingoffset=\dimen325
+\Gm@wd@mp=\dimen326
+\Gm@odd@mp=\dimen327
+\Gm@even@mp=\dimen328
+\Gm@layoutwidth=\dimen329
+\Gm@layoutheight=\dimen330
+\Gm@layouthoffset=\dimen331
+\Gm@layoutvoffset=\dimen332
+\Gm@dimlist=\toks56
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count485
-\@quotereset=\count486
+\@quotelevel=\count490
+\@quotereset=\count491
 (./doc_main.aux)
 \openout1 = doc_main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-06.
+07.
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count487
-\scratchdimen=\dimen320
+\scratchcounter=\count492
+\scratchdimen=\dimen333
 \scratchbox=\box79
-\nofMPsegments=\count488
-\nofMParguments=\count489
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count490
-\MPscratchDim=\dimen321
-\MPnumerator=\count491
-\makeMPintoPDFobject=\count492
-\everyMPtoPDFconversion=\toks57
+\nofMPsegments=\count493
+\nofMParguments=\count494
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count495
+\MPscratchDim=\dimen334
+\MPnumerator=\count496
+\makeMPintoPDFobject=\count497
+\everyMPtoPDFconversion=\toks58
 )
 (C:/Users/natha/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
 ase.sty
@@ -1518,7 +1543,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 106.
+Package hyperref Info: Link coloring ON on input line 107.
  (./doc_main.out) (./doc_main.out)
 \@outlinefile=\write5
 
@@ -1528,7 +1553,7 @@ Package hyperref Info: Link coloring ON on input line 106.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 106.
+ on input line 107.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: longtable package is loaded.
@@ -1542,61 +1567,61 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 106.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 106.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 106.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 106.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 106.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 106.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 106.
-LaTeX Font Info:    Redeclaring math accent \check on input line 106.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 106.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 106.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 106.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 106.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 107.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 107.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 107.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 107.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 107.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 107.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 107.
+LaTeX Font Info:    Redeclaring math accent \check on input line 107.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 107.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 107.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 107.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 107.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 106.
+(Font)              `operators' in the math version `normal' on input line 107.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/FiraSans(0)/m/n on input line 106.
+(Font)                  OT1/cmr/m/n --> TU/FiraSans(0)/m/n on input line 107.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 106.
+(Font)              `operators' in the math version `bold' on input line 107.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/FiraSans(0)/m/n on input line 106.
+(Font)                  OT1/cmr/bx/n --> TU/FiraSans(0)/m/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/FiraSans(0)/m/n --> TU/FiraSans(0)/m/n on input line
- 106.
+ 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/FiraSans(0)/m/it on input line 106.
+(Font)                  OT1/cmr/m/it --> TU/FiraSans(0)/m/it on input line 107.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/FiraSans(0)/b/n on input line 106.
+(Font)                  OT1/cmr/bx/n --> TU/FiraSans(0)/b/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 106.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 106.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/FiraSans(0)/m/n --> TU/FiraSans(0)/b/n on input line
- 106.
+ 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/FiraSans(0)/b/it on input line 106
+(Font)                  OT1/cmr/bx/it --> TU/FiraSans(0)/b/it on input line 107
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 106.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 106.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 107.
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
@@ -1616,8 +1641,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'doc_main.bbl' found.
  (./doc_main.bbl)
-Package biblatex Info: Reference section=0 on input line 106.
-Package biblatex Info: Reference segment=0 on input line 106.
+Package biblatex Info: Reference section=0 on input line 107.
+Package biblatex Info: Reference segment=0 on input line 107.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1656,10 +1681,10 @@ Package biblatex Info: Reference segment=0 on input line 106.
 
 warning  (file ./pictures/JuventusLogo.pdf) (pdf inclusion): PDF inclusion: foun
 d PDF version '1.7', but at most version '1.5' allowed
-<./pictures/JuventusLogo.pdf, id=54, 244.9953pt x 51.0708pt>
+<./pictures/JuventusLogo.pdf, id=126, 244.9953pt x 51.0708pt>
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
 <use ./pictures/JuventusLogo.pdf>
-Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 118.
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 119.
 (luatex.def)             Requested size: 170.71652pt x 35.588pt.
 [1
 
@@ -1674,15 +1699,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 \tf@lof=\write7
 
 \openout7 = doc_main.lof
- [2] (./sys_eng.tex (./terminplan.tex
-Underfull \hbox (badness 10000) in alignment at lines 35--35
-[][][][]
- []
-
-))
+ [2] (./Einleitung.tex) (./vorarbeiten.tex
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
 <use ./pictures/JuventusLogo.pdf>
-Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 177.
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 2.
 (luatex.def)             Requested size: 170.71652pt x 35.588pt.
 
 
@@ -1693,43 +1713,316 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[3] (./doc_main.lot)
+[3]
+<pictures/render_prototype.PNG, id=199, 1927.2pt x 634.37pt>
+File: pictures/render_prototype.PNG Graphic file (type png)
+<use pictures/render_prototype.PNG>
+Package luatex.def Info: pictures/render_prototype.PNG  used on input line 6.
+(luatex.def)             Requested size: 455.24411pt x 149.85133pt.
+<pictures/Schwingspule_lang.jpg, id=201, 4015.0pt x 1850.915pt>
+File: pictures/Schwingspule_lang.jpg Graphic file (type jpg)
+<use pictures/Schwingspule_lang.jpg>
+Package luatex.def Info: pictures/Schwingspule_lang.jpg  used on input line 17.
+
+(luatex.def)             Requested size: 318.66948pt x 146.89003pt.
+<pictures/Schwingspule_kurz.jpg, id=202, 4015.0pt x 1850.915pt>
+File: pictures/Schwingspule_kurz.jpg Graphic file (type jpg)
+<use pictures/Schwingspule_kurz.jpg>
+Package luatex.def Info: pictures/Schwingspule_kurz.jpg  used on input line 24.
+
+(luatex.def)             Requested size: 318.66948pt x 146.89003pt.
+<pictures/Schwingspule_eisenbobine.jpg, id=203, 4015.0pt x 1850.915pt>
+File: pictures/Schwingspule_eisenbobine.jpg Graphic file (type jpg)
+<use pictures/Schwingspule_eisenbobine.jpg>
+Package luatex.def Info: pictures/Schwingspule_eisenbobine.jpg  used on input l
+ine 31.
+(luatex.def)             Requested size: 318.66948pt x 146.89003pt.
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 39.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[4<./pictures/render_prototype.PNG>]
+<pictures/exciter.jpg, id=211, 250.9375pt x 250.9375pt>
+File: pictures/exciter.jpg Graphic file (type jpg)
+<use pictures/exciter.jpg>
+Package luatex.def Info: pictures/exciter.jpg  used on input line 45.
+(luatex.def)             Requested size: 150.56364pt x 150.56364pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--48
+\TU/FiraSans(0)/m/n/10 SWEEP[] So-mit liegt ein stark nicht-linearer Fre-quenz-g
+ang vor.
+ []
+
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 48.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[5<./pictures/Schwingspule_lang.jpg><./pictures/Schwingspule_kurz.jpg><./picture
+s/Schwingspule_eisenbobine.jpg>]) (./sys_eng.tex (./situationsanalyse.tex
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 10.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[6<./pictures/exciter.jpg>]
+warning  (file pictures/SWOT.pdf) (pdf inclusion): PDF inclusion: found PDF vers
+ion '1.7', but at most version '1.5' allowed
+<pictures/SWOT.pdf, id=231, 529.98pt x 213.67828pt>
+File: pictures/SWOT.pdf Graphic file (type pdf)
+<use pictures/SWOT.pdf>
+Package luatex.def Info: pictures/SWOT.pdf  used on input line 19.
+(luatex.def)             Requested size: 455.24411pt x 183.54779pt.
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 27.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[7<./pictures/SWOT.pdf>]
+warning  (file pictures/ishikawa.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.7', but at most version '1.5' allowed
+<pictures/ishikawa.pdf, id=267, 588.27782pt x 257.04028pt>
+File: pictures/ishikawa.pdf Graphic file (type pdf)
+<use pictures/ishikawa.pdf>
+Package luatex.def Info: pictures/ishikawa.pdf  used on input line 34.
+(luatex.def)             Requested size: 455.24411pt x 198.92177pt.
+) (./Zieldefinition.tex
+
+Package caption Warning: \label without proper reference on input line 111.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:aims' on page 8 undefined on input line 1.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]\TU/FiraSans(0)/m/n/10 Di-rek-tio-na-le
+ []
+
+
+Underfull \hbox (badness 7133) in paragraph at lines 110--110
+[]\TU/FiraSans(0)/m/n/10 Mög-lichst we-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]\TU/FiraSans(0)/m/n/10 Un-te-re Grenz-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\TU/FiraSans(0)/m/n/10 fre-quenz tief
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]\TU/FiraSans(0)/m/n/10 Ab-strah-lung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\TU/FiraSans(0)/m/n/10 soft-ware-mä-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]\TU/FiraSans(0)/m/n/10 Re-du-zier-tes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]\TU/FiraSans(0)/m/n/10 Be-nut-zer-si-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]\TU/FiraSans(0)/m/n/10 Bat-te-rie-be-trie-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]\TU/FiraSans(0)/m/n/10 Draht-lo-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\TU/FiraSans(0)/m/n/10 Si-gnal-über-tra-
+ []
+
+
+Overfull \hbox (10.6124pt too wide) in alignment at lines 110--110
+[][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--113
+
+ []
+
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 113.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[8<./pictures/ishikawa.pdf>]) (./zielbeziehungen.tex
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 5.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[9]) (./zielgewichtung.tex
+Underfull \hbox (badness 10000) in alignment at lines 30--30
+[][][][][][][][][][]
+ []
+
+
+Overfull \hbox (0.98373pt too wide) in paragraph at lines 35--36
+[]\TU/FiraSans(0)/b/n/10 G Brenn-bar-keit[] \TU/FiraSans(0)/m/n/10 Das End-pro-d
+ukt muss ein mög-lichst mi-ni-mier-tes Brenn-bar-keits-ri-si-ko auf-wei-sen. Zw
+ar
+ []
+
+) (./terminplan.tex
+Overfull \hbox (0.5599pt too wide) in alignment at lines 36--36
+[][][][]
+ []
+
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 38.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[10]))
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 162.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[11]
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 178.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[12] (./doc_main.lot)
 \tf@lot=\write8
 
 \openout8 = doc_main.lot
- [4] 
+ [13] 
 AED: lastpage setting LastPage
-[5
+[14
 
 ] (./doc_main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `doc_main.out' has not changed.
-(rerunfilecheck)             Checksum: D00A03F8A9535EC7775312F74CE3A920;1374.
+(rerunfilecheck)             Checksum: 0D43EBCACDAFD3E07A477FB79B49F1C6;4385.
 Package logreq Info: Writing requests to 'doc_main.run.xml'.
 
 \openout1 = doc_main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 45490 strings out of 476497
- 100000,2373549 words of node,token memory allocated
- 815 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 17 attribute, 105 glue_spe
-c, 10 attribute_list, 3 write nodes
-   avail lists: 2:2628,3:255,4:126,5:781,6:65,7:5035,8:21,9:851,10:7,11:404
- 66437 multiletter control sequences out of 65536+600000
- 51 fonts using 11158671 bytes
- 99i,15n,97p,1863b,1728s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 45939 strings out of 476497
+ 125007,2373549 words of node,token memory allocated
+ 835 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 22 attribute, 108 glue_spe
+c, 12 attribute_list, 3 write nodes
+   avail lists: 1:4,2:5786,3:447,4:173,5:1492,6:95,7:8925,8:21,9:1775,10:13,11:7
+18
+ 66744 multiletter control sequences out of 65536+600000
+ 63 fonts using 13370175 bytes
+ 99i,16n,97p,1863b,1728s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.3'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
 <//?/c:/users/natha/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmon
 o10-regular.otf><C:/Users/natha/AppData/Local/Microsoft/Windows/Fonts/firasans-i
 talic.ttf><C:/Users/natha/AppData/Local/Microsoft/Windows/Fonts/firasans-regular
-.ttf><C:/Users/natha/AppData/Local/Microsoft/Windows/Fonts/firasans-bold.ttf>
-Output written on doc_main.pdf (6 pages, 246812 bytes).
+.ttf><C:/Users/natha/AppData/Local/Microsoft/Windows/Fonts/firasans-bold.ttf><C:
+/Users/natha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+pfb>
+Output written on doc_main.pdf (15 pages, 8779300 bytes).
 
-PDF statistics: 187 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 131072)
- 117 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 462 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 131072)
+ 261 words of extra memory for PDF output out of 10000 (max. 100000000)
 

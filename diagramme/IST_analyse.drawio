@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="27.1.6">
+  <diagram name="Page-1" id="nhx6aED9dKo0qimKDNKH">
+    <mxGraphModel dx="856" dy="508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sdFFfKZNdMTJ23Fbi-vx-1" value="Stärken" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;rounded=0;swimlaneLine=1;glass=0;shadow=0;strokeWidth=3;perimeterSpacing=0;fontFamily=Fira Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BSans;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="90" y="100" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sdFFfKZNdMTJ23Fbi-vx-2" value="&lt;ul&gt;&lt;li&gt;Vorarbeit geleistet&lt;/li&gt;&lt;li&gt;Keine wirtschaftliche Rahmenbedingungen&lt;/li&gt;&lt;li&gt;Kein Arbeitgeber oder Kunde als Stakeholder&lt;/li&gt;&lt;li&gt;Freiheit im Design und Herstellungsprozess&lt;/li&gt;&lt;li&gt;Prinzip existiert und ist bereits vielfach angewant&lt;/li&gt;&lt;li&gt;Neuheit in diesem Kontext, kein ähnliches Produkt&lt;/li&gt;&lt;li&gt;u.U. Unterstützung von Drittunternehmen&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Fira Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BSans;spacing=2;spacingTop=0;fontSize=12;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="sdFFfKZNdMTJ23Fbi-vx-1">
+          <mxGeometry x="10" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sdFFfKZNdMTJ23Fbi-vx-4" value="Schwächen" style="swimlane;horizontal=0;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;rounded=0;swimlaneLine=1;glass=0;shadow=0;strokeWidth=3;perimeterSpacing=0;fontFamily=Fira Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BSans;fontStyle=1;rotation=-180;whiteSpace=wrap;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="450" y="100" width="370" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sdFFfKZNdMTJ23Fbi-vx-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;ul style=&quot;font-size: 12px; font-weight: 400; text-wrap-mode: nowrap;&quot;&gt;&lt;li&gt;Keine Rahmenressourcen&lt;/li&gt;&lt;li&gt;Keine Unterstützung durch Arbeitgeber&lt;/li&gt;&lt;li&gt;Keine Referenzprodukte&lt;/li&gt;&lt;li&gt;Finanzieller Rahmen begrenzt&lt;/li&gt;&lt;li&gt;Begrenzte Möglichkeiten zur Simulation&lt;/li&gt;&lt;li&gt;Einzelarbeit&lt;/li&gt;&lt;li&gt;Zeitrahmen recht eng&lt;/li&gt;&lt;li&gt;u.U. elektronische, mechanische und SW-Komponenten&lt;/li&gt;&lt;/ul&gt;&lt;/h1&gt;" style="text;html=1;overflow=hidden;rounded=0;fontFamily=Fira Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BSans;whiteSpace=wrap;labelBorderColor=none;textShadow=0;" vertex="1" parent="sdFFfKZNdMTJ23Fbi-vx-4">
+          <mxGeometry width="350" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="sdFFfKZNdMTJ23Fbi-vx-7" value="Chancen" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;rounded=0;swimlaneLine=1;glass=0;shadow=0;strokeWidth=3;perimeterSpacing=0;fontFamily=Fira Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BSans;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="90" y="250" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sdFFfKZNdMTJ23Fbi-vx-8" value="&lt;ul&gt;&lt;li&gt;Tabula Rasa&lt;/li&gt;&lt;li&gt;Potential für Innovation&lt;/li&gt;&lt;li&gt;Produktneuheit&lt;/li&gt;&lt;li&gt;u.U. Skalierbarkeit&lt;/li&gt;&lt;li&gt;Konzept erweiterbar&lt;/li&gt;&lt;li&gt;unabhängig von Verkaufszahlen&lt;/li&gt;&lt;li&gt;moderne Technologien können angewandt werden&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Fira Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BSans;spacing=2;spacingTop=0;fontSize=12;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="sdFFfKZNdMTJ23Fbi-vx-7">
+          <mxGeometry x="10" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sdFFfKZNdMTJ23Fbi-vx-9" value="Gefahren" style="swimlane;horizontal=0;html=1;fillColor=light-dark(#D80073,#FF5555);strokeColor=light-dark(#A50040,#FF8A89);rounded=0;swimlaneLine=1;glass=0;shadow=0;strokeWidth=3;perimeterSpacing=0;fontFamily=Fira Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BSans;fontStyle=1;rotation=-180;whiteSpace=wrap;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;fontColor=#ffffff;fillStyle=auto;" vertex="1" parent="1">
+          <mxGeometry x="450" y="250" width="370" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sdFFfKZNdMTJ23Fbi-vx-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;ul style=&quot;font-size: 12px; font-weight: 400; text-wrap-mode: nowrap;&quot;&gt;&lt;li&gt;Resultat kann nur bedingt vorausgesagt werden&lt;/li&gt;&lt;li&gt;Kann auch gar nicht funktionieren&lt;/li&gt;&lt;li&gt;Mögliche Kostengefahr&lt;/li&gt;&lt;li&gt;Zeitrahmen möglicherweise zu eng&lt;/li&gt;&lt;li&gt;Keine wirtschaftliche Relevanz&lt;/li&gt;&lt;/ul&gt;&lt;/h1&gt;" style="text;html=1;overflow=hidden;rounded=0;fontFamily=Fira Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BSans;whiteSpace=wrap;labelBorderColor=none;textShadow=0;verticalAlign=top;" vertex="1" parent="sdFFfKZNdMTJ23Fbi-vx-9">
+          <mxGeometry y="10" width="350" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

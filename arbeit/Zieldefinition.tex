@@ -1,0 +1,113 @@
+Das Grundlegende Projektziel ist eigentlich sehr einfach beschrieben: Es soll ein Gerät entwickelt werden, welches den Klang in eine bestimmte Richtung abstrahlen kann (Beam Forming). Da jedoch in Rahmen dieser Ausbildung bzw. dieses Projekts keine anechoische Kammer und/oder eine genau winkelverstellbare Halterung zur Verfügung stand, um die Direktionalität des Schallpegels zu messen, war die grundsätzliche Messbarkeit dieses Zieles fraglich.\\Nichtsdestotrotz sollen sowohl das oben genannte Hauptziel (\textbf{Muss}) als auch Nebenziele (\textbf{Soll, Kann}) an dieser Stelle definiert und quantifiziert werden. Dabei ist der Ziel-Zeitpunkt jeweils der Abgabetermin der Arbeit. Tabelle \ref{tab:aims} zeigt die verschiedenen Ziele und deren Messgrössen.\\
+\begin{table}[H]
+	\centering
+	%\rowcolors{2}{gray!0}{gray!8}
+	\setstretch{1.5}
+	\begin{tabularx}{\textwidth}{l|>{\columncolor{red!22}}c|>{\columncolor{orange!12}}c|>{\columncolor{blue!12}}c|ccc}
+		\centering
+		Zielbezeichnung & \textbf{MUSS} & \textbf{SOLL} & \textbf{KANN} & Messgrösse & Kenn/Grenzzahl & Bedingung  \\
+		\hline
+		{\Large \textbf A}\hspace{3mm}\begin{minipage}{2.4cm}
+			\vspace{2mm}
+			\setstretch{1.1}
+			Direktionale Abstrahlung
+			\vspace{2mm}
+		\end{minipage} & x &  &  & Direktivität & -3dB SPL & \begin{minipage}{2.1cm}
+			\vspace{1mm}
+			\setstretch{1.1}
+			\centering
+			> 10° von Bezugsachse
+		\end{minipage}\\
+		\hline
+		{\Large \textbf B}\hspace{3mm}\begin{minipage}{2.4cm}
+			\vspace{2mm}
+			\setstretch{1.1}
+			Möglichst wenige Stecker
+			\vspace{2mm}
+		\end{minipage} &  & x &  & Anzahl Stecker & max. 3 & - \\
+		\hline
+		{\Large \textbf C}\hspace{3mm}\begin{minipage}{2.4cm}
+			\vspace{2mm}
+			\setstretch{1.1}
+			Untere Grenzfrequenz tief genug
+			\vspace{2mm}
+		\end{minipage} &  & x &  & -3dB Punkt & min. 100 Hz & - \\
+		\hline
+		{\Large \textbf D.1}\hspace{1.5mm}\begin{minipage}{2.4cm}
+			\vspace{2mm}
+			\setstretch{1.1}
+			Mobilität
+			\vspace{2mm}
+		\end{minipage} &  & x &  & Gewicht & max. 6 kg & - \\
+		%\hline
+		{\Large \textbf D.2}\hspace{1mm}\begin{minipage}{2.4cm}
+			\vspace{2mm}
+			\setstretch{1.1}
+			Mobilität
+			\vspace{2mm}
+		\end{minipage} &  &  & x & Dimensionen & max. 1.8x0.8x0.3m & - \\
+		\hline
+		{\Large \textbf E}\hspace{3mm}\begin{minipage}{2.4cm}
+			\vspace{2mm}
+			\setstretch{1.1}
+			Speisung + Daten auf einem Stecker
+			\vspace{2mm}
+		\end{minipage} &  &  & x & Anzahl Stecker & 1 & - \\
+		\hline
+		{\Large \textbf F}\hspace{3mm}\begin{minipage}{2.4cm}
+			\vspace{2mm}
+			\setstretch{1.1}
+			Abstrahlung softwaremässig steuerbar
+			\vspace{2mm}
+		\end{minipage} &  &  & x & Möglich & Ja & -\\
+		\hline
+		{\Large \textbf G}\hspace{3mm}\begin{minipage}{2.4cm}
+		\vspace{2mm}
+		\setstretch{1.1}
+		Reduziertes Brandrisiko
+		\vspace{2mm}
+		\end{minipage} & x &  &  & \begin{minipage}{2cm}
+			\centering
+			\vspace{2mm}
+			MTBF (durch Brand)\vspace{2mm}
+		\end{minipage} & min. 200 Jahre & \begin{minipage}{2.4cm}
+		\vspace{1mm}
+		\setstretch{1.1}
+		\centering
+		Sachgemässe Benützung
+		\end{minipage}\\
+		\hline
+		{\Large \textbf H}\hspace{3mm}\begin{minipage}{2.4cm}
+		\vspace{2mm}
+		\setstretch{1.1}
+		Benutzersicherheit
+		\vspace{2mm}
+		\end{minipage} &  & x &  & \begin{minipage}{2cm}
+		\centering
+		\vspace{2mm}
+		MTBF (durch Benutzerunfall)
+		\vspace{2mm}
+		\end{minipage} & min. 80 Jahre & \begin{minipage}{2.4cm}
+		\vspace{1mm}
+		\setstretch{1.1}
+		\centering
+		Sachgemässe Benützung
+		\end{minipage} \\
+		\hline
+		{\Large \textbf I}\hspace{3mm}\begin{minipage}{2.4cm}
+		\vspace{2mm}
+		\setstretch{1.1}
+		Batteriebetrieben
+		\vspace{2mm}
+		\end{minipage} &  &  & x & Akkulaufzeit & 12h & - \\
+		\hline
+		{\Large \textbf J}\hspace{3mm}\begin{minipage}{2.4cm}
+		\vspace{2mm}
+		\setstretch{1.1}
+		Drahtlose Signalübertragung
+		\vspace{2mm}
+		\end{minipage} &  &  & x & Funkstrecke & Ja & -
+	\end{tabularx}
+	\label{tab:aims}
+	\caption{Projektziele}
+\end{table}
