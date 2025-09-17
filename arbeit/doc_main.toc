@@ -33,16 +33,37 @@
 \contentsline {paragraph}{I vs. G}{9}{section*.19}%
 \contentsline {paragraph}{B vs. E}{10}{section*.20}%
 \contentsline {subsection}{\numberline {2.4}Zielgewichtung}{10}{subsection.0.2.4}%
-\contentsline {paragraph}{G Brennbarkeit}{10}{section*.22}%
+\contentsline {paragraph}{G Reduziertes Brandrisiko}{10}{section*.22}%
 \contentsline {paragraph}{D.2 Mobilität}{10}{section*.23}%
 \contentsline {paragraph}{A Direktionale Abstrahlung}{10}{section*.24}%
 \contentsline {subsection}{\numberline {2.5}Variantendefinition}{11}{subsection.0.2.5}%
-\contentsline {subsection}{\numberline {2.6}Variantenauswertung}{11}{subsection.0.2.6}%
-\contentsline {subsection}{\numberline {2.7}Variantenauswahl}{11}{subsection.0.2.7}%
-\contentsline {subsection}{\numberline {2.8}Terminplanung}{11}{subsection.0.2.8}%
-\contentsline {section}{\numberline {3}Umsetzung}{12}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Systemaufbau}{12}{subsection.0.3.1}%
-\contentsline {section}{\numberline {4}Tests}{12}{section.0.4}%
-\contentsline {section}{\numberline {5}Fazit}{12}{section.0.5}%
-\contentsline {section}{13 Tabellenverzeichnis}{13}{section.0.5}%
-\contentsline {section}{Quellenverzeichnis}{14}{chapter*.26}%
+\contentsline {subsubsection}{\numberline {2.5.1}Morphologischer Kasten}{11}{subsubsection.0.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Variante A: Alles Analog}{12}{subsubsection.0.2.5.2}%
+\contentsline {paragraph}{Vorteile}{12}{section*.27}%
+\contentsline {paragraph}{Nachteile}{12}{section*.28}%
+\contentsline {paragraph}{Risikoanalyse}{13}{section*.29}%
+\contentsline {subsubsection}{\numberline {2.5.3}Variante B: Drahtlos \& Portabel}{14}{subsubsection.0.2.5.3}%
+\contentsline {paragraph}{Vorteile}{14}{section*.32}%
+\contentsline {paragraph}{Nachteile}{14}{section*.33}%
+\contentsline {paragraph}{Risikoanalyse}{15}{section*.34}%
+\contentsline {subsubsection}{\numberline {2.5.4}Variante C: High-End Audiophil}{16}{subsubsection.0.2.5.4}%
+\contentsline {paragraph}{Vorteile}{16}{section*.37}%
+\contentsline {paragraph}{Nachteile}{16}{section*.38}%
+\contentsline {paragraph}{Risikoanalyse}{17}{section*.39}%
+\contentsline {subsubsection}{\numberline {2.5.5}Variante D: Einfache Anwendung, Plug'n'Play}{18}{subsubsection.0.2.5.5}%
+\contentsline {paragraph}{Vorteile}{18}{section*.42}%
+\contentsline {paragraph}{Nachteile}{18}{section*.43}%
+\contentsline {paragraph}{Risikoanalyse}{19}{section*.44}%
+\contentsline {subsubsection}{\numberline {2.5.6}Variante E: Neu ist besser}{20}{subsubsection.0.2.5.6}%
+\contentsline {paragraph}{Vorteile}{20}{section*.47}%
+\contentsline {paragraph}{Nachteile}{20}{section*.48}%
+\contentsline {paragraph}{Risikoanalyse}{21}{section*.49}%
+\contentsline {subsection}{\numberline {2.6}Variantenauswertung}{22}{subsection.0.2.6}%
+\contentsline {subsection}{\numberline {2.7}Variantenauswahl}{22}{subsection.0.2.7}%
+\contentsline {subsection}{\numberline {2.8}Terminplanung}{22}{subsection.0.2.8}%
+\contentsline {section}{\numberline {3}Umsetzung}{23}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Systemaufbau}{23}{subsection.0.3.1}%
+\contentsline {section}{\numberline {4}Tests}{23}{section.0.4}%
+\contentsline {section}{\numberline {5}Fazit}{23}{section.0.5}%
+\contentsline {section}{13 Tabellenverzeichnis}{24}{section.0.5}%
+\contentsline {section}{Quellenverzeichnis}{25}{chapter*.52}%
