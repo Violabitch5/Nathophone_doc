@@ -17,6 +17,152 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{aespar}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BDA}{%
+         family={Bohn},
+         familyi={B\bibinitperiod},
+         given={Dennis\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BDA1}
+    \strng{fullhash}{BDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Pro Audio Reference}
+    \verb{url}
+    \verb https://www.aes.org/par/
+    \endverb
+    \field{day}{21}
+    \field{month}{09}
+    \field{year}{2025}
+    \field{urlday}{21}
+    \field{urlmonth}{09}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{DAEX19QLP4spec}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={DaytonAudio},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{DAEX19QLP4 Quad Feet Low Profile 19mm Exciter}
+    \verb{url}
+    \verb https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DAEX19QLP-4/DAE
+    \verb X19QLP-4-datasheet.pdf
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{09}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{DAEX25QLP4spec}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={DaytonAudio},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{DAEX25QLP4 Quad Feet Low Profile 25mm Exciter 10W 4 Ohm}
+    \verb{url}
+    \verb https://www.daytonaudio.com/images/resources/295-262--dayton-audio-da
+    \verb ex25qlp-4-specifications.pdf
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{09}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{guidetopowerhandling}{online}{}
+    \name{author}{1}{}{%
+      {{hash=FA}{%
+         family={Fox},
+         familyi={F\bibinitperiod},
+         given={Arthur},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FA1}
+    \strng{fullhash}{FA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Complete Guide To Speaker Power Handling and Wattage Ratings}
+    \verb{url}
+    \verb https://mynewmicrophone.com/complete-guide-to-speaker-power-handling-
+    \verb wattage-ratings/#Program-Power-Handling
+    \endverb
+    \field{day}{01}
+    \field{month}{06}
+    \field{year}{2020}
+    \field{urlday}{21}
+    \field{urlmonth}{09}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{joyned_store}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Joyned Store}
+    \verb{url}
+    \verb https://joyned.store/
+    \endverb
+    \field{urlday}{25}
+    \field{urlmonth}{09}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{PoE_overview_doc}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=LYDAPL}{%
+         family={Lennart\bibnamedelima Yseboodt},
+         familyi={L\bibinitperiod\bibinitdelim Y\bibinitperiod},
+         suffix={Philips\bibnamedelima Lighting},
+         suffixi={P\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={David\bibnamedelima Abramson},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Texas Instruments}%
+    }
+    \strng{namehash}{LYPLDA1}
+    \strng{fullhash}{LYPLDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Overview of 802.3bt - Power over Ethernet standard}
+    \verb{url}
+    \verb https://ethernetalliance.org/wp-content/uploads/2018/04/WP_EA_Overvie
+    \verb w8023bt_FINAL.pdf
+    \endverb
+    \field{urlday}{29}
+    \field{urlmonth}{09}
+    \field{urlyear}{2025}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
   \entry{SoundreinforcementforaudioEngineers}{book}{}
     \name{author}{1}{}{%
       {{hash=NWAD}{%
@@ -45,6 +191,31 @@
       {4 Park Square, Milton Park, Abingdon, Oxon OX14 4RN}%
     }
     \field{year}{2023}
+  \endentry
+
+  \entry{adc820man}{online}{}
+    \name{author}{1}{}{%
+      {{hash=Q}{%
+         family={QSC},
+         familyi={Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Q1}
+    \strng{fullhash}{Q1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{title}{AD C820 C821 AcousticDesign High Output Ceiling Mount
+  Loudspeakers}
+    \verb{url}
+    \verb https://www.qsys.com/resource-files/productresources/spk/ad/q_spk_adc
+    \verb _820_821_specs.pdf
+    \endverb
+    \field{year}{2020}
+    \field{urlday}{24}
+    \field{urlmonth}{09}
+    \field{urlyear}{2025}
   \endentry
 \enddatalist
 \endinput

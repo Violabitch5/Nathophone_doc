@@ -17,56 +17,68 @@
 \contentsline {paragraph}{Anregung mittels Exciter}{7}{section*.8}%
 \contentsline {subsubsection}{\numberline {1.3.3}Erkenntnisse}{7}{subsubsection.0.1.3.3}%
 \contentsline {subsubsection}{\numberline {1.3.4}Konstruktion Korpus mit sechs Elementen}{7}{subsubsection.0.1.3.4}%
-\contentsline {section}{\numberline {2}System Engineering}{7}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1}Situationsanalyse}{7}{subsection.0.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}SWOT Analyse}{8}{subsubsection.0.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Ishikawa Diagramm}{8}{subsubsection.0.2.1.2}%
+\contentsline {chapter}{\numberline {1}System Engineering}{8}{chapter.1}%
+\contentsline {section}{\numberline {1}Situationsanalyse}{8}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1}SWOT Analyse}{9}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.2}Ishikawa Diagramm}{9}{subsection.1.1.2}%
 \contentsline {paragraph}{Physik}{9}{section*.10}%
 \contentsline {paragraph}{Material}{9}{section*.11}%
 \contentsline {paragraph}{Engineering}{9}{section*.12}%
 \contentsline {paragraph}{Zeit}{9}{section*.13}%
-\contentsline {paragraph}{Budget}{9}{section*.14}%
-\contentsline {paragraph}{Produktesicherheit}{9}{section*.15}%
-\contentsline {subsection}{\numberline {2.2}Zieldefinition}{9}{subsection.0.2.2}%
-\contentsline {subsection}{\numberline {2.3}Zielbeziehungen}{10}{subsection.0.2.3}%
-\contentsline {paragraph}{C vs. D.2}{10}{section*.18}%
+\contentsline {paragraph}{Budget}{10}{section*.14}%
+\contentsline {paragraph}{Produktesicherheit}{10}{section*.15}%
+\contentsline {section}{\numberline {2}Zieldefinition}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {2.1}Zielbeziehungen}{11}{subsection.1.2.1}%
+\contentsline {paragraph}{C vs. D.2}{11}{section*.18}%
 \contentsline {paragraph}{I vs. G}{11}{section*.19}%
 \contentsline {paragraph}{B vs. E}{11}{section*.20}%
-\contentsline {subsection}{\numberline {2.4}Zielgewichtung}{11}{subsection.0.2.4}%
-\contentsline {paragraph}{G Reduziertes Brandrisiko}{11}{section*.22}%
-\contentsline {paragraph}{D.2 Mobilität}{11}{section*.23}%
-\contentsline {paragraph}{A Direktionale Abstrahlung}{11}{section*.24}%
-\contentsline {subsection}{\numberline {2.5}Variantendefinition}{12}{subsection.0.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Morphologischer Kasten}{12}{subsubsection.0.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Variante A: Alles Analog}{13}{subsubsection.0.2.5.2}%
-\contentsline {paragraph}{Vorteile}{13}{section*.27}%
-\contentsline {paragraph}{Nachteile}{13}{section*.28}%
-\contentsline {paragraph}{Risikoanalyse}{14}{section*.29}%
-\contentsline {subsubsection}{\numberline {2.5.3}Variante B: Drahtlos \& Portabel}{15}{subsubsection.0.2.5.3}%
-\contentsline {paragraph}{Vorteile}{15}{section*.32}%
-\contentsline {paragraph}{Nachteile}{15}{section*.33}%
-\contentsline {paragraph}{Risikoanalyse}{16}{section*.34}%
-\contentsline {subsubsection}{\numberline {2.5.4}Variante C: High-End Audiophil}{17}{subsubsection.0.2.5.4}%
-\contentsline {paragraph}{Vorteile}{17}{section*.37}%
-\contentsline {paragraph}{Nachteile}{17}{section*.38}%
-\contentsline {paragraph}{Risikoanalyse}{18}{section*.39}%
-\contentsline {subsubsection}{\numberline {2.5.5}Variante D: Einfache Anwendung, Plug'n'Play}{19}{subsubsection.0.2.5.5}%
-\contentsline {paragraph}{Vorteile}{19}{section*.42}%
-\contentsline {paragraph}{Nachteile}{19}{section*.43}%
-\contentsline {paragraph}{Risikoanalyse}{20}{section*.44}%
-\contentsline {subsubsection}{\numberline {2.5.6}Variante E: Neu ist besser}{21}{subsubsection.0.2.5.6}%
-\contentsline {paragraph}{Vorteile}{21}{section*.47}%
-\contentsline {paragraph}{Nachteile}{21}{section*.48}%
-\contentsline {paragraph}{Risikoanalyse}{22}{section*.49}%
-\contentsline {subsection}{\numberline {2.6}Variantenauswertung}{23}{subsection.0.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}Nutzwertanalyse}{23}{subsubsection.0.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.2}Kosten-Nutzen Analyse}{23}{subsubsection.0.2.6.2}%
-\contentsline {subsection}{\numberline {2.7}Variantenauswahl}{25}{subsection.0.2.7}%
-\contentsline {paragraph}{Anpassungen}{25}{section*.53}%
-\contentsline {subsection}{\numberline {2.8}Terminplanung}{25}{subsection.0.2.8}%
-\contentsline {section}{\numberline {3}Umsetzung}{26}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Systemaufbau}{26}{subsection.0.3.1}%
-\contentsline {section}{\numberline {4}Tests}{26}{section.0.4}%
-\contentsline {section}{\numberline {5}Fazit}{26}{section.0.5}%
-\contentsline {section}{13 Tabellenverzeichnis}{27}{section.0.5}%
-\contentsline {section}{Quellenverzeichnis}{28}{chapter*.56}%
+\contentsline {section}{\numberline {3}Zielgewichtung}{12}{section.1.3}%
+\contentsline {subsection}{\numberline {3.1}Primärziele}{12}{subsection.1.3.1}%
+\contentsline {paragraph}{G Reduziertes Brandrisiko}{12}{section*.22}%
+\contentsline {paragraph}{D.2 Mobilität}{12}{section*.23}%
+\contentsline {paragraph}{A Direktionale Abstrahlung}{12}{section*.24}%
+\contentsline {section}{\numberline {4}Variantendefinition}{13}{section.1.4}%
+\contentsline {subsection}{\numberline {4.1}Morphologischer Kasten}{13}{subsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Variante A: Alles Analog}{14}{subsubsection.1.4.1.1}%
+\contentsline {paragraph}{Vorteile}{14}{section*.27}%
+\contentsline {paragraph}{Nachteile}{14}{section*.28}%
+\contentsline {paragraph}{Risikoanalyse}{15}{section*.29}%
+\contentsline {subsubsection}{\numberline {4.1.2}Variante B: Drahtlos \& Portabel}{16}{subsubsection.1.4.1.2}%
+\contentsline {paragraph}{Vorteile}{16}{section*.32}%
+\contentsline {paragraph}{Nachteile}{16}{section*.33}%
+\contentsline {paragraph}{Risikoanalyse}{17}{section*.34}%
+\contentsline {subsubsection}{\numberline {4.1.3}Variante C: High-End Audiophil}{18}{subsubsection.1.4.1.3}%
+\contentsline {paragraph}{Vorteile}{18}{section*.37}%
+\contentsline {paragraph}{Nachteile}{18}{section*.38}%
+\contentsline {paragraph}{Risikoanalyse}{19}{section*.39}%
+\contentsline {subsubsection}{\numberline {4.1.4}Variante D: Einfache Anwendung, Plug'n'Play}{20}{subsubsection.1.4.1.4}%
+\contentsline {paragraph}{Vorteile}{20}{section*.42}%
+\contentsline {paragraph}{Nachteile}{20}{section*.43}%
+\contentsline {paragraph}{Risikoanalyse}{21}{section*.44}%
+\contentsline {subsubsection}{\numberline {4.1.5}Variante E: Neu ist besser}{22}{subsubsection.1.4.1.5}%
+\contentsline {paragraph}{Vorteile}{22}{section*.47}%
+\contentsline {paragraph}{Nachteile}{22}{section*.48}%
+\contentsline {paragraph}{Risikoanalyse}{23}{section*.49}%
+\contentsline {section}{\numberline {5}Variantenauswertung}{24}{section.1.5}%
+\contentsline {subsubsection}{\numberline {5.0.1}Nutzwertanalyse}{24}{subsubsection.1.5.0.1}%
+\contentsline {subsubsection}{\numberline {5.0.2}Kosten-Nutzen Analyse}{24}{subsubsection.1.5.0.2}%
+\contentsline {section}{\numberline {6}Variantenauswahl}{26}{section.1.6}%
+\contentsline {section}{\numberline {7}Terminplanung}{26}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Umsetzung}{28}{chapter.2}%
+\contentsline {section}{\numberline {1}Blockschaltbild}{28}{section.2.1}%
+\contentsline {paragraph}{MILAN Modul MT32-TDM to MILAN}{28}{section*.54}%
+\contentsline {paragraph}{Gehäuse}{28}{section*.56}%
+\contentsline {section}{\numberline {2}Kennzahlen}{30}{section.2.2}%
+\contentsline {subsection}{\numberline {2.1}Leisungsbudget}{30}{subsection.2.2.1}%
+\contentsline {paragraph}{Anzahl Exciter: 6}{30}{section*.59}%
+\contentsline {paragraph}{Leistung (RMS) pro Exciter: 0.5 bis 150 Watt}{30}{section*.60}%
+\contentsline {subsubsection}{\numberline {2.1.1}Leistungsangaben bei Lautsprechern}{30}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Entscheid Exciterleistung}{31}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}PoE}{32}{subsubsection.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Gesamtes Leisungsbudget}{33}{subsubsection.2.2.1.4}%
+\contentsline {section}{\numberline {3}Bauteilevaluation}{33}{section.2.3}%
+\contentsline {section}{\numberline {4}Systemaufbau}{33}{section.2.4}%
+\contentsline {section}{\numberline {5}Tests}{33}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{34}{chapter.3}%
+\contentsline {section}{13 Tabellenverzeichnis}{35}{section*.67}%
+\contentsline {section}{Quellenverzeichnis}{36}{chapter*.68}%

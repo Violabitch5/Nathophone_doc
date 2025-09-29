@@ -27,45 +27,45 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Too many commas in name 1 of "4 Park Square, Milton Park, Abingdon, Oxon OX14 4RN" for entry SoundreinforcementforaudioEngineers
 while executing---line 2815 of file biblatex.bst
-You've used 2 entries,
+You've used 9 entries,
             6399 wiz_defined-function locations,
-            1212 strings with 9220 characters,
-and the built_in function-call counts, 12361 in all, are:
-= -- 820
-> -- 697
-< -- 97
-+ -- 664
-- -- 510
-* -- 583
-:= -- 1568
+            1249 strings with 10345 characters,
+and the built_in function-call counts, 64549 in all, are:
+= -- 3112
+> -- 5135
+< -- 476
++ -- 4746
+- -- 4160
+* -- 3077
+:= -- 8311
 add.period$ -- 0
-call.type$ -- 2
-change.case$ -- 68
-chr.to.int$ -- 66
-cite$ -- 2
-duplicate$ -- 785
-empty$ -- 938
-format.name$ -- 49
-if$ -- 2328
+call.type$ -- 9
+change.case$ -- 141
+chr.to.int$ -- 380
+cite$ -- 16
+duplicate$ -- 4918
+empty$ -- 4791
+format.name$ -- 336
+if$ -- 10377
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 20
 missing$ -- 0
-newline$ -- 49
-num.names$ -- 104
-pop$ -- 384
+newline$ -- 218
+num.names$ -- 376
+pop$ -- 2730
 preamble$ -- 1
-purify$ -- 70
+purify$ -- 154
 quote$ -- 0
-skip$ -- 443
+skip$ -- 1817
 stack$ -- 0
-substring$ -- 1613
-swap$ -- 214
-text.length$ -- 57
-text.prefix$ -- 1
+substring$ -- 6317
+swap$ -- 1386
+text.length$ -- 359
+text.prefix$ -- 8
 top$ -- 1
-type$ -- 56
+type$ -- 294
 warning$ -- 0
-while$ -- 139
+while$ -- 673
 width$ -- 0
-write$ -- 48
+write$ -- 210
 (There was 1 error message)
