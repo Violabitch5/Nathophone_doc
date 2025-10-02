@@ -33,7 +33,15 @@ Abbildung \ref{pics:adc820_pwr} zeigt diese Angaben aus einem Datenblatt eines D
 	\label{pics:adc820_footnote}
 \end{figure}
 \subsubsection{Entscheid Exciterleistung}
-Aus den Vorarbeiten ging heraus, dass bereits ein Excitermodell mit 10W RMS-Leistung extrem Effizient und weitaus höhere Schallpegel erzeugt als in dieser Anwendung erfordert. Der dabei verwendete Exciter war ein \textbf{DAEX25QLP-4} von Dayton Audio. Abbildung \ref{pics:DAEX25QLP4_freqresp} zeigt den Frequenzgang dieses Modells. Dieser bewegt sich durchschnittlich im Bereich von 75-80 dB SPL\footnote{Eine SPL-Nominalwert wird im Datenblatt nicht angegeben. Zudem fehlt die Angabe ob A-, B- oder Z-Gewichtet wurde}. Der Vergleich mit dem kleineren Modell \textbf{DAEX19QLP-4} (Abbildung \ref{pics:DAEX19QLP4_freqresp}) zeigt, dass dieser im Bereich von 100-1000Hz zwar ca. 5 dB weniger Pegel erzeugt, darüber sogar noch einen lineareren Frequenzgang aufweist. Aus dieser Beobachtung wurde geschlossen, dass auch ein \textbf{Exciter mit 5W RMS} bereits für diese Anwendung ausreicht. Aus Zeitgründen und um genug Headroom für hohe Signalpegel zu haben, wurde darauf verzichtet, noch kleinere Leistungsmodelle zu evaluieren.
+Aus den Vorarbeiten ging heraus, dass bereits ein Excitermodell mit 10W RMS-Leistung extrem Effizient und weitaus höhere Schallpegel erzeugt als in dieser Anwendung erfordert. Der dabei verwendete Exciter war ein \textbf{DAEX25QLP-4} von Dayton Audio. Abbildung \ref{pics:DAEX25QLP4_freqresp} zeigt den Frequenzgang dieses Modells. Dieser bewegt sich durchschnittlich im Bereich von 75-80 dB SPL\footnote{Eine SPL-Nominalwert wird im Datenblatt nicht angegeben. Zudem fehlt die Angabe ob A-, B- oder Z-Gewichtet wurde}. Der Vergleich mit dem kleineren Modell \textbf{DAEX19QLP-4} (Abbildung \ref{pics:DAEX19QLP4_freqresp}) zeigt, dass dieser im Bereich von 100-1000Hz zwar ca. 5 dB weniger Pegel erzeugt, darüber sogar noch einen lineareren Frequenzgang aufweist.\\
+\begin{center}
+	\begin{minipage}{\textwidth*7/8}
+		\centering
+		{\large Aus dieser Beobachtung wurde geschlossen, dass auch ein \textbf{Exciter mit 5W RMS} bereits für diese Anwendung ausreicht.}
+		\vspace{6mm}
+	\end{minipage}
+\end{center}
+Aus Zeitgründen und um genug Headroom für hohe Signalpegel zu haben, wurde darauf verzichtet, noch kleinere Leistungsmodelle zu evaluieren.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth*7/8]{pictures/DAEX25QLP4_freqresp.png}
@@ -47,7 +55,7 @@ Aus den Vorarbeiten ging heraus, dass bereits ein Excitermodell mit 10W RMS-Leis
 	\label{pics:DAEX19QLP4_freqresp}
 \end{figure}
 \subsubsection{PoE}
-In der Netzwerktechnik als weit verbreiteter Standard zur gleichzeitigen Übertragung von Speisung und Daten etabliert, bietet PoE (\textit{Power over Ethernet}) eine extrem einfache und Attraktive Lösung für dieses Projekt. Jedoch hat der Standard auch einige Tücken, und gerade die höheren Leistungsklassen (PoE++) können schnell extrem kostenintensiv werden. Zudem hängt das ganze nochmals vom verwendeten Kabel, und dessen Querschnitt ab. Abbildung \ref{pic:poe_overview} zeigt eine anschauliche Übersicht über den Standard und die verfügbaren Leistungen (Quelle: \cite{PoE_overview_doc}).
+In der Netzwerktechnik als weit verbreiteter Standard zur gleichzeitigen Übertragung von Speisung und Daten etabliert, bietet PoE (\textit{Power over Ethernet}) eine extrem einfache und attraktive Lösung für dieses Projekt. Jedoch hat der Standard auch einige Tücken, und gerade die höheren Leistungsklassen (PoE++) können schnell extrem kostenintensiv werden. Zudem hängt das ganze nochmals vom verwendeten Kabel, und dessen Querschnitt ab. Abbildung \ref{pic:poe_overview} zeigt eine anschauliche Übersicht über den Standard und die verfügbaren Leistungen (Quelle: \cite{PoE_overview_doc}).
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth*3/4]{pictures/PoE_overview.png}
@@ -55,10 +63,10 @@ In der Netzwerktechnik als weit verbreiteter Standard zur gleichzeitigen Übertr
 	\label{pic:poe_overview}
 \end{figure}
 \subsubsection{Gesamtes Leisungsbudget}
-Mit dem Wissen aus \ref{chap:leistungsangaben} kann nun eine Aussage über die voraussichtlich benötigte Nominalleistung der Endstufe und der Speisung gemacht werden. {\color{red} Zu beachten ist, dass das MILAN-Modul direkt durch PoE gespiesen wird und somit in der Leistungsberechnung entfällt.} In einer Grafik können nun alle Leistungswerte Eingetragen werden (Abbildung \ref{pic:Leistungsbudget}). Darin sind zum Vergleich auch die am Gerät verfügbaren Nennleistungen der PoE-Klassen (PoE, PoE+ und PoE++). Es zeigt sich somit, dass auch die höchste PoE-Klasse nur sehr knapp die geforderte Leistung zu erbringen vermag (bzw. nur mit einem sehr aufwändigem Puffer) und daher als alleinige Speisung für das komplette Gerät nicht infrage kommt.
+Mit dem Wissen aus \ref{chap:leistungsangaben} kann nun eine Aussage über die voraussichtlich benötigte Nominalleistung der Endstufe und der Speisung gemacht werden. {\color{red} Zu beachten ist, dass das MILAN-Modul direkt durch PoE gespiesen wird und somit in der Leistungsberechnung entfällt.} Zu beachten ist auch, dass die gesamte Endstufenleistung sechs Kanäle enthält, also die Werte der Einzelkanäle mit dem Faktor 6 multipliziert. In einer Grafik können nun alle Leistungswerte als Balken dargestellt und verglichen werden (Abbildung \ref{pic:Leistungsbudget}). Darin sind zum Vergleich auch die am Gerät verfügbaren Nennleistungen der PoE-Klassen (PoE, PoE+ und PoE++). Es zeigt sich somit, dass auch die höchste PoE-Klasse nur sehr knapp die geforderte Gesamtleistung für sechs Kanäle zu erbringen vermag (bzw. nur mit einem sehr aufwändigem Puffer) und daher als alleinige Speisung für das komplette Gerät nicht infrage kommt.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{pictures/Leistungsbudget.png}
+	\includegraphics[width=\textwidth]{pictures/Leistungsbudget.pdf}
 	\caption{Das Leistungsbudget}
 	\label{pic:Leistungsbudget}
 \end{figure}
