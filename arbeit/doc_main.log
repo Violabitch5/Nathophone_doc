@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2025.1.12)  2 OCT 2025 14:51
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2025.1.12)  9 OCT 2025 12:13
  restricted system commands enabled.
 **doc_main.tex
 (./doc_main.tex
@@ -1693,6 +1693,12 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'date' 
 (biblatex)                - Invalid format of field 'date'.
 
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'switchingreg_linreg':
+(biblatex)                - Invalid format of field 'date' 
+(biblatex)                - Invalid format of field 'date'.
+
 )
 Package biblatex Info: Reference section=0 on input line 108.
 Package biblatex Info: Reference segment=0 on input line 108.
@@ -1734,7 +1740,7 @@ Package biblatex Info: Reference segment=0 on input line 108.
 
 warning  (file ./pictures/JuventusLogo.pdf) (pdf inclusion): PDF inclusion: foun
 d PDF version '1.7', but at most version '1.5' allowed
-<./pictures/JuventusLogo.pdf, id=211, 244.9953pt x 51.0708pt>
+<./pictures/JuventusLogo.pdf, id=247, 244.9953pt x 51.0708pt>
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
 <use ./pictures/JuventusLogo.pdf>
 Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 120.
@@ -1761,11 +1767,24 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[2] (./doc_main.lof)
+[2] (./doc_main.lof [3])
 \tf@lof=\write7
 
 \openout7 = doc_main.lof
- [3] (./Einleitung.tex) (./vorarbeiten.tex
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 153.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[4] (./Einleitung.tex) (./vorarbeiten.tex
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
 <use ./pictures/JuventusLogo.pdf>
 Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 2.
@@ -1779,25 +1798,25 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[4]
-<pictures/render_prototype.PNG, id=367, 1927.2pt x 634.37pt>
+[5]
+<pictures/render_prototype.PNG, id=440, 1927.2pt x 634.37pt>
 File: pictures/render_prototype.PNG Graphic file (type png)
 <use pictures/render_prototype.PNG>
 Package luatex.def Info: pictures/render_prototype.PNG  used on input line 6.
 (luatex.def)             Requested size: 478.00598pt x 157.34341pt.
-<pictures/Schwingspule_lang.jpg, id=369, 4015.0pt x 1850.915pt>
+<pictures/Schwingspule_lang.jpg, id=442, 4015.0pt x 1850.915pt>
 File: pictures/Schwingspule_lang.jpg Graphic file (type jpg)
 <use pictures/Schwingspule_lang.jpg>
 Package luatex.def Info: pictures/Schwingspule_lang.jpg  used on input line 17.
 
 (luatex.def)             Requested size: 334.60272pt x 154.23312pt.
-<pictures/Schwingspule_kurz.jpg, id=370, 4015.0pt x 1850.915pt>
+<pictures/Schwingspule_kurz.jpg, id=443, 4015.0pt x 1850.915pt>
 File: pictures/Schwingspule_kurz.jpg Graphic file (type jpg)
 <use pictures/Schwingspule_kurz.jpg>
 Package luatex.def Info: pictures/Schwingspule_kurz.jpg  used on input line 24.
 
 (luatex.def)             Requested size: 334.60272pt x 154.23312pt.
-<pictures/Schwingspule_eisenbobine.jpg, id=371, 4015.0pt x 1850.915pt>
+<pictures/Schwingspule_eisenbobine.jpg, id=444, 4015.0pt x 1850.915pt>
 File: pictures/Schwingspule_eisenbobine.jpg Graphic file (type jpg)
 <use pictures/Schwingspule_eisenbobine.jpg>
 Package luatex.def Info: pictures/Schwingspule_eisenbobine.jpg  used on input l
@@ -1816,8 +1835,8 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[5<./pictures/render_prototype.PNG>]
-<pictures/exciter.jpg, id=379, 250.9375pt x 250.9375pt>
+[6<./pictures/render_prototype.PNG>]
+<pictures/exciter.jpg, id=452, 250.9375pt x 250.9375pt>
 File: pictures/exciter.jpg Graphic file (type jpg)
 <use pictures/exciter.jpg>
 Package luatex.def Info: pictures/exciter.jpg  used on input line 45.
@@ -1839,7 +1858,7 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[6<./pictures/Schwingspule_lang.jpg><./pictures/Schwingspule_kurz.jpg><./picture
+[7<./pictures/Schwingspule_lang.jpg><./pictures/Schwingspule_kurz.jpg><./picture
 s/Schwingspule_eisenbobine.jpg>]
 Underfull \hbox (badness 1048) in paragraph at lines 50--51
 \TU/FiraSans(0)/m/n/10 Laut-spre-cher oh-ne Mem-bra-ne, auf den Pro-to-ty-
@@ -1859,10 +1878,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[7<./pictures/exciter.jpg>]
+[8<./pictures/exciter.jpg>]
 Kapitel 1.
 (./sys_eng.tex (./situationsanalyse.tex
-<pictures/joyned_logo.png, id=399, 57.0933pt x 10.3587pt>
+<pictures/joyned_logo.png, id=472, 57.0933pt x 10.3587pt>
 File: pictures/joyned_logo.png Graphic file (type png)
 <use pictures/joyned_logo.png>
 Package luatex.def Info: pictures/joyned_logo.png  used on input line 15.
@@ -1870,12 +1889,12 @@ Package luatex.def Info: pictures/joyned_logo.png  used on input line 15.
 
 warning  (file pictures/SWOT.pdf) (pdf inclusion): PDF inclusion: found PDF vers
 ion '1.7', but at most version '1.5' allowed
-<pictures/SWOT.pdf, id=401, 529.98pt x 213.67828pt>
+<pictures/SWOT.pdf, id=474, 529.98pt x 213.67828pt>
 File: pictures/SWOT.pdf Graphic file (type pdf)
 <use pictures/SWOT.pdf>
 Package luatex.def Info: pictures/SWOT.pdf  used on input line 22.
 (luatex.def)             Requested size: 478.00598pt x 192.726pt.
-[8
+[9
 
 <./pictures/joyned_logo.png>]
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
@@ -1891,10 +1910,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[9<./pictures/SWOT.pdf>]
+[10<./pictures/SWOT.pdf>]
 warning  (file pictures/ishikawa.pdf) (pdf inclusion): PDF inclusion: found PDF 
 version '1.7', but at most version '1.5' allowed
-<pictures/ishikawa.pdf, id=447, 588.27782pt x 257.04028pt>
+<pictures/ishikawa.pdf, id=521, 588.27782pt x 257.04028pt>
 File: pictures/ishikawa.pdf Graphic file (type pdf)
 <use pictures/ishikawa.pdf>
 Package luatex.def Info: pictures/ishikawa.pdf  used on input line 37.
@@ -1978,9 +1997,9 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[10<./pictures/ishikawa.pdf>] (./zielbeziehungen.tex) (./zielgewichtung.tex
+[11<./pictures/ishikawa.pdf>] (./zielbeziehungen.tex) (./zielgewichtung.tex
 
-LaTeX Warning: Reference `tab:aimweights' on page 11 undefined on input line 1.
+LaTeX Warning: Reference `tab:aimweights' on page 12 undefined on input line 1.
 
 
 
@@ -2000,10 +2019,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[11]) (./morphologischer_kasten.tex
+[12]) (./morphologischer_kasten.tex
 warning  (file pictures/morphologischer_kasten.pdf) (pdf inclusion): PDF inclusi
 on: found PDF version '1.7', but at most version '1.5' allowed
-<pictures/morphologischer_kasten.pdf, id=486, 840.0183pt x 1016.83888pt>
+<pictures/morphologischer_kasten.pdf, id=559, 840.0183pt x 1016.83888pt>
 File: pictures/morphologischer_kasten.pdf Graphic file (type pdf)
 <use pictures/morphologischer_kasten.pdf>
 Package luatex.def Info: pictures/morphologischer_kasten.pdf  used on input lin
@@ -2021,10 +2040,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[12]) (./variantendefinition.tex
+[13]) (./variantendefinition.tex
 warning  (file pictures/VarianteA_allesAnalog.pdf) (pdf inclusion): PDF inclusio
 n: found PDF version '1.7', but at most version '1.5' allowed
-<pictures/VarianteA_allesAnalog.pdf, id=497, 423.50218pt x 416.51608pt>
+<pictures/VarianteA_allesAnalog.pdf, id=570, 423.50218pt x 416.51608pt>
 File: pictures/VarianteA_allesAnalog.pdf Graphic file (type pdf)
 <use pictures/VarianteA_allesAnalog.pdf>
 Package luatex.def Info: pictures/VarianteA_allesAnalog.pdf  used on input line
@@ -2042,7 +2061,7 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[13<./pictures/morphologischer_kasten.pdf>]
+[14<./pictures/morphologischer_kasten.pdf>]
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
 <use ./pictures/JuventusLogo.pdf>
 Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 10.
@@ -2056,8 +2075,8 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[14<./pictures/VarianteA_allesAnalog.pdf>]
-<pictures/risks-Variante A_ Alles analog.png, id=626, 3764.0625pt x 3649.635pt>
+[15<./pictures/VarianteA_allesAnalog.pdf>]
+<pictures/risks-Variante A_ Alles analog.png, id=699, 3764.0625pt x 3649.635pt>
 
 File: pictures/risks-Variante A_ Alles analog.png Graphic file (type png)
 <use pictures/risks-Variante A_ Alles analog.png>
@@ -2077,10 +2096,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[15<./pictures/risks-Variante A_ Alles analog.png>]
+[16<./pictures/risks-Variante A_ Alles analog.png>]
 warning  (file pictures/VarianteB_drahtlosPortabel.pdf) (pdf inclusion): PDF inc
 lusion: found PDF version '1.7', but at most version '1.5' allowed
-<pictures/VarianteB_drahtlosPortabel.pdf, id=635, 424.4658pt x 413.62529pt>
+<pictures/VarianteB_drahtlosPortabel.pdf, id=708, 424.4658pt x 413.62529pt>
 File: pictures/VarianteB_drahtlosPortabel.pdf Graphic file (type pdf)
 <use pictures/VarianteB_drahtlosPortabel.pdf>
 Package luatex.def Info: pictures/VarianteB_drahtlosPortabel.pdf  used on input
@@ -2098,8 +2117,8 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[16<./pictures/VarianteB_drahtlosPortabel.pdf>]
-<pictures/risks-Variante B_ Portabel und Drahtlos.drawio.png, id=686, 3151.775p
+[17<./pictures/VarianteB_drahtlosPortabel.pdf>]
+<pictures/risks-Variante B_ Portabel und Drahtlos.drawio.png, id=759, 3151.775p
 t x 3041.3625pt>
 File: pictures/risks-Variante B_ Portabel und Drahtlos.drawio.png Graphic file 
 (type png)
@@ -2120,10 +2139,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[17<./pictures/risks-Variante B_ Portabel und Drahtlos.drawio.png>]
+[18<./pictures/risks-Variante B_ Portabel und Drahtlos.drawio.png>]
 warning  (file pictures/VarianteC_HighEndAudiophil.pdf) (pdf inclusion): PDF inc
 lusion: found PDF version '1.7', but at most version '1.5' allowed
-<pictures/VarianteC_HighEndAudiophil.pdf, id=695, 416.51608pt x 409.53pt>
+<pictures/VarianteC_HighEndAudiophil.pdf, id=768, 416.51608pt x 409.53pt>
 File: pictures/VarianteC_HighEndAudiophil.pdf Graphic file (type pdf)
 <use pictures/VarianteC_HighEndAudiophil.pdf>
 Package luatex.def Info: pictures/VarianteC_HighEndAudiophil.pdf  used on input
@@ -2141,8 +2160,8 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[18<./pictures/VarianteC_HighEndAudiophil.pdf>]
-<pictures/risks-Variante C.png, id=747, 3136.71875pt x 3041.3625pt>
+[19<./pictures/VarianteC_HighEndAudiophil.pdf>]
+<pictures/risks-Variante C.png, id=820, 3136.71875pt x 3041.3625pt>
 File: pictures/risks-Variante C.png Graphic file (type png)
 <use pictures/risks-Variante C.png>
 Package luatex.def Info: pictures/risks-Variante C.png  used on input line 53.
@@ -2160,10 +2179,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[19<./pictures/risks-Variante C.png>]
+[20<./pictures/risks-Variante C.png>]
 warning  (file pictures/VarianteD_EinfachPlugnPlay.pdf) (pdf inclusion): PDF inc
 lusion: found PDF version '1.7', but at most version '1.5' allowed
-<pictures/VarianteD_EinfachPlugnPlay.pdf, id=756, 421.575pt x 416.51608pt>
+<pictures/VarianteD_EinfachPlugnPlay.pdf, id=830, 421.575pt x 416.51608pt>
 File: pictures/VarianteD_EinfachPlugnPlay.pdf Graphic file (type pdf)
 <use pictures/VarianteD_EinfachPlugnPlay.pdf>
 Package luatex.def Info: pictures/VarianteD_EinfachPlugnPlay.pdf  used on input
@@ -2181,8 +2200,8 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[20<./pictures/VarianteD_EinfachPlugnPlay.pdf>]
-<pictures/risks-Variante D.png, id=808, 3136.71875pt x 3041.3625pt>
+[21<./pictures/VarianteD_EinfachPlugnPlay.pdf>]
+<pictures/risks-Variante D.png, id=881, 3136.71875pt x 3041.3625pt>
 File: pictures/risks-Variante D.png Graphic file (type png)
 <use pictures/risks-Variante D.png>
 Package luatex.def Info: pictures/risks-Variante D.png  used on input line 72.
@@ -2200,10 +2219,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[21<./pictures/risks-Variante D.png>]
+[22<./pictures/risks-Variante D.png>]
 warning  (file pictures/VarianteE_Neuistbesser.pdf) (pdf inclusion): PDF inclusi
 on: found PDF version '1.7', but at most version '1.5' allowed
-<pictures/VarianteE_Neuistbesser.pdf, id=817, 416.51608pt x 416.51608pt>
+<pictures/VarianteE_Neuistbesser.pdf, id=890, 416.51608pt x 416.51608pt>
 File: pictures/VarianteE_Neuistbesser.pdf Graphic file (type pdf)
 <use pictures/VarianteE_Neuistbesser.pdf>
 Package luatex.def Info: pictures/VarianteE_Neuistbesser.pdf  used on input lin
@@ -2221,8 +2240,8 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[22<./pictures/VarianteE_Neuistbesser.pdf>]
-<pictures/risks-Variante E.png, id=868, 3217.01875pt x 3041.3625pt>
+[23<./pictures/VarianteE_Neuistbesser.pdf>]
+<pictures/risks-Variante E.png, id=941, 3217.01875pt x 3041.3625pt>
 File: pictures/risks-Variante E.png Graphic file (type png)
 <use pictures/risks-Variante E.png>
 Package luatex.def Info: pictures/risks-Variante E.png  used on input line 91.
@@ -2240,12 +2259,12 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[23<./pictures/risks-Variante E.png>]) (./Nutzwertanalyse.tex
+[24<./pictures/risks-Variante E.png>]) (./Nutzwertanalyse.tex
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 1.
 
-<pictures/Kostennutzenanalyse.png, id=880, 476.982pt x 235.206pt>
+<pictures/Kostennutzenanalyse.png, id=953, 476.982pt x 235.206pt>
 File: pictures/Kostennutzenanalyse.png Graphic file (type png)
 <use pictures/Kostennutzenanalyse.png>
 Package luatex.def Info: pictures/Kostennutzenanalyse.png  used on input line 1
@@ -2263,10 +2282,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[24<./pictures/Kostennutzenanalyse.png>]
+[25<./pictures/Kostennutzenanalyse.png>]
 warning  (file pictures/Nutzwertanalyse.pdf) (pdf inclusion): PDF inclusion: fou
 nd PDF version '1.7', but at most version '1.5' allowed
-<pictures/Nutzwertanalyse.pdf, id=888, 614.295pt x 397.485pt>
+<pictures/Nutzwertanalyse.pdf, id=961, 614.295pt x 397.485pt>
 File: pictures/Nutzwertanalyse.pdf Graphic file (type pdf)
 <use pictures/Nutzwertanalyse.pdf>
 Package luatex.def Info: pictures/Nutzwertanalyse.pdf  used on input line 21.
@@ -2283,7 +2302,7 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[25<./pictures/Nutzwertanalyse.pdf>]) (./variantenauswahl.tex)
+[26<./pictures/Nutzwertanalyse.pdf>]) (./variantenauswahl.tex)
 (./terminplan.tex
 Overfull \hbox (0.5599pt too wide) in alignment at lines 35--35
 [][][][]
@@ -2303,7 +2322,7 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[26]
+[27]
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
 <use ./pictures/JuventusLogo.pdf>
 Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 165.
@@ -2317,16 +2336,16 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[27]
+[28]
 Kapitel 2.
 (./umsetzung.tex (./Blockschaltbild.tex
-<pictures/Joyned_MT32-TDM.png, id=1013, 175.1343pt x 60.9477pt>
+<pictures/Joyned_MT32-TDM.png, id=1086, 175.1343pt x 60.9477pt>
 File: pictures/Joyned_MT32-TDM.png Graphic file (type png)
 <use pictures/Joyned_MT32-TDM.png>
 Package luatex.def Info: pictures/Joyned_MT32-TDM.png  used on input line 5.
 (luatex.def)             Requested size: 358.50449pt x 124.76776pt.
 <pictures/Nathophone_2025-Sep-29_07-57-22AM-000_CustomizedView2892546826.png, i
-d=1015, 1927.2pt x 634.37pt>
+d=1088, 1927.2pt x 634.37pt>
 File: pictures/Nathophone_2025-Sep-29_07-57-22AM-000_CustomizedView2892546826.p
 ng Graphic file (type png)
 <use pictures/Nathophone_2025-Sep-29_07-57-22AM-000_CustomizedView2892546826.pn
@@ -2337,12 +2356,12 @@ zedView2892546826.png  used on input line 12.
 
 warning  (file pictures/blockschaltbild.pdf) (pdf inclusion): PDF inclusion: fou
 nd PDF version '1.7', but at most version '1.5' allowed
-<pictures/blockschaltbild.pdf, id=1016, 995.63968pt x 411.45718pt>
+<pictures/blockschaltbild.pdf, id=1089, 995.63968pt x 411.45718pt>
 File: pictures/blockschaltbild.pdf Graphic file (type pdf)
 <use pictures/blockschaltbild.pdf>
 Package luatex.def Info: pictures/blockschaltbild.pdf  used on input line 18.
 (luatex.def)             Requested size: 478.00598pt x 197.54114pt.
-[28
+[29
 
 <./pictures/Joyned_MT32-TDM.png>]) (./kennzahlen.tex
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
@@ -2358,9 +2377,9 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[29<./pictures/Nathophone_2025-Sep-29_07-57-22AM-000_CustomizedView2892546826.pn
+[30<./pictures/Nathophone_2025-Sep-29_07-57-22AM-000_CustomizedView2892546826.pn
 g><./pictures/blockschaltbild.pdf>]
-<pictures/adc820_pwr.png, id=1063, 118.7637pt x 30.8352pt>
+<pictures/adc820_pwr.png, id=1137, 118.7637pt x 30.8352pt>
 File: pictures/adc820_pwr.png Graphic file (type png)
 <use pictures/adc820_pwr.png>
 Package luatex.def Info: pictures/adc820_pwr.png  used on input line 25.
@@ -2378,8 +2397,8 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[30]
-<pictures/adc820_footnotes.png, id=1075, 106.2369pt x 18.0675pt>
+[31]
+<pictures/adc820_footnotes.png, id=1148, 106.2369pt x 18.0675pt>
 File: pictures/adc820_footnotes.png Graphic file (type png)
 <use pictures/adc820_footnotes.png>
 Package luatex.def Info: pictures/adc820_footnotes.png  used on input line 31.
@@ -2389,13 +2408,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-<pictures/DAEX25QLP4_freqresp.png, id=1079, 341.1144pt x 175.857pt>
+<pictures/DAEX25QLP4_freqresp.png, id=1152, 341.1144pt x 175.857pt>
 File: pictures/DAEX25QLP4_freqresp.png Graphic file (type png)
 <use pictures/DAEX25QLP4_freqresp.png>
 Package luatex.def Info: pictures/DAEX25QLP4_freqresp.png  used on input line 4
 7.
 (luatex.def)             Requested size: 418.25523pt x 215.63734pt.
-<pictures/DAEX19QLP4_freqresp.png, id=1082, 336.2964pt x 173.6889pt>
+<pictures/DAEX19QLP4_freqresp.png, id=1155, 336.2964pt x 173.6889pt>
 File: pictures/DAEX19QLP4_freqresp.png Graphic file (type png)
 <use pictures/DAEX19QLP4_freqresp.png>
 Package luatex.def Info: pictures/DAEX19QLP4_freqresp.png  used on input line 5
@@ -2413,8 +2432,8 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[31<./pictures/adc820_pwr.png><./pictures/adc820_footnotes.png>]
-<pictures/PoE_overview.png, id=1097, 275.8305pt x 70.5837pt>
+[32<./pictures/adc820_pwr.png><./pictures/adc820_footnotes.png>]
+<pictures/PoE_overview.png, id=1170, 275.8305pt x 70.5837pt>
 File: pictures/PoE_overview.png Graphic file (type png)
 <use pictures/PoE_overview.png>
 Package luatex.def Info: pictures/PoE_overview.png  used on input line 61.
@@ -2432,10 +2451,10 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[32<./pictures/DAEX25QLP4_freqresp.png><./pictures/DAEX19QLP4_freqresp.png>]
+[33<./pictures/DAEX25QLP4_freqresp.png><./pictures/DAEX19QLP4_freqresp.png>]
 warning  (file pictures/Leistungsbudget.pdf) (pdf inclusion): PDF inclusion: fou
 nd PDF version '1.7', but at most version '1.5' allowed
-<pictures/Leistungsbudget.pdf, id=1109, 1054.90106pt x 513.83968pt>
+<pictures/Leistungsbudget.pdf, id=1182, 1054.90106pt x 513.83968pt>
 File: pictures/Leistungsbudget.pdf Graphic file (type pdf)
 <use pictures/Leistungsbudget.pdf>
 Package luatex.def Info: pictures/Leistungsbudget.pdf  used on input line 69.
@@ -2457,7 +2476,7 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[33<./pictures/PoE_overview.png><./pictures/Leistungsbudget.pdf>]
+[34<./pictures/PoE_overview.png><./pictures/Leistungsbudget.pdf>]
 
 LaTeX Warning: Unexpected alignment  on input line 4.
 
@@ -2482,14 +2501,14 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[34]
-<pictures/Blockschaltbild_TAS2781.png, id=1131, 138.9993pt x 95.1555pt>
+[35]
+<pictures/Blockschaltbild_TAS2781.png, id=1204, 138.9993pt x 95.1555pt>
 File: pictures/Blockschaltbild_TAS2781.png Graphic file (type png)
 <use pictures/Blockschaltbild_TAS2781.png>
 Package luatex.def Info: pictures/Blockschaltbild_TAS2781.png  used on input li
 ne 24.
 (luatex.def)             Requested size: 358.50449pt x 245.47601pt.
-<pictures/Blockschaltbild_TAS5720.png, id=1132, 151.2852pt x 130.3269pt>
+<pictures/Blockschaltbild_TAS5720.png, id=1205, 151.2852pt x 130.3269pt>
 File: pictures/Blockschaltbild_TAS5720.png Graphic file (type png)
 <use pictures/Blockschaltbild_TAS5720.png>
 Package luatex.def Info: pictures/Blockschaltbild_TAS5720.png  used on input li
@@ -2508,7 +2527,7 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[35]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 55--55
 \TU/FiraSans(0)/m/n/10 Inter-chip com-mu-ni-ca-ti-on
  []
@@ -2535,7 +2554,7 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[36<./pictures/Blockschaltbild_TAS2781.png><./pictures/Blockschaltbild_TAS5720.p
+[37<./pictures/Blockschaltbild_TAS2781.png><./pictures/Blockschaltbild_TAS5720.p
 ng>]
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
 <use ./pictures/JuventusLogo.pdf>
@@ -2550,20 +2569,20 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[37]
-<pictures/TAS2781_THDN_maxV.png, id=1163, 194.1654pt x 77.8107pt>
+[38]
+<pictures/TAS2781_THDN_maxV.png, id=1236, 194.1654pt x 77.8107pt>
 File: pictures/TAS2781_THDN_maxV.png Graphic file (type png)
 <use pictures/TAS2781_THDN_maxV.png>
 Package luatex.def Info: pictures/TAS2781_THDN_maxV.png  used on input line 65.
 
 (luatex.def)             Requested size: 418.25523pt x 167.61978pt.
-<pictures/tas5720l_THDN_Vmax.png, id=1164, 245.4771pt x 96.6009pt>
+<pictures/tas5720l_THDN_Vmax.png, id=1237, 245.4771pt x 96.6009pt>
 File: pictures/tas5720l_THDN_Vmax.png Graphic file (type png)
 <use pictures/tas5720l_THDN_Vmax.png>
 Package luatex.def Info: pictures/tas5720l_THDN_Vmax.png  used on input line 73
 .
 (luatex.def)             Requested size: 418.25523pt x 164.59814pt.
-<pictures/TAS2781_powermodes.png, id=1165, 197.7789pt x 93.7101pt>
+<pictures/TAS2781_powermodes.png, id=1238, 197.7789pt x 93.7101pt>
 File: pictures/TAS2781_powermodes.png Graphic file (type png)
 <use pictures/TAS2781_powermodes.png>
 Package luatex.def Info: pictures/TAS2781_powermodes.png  used on input line 83
@@ -2573,19 +2592,19 @@ Package luatex.def Info: pictures/TAS2781_powermodes.png  used on input line 83
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/TAS2781_efficiency_powermode0.png, id=1166, 91.542pt x 75.6426pt>
+<pictures/TAS2781_efficiency_powermode0.png, id=1239, 91.542pt x 75.6426pt>
 File: pictures/TAS2781_efficiency_powermode0.png Graphic file (type png)
 <use pictures/TAS2781_efficiency_powermode0.png>
 Package luatex.def Info: pictures/TAS2781_efficiency_powermode0.png  used on in
 put line 91.
 (luatex.def)             Requested size: 239.00299pt x 197.5144pt.
-<pictures/TAS2781_efficiency_powermode1.png, id=1167, 91.542pt x 75.6426pt>
+<pictures/TAS2781_efficiency_powermode1.png, id=1240, 91.542pt x 75.6426pt>
 File: pictures/TAS2781_efficiency_powermode1.png Graphic file (type png)
 <use pictures/TAS2781_efficiency_powermode1.png>
 Package luatex.def Info: pictures/TAS2781_efficiency_powermode1.png  used on in
 put line 99.
 (luatex.def)             Requested size: 239.00299pt x 197.5144pt.
-<pictures/tas5720l_efficiency.png, id=1168, 183.084pt x 72.27pt>
+<pictures/tas5720l_efficiency.png, id=1241, 183.084pt x 72.27pt>
 File: pictures/tas5720l_efficiency.png Graphic file (type png)
 <use pictures/tas5720l_efficiency.png>
 Package luatex.def Info: pictures/tas5720l_efficiency.png  used on input line 1
@@ -2603,14 +2622,29 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[38<./pictures/TAS2781_THDN_maxV.png><./pictures/tas5720l_THDN_Vmax.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+[39<./pictures/TAS2781_THDN_maxV.png><./pictures/tas5720l_THDN_Vmax.png>]
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 122.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[40<./pictures/TAS2781_powermodes.png><./pictures/TAS2781_efficiency_powermode0.
+png><./pictures/TAS2781_efficiency_powermode1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
 <use ./pictures/JuventusLogo.pdf>
-Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 119.
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 139.
 (luatex.def)             Requested size: 170.71652pt x 35.588pt.
 
 Package fancyhdr Warning: \headheight is too small (22.76219pt): 
@@ -2620,8 +2654,357 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[39<./pictures/TAS2781_powermodes.png><./pictures/TAS2781_efficiency_powermode0.
-png><./pictures/TAS2781_efficiency_powermode1.png>])))
+[41<./pictures/tas5720l_efficiency.png>]) (./Speisungsregelung.tex
+<pictures/tas5720l_efficiency_4Ohms.png, id=1280, 111.0549pt x 86.724pt>
+File: pictures/tas5720l_efficiency_4Ohms.png Graphic file (type png)
+<use pictures/tas5720l_efficiency_4Ohms.png>
+Package luatex.def Info: pictures/tas5720l_efficiency_4Ohms.png  used on input 
+line 27.
+(luatex.def)             Requested size: 239.00299pt x 186.65274pt.
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 31.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[42]
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 62.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[43<./pictures/tas5720l_efficiency_4Ohms.png>]
+<pictures/simu_load.png, id=1313, 199.7061pt x 126.2316pt>
+File: pictures/simu_load.png Graphic file (type png)
+<use pictures/simu_load.png>
+Package luatex.def Info: pictures/simu_load.png  used on input line 92.
+(luatex.def)             Requested size: 358.50449pt x 226.62535pt.
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 95.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[44]
+PGFPlots: reading {data/Load_simulation.csv}
+\pgf@layerbox@axis background=\box81
+\pgf@layerboxsaved@axis background=\box82
+\pgf@layerbox@axis grid=\box83
+\pgf@layerboxsaved@axis grid=\box84
+\pgf@layerbox@axis ticks=\box85
+\pgf@layerboxsaved@axis ticks=\box86
+\pgf@layerbox@axis lines=\box87
+\pgf@layerboxsaved@axis lines=\box88
+\pgf@layerbox@axis tick labels=\box89
+\pgf@layerboxsaved@axis tick labels=\box90
+\pgf@layerbox@pre main=\box91
+\pgf@layerboxsaved@pre main=\box92
+\pgf@layerbox@axis descriptions=\box93
+\pgf@layerboxsaved@axis descriptions=\box94
+\pgf@layerbox@axis foreground=\box95
+\pgf@layerboxsaved@axis foreground=\box96
+Package pgfplots info on input line 129: Setting layers 'axis background,axis g
+rid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis
+ foreground'...
+PGFPlots: reading {data/Load_Transient_nofilter.csv}
+
+
+Package pgfplots Warning: Table 'data/Load_Transient_nofilter.csv' has an empty
+ column name; replacing it by '2'' on input line 150.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/Load_Transient_nofilter.csv}
+
+Package pgfplots Warning: Table 'data/Load_Transient_nofilter.csv' has an empty
+ column name; replacing it by '2'' on input line 170.
+
+ [warning /pgfplots/warning/empty column name]
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 176.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[45<./pictures/simu_load.png>]
+<pictures/simu_cap_sweep_schematic.png, id=1341, 247.6452pt x 113.4639pt>
+File: pictures/simu_cap_sweep_schematic.png Graphic file (type png)
+<use pictures/simu_cap_sweep_schematic.png>
+Package luatex.def Info: pictures/simu_cap_sweep_schematic.png  used on input l
+ine 181.
+(luatex.def)             Requested size: 358.50449pt x 164.2691pt.
+
+warning  (file pictures/2LoadsParallel_Lastspannung bei 0F Kapazität_IndSweep0H
+to400uH.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at mos
+t version '1.5' allowed
+<pictures/2LoadsParallel_Lastspannung bei 0F Kapazität_IndSweep0Hto400uH.pdf, 
+id=1342, 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Lastspannung bei 0F Kapazität_IndSweep0Hto400uH.
+pdf Graphic file (type pdf)
+<use pictures/2LoadsParallel_Lastspannung bei 0F Kapazität_IndSweep0Hto400uH.p
+df>
+Package luatex.def Info: pictures/2LoadsParallel_Lastspannung bei 0F Kapazität
+_IndSweep0Hto400uH.pdf  used on input line 189.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+
+warning  (file pictures/2LoadsParallel_Speisestrom bei 0F Kapazität_IndSweep0Ht
+o400uH.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most
+ version '1.5' allowed
+<pictures/2LoadsParallel_Speisestrom bei 0F Kapazität_IndSweep0Hto400uH.pdf, i
+d=1343, 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Speisestrom bei 0F Kapazität_IndSweep0Hto400uH.p
+df Graphic file (type pdf)
+<use pictures/2LoadsParallel_Speisestrom bei 0F Kapazität_IndSweep0Hto400uH.pd
+f>
+Package luatex.def Info: pictures/2LoadsParallel_Speisestrom bei 0F Kapazität_
+IndSweep0Hto400uH.pdf  used on input line 196.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+
+warning  (file pictures/2LoadsParallel_Lastspannung bei 100uF_IndSweep0Hto400uH.
+pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most versio
+n '1.5' allowed
+<pictures/2LoadsParallel_Lastspannung bei 100uF_IndSweep0Hto400uH.pdf, id=1344,
+ 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Lastspannung bei 100uF_IndSweep0Hto400uH.pdf Grap
+hic file (type pdf)
+<use pictures/2LoadsParallel_Lastspannung bei 100uF_IndSweep0Hto400uH.pdf>
+Package luatex.def Info: pictures/2LoadsParallel_Lastspannung bei 100uF_IndSwee
+p0Hto400uH.pdf  used on input line 207.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+
+warning  (file pictures/2LoadsParallel_Speisestrom bei 100uF Kapazität_IndSweep
+0Hto400uH.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at m
+ost version '1.5' allowed
+<pictures/2LoadsParallel_Speisestrom bei 100uF Kapazität_IndSweep0Hto400uH.pdf
+, id=1345, 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Speisestrom bei 100uF Kapazität_IndSweep0Hto400u
+H.pdf Graphic file (type pdf)
+<use pictures/2LoadsParallel_Speisestrom bei 100uF Kapazität_IndSweep0Hto400uH
+.pdf>
+Package luatex.def Info: pictures/2LoadsParallel_Speisestrom bei 100uF Kapazit
+ät_IndSweep0Hto400uH.pdf  used on input line 214.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 220.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[46<./pictures/simu_cap_sweep_schematic.png>]
+warning  (file pictures/2LoadsParallel_Lastspannung bei 200uF_IndSweep0Hto400uH.
+pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most versio
+n '1.5' allowed
+<pictures/2LoadsParallel_Lastspannung bei 200uF_IndSweep0Hto400uH.pdf, id=1355,
+ 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Lastspannung bei 200uF_IndSweep0Hto400uH.pdf Grap
+hic file (type pdf)
+<use pictures/2LoadsParallel_Lastspannung bei 200uF_IndSweep0Hto400uH.pdf>
+Package luatex.def Info: pictures/2LoadsParallel_Lastspannung bei 200uF_IndSwee
+p0Hto400uH.pdf  used on input line 225.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+
+warning  (file pictures/2LoadsParallel_Speisestrom bei 200uF Kapazität_IndSweep
+0Hto400uH.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at m
+ost version '1.5' allowed
+<pictures/2LoadsParallel_Speisestrom bei 200uF Kapazität_IndSweep0Hto400uH.pdf
+, id=1356, 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Speisestrom bei 200uF Kapazität_IndSweep0Hto400u
+H.pdf Graphic file (type pdf)
+<use pictures/2LoadsParallel_Speisestrom bei 200uF Kapazität_IndSweep0Hto400uH
+.pdf>
+Package luatex.def Info: pictures/2LoadsParallel_Speisestrom bei 200uF Kapazit
+ät_IndSweep0Hto400uH.pdf  used on input line 232.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+
+warning  (file pictures/2LoadsParallel_Lastspannung bei 300uF_IndSweep0Hto400uH.
+pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most versio
+n '1.5' allowed
+<pictures/2LoadsParallel_Lastspannung bei 300uF_IndSweep0Hto400uH.pdf, id=1357,
+ 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Lastspannung bei 300uF_IndSweep0Hto400uH.pdf Grap
+hic file (type pdf)
+<use pictures/2LoadsParallel_Lastspannung bei 300uF_IndSweep0Hto400uH.pdf>
+Package luatex.def Info: pictures/2LoadsParallel_Lastspannung bei 300uF_IndSwee
+p0Hto400uH.pdf  used on input line 243.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+
+warning  (file pictures/2LoadsParallel_Speisestrom bei 300uF Kapazität_IndSweep
+0Hto400uH.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at m
+ost version '1.5' allowed
+<pictures/2LoadsParallel_Speisestrom bei 300uF Kapazität_IndSweep0Hto400uH.pdf
+, id=1358, 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Speisestrom bei 300uF Kapazität_IndSweep0Hto400u
+H.pdf Graphic file (type pdf)
+<use pictures/2LoadsParallel_Speisestrom bei 300uF Kapazität_IndSweep0Hto400uH
+.pdf>
+Package luatex.def Info: pictures/2LoadsParallel_Speisestrom bei 300uF Kapazit
+ät_IndSweep0Hto400uH.pdf  used on input line 250.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+
+warning  (file pictures/2LoadsParallel_Lastspannung bei 400uF_IndSweep0Hto400uH.
+pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most versio
+n '1.5' allowed
+<pictures/2LoadsParallel_Lastspannung bei 400uF_IndSweep0Hto400uH.pdf, id=1359,
+ 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Lastspannung bei 400uF_IndSweep0Hto400uH.pdf Grap
+hic file (type pdf)
+<use pictures/2LoadsParallel_Lastspannung bei 400uF_IndSweep0Hto400uH.pdf>
+Package luatex.def Info: pictures/2LoadsParallel_Lastspannung bei 400uF_IndSwee
+p0Hto400uH.pdf  used on input line 261.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+
+warning  (file pictures/2LoadsParallel_Speisestrom bei 400uF Kapazität_IndSweep
+0Hto400uH.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at m
+ost version '1.5' allowed
+<pictures/2LoadsParallel_Speisestrom bei 400uF Kapazität_IndSweep0Hto400uH.pdf
+, id=1360, 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Speisestrom bei 400uF Kapazität_IndSweep0Hto400u
+H.pdf Graphic file (type pdf)
+<use pictures/2LoadsParallel_Speisestrom bei 400uF Kapazität_IndSweep0Hto400uH
+.pdf>
+Package luatex.def Info: pictures/2LoadsParallel_Speisestrom bei 400uF Kapazit
+ät_IndSweep0Hto400uH.pdf  used on input line 268.
+(luatex.def)             Requested size: 220.61813pt x 155.99821pt.
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 274.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[47<./pictures/2LoadsParallel_Lastspannung bei 0F Kapazität_IndSweep0Hto400uH.p
+df><./pictures/2LoadsParallel_Speisestrom bei 0F Kapazität_IndSweep0Hto400uH.pd
+f><./pictures/2LoadsParallel_Lastspannung bei 100uF_IndSweep0Hto400uH.pdf><./pic
+tures/2LoadsParallel_Speisestrom bei 100uF Kapazität_IndSweep0Hto400uH.pdf><./p
+ictures/2LoadsParallel_Lastspannung bei 200uF_IndSweep0Hto400uH.pdf><./pictures/
+2LoadsParallel_Speisestrom bei 200uF Kapazität_IndSweep0Hto400uH.pdf>]
+warning  (file pictures/2LoadsParallel_Lastspannung und Speisestrom bei 150uH un
+d 350uF.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at mos
+t version '1.5' allowed
+<pictures/2LoadsParallel_Lastspannung und Speisestrom bei 150uH und 350uF.pdf, 
+id=1517, 845.07724pt x 597.55246pt>
+File: pictures/2LoadsParallel_Lastspannung und Speisestrom bei 150uH und 350uF.
+pdf Graphic file (type pdf)
+<use pictures/2LoadsParallel_Lastspannung und Speisestrom bei 150uH und 350uF.p
+df>
+Package luatex.def Info: pictures/2LoadsParallel_Lastspannung und Speisestrom b
+ei 150uH und 350uF.pdf  used on input line 279.
+(luatex.def)             Requested size: 358.50449pt x 253.49597pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--282
+
+ []
+
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 283.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[48<./pictures/2LoadsParallel_Lastspannung bei 300uF_IndSweep0Hto400uH.pdf><./pi
+ctures/2LoadsParallel_Speisestrom bei 300uF Kapazität_IndSweep0Hto400uH.pdf><./
+pictures/2LoadsParallel_Lastspannung bei 400uF_IndSweep0Hto400uH.pdf><./pictures
+/2LoadsParallel_Speisestrom bei 400uF Kapazität_IndSweep0Hto400uH.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 296.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[49<./pictures/2LoadsParallel_Lastspannung und Speisestrom bei 150uH und 350uF.p
+df>]
+
+LaTeX Warning: Unexpected alignment  on input line 299.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 330--330
+\TU/FiraSans(0)/m/n/10 –Optional Ex-ter-nal VC Pin:
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 330--330
+[][][]
+ []
+
+))
+File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
+<use ./pictures/JuventusLogo.pdf>
+Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 7.
+(luatex.def)             Requested size: 170.71652pt x 35.588pt.
+
+
+Package fancyhdr Warning: \headheight is too small (22.76219pt): 
+(fancyhdr)                Make it at least 39.18803pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.18803pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
+
+[50])
 File: ./pictures/JuventusLogo.pdf Graphic file (type pdf)
 <use ./pictures/JuventusLogo.pdf>
 Package luatex.def Info: ./pictures/JuventusLogo.pdf  used on input line 167.
@@ -2635,9 +3018,9 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
-[40<./pictures/tas5720l_efficiency.png>]
+[51]
 Kapitel 3.
-[41
+[52
 
 ] (./doc_main.lot)
 \tf@lot=\write8
@@ -2648,7 +3031,7 @@ Kapitel 3.
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 178.
 
-[42]
+[53]
 Overfull \hbox (1.46927pt too wide) in paragraph at lines 183--183
 [][]\TU/FiraSans(0)/m/n/10 Bohn, Den-nis A. \TU/FiraSans(0)/m/it/10 Pro Au-dio 
 Re-fe-rence\TU/FiraSans(0)/m/n/10 . 21. Sep. 2025. \TU/FiraSans(0)/m/sc/10 
@@ -2664,7 +3047,7 @@ Overfull \hbox (12.24805pt too wide) in paragraph at lines 183--183
 
 
 AED: lastpage setting LastPage
-[43
+[54
 
 ] (./doc_main.aux)
  ***********
@@ -2679,23 +3062,37 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `doc_main.out' has not changed.
-(rerunfilecheck)             Checksum: 608D4087B98DF1476B5626C9CF45A1AC;8319.
+(rerunfilecheck)             Checksum: 35D4B7AA6BED48C9ABB8793F191454D5;10090.
 Package logreq Info: Writing requests to 'doc_main.run.xml'.
 
 \openout1 = doc_main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 47532 strings out of 476497
- 125011,2373549 words of node,token memory allocated
- 986 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 12 glue, 4 kern, 1 glyph, 46 attribute, 108 glue_sp
-ec, 24 attribute_list, 3 write, 5 pdf_action nodes
-   avail lists: 1:3,2:6136,3:415,4:176,5:1463,6:125,7:8003,8:108,9:1409,10:12,11
-:820
- 67965 multiletter control sequences out of 65536+600000
- 63 fonts using 13370815 bytes
+ 48374 strings out of 476497
+ 195328,2848258 words of node,token memory allocated
+ 1185 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 19 glue, 4 kern, 1 glyph, 94 attribute, 108 glue_sp
+ec, 48 attribute_list, 3 write, 6 pdf_action nodes
+   avail lists: 1:4,2:25419,3:10123,4:174,5:1476,6:127,7:7997,8:108,9:1409,10:12
+,11:820
+ 68653 multiletter control sequences out of 65536+600000
+ 66 fonts using 14656823 bytes
  95i,16n,97p,1863b,2457s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.16'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.15'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.14'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.13'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.12'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.11'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.10'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.9'
 
@@ -2718,15 +3115,19 @@ warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
 o10-regular.otf><C:/Users/natha/AppData/Local/Microsoft/Windows/Fonts/firasans-i
 talic.ttf><C:/Users/natha/AppData/Local/Microsoft/Windows/Fonts/firasans-regular
 .ttf><C:/Users/natha/AppData/Local/Microsoft/Windows/Fonts/firasans-bold.ttf><C:
-/Users/natha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10
+/Users/natha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10
 .pfb><C:/Users/natha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmmi7.pfb><C:/Users/natha/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Users/natha/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb><C:/Users/natha/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb>
-Output written on doc_main.pdf (44 pages, 25939950 bytes).
+m/cmmi10.pfb><C:/Users/natha/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmi7.pfb><C:/Users/natha/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/natha/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr5.pfb><C:/Users/natha/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/natha/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/natha/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/natha/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on doc_main.pdf (55 pages, 28978632 bytes).
 
-PDF statistics: 1286 PDF objects out of 1440 (max. 8388607)
- 183 named destinations out of 1000 (max. 131072)
- 439 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1778 PDF objects out of 2073 (max. 8388607)
+ 239 named destinations out of 1000 (max. 131072)
+ 511 words of extra memory for PDF output out of 10000 (max. 100000000)
 

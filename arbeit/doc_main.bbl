@@ -17,6 +17,20 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{aes75}{online}{}
+    \list{organization}{1}{%
+      {Audio Engineering Society}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{AES75 Users and Resources}
+    \verb{url}
+    \verb https://www.aes.org/standards/AES75/
+    \endverb
+    \field{year}{2025}
+  \endentry
+
   \entry{aespar}{online}{}
     \name{author}{1}{}{%
       {{hash=BDA}{%
@@ -216,6 +230,38 @@
     \field{urlday}{24}
     \field{urlmonth}{09}
     \field{urlyear}{2025}
+  \endentry
+
+  \entry{switchingreg_linreg}{online}{}
+    \name{author}{1}{}{%
+      {{hash=ZH}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Henry},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ANALOG DEVICES, INC}%
+    }
+    \strng{namehash}{ZH1}
+    \strng{fullhash}{ZH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{title}{AN-140: Basic Concepts of Linear Regulator and Switching Mode
+  Power Supplies}
+    \verb{url}
+    \verb https://www.analog.com/media/en/technical-documentation/app-notes/an1
+    \verb 40.pdf
+    \endverb
+    \field{version}{Rev. C}
+    \field{urlday}{05}
+    \field{urlmonth}{10}
+    \field{urlyear}{2025}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
   \endentry
 \enddatalist
 \endinput

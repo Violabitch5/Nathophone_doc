@@ -49,7 +49,7 @@ Aus Erfahrungswerten war auch die Firma \href{https://www.cirrus.com/}{Cirrus Lo
 		\textbf{Control Interface}&I2C with fast mode+ or SPI\newline Inter-chip communication bus&I2C Control With 8 Selectable I2C Address\\\midrule
 		\textbf{No. of Configuration Registers}&156&9\\\midrule
 		\textbf{Exposed Pad}&No&Yes\\\midrule
-		\textbf{min. PSSR}&88 dB&50 dB\\\midrule
+		\textbf{min. PSRR}&88 dB&50 dB\\\midrule
 		\textbf{Special Features}&\textendash Low Voltage Signaling (LVS)\newline\textendash Noise Gate Mode\newline\textendash Supply Tracking Limiter\newline\textendash Brownout Prevention\newline\textendash ICC Pin and Inter-Chip Communication\newline\textendash Ultrasonic\newline\textendash Hard- \& Software Shutdown\newline\textendash Mute Mode\newline\textendash Beep Generator&Digital Clipper\newline\textendash Shutdown Mode (SDZ)\newline\textendash Sleep Mode\newline\textendash Mute Mode\\\midrule
 		\textbf{Stückpreis auf DigiKey}&\$ 3.07&\$ 2.60\\\bottomrule
 	\end{tabularx}
@@ -114,11 +114,32 @@ Bei der Effizienz ist zu beachten, dass der TAS2781 verschiedene Power Modes hat
 	\caption{Vergleich der Effizienz der Endstufen}
 	\label{pic:effizienz_vergleich}
 \end{figure}
+\subsubsection{Ausgangsstrom}
+Aus der Effektivleistung und dem Crest-Faktor kann der Spitzenstrom berechnet werden:
+\begin{equation}
+	Iout_{ch(peak)} = \sqrt{\frac{P_{exciter(nom.)} \cdot Crest}{R_{exciter}}}  \rightarrow Iout_{ch(peak)} = \sqrt{\frac{5W \cdot 10^{\frac{6}{10}}}{4 Ohm}} = \textbf{2.23 A}
+	\label{eq:peak_out_current_per_channel}
+\end{equation}
+Im Datenblatt des TAS5720 sind zwei Werte für den Maximalstrom angegeben: \textit{Peak output current} $I_{PK}$ und \textit{Overcurrent error (OCE)
+threshold} $OCE_{(THRESH)}$. Während der erste Wert ein nominaler Grenzwert ist, zeigt der OCE-Wert die Stromstärke, bei der am Status-Pin \textit{FAULTZ} aktiviert wird (aktive low). Dieser Wert kann auch prozentual konfiguriert werden. Die Werte sind folgendermassen gegeben:
+\begin{itemize}
+	\item $I_{PK}$: \textbf{5 A}
+	\item $OCE_{(THRESH)}$: \textbf{6 A}
+\end{itemize}
+Der Spitzenausgangsstrom ($I_{PK}$) des TAS5720 wird mit \textbf{5A} angegeben, somit kann die Endstufe auch die Spitzenströme gut liefern.\\
+Im Datenblatt des TAS2781 sind lediglich das \textit{Output Over Current Limit on PVDDL} mit min. \textbf{2 A} und  \textit{Output Over Current Limit on PVDDH} mit min. \textbf{5.5 A} angegeben.
+\begin{center}
+	\begin{minipage}{\textwidth*7/8}
+		\centering
+		Somit können beide Endstufen die geforderten Spitzenströme liefern.
+	\end{minipage}
+\end{center}
 \subsubsection{Fazit und Entscheid Endstufen}
 Beide Endstufen bieten Leistungsmässig genug Headroom, um zu einem späteren Zeitpunkt auch 10W-Exciter zu treiben\footnote{Dies hätte Auswirkungen auf die Speisungsevaluation und soll dort entschieden werden.}. Die Unterschiede liegen hauptsächlich darin, dass der TAS2781 sehr viel mehr Funktionen und bessere Performance bietet, insbesondere im PSSR-Wert. Allerdings erfordernd die 156 Register einiges an Programmier- und Testaufwand. Zudem beinhaltet der TAS2781 einiges an Features, welche für dieses Projekt nicht relevant sind. Der Supply Tracking Limiter wäre sehr nützlich gewesen bei einer PoE-Speisung. Jedoch wird hier nun eine Netz-Betriebene Speisung verwendet und darum Spannungseinbrüche eher weniger zu erwarten bzw. werden vom externen Netzteil abgefangen.\\
 \begin{center}
 	\begin{minipage}{\textwidth*7/8}
 		\centering
-		{\large Daher wurde der \textbf{TAS5720} als kombinierte D/A-Wandler und Endstufe ausgewählt.}
+		{\large Daher wurde der \textbf{TAS5720} als kombinierter D/A-Wandler und Endstufe ausgewählt.\\
+		Für eine optimierte Effizienz wurde zudem die Speisespannung auf \textbf{15V}, mit einer PWM-Frequenz von 384kHz festgelegt.}
 	\end{minipage}
 \end{center}
