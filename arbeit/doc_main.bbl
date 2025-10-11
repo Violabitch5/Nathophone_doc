@@ -17,6 +17,25 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{adc820man}{online}{}
+    \list{organization}{1}{%
+      {QSC Audio Products}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{AD C820 C821 AcousticDesign High Output Ceiling Mount
+  Loudspeakers}
+    \verb{url}
+    \verb https://www.qsys.com/resource-files/productresources/spk/ad/q_spk_adc
+    \verb _820_821_specs.pdf
+    \endverb
+    \field{year}{2020}
+    \field{urlday}{24}
+    \field{urlmonth}{09}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{aes75}{online}{}
     \list{organization}{1}{%
       {Audio Engineering Society}%
@@ -59,15 +78,9 @@
   \endentry
 
   \entry{DAEX19QLP4spec}{online}{}
-    \name{author}{1}{}{%
-      {{hash=D}{%
-         family={DaytonAudio},
-         familyi={D\bibinitperiod},
-      }}%
+    \list{organization}{1}{%
+      {Dayton Audio}%
     }
-    \strng{namehash}{D1}
-    \strng{fullhash}{D1}
-    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{D}
     \field{sortinithash}{D}
@@ -82,15 +95,9 @@
   \endentry
 
   \entry{DAEX25QLP4spec}{online}{}
-    \name{author}{1}{}{%
-      {{hash=D}{%
-         family={DaytonAudio},
-         familyi={D\bibinitperiod},
-      }}%
+    \list{organization}{1}{%
+      {Dayton Audio}%
     }
-    \strng{namehash}{D1}
-    \strng{fullhash}{D1}
-    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{D}
     \field{sortinithash}{D}
@@ -133,6 +140,9 @@
   \endentry
 
   \entry{joyned_store}{online}{}
+    \list{organization}{1}{%
+      {Joyned GmbH}%
+    }
     \field{labeltitlesource}{title}
     \field{sortinit}{J}
     \field{sortinithash}{J}
@@ -207,29 +217,39 @@
     \field{year}{2023}
   \endentry
 
-  \entry{adc820man}{online}{}
-    \name{author}{1}{}{%
-      {{hash=Q}{%
-         family={QSC},
-         familyi={Q\bibinitperiod},
-      }}%
+  \entry{pcb_temp_calculatr}{online}{}
+    \list{organization}{1}{%
+      {HeatSinkCalculator}%
     }
-    \strng{namehash}{Q1}
-    \strng{fullhash}{Q1}
-    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{Q}
-    \field{sortinithash}{Q}
-    \field{title}{AD C820 C821 AcousticDesign High Output Ceiling Mount
-  Loudspeakers}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{PCB Temperature Calculator}
     \verb{url}
-    \verb https://www.qsys.com/resource-files/productresources/spk/ad/q_spk_adc
-    \verb _820_821_specs.pdf
+    \verb https://heatsinkcalculator.com/pcb-temperature-calculator.html
     \endverb
-    \field{year}{2020}
-    \field{urlday}{24}
-    \field{urlmonth}{09}
+    \field{year}{2025}
+    \field{urlday}{11}
+    \field{urlmonth}{10}
     \field{urlyear}{2025}
+  \endentry
+
+  \entry{TAS5720L/M_datasheet}{manual}{}
+    \list{organization}{1}{%
+      {Texas Instruments Incorporated}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{TAS5720x Digital Input Mono Class-D Audio Amplifier With TDM
+  Support Up To 8 Channels}
+    \verb{url}
+    \verb https://www.ti.com/lit/ds/symlink/tas5720l.pdf?ts=1760173341940&ref_u
+    \verb rl=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTAS5720L%253Fqgpn%2
+    \verb 53Dtas5720l
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date' \item Invalid format of field 'urldate'}
   \endentry
 
   \entry{switchingreg_linreg}{online}{}

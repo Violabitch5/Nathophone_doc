@@ -85,7 +85,8 @@ Hinzu kommt die Stromaufnahme des Milan-Moduls, welches mit 5V betrieben wird un
 \end{equation}
 \paragraph{Speisung mit nur Linearreglern} Die Verwendung von ausschliesslich Linearreglern hätte zwar einige Vorteile im Rauschverhalten, jedoch würde der in Gleichung \ref{eq:peak_current_per_channel} berechnete Spitzenstrom \textit{pro Kanal} aus der Hauptspeisung bezogen werden. Dies ergäbe, allein für die Endstufen und mit angenommen 100\% Effizienz, bei einem 24V-Netzteil eine Leistungsanforderung von mindestens $P_{peak} = I_{peak} \cdot N_{ch} \cdot U_{supply} \rightarrow P_{peak} = 1.608A \cdot 6 \cdot 24V = \textbf{231.5W}$ benötigt wird. Zwar gibt es Netzteile mit solchen Leistungen, jedoch wären die Kosten und Gewicht sehr hoch für diese Anwendung.
 \subsection{Simulation der Last und passiven Entkopplung}
-Um das Lastverhalten so detailliert wie möglich zu simulieren, muss ein Signalverlauf erzeugt werden, dessen Spitzenwert und Crestfaktor der letztendlichen Anwendung so nahe wie möglich kommt. Zu diesem Zweck wurde von der Webseite der AES ein Lautsprecher-Testsignal heruntergeladen \footnote{Siehe: \cite{aes75}}. Dieses Signal ist ein auf Musikinhalte zugeschnittener Pinkes Rauschen (Dateiname: \textit{Music-Noise\_48kHz}). Mittels dem Open Source Programm Audacity wurde das Signal ein einer Stelle mit einer hohen Spitze als einzelne Samplewerte exportiert. Diese Werte konnten dann in das Simulationsprogramm NI Multisim als PWL-Spannungsquelle (\textit{PIECEWISE\_LINEAR\_VOLTAGE}) importiert werden. Mittels eines Skalierungs-Bausteins (\textit{VOLTAGE\_CONTROLLED\_PIECEWISE\_LINEAR\_SOURCE}) kann dieses Signal umgewandelt werden, sodass schliesslich eine Last gesteuert werden kann (\textit{VOLTAGE\_CONTROLLED\_RESISTOR\_VIRTUAL}). Die Skalierung wurde nun so angepasst, dass die simulierte Leistungsspitze über dem Lastwiderstand genau den berechneten Spitzenwert aus Gleichung \ref{eq:pwr_per_channel_peak} erreichte. Es konnten dabei auch zwei oder mehr Lasten parallel betrieben werden, was einem Parallelbetrieb von mehreren Kanälen entspricht. Abbildung \ref{pic:simulation_load} zeigt dem Simulationsaufbau und Abbildung \ref{plot:load_transient} die damit erzeugte Transiente.
+Um das Lastverhalten so detailliert wie möglich zu simulieren, muss ein Signalverlauf erzeugt werden, dessen Spitzenwert und Crestfaktor der letztendlichen Anwendung so nahe wie möglich kommt. Zu diesem Zweck wurde von der Webseite der AES ein Lautsprecher-Testsignal heruntergeladen \footnote{Siehe: \cite{aes75}}. Dieses Signal ist ein auf Musikinhalte zugeschnittener Pinkes Rauschen (Dateiname: \textit{Music-Noise\_48kHz}). Mittels dem Open Source Programm Audacity wurde das Signal ein einer Stelle mit einer hohen Spitze als einzelne Samplewerte exportiert. Diese Werte konnten dann in das Simulationsprogramm NI Multisim als PWL-Spannungsquelle (\textit{PIECEWISE\_LINEAR\_VOLTAGE}) importiert werden. Mittels eines Skalierungs-Bausteins (\textit{VOLTAGE\_CONTROLLED\_PIECEWISE\_LINEAR\_SOURCE}) kann dieses Signal umgewandelt werden, sodass schliesslich eine Last gesteuert werden kann (\textit{VOLTAGE\_CONTROLLED\_RESISTOR\_VIRTUAL}). 
+\paragraph{Keine Simulationsmodelle des TAS5720}Sowohl auf der Webseite von Texas Instruments als auch in PSpice\footnote{Die Simulationssoftware von Texas Instruments} waren zum Zeitpunkt der Arbeit keine Simulationsmodelle des TAS5720 verfügbar. Daher konnte nur aus der Effizienz und der bekannten Last das Verhalten des TAS5720 ermittelt werden: Die Skalierung des Simulations-Bausteins wurde so angepasst, dass die simulierte Leistungsspitze über dem Lastwiderstand genau den berechneten Spitzenwert aus Gleichung \ref{eq:pwr_per_channel_peak} erreichte. Es konnten dabei auch zwei oder mehr Lasten parallel betrieben werden, was einem Parallelbetrieb von mehreren Kanälen entspricht. Abbildung \ref{pic:simulation_load} zeigt dem Simulationsaufbau und Abbildung \ref{plot:load_transient} die damit erzeugte Transiente.
 Danach wurde mit einer idealen 15V-Spannungsquelle und einem 250mOhm\footnote{Was einer eher schlechten Speisung entspricht.} Innenwiderstand die Speisung simuliert. Die somit entstehende Stromspitze erzeugte nun einen entsprechenden Speisungsabfall (Abbildung \ref{plot:load_transient_nofilter}).
 \begin{figure}[H]
 	\centering
@@ -280,7 +281,25 @@ Es wurde klar, dass mit einer Kapazität von \textbf{350uF} und \textbf{150uH} d
 	\caption{Speisungsverhalten bei 150uH und 350uF}
 	\label{pic:simulation_150uH_350uF}
 \end{figure}
-\paragraph{Kapazität}Für den Kondensator kamen wegen der DC-Spannung und den Dimensionen nur Aluminium-Polymer Kondensatoren in Frage. Hier musste auch der Spitzen-Rippelstrom überprüft werden: Die Simulation gab einen Spitzenstrom von 2.55A durch den Kondensator an! Der \href{https://www.digikey.ch/de/products/detail/kemet/A781MS277M1VLAV022/16679281?s=N4IgTCBcDaIIIHYAcBGAsgZTAhaUDUAZOfABjAgF0BfIA}{A781MS277M1VLAV022 von Kemet} erfüllte diese Anforderungen. Dimensionen: 10,80mm x 10,30mm x 13,20mm.
+\paragraph{Kapazität}Das Datenblatt des TAS5720 gibt einige Empfehlungen, wie die Kapazität gestalltet werden sollte. Es wird zudem empfohlen, an beiden PVDD-Eingängen einen Kondensator zu platzieren.
+
+\begin{quotation}
+	\textit{\textbf{8.2.2.4}
+	Select the bulk capacitors at the PVDD inputs for proper voltage margin and adequate capacitance to support the
+	power requirements. The TAS5720L/M has very good PVDD PSRR, so the capacitor is more about limiting the
+	ripple and droop for the rest of system than preserving good audio performance. The amount of bulk decoupling
+	can be reduced as long as the droop and ripple is acceptable. One capacitor should be placed near the PVDD
+	inputs at each side of the device. PVDD capacitors should be a low ESR type because they are being used in a
+	high-speed switching application.\\
+	\textbf{8.2.2.5 }
+	Select Decoupling Capacitors
+	Good quality decoupling capacitors should be added at each of the PVDD inputs to provide good reliability, good
+	audio performance, and to meet regulatory requirements. X5R or better ratings should be used in this
+	application. Consider temperature, ripple current, and voltage overshoots when selecting decoupling capacitors.
+	Also, the decoupling capacitors should be located near the PVDD and GND connections to the device to
+	minimize series inductances.}\\-Quelle: \cite{TAS5720L/M_datasheet}
+\end{quotation}
+Somit mussten also pro Eingang ein grösserer Kondensator sowie ein kleinerer, etwa 100nF, vorgesehen werden. Da zwei Kanäle zusammen gefiltert werden sollen, sind also insgesamt vier grössere Kondensatoren vorgesehen. Für den grossen Kondensator kamen wegen der DC-Spannung von 15V und den Dimensionen nur Aluminium-Polymer Kondensatoren in Frage. Das Datenblatt gab hier pro Kondensator eine Kapazität von mindestens 100uF an. Hier musste auch der Spitzen-Rippelstrom überprüft werden: Die Simulation gab dabei einen Spitzenstrom von ca. 0.6A pro Kondensator an. Die Hersteller geben jeweils den maximalen Welligkeitsstrom bei Niederfrequenz, 120 Hz, und Hochfrequenz, 100k Hz, an. Die im Testsignal vorkommende Transientendauer von 160us entspräche also 6kHz, oder 3kHz wenn sie als eine Halbwelle interpretiert wird. Welcher Spitzenstrom kann also als Kennwert verwendet werden? Da dies wahrscheinlich nicht so einfach linear interpoliert werden kann, wurde sicherheitshalber der \href{https://www.digikey.ch/de/products/detail/kemet/A782MS107M1JLAS030/21544807}{A782MS107M1JLAS030} gewählt, welcher eine Spannungsfestigkeit von 63V hat und bei 120Hz 800mA aushält. Dimensionen: 10,80mm x 10,30mm x 12,70mm.
 \paragraph{Induktivität}Die Spule musste lediglich den neuen Spitzenstrom aushalten und möglichst klein sein. Die Spule \href{https://www.digikey.ch/de/products/detail/w%
 	C3%BCrth-elektronik/74404086151/8134307}{74404086151 von Würth Elektronik} erfüllte diese Anforderungen, hatte jedoch mit 355mOhm einen höheren ESR als in der Simulation. Nach einer erneuten Simulation mit diesem ESR-Wert zeigten sich jedoch keine Probleme dadurch. Dimensionen: 8,00mm x 8,00mm x 6,50mm.
 \paragraph{Alle 6 Kanäle zusammen entkoppeln?}Es wäre nun möglich gewesen, einen Schritt weiter zu gehen und gleich alle sechs Kanäle mit nur diesen zwei Bauteilen zu entkoppeln. Dies führte jedoch zu einem Spannungseinbruch auf 13.5V und einem Kondensatorstrom von über \textbf{7.1A}, was nicht akzeptabel war.
@@ -288,7 +307,7 @@ Es wurde klar, dass mit einer Kapazität von \textbf{350uF} und \textbf{150uH} d
 \begin{center}
 	\begin{minipage}{\textwidth*7/8}
 		\centering
-		{\large Aus diesen Ergebnissen wurde entschieden, jeweils zwei Kanäle mit einem \textbf{350uF Aluminium-Polymer Kondensator} und einer \textbf{150uH Drosselspule} zu entkoppeln.}
+		{\large Aus diesen Ergebnissen wurde entschieden, jeweils zwei Kanäle mit insgesamt vier \textbf{100uF Aluminium-Polymer Kondensatoren} und einer \textbf{150uH Drosselspule} zu entkoppeln.}
 	\end{minipage}
 \end{center}
 \subsection{Schaltregler}
@@ -308,7 +327,7 @@ Die zusammengefasste Antwort darauf:
 	\item 2x Texas Instruments — TPSM33625 (power module, 3–36 V VIN, 2.5 A)
 \end{itemize}}
 .\dotfill.\\
-\paragraph{Kurzevaluation}Der LT8648S ist mit einem einzelnen Ausgang und einem Nennstrom von 15A viel zu gross dimensioniert. Zweimal ein uModule zu nutzen vernichtet die Vorteile dieses Ansatzes. Als Alternative zum Top Pick LT8650S wurde zusätzlich zu dieser Liste manuell der TI TPSM64406, ein Dual Output uModule, gesucht und ins Auge gefasst.
+\paragraph{Kurzevaluation}Der LT8648S ist mit einem einzelnen Ausgang und einem Nennstrom von 15A viel zu gross dimensioniert. Zweimal ein uModule zu nutzen vernichtet die Vorteile dieses Ansatzes. Als Alternative zum Top Pick LT8650S wurde zusätzlich zu dieser Liste manuell der TI TPSM64406, ein Dual Output uModule, gesucht und ins Auge gefasst. Tabelle \ref{tab:Vergleich_LT8650S_TPSM64406} zeigt den Direktvergleich zwischen den Modellen. Es gibt viele Ähnlichkeiten und von der Performance her sind beide auf dem selben Level. Der Vergleich zwischen den Transientenverhalten (Abb. \ref{pic:transient_behv}) zeigte jedoch durch die externe Kompensation ein leicht besseres Verhalten. Jedoch waren bei diesem Chip die Kosten leicht höher und brauchte leicht mehr Platz auf dem PCB.
 \subsubsection{Direktvergleich von LT8650S und TPSM64406}
 \begin{table}[H]
 	\centering
@@ -331,3 +350,28 @@ Die zusammengefasste Antwort darauf:
 	\caption{Direktvergleich zwischen zwei Schaltreglern}
 	\label{tab:Vergleich_LT8650S_TPSM64406}
 \end{table}
+\paragraph{Fazit}Hier war die Entscheidung recht schwierig. Die Vor- und Nachteile heben sich jeweils sehr gut auf. Auch die Effizienz war bei beiden Modellen mit den gegebenen Spannungen und Strömen bei ca. 92\%. Jedoch wurde der LT8650S als einfacher zu integrieren\footnote{Das Landing Pattern des TPSM64406 ist recht komplex.} erachtet und hatte leicht besseres Verhalten bei Lasttransienten.
+\begin{center}
+	\begin{minipage}{\textwidth*7/8}
+		\centering
+		{\large Daher wurde der LT8650S als Schaltregler ausgewählt.}
+	\end{minipage}
+\end{center}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth*6/8}
+		\centering
+		\includegraphics[width=\textwidth*1/2]{pictures/LT8650S_transient_behv.png}
+		\caption{Transientenverhalten des LT8650S, ca. 50mV-Ausschläge}
+		\label{pic:transient_behv_LT8650S}
+	\end{subfigure}
+	\vspace{5mm}
+	\begin{subfigure}{\textwidth*6/8}
+		\centering
+		\includegraphics[width=\textwidth]{pictures/TPSM64406_transient_behv.png}
+		\caption{Transientenverhalten des TPSM64406, ca. 100mV-Ausschläge}
+		\label{pic:transient_behv_TPSM64406}
+	\end{subfigure}
+	\caption{Der Vergleich des Transientenverhalten zeigte einen leichten Unterschied.}
+	\label{pic:transient_behv}
+\end{figure}
