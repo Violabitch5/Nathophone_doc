@@ -1,0 +1,14 @@
+\subsection{Evaluation Einzelkomponenten}
+Hier sind die Begründungen aufgeführt, wie einzelne Teile oder Komponenten ausgewählt wurden. Dabei spielte zu einem grossen Teil auch die Verfügbarkeit eine wichtige Rolle.
+\subsubsection{ext. Netzteil}
+Hier musste ein genügend Leistungsstarkes Netzteil gewählt werden. Gemäss Abbildung \ref{pic:Leistungsbudget} sind dies zwischen 72 und 120W. Die Wahl viel auf  \href{https://www.bicker.de/files/downloads/datenblatt/bet-0900-t_e.pdf}{BET-0900}.
+\subsubsection{Speisungsstecker}
+Der Stecker musste von der Bauform her auf das Netzteil passen, genügend Spannungsfestigkeit haben (min. 36V) und den erwartbaren Spitzenstrom aushalten. Da der Spitzenstrom erst noch simuliert werden musste, viel die Wahl zunächst auf den \href{https://www.cuidevices.com/product/resource/pj-063ah.pdf}{PJ-063AH}.
+\subsubsection{Speisungsschalter}
+Es wurde entschieden, dass die gesamte Speisung über einen Hauptschalter ein- oder ausgeschaltet werden soll. Es wäre auch möglich gewesen, die EN-Pins des Schaltregler dafür zu nutzen. Jedoch wurde bevorzugt, dass sich im AUS-Zustand auf gar keinen Fall Strom in die Schaltung fliessen kann. Die wahl viel zunächst auf den \href{https://www.nkkswitches.com/pdf/SW-1.pdf}{SW3001A} welcher allerdings nicht als Print-Montage erhältlich war und somit über Litzen verbunden werden musste.
+\subsubsection{Überspannungsschutz}
+Um möglicherweise auftretende Transienten (z.B. bei Einschaltvorgängen) abzublocken, wurde eine TVS-Supressor eingesetzt. Dabei musste eine Klemmspannung gewählt werden, die höchstens der kleinsten maximalen Eingangsspannung eines Bauteils entsprach. Die Wahl viel auf den \href{https://www.littelfuse.com/assetdocs/tvs-diode-tpsmb-datasheet?assetguid=E7A196A8-A225-4724-AB76-7C22E0D48557}{TPSMB2616CA} mit einer Klemmspannung von 39.5V.
+\subsubsection{Speisungsfilter}
+Um die erwartbare Rippelspannung des Netzteils zu glätten und kurze Spitzen des eigenen Schaltreglers abzufangen wurde ein Filterkondensator vorgesehen. Dabei wurde ein 10nF Filmkondensator gewählt, da Metallfilm-kondensatoren keine DC-Degradierung erfahren und zudem selbstheilende Effekte\footnote{Siehe: \cite{healingofhilmcaps}} haben. Die Wahl fiel auf \href{https://industrial.panasonic.com/ww/products/pt/film-cap-electroequip/models/ECHU1H103JX5}{ECH-U1H103JX5}, welcher eine Spannungsfestigkeit von 50 VDC hat.
+\subsubsection{Verpolungsschutz}
+Ein effektiver Verpolungsschutz kann mit einem N-Kanal Mosfet realisiert werden. Dieser muss eine genügend grosse Drain-Source und Gate-Source Spannungsfestigkeit aufweisen und den erwartbaren Spitzenstrom aushalten. Die Wahl viel auf den \href{https://www.onsemi.com/pdf/datasheet/fqu11p06-d.pdf}{FQD11P06TM} mit einem $ID_max$ von 9.4A und $ID_pulsed$ von 37.6A.

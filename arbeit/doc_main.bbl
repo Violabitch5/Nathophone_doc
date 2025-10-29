@@ -252,6 +252,22 @@
   'date' \item Invalid format of field 'urldate'}
   \endentry
 
+  \entry{healingofhilmcaps}{online}{}
+    \list{organization}{1}{%
+      {ALTER TECHNOLOGY TÜV NORD S.A.U.}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{The self-healing characteristics of film capacitors}
+    \verb{url}
+    \verb https://www.doeeet.com/content/eee-components/passive-components/the-
+    \verb self-healing-characteristics-of-film-capacitors/
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date' \item Invalid format of field 'urldate'}
+  \endentry
+
   \entry{switchingreg_linreg}{online}{}
     \name{author}{1}{}{%
       {{hash=ZH}{%
