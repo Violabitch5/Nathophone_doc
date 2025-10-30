@@ -11,4 +11,26 @@ Um möglicherweise auftretende Transienten (z.B. bei Einschaltvorgängen) abzubl
 \subsubsection{Speisungsfilter}
 Um die erwartbare Rippelspannung des Netzteils zu glätten und kurze Spitzen des eigenen Schaltreglers abzufangen wurde ein Filterkondensator vorgesehen. Dabei wurde ein 10nF Filmkondensator gewählt, da Metallfilm-kondensatoren keine DC-Degradierung erfahren und zudem selbstheilende Effekte\footnote{Siehe: \cite{healingofhilmcaps}} haben. Die Wahl fiel auf \href{https://industrial.panasonic.com/ww/products/pt/film-cap-electroequip/models/ECHU1H103JX5}{ECH-U1H103JX5}, welcher eine Spannungsfestigkeit von 50 VDC hat.
 \subsubsection{Verpolungsschutz}
-Ein effektiver Verpolungsschutz kann mit einem N-Kanal Mosfet realisiert werden. Dieser muss eine genügend grosse Drain-Source und Gate-Source Spannungsfestigkeit aufweisen und den erwartbaren Spitzenstrom aushalten. Die Wahl viel auf den \href{https://www.onsemi.com/pdf/datasheet/fqu11p06-d.pdf}{FQD11P06TM} mit einem $ID_max$ von 9.4A und $ID_pulsed$ von 37.6A.
+Ein effektiver Verpolungsschutz kann mit einem N-Kanal Mosfet realisiert werden. Dieser muss eine genügend grosse Drain-Source und Gate-Source Spannungsfestigkeit aufweisen und den erwartbaren Spitzenstrom aushalten. Die Wahl viel auf den \href{https://www.onsemi.com/pdf/datasheet/fqu11p06-d.pdf}{FQD11P06TM} mit einem $ID_{max}$ von 9.4A und $ID_{pulsed}$ von 37.6A.
+\subsubsection{interne 3.3V-Speisung \& Supply Switchover}
+Die gesamte Signalanbindung ging bislang von einem Milan-Modul aus, welches die 3.3V-Spannung erzeugt und zurück auf das Driverboard speist. Was aber, wenn dieses Modul in einer künftigen Anwendung nicht vorhanden ist? Dann wäre plötzlich keine 3.3V-Speisung vorhanden. Daher wurde entschieden, eine interne 3.3V-Speisung mit einem LDO-Regler einzubauen. Zudem soll eine einfache Schaltung zur automatischen Umschaltung der Speisung, mit Priorität auf der externen Speisung, eingebaut werden. Somit ist in jedem Fall eine 3.3V-Spannung, welche die Endstufen für deren digitalen Teil benötigen, gegeben. Als LDO wurde der \href{https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6642/1016_SPX3819.pdf}{SPX3819M5-L-3-3/TR} 0.5A nom. und Überstrom ausgewählt. Als für die Speisungsumschaltung wurden zwei P-Kanal MOS-FETs (FDN340P) und ein N-Kanal MOS-FET (N7002N) verwendet.
+\subsubsection{Group SDZ}
+Die Endstufen besitzen einen Low-Aktiven Shutdown-Eingang. Da es bei einem Line-Array bei einem Fehlerfall auf einem Kanal keinen Sinn macht, wenn die restlichen Endstufen weiterlaufen wurden alle Shutdown-Signale miteinander verbunden. Daher wurde das Signal \textit{Group\_SDZ} benannt. Das Milan-Modul besitzt ebenfalls einen ADC-Reset Ausgang (\textit{ADC\_RST\_N\_OUT}), dessen Verhalten vom Hersteller wie folgt beschrieben wird:
+\begin{quote}
+	The reset line allows to reset peripherals on the extension cards. The reference firmware pulls the reset line low on initialisation or whenever a sample rate change occurs.\\- \cite{MT32_EVK_Datasheet}
+\end{quote}
+Aus Erfahrungswerten wurde mittels einer Lötbrücke die Möglichkeit eingebaut, dieses Signal mit dem \textit{Group\_SDZ} Signal zu verbinden oder zu trennen.
+\subsubsection{Power-Good LED}
+Die beiden Power Good-Signale des Schalreglers wurden zusammengeschlossen und verwendet, um eine grüne LED-Anzusteuern. Diese signalisiert somit den Zustand der Speisespannung.
+\subsubsection{Fault LEDs}
+Im Gegensatz zum Group-SDZ wurde jeder \textit{FAULTZ}-Ausgang der Endstufe auf eine separate rote LED verbunden. Somit ist bei Fehlerfällen ersichtlich, welche Endstufe eine Störung ausgelöst hat.
+\subsubsection{Output Connectors}
+Für die Verbindung zu den Excitern wurden Leiterplattenklemmen von Phoenix Contact verwendet: \href{https://www.phoenixcontact.com/us/products/1862042/pdf}{1862042}. Diese sind nur 8mm hoch, haben einen Abgangswinkel von 45° und sind mit 8A und 300V genügend robust spezifiziert. Zudem können die Kontakte ohne Werkzeug verbunden werden.
+\subsubsection{GPIO LED}
+Das Milan-Modul besitzt zudem einen GPIO-Ausgang, welcher vom Hersteller mit \textquotedbl{}Reserved for future use.\textquotedbl{} beschrieben wird. Da die Funktionalität u.U. auch konfigurierbar sein könnte, wurde trotzdem eine gelbe LED vorgesehen. So könnte z.B. der Verbindungsstatus angezeigt werden.
+\subsubsection{opt. ext. TDM Input}
+Mittels Stifleisten soll auch die Möglichkeit bestehen, aus einer anderen Quelle ein TDM-Signal einspeisen zu können. Wie sehr diese Stiftleiste HF-Mässig eine Störung hervorruft oder gar aussendet muss noch eruiert werden.
+\subsubsection{Testsignale}
+Zur Fehlersuche oder auch externe Module wurden einige weitere Stiftleisten vorgesehen. Mittels rücksetzbaren PTC-Sicherungen können auch die Speisungen auf die Stiftleisten geführt werden und verringern somit die Gefahr einer unabsichtlichen Zerstörung.
+\subsubsection{opt.: System Monitor I2C-ADC}
+Es kam auch die Idee auf, mittels eines einfachen I2C-ADCs alle Speisungs- und Signalpegel digital überwachen zu können. Es war allerdings fraglich, ob dieser Nutzen den Aufwand für die korrekte Umsetzung rechtfertigt.

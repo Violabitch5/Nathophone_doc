@@ -77,6 +77,31 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{MT32_EVK_Datasheet}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=BF}{%
+         family={Braun},
+         familyi={B\bibinitperiod},
+         given={Fabian},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BF1}
+    \strng{fullhash}{BF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{edition}{HW Rev. V3, DOC Rev. 0.3}
+    \field{title}{MT32-EVK - MILAN To TDM - Datasheet}
+    \field{day}{20}
+    \field{month}{08}
+    \field{year}{2025}
+    \field{urlday}{30}
+    \field{urlmonth}{10}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{DAEX19QLP4spec}{online}{}
     \list{organization}{1}{%
       {Dayton Audio}%
