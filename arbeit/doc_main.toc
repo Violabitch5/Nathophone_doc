@@ -115,7 +115,29 @@
 \contentsline {subsubsection}{\numberline {4.2.13}opt. ext. TDM Input}{58}{subsubsection.2.4.2.13}%
 \contentsline {subsubsection}{\numberline {4.2.14}Testsignale}{58}{subsubsection.2.4.2.14}%
 \contentsline {subsubsection}{\numberline {4.2.15}opt.: System Monitor I2C-ADC}{58}{subsubsection.2.4.2.15}%
-\contentsline {section}{\numberline {5}Tests}{58}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{59}{chapter.3}%
-\contentsline {section}{13 Tabellenverzeichnis}{60}{section*.94}%
-\contentsline {section}{Quellenverzeichnis}{62}{chapter*.95}%
+\contentsline {subsection}{\numberline {4.3}Simulation des Schaltreglers}{58}{subsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}OUT2 auf 15V}{60}{subsubsection.2.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Lastentkopplung durch drei Ls}{60}{subsubsection.2.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Erhöhung der Induktivität L2}{60}{subsubsection.2.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Kaskadierung von OUT1 und OUT2}{61}{subsubsection.2.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Verbessertes Transientenverhalten}{61}{subsubsection.2.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.6}Bessere Stabilität durch Anpassung des FB-Kondensators}{61}{subsubsection.2.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.3.7}Eingangsnetzwerk}{61}{subsubsection.2.4.3.7}%
+\contentsline {subsubsection}{\numberline {4.3.8}Efficiency Report}{63}{subsubsection.2.4.3.8}%
+\contentsline {subsection}{\numberline {4.4}Schema Driverboard}{64}{subsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Überwachungs-ADC}{64}{subsubsection.2.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Stiftleiste für externes Modul}{64}{subsubsection.2.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Sicherungen}{64}{subsubsection.2.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Diode für die 5V-Speisung des Milan Moduls}{64}{subsubsection.2.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}Resetschaltung}{65}{subsubsection.2.4.4.5}%
+\contentsline {subsubsection}{\numberline {4.4.6}Endstufenkodierung}{65}{subsubsection.2.4.4.6}%
+\contentsline {subsubsection}{\numberline {4.4.7}Ausgangsfilter}{66}{subsubsection.2.4.4.7}%
+\contentsline {subsubsection}{\numberline {4.4.8}Speisungsumschaltung}{67}{subsubsection.2.4.4.8}%
+\contentsline {subsubsection}{\numberline {4.4.9}Testsignale}{68}{subsubsection.2.4.4.9}%
+\contentsline {subsection}{\numberline {4.5}Layout Driverboard}{68}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {4.6}Simulation der TDM-Reflektionen}{68}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {4.7}Herstellung Driverboard}{68}{subsection.2.4.7}%
+\contentsline {section}{\numberline {5}Tests}{68}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{69}{chapter.3}%
+\contentsline {section}{13 Tabellenverzeichnis}{70}{section*.104}%
+\contentsline {section}{Quellenverzeichnis}{72}{chapter*.105}%

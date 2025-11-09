@@ -1,0 +1,77 @@
+\subsection{Simulation des Schaltreglers}
+Auf der Produktewebseite des LT8650S\footnote{Siehe: \href{https://www.analog.com/en/products/lt8650s.html}{Analog Devices - LT8650S}} konnte ein vorbereitetes Simulations-File für LTSpice heruntergeladen. Dieses diente als Ausgangslage, um die schlussendliche Speisungsschaltung zu simulieren. Abbildung \ref{pic:example_simulation_LT8650S} zeigt den Aufbau dieser Beispiel-Simulation und entspricht der Konfiguration mit 5V- und 3.3V-Ausgängen.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim={0 7cm 0 7cm},clip,width=\textwidth]{pictures/LT8650S_example_simulation.pdf}
+	\caption{Aufbau der Beispielsimulation des LT8650S}
+	\label{pic:example_simulation_LT8650S}
+\end{figure}
+Dieser Aufbau wurde nun auf die vorliegende Anwendung angepasst. Schritt für Schritt konnte und die Schaltung optimiert werden. Dabei wurde die Last allerdings als rein statischer DC-Strom angenommen, welcher von der ersten us an den vollen Strom bezieht. Dies ist nicht wirklich realitätsnah, aber gibt u.U. Hinweise auf das Verhalten bei solchen Extremsituationen. Abbildung \ref{pic:adapted_simulation_LT8650S} zeigt die adaptierte Simulation.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim={0 7cm 0 7cm},clip,width=\textwidth]{pictures/LT8650S_adapted_simulation.pdf}
+	\caption{Adaptierte des LT8650S}
+	\label{pic:adapted_simulation_LT8650S}
+\end{figure}
+Zu bemerken ist, dass die Schaltfrequenz $f_{sw}$ bei 2MHz beibehalten wurde. Die sonstigen Anpassung waren wie folgt:
+\subsubsection{OUT2 auf 15V}
+Die erste Anpassung war logischerweise die Anpassung der Ausgangsspannung des zweiten Outputs. Dazu musste lediglich \textbf{R4 auf 56k}\footnote{Die entsprechende Formel aus dem Datenblatt: $R1 = R2 (\frac{V_{OUT}}{0.8V}-1)$, mit R1 zwischen FB und Output, und R2 zwischen FB und GND.} gesetzt werden.
+\subsubsection{Lastentkopplung durch drei Ls}
+Da die Endstufen jeweils durch 150uH-Induktivitäten und 400uF-Kapazitäten entkoppelt werden, wurden diese entsprechend eingebunden.
+\subsubsection{Erhöhung der Induktivität L2}
+Als zentrales Bauteil eines jeden Schaltreglers fungiert die Ausgangsspule. Das Datenblatt gibt einen Anhaltspunkt, wie gross die Induktivität gewählt werden sollte:
+\begin{quote}
+	A good first choice for the inductor value is:\\
+	$L_{1,2} = \frac{V_{OUT1,2} + V_{SW(BOT)}}{2f_{SW}}$\\
+	where fSW is the switching frequency in MHz, VOUT is the output voltage, VSW(BOT) is the bottom switch drop (~0.12V) and L is the inductor value in μH.
+	- \cite{LT8650S_Datasheet}
+\end{quote}
+Mit den hier vorhandenen Werten eingesetzt entspräche das $L_{2} = \frac{15V + 0.12V}{2\cdot2MHz} = 3.78uH$.
+\textbf{\color{red} MEHR ERKLÄREN}
+\subsubsection{Kaskadierung von OUT1 und OUT2}
+Generell ist es bei Audioanwendungen angebracht, die Speisung der Endstufe als letztes einzuschalten, da dadurch Pop-Geräusche bei Signalbeginn tendenziell verhindert werden. Bei der Simulation wurde zudem beobachtet, dass der Spitzenstrom der Speisung verringert werden kann wenn die Speisungen nacheinander eingeschaltet werden. Dazu musste lediglich das \textit{PG1}-Signal mit dem \textit{EN2}-Eingang verbunden werden.
+\subsubsection{Verbessertes Transientenverhalten}
+Für das in Abbildung \ref{pic:transient_behv_LT8650S} zu sehende Transientenverhalten wurde der \textit{VC2}-Pin über eine RC-Serieschaltung auf GND verbunden. Die Werte wurden aus dem Datenblatt übernommen\footnote{Hier könnte noch weiter optimiert werden, jedoch war dies aus Zeitgründen nicht mehr möglich.}.
+\subsubsection{Bessere Stabilität durch Anpassung des FB-Kondensators}
+Es wurde zudem beobachtet, dass die Schwinganfälligkeit erheblich verbessert werden konnte, wenn für C7 ein 220pF-Kondensator eingesetzt wurde.
+\subsubsection{Eingangsnetzwerk}
+Im Datenblatt wird am Ende des Kapitels \textit{Input Capacitor} eine Überspannung erwähnt, die durch eine Kombination von Keramikkondensatoren mit niedrigem ESR und einer parasitären Kabelinduktion entsteht:
+\begin{quote}
+	A second precaution regarding the ceramic 
+	input capacitor concerns the maximum input voltage rating of the LT8650S. A ceramic input capacitor combined with trace or cable inductance forms a high quality (under 
+	damped) tank circuit. If the LT8650S circuit is plugged into a live supply, the input voltage can ring to twice its nominal value, possibly exceeding the LT8650S’s voltage rating. This situation is easily avoided (see Analog Devices Application Note 88).
+	- \cite{LT8650S_Datasheet}
+\end{quote}
+Die erwähnte Überspannung entsteht genau dann, wenn ein Netzteil über ein langes Kabel und einem Schalter mit noch ungeladenen Keramikkondensatoren verbunden ist. Genau das ist ja die Situation hier! In der Application Note\footnote{Siehe: \cite{OvervoltageWithCerCaps}} wird die Anwendung eines Snubber-Netzwerkes, also eines grösseren Kondensators mit einem kleinen (0.5Ohm) Widerstand in Serie. Dieser sozusagen künstlich verschlechterte Kondensator sorgt dafür, dass Energie weiterhin aus dem Netzwerk entzogen sobald die Keramikkondensatoren geladen sind. Ansonsten würde die Spule einen stark abfallenden Strom \textquotedbl{}sehen\textquotedbl{} und eine Spannung erzeugen, welche sich zu den bereits Vorhandenen 24V hinzuaddiert. In Abbildung \ref{pic:startup_comparision} ist der direkte Vergleich zwischen dem Aufstartverhalten mit und ohne Snubber zu sehen. Dabei wurde ein 47uH-Kondensator und einem 0.5Ohm-Widerstand in Serie ausgewählt. Zu beachten ist, dass bei \ref{pic:startup_nosnubber} nicht nur eine Spannungsüberhöhung stattfindet sondern auch Strom zurück in die Speisung fliesst!\\
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth*9/13}
+		\includegraphics[trim={0 5mm 0 0},clip,width=\textwidth]{pictures/startup_Schaltregler_noSnubber_L2_10uH.pdf}
+		\caption{Aufstartverhalten ohne Snubber}
+		\label{pic:startup_nosnubber}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*9/13}
+		\includegraphics[trim={0 5mm 0 0},clip,width=\textwidth]{pictures/startup_Schaltregler_withSnubber_L2_10uH.pdf}
+		\caption{Aufstartverhalten mit Snubber}
+		\label{pic:startup_withsnubber}
+	\end{subfigure}
+	\caption{Der Snubber stabilisiert das System}
+	\label{pic:startup_comparision}
+\end{figure}
+Zusätzlich wurden zwei 4.7uH Keramikkondensatoren gemäss dem Datenblatt verwendet:
+\begin{quote}
+	Bypass the input of the LT8650S circuit with a ceramic capacitor of X7R or X5R type placed as close as possible to the VIN and GND pins. Y5V types have poor performance over temperature and applied voltage, and should not be used. A 4.7μF to 10μF ceramic capacitor is adequate to bypass the LT8650S and will easily handle the ripple current. Note that larger input capacitance is required when a lower switching frequency is used. If the input power source has high impedance, or there is significant inductance due to long wires or cables, additional bulk capacitance may be necessary. This can be provided with a low performance electrolytic capacitor.
+	- \cite{LT8650S_Datasheet}
+\end{quote}
+\subsubsection{Efficiency Report}
+LTSpice bietet auch die Möglichkeit, einen Efficiency Report zu generieren. Bei diesem wird für jedes Bauteil sowohl der RMS- und Peak-Ströme als auch die Verlustleistung berechnet. Dabei werden bei reaktiven Bauteilen ein gesondertes Verfahren angewandt. In Abbilung \ref{pic:efficiency_report} ist der gesamte Report zu sehen.
+\begin{figure}[H]
+	\vspace{-5mm}
+	\centering
+	\includegraphics[trim = {2cm 11cm 10cm 2cm}, clip, width=\textwidth*2/4]{pictures/efficiency_report.pdf}
+	\caption{Der Efficiency Report der Simulation}
+	\label{pic:efficiency_report}
+\end{figure}
+Zu beachten ist, dass dieser von einer einzelnen Last ausgeht. Da hier mehrere Lasten anliegen, kann der Report nicht die \textquotedbl{}richtige\textquotedbl{} Last bestimmen. Die Effizienz kann jedoch einfach rechnerisch bestimmt werden:
+$\mu_{Schaltregler} = \frac{P_{out}}{P_{in}} = \frac{P_{Load1} + 3\cdot P_{Load2}}{P_{in}}\rightarrow\mu_{Schaltregler} = \frac{5.6W + 3\cdot 10.849W}{39W} = 97.81\%$

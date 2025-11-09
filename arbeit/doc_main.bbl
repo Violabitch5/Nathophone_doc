@@ -212,6 +212,26 @@
   'date'}
   \endentry
 
+  \entry{LT8650S_Datasheet}{manual}{}
+    \list{organization}{1}{%
+      {ANALOG DEVICES, INC. 2017-2024}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{edition}{Rev. D}
+    \field{subtitle}{Dual Channel 4A, 42V, Synchronous Step-Down Silent
+  Switcher 2 with 6.2µA Quiescent Current}
+    \field{title}{LT8650S - Datasheet}
+    \verb{url}
+    \verb https://www.analog.com/media/en/technical-documentation/data-sheets/l
+    \verb t8650s.pdf
+    \endverb
+    \field{urlday}{01}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{SoundreinforcementforaudioEngineers}{book}{}
     \name{author}{1}{}{%
       {{hash=NWAD}{%
@@ -257,6 +277,37 @@
     \field{urlday}{11}
     \field{urlmonth}{10}
     \field{urlyear}{2025}
+  \endentry
+
+  \entry{OvervoltageWithCerCaps}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=PG}{%
+         family={Perica},
+         familyi={P\bibinitperiod},
+         given={Goran},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {LINEAR TECHNOLOGY CORPORATION 2001}%
+    }
+    \strng{namehash}{PG1}
+    \strng{fullhash}{PG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Application Note 88: Ceramic Input Capacitors Can Cause
+  Overvoltage Transients}
+    \verb{url}
+    \verb https://www.analog.com/media/en/technical-documentation/application-n
+    \verb otes/an88f.pdf?doc=LT8650S.pdf
+    \endverb
+    \field{urlday}{02}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
   \endentry
 
   \entry{TAS5720L/M_datasheet}{manual}{}

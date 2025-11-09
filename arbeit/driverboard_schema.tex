@@ -1,0 +1,81 @@
+\subsection{Schema Driverboard}
+Nun konnte mit dem Schema begonnen werden. Die Bauteile wurden weitgehend gemäss dem Blockschaltbild in Abbildung \ref{pic:blockschaltbild_pcb} eingefügt. Jedoch wurden im Zuge der Arbeit einige Änderungen vorgenommen:
+\subsubsection{Überwachungs-ADC}
+Dieser Teil wurde nicht übernommen, da mit genug Testpunkten alle Spannungen gut genug zugänglich waren. Zudem hätte ein Multiplexer eingesetzt werden müssen, was alles kompliziert gemacht und wenig Nutzen gebracht hätte.
+\subsubsection{Stiftleiste für externes Modul}
+Eine eigene Stiftleiste für den Anschluss eines externen Modules wurde vorgesehen. Auf dieser sind alle TDM-Signale, I2C sowie 5V und 3.3V-Speisungen enthalten.
+\subsubsection{Sicherungen}
+Speisespannungen wurden nicht direkt auf die Testpins verbunden. Stattdessen wurden  rücksetzbaren PTC-Sicherungen verwendet. Diese besitzen eine Polymer-Schicht mit Kohlenstoff-Granulaten, welche bei Erhitzung aufquillt und den Kontakt zwischen den Granulaten unterbrechen. Sobald die Temperatur wieder unter ein Limit fällt, fällt der Widerstand wieder unter den Nominalwert. Somit ist die Gefahr einer unabsichtlichen Zerstörung deutlich verringert. Für das externe Modul wurden Sicherungen mit 1.25A vorgesehen, für reine Testpins 0.25A-Sicherungen.
+\subsubsection{Diode für die 5V-Speisung des Milan Moduls}
+Da das MILAN-Modul einen PoE-Baustein besitzt wäre es theoretisch möglich, dass dieses an einen Switch mit PoE angeschlossen könnte. In diesem Fall würden plötzlich zwei 5V-Speisungen kurzgeschlossen. Man hätte hier auch eine Speisungs-Umschaltung realisieren können. Jedoch gab es eine einfachere Möglichkeit: Nach kurzer Recherche konnte das dort verwendete PoE-Modul eruiert werden (AG9905LP). In dessen Datenblatt ist klar ersichtlich, dass am Ausgang eine Diode in Serie verwendet wird (Abbildung \ref{pic:Ag9900_BlockDia}). Somit kann die interne 5V-Speisung ebenfalls mit einer 5V-Diode geschützt werden.
+\begin{figure}[H]
+	\centering
+	\includegraphics{pictures/Ag9900_BlockDiagram.png}
+	\label{pic:Ag9900_BlockDia}
+	\caption{Das Blockschaltbild des Ag9900 PoE-Moduls}
+\end{figure}
+\subsubsection{Resetschaltung}
+Anstatt einer fixen Lötbrücke wurde eine flexiblere Lösung eingesetzt: Es sollte sowohl die Möglichkeit erhalten bleiben, das Reset-Signal des Milan-Moduls mit dem Group-SDZ zu verbinden als auch manuell ein Reset auszulösen. Zu diesem Zweck wurde ein Logik-Buffer mit Open-Drain Ausgängen (74LVC2G07) eingesetzt, dessen Ausgänge kurzgeschlossen werden können. Zudem wurde ein Schalter eingebaut, der das Reset-Signal des Moduls vom Group-SDZ abtrennt. Somit bleibt volle Flexibilität erhalten. Abbildung \ref{pic:Reset_Schaltung} zeigt die Resetschaltung.
+\begin{figure}[H]
+	\centering
+	\includegraphics{pictures/Reset_Schaltung.png}
+	\label{pic:Reset_Schaltung}
+	\caption{Die Resetschaltung}
+\end{figure}
+\subsubsection{Endstufenkodierung}
+Die Endstufen wurden grösstenteils gemäss den Angaben im Datenblatt beschaltet. Speziell zu beachten gab nur die I2C-Adresskonfiguration, für die bei jeder Endstufe die zwei \textit{ADR0} und \textit{ADR1}-Eingänge ein wenig anders beschaltet werden mussten. Abbildung \ref{pic:I2C_AddressCoding} zeigt, wie diese für die Addressen 0x6C bis 0x73 beschaltet werden können.
+\begin{figure}[H]
+	\centering
+	\includegraphics{pictures/I2C_Adress_Setting.png}
+	\caption{Die I2C-Adresse bestimmt auch den Standardmässigen TDM-Slot}
+	\label{pic:I2C_AddressCoding}
+\end{figure}
+\subsubsection{Ausgangsfilter}
+In der Regel werden für die Ausgänge von D-Klasse Endstufen noch einige passive Filterbausteine benötigt. Diese werden in der Beispielschaltung\footnote{Kapitel 8.2 \textit{Typical Application} im Datenblatt} des TAS5720M allerdings nicht gezeigt. Erstaunlicherweise sind diese jedoch im Evaluation Board (TAS5825MEVM) enthalten. Abbildungen \ref{pic:TAS5720M_TypApp} und \ref{pic:Output_TAS5825MEVM-SB} zeigt das Datenblatt und die Anwendung auf einem Eval-Board. Letztendlich wurde entschieden, Bauteile für diese Filter vorzusehen, jedoch unbestückt zu lassen oder mit einem 0R-Widerstand zu überbrücken.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth*4/13}
+		\centering
+		\includegraphics[width=\textwidth]{pictures/Output_Filters_TAS5720x_TypApp.png}
+		\caption{Die Ausgänge des TAS5720 ohne Filter...}
+		\label{pic:TAS5720M_TypApp}
+		\vspace{5mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*9/13}
+		\centering
+		\includegraphics[width=\textwidth]{pictures/Output_Filters_TAS5825MEVM.png}
+		\caption{... auf dem TAS5825MEVM jedoch mit}
+		\label{pic:Output_TAS5825MEVM-SB}
+	\end{subfigure}
+	\caption{Der Vergleich zwischen verschiedenen Anwendungen des TAS5720 zeigt Unterschiede}
+	\label{pic:Output_Filter_Differences}
+\end{figure}
+\subsubsection{Speisungsumschaltung}
+Die Schaltung zur automatischen Umschaltung der Speisung von externer zu interner 3.3V-Speisung ist in Abbildung \ref{pic:Switchover_Circuit} zu sehen. Q3 leitet nur, wenn 3.3V-ext anliegt. Q5 leitet nur, wenn 3.3V-ext \textbf{nicht} anliegt. Somit ist sichergestellt, dass +3.3V immer nur von einer Speisung gespiesen wird und keine Kurzschlüsse entstehen.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth*1/2]{pictures/SwitchoverCircuit.png}
+	\caption{Die Umschaltungsschaltung}
+	\label{pic:Switchover_Circuit}
+\end{figure}
+\subsubsection{Testsignale}
+Es wurden mehrere Stiftleisten für die Testsignale definiert:
+\begin{table}[h]
+	\centering
+	\setstretch{1.5}
+	\begin{tabularx}{\textwidth*6/8}{>{\hsize=1\hsize}XXX}
+		\textbf{Steckerbezeichnung} & \textbf{Zweck} & \textbf{Signale} \\
+		\toprule
+		J2 & Speisungsüberwachung & +24V, +5.3V, 3.3V\_int, PG\_1, PG\_2, U1\_temp \\
+		\hline
+		J4 & Anschluss für externes TDM-Modul & +5.3V, +3.3V\_int, TDM-Signale, I2C-Signale \\
+		\hline
+		J5 & Überwachung der Steuersignale & +3.3V\_ext, +5V\_ext, GPIO, ADC\_RST, Group\_SDZ \\
+		\hline
+		J6 & Endstufenausgänge & Alle Endstufenausgänge \\
+		\hline
+		J8 & FAULT-Signale & FAULT\_0 bis FAULT\_5 \\
+		\bottomrule
+	\end{tabularx}
+	\caption{}
+\end{table}
