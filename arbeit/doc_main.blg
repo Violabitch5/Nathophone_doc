@@ -29,7 +29,7 @@ Too many commas in name 1 of "4 Park Square, Milton Park, Abingdon, Oxon OX14 4R
 while executing---line 2815 of file biblatex.bst
 You've used 17 entries,
             6399 wiz_defined-function locations,
-            1303 strings with 12067 characters,
+            1303 strings with 12071 characters,
 and the built_in function-call counts, 115313 in all, are:
 = -- 4959
 > -- 10270

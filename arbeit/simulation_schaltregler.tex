@@ -42,7 +42,7 @@ Im Datenblatt wird am Ende des Kapitels \textit{Input Capacitor} eine Überspann
 	damped) tank circuit. If the LT8650S circuit is plugged into a live supply, the input voltage can ring to twice its nominal value, possibly exceeding the LT8650S’s voltage rating. This situation is easily avoided (see Analog Devices Application Note 88).
 	- \cite{LT8650S_Datasheet}
 \end{quote}
-Die erwähnte Überspannung entsteht genau dann, wenn ein Netzteil über ein langes Kabel und einem Schalter mit noch ungeladenen Keramikkondensatoren verbunden ist. Genau das ist ja die Situation hier! In der Application Note\footnote{Siehe: \cite{OvervoltageWithCerCaps}} wird die Anwendung eines Snubber-Netzwerkes, also eines grösseren Kondensators mit einem kleinen (0.5Ohm) Widerstand in Serie. Dieser sozusagen künstlich verschlechterte Kondensator sorgt dafür, dass Energie weiterhin aus dem Netzwerk entzogen sobald die Keramikkondensatoren geladen sind. Ansonsten würde die Spule einen stark abfallenden Strom \textquotedbl{}sehen\textquotedbl{} und eine Spannung erzeugen, welche sich zu den bereits Vorhandenen 24V hinzuaddiert. In Abbildung \ref{pic:startup_comparision} ist der direkte Vergleich zwischen dem Aufstartverhalten mit und ohne Snubber zu sehen. Dabei wurde ein 47uH-Kondensator und einem 0.5Ohm-Widerstand in Serie ausgewählt. Zu beachten ist, dass bei \ref{pic:startup_nosnubber} nicht nur eine Spannungsüberhöhung stattfindet sondern auch Strom zurück in die Speisung fliesst!\\
+Die erwähnte Überspannung entsteht genau dann, wenn ein Netzteil über ein langes Kabel und einem Schalter mit noch ungeladenen Keramikkondensatoren verbunden ist. Genau das ist ja die Situation hier! In der Application Note\footnote{Siehe: \cite{OvervoltageWithCerCaps}} wird die Anwendung eines Snubber-Netzwerkes, also eines grösseren Kondensators mit einem kleinen (0.5Ohm) Widerstand in Serie. Dieser sozusagen künstlich verschlechterte Kondensator sorgt dafür, dass Energie weiterhin aus dem Netzwerk entzogen sobald die Keramikkondensatoren geladen sind. Ansonsten würde die Spule einen stark abfallenden Strom \textquotedbl{}sehen\textquotedbl{} und eine Spannung erzeugen, welche sich zu den bereits Vorhandenen 24V hinzuaddiert. In Abbildung \ref{pic:startup_comparision} ist der direkte Vergleich zwischen dem Aufstartverhalten mit und ohne Snubber zu sehen. Dabei wurde ein 47uH-Kondensator und einem 0.5Ohm-Widerstand in Serie ausgewählt. Zu beachten ist, dass bei \ref{pic:startup_nosnubber} nicht nur eine Spannungsüberhöhung stattfindet sondern auch Strom zurück in die Speisung fliesst! Dies wird allerdings erkauft mit einem erhöhtem Eingangsstrom. {\color{red} Da dieser Strom allerdings nur wenige $\mu$s andauert, kann erwartet werden, dass dieser von der Ausgangskapazität des Netzteils geliefert werden kann.}\\
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{\textwidth*9/13}
@@ -73,5 +73,61 @@ LTSpice bietet auch die Möglichkeit, einen Efficiency Report zu generieren. Bei
 	\caption{Der Efficiency Report der Simulation}
 	\label{pic:efficiency_report}
 \end{figure}
-Zu beachten ist, dass dieser von einer einzelnen Last ausgeht. Da hier mehrere Lasten anliegen, kann der Report nicht die \textquotedbl{}richtige\textquotedbl{} Last bestimmen. Die Effizienz kann jedoch einfach rechnerisch bestimmt werden:
-$\mu_{Schaltregler} = \frac{P_{out}}{P_{in}} = \frac{P_{Load1} + 3\cdot P_{Load2}}{P_{in}}\rightarrow\mu_{Schaltregler} = \frac{5.6W + 3\cdot 10.849W}{39W} = 97.81\%$
+Zu beachten ist, dass dieser von einer einzelnen Last ausgeht. Da hier mehrere Lasten anliegen, kann der Report nicht die \textquotedbl{}richtige\textquotedbl{} Last bestimmen. Die Effizienz kann jedoch einfach rechnerisch bestimmt werden:\\
+$\mu_{Schaltregler} = \frac{P_{out}}{P_{in}} = \dfrac{\sum_{n=1}^{N_{Loads}}P_{Load}}{P_{in}}\rightarrow\mu_{Schaltregler} = \frac{5.6W + 3\cdot 10.849W}{39W} = 97.81\%$
+\subsubsection{Kontrolle Wärmeverhalten}
+Mit den Daten aus dem Efficiency Report kann nun abgeschätzt werden, wie warm der Schaltregler während des Betriebs werden könnte und ob dieser u.U. einen Kühlkörper braucht. Da eine genaue Simulation Zeitaufwändig war und keine Software verfügbar war, wurde eine andere Methode angewandt:\\
+Auf der Webseite \cite{pcbtemp_calculator} war nebst anderen ein Berechnungstool verfügbar, mit welchem die voraussichtliche Junction-Temperatur eines Chips berechnet werden kann. Diese ist von sehr vielen Umgebungsgrössen wie grösse des PCBs, Anteil der Kupferfläche, Anzahl Vias, Luftstrom etc. abhängig und recht aufwändig zu berechnen. Mit diesem Tool konnten die Kenndaten eingegeben werden und damit wurden alle Berechnungen automatisch durchgeführt und das Resultat ausgegeben\footnote{Die genauen Berechnungsmethoden waren hier hinterlegt: \href{https://www.heatsinkcalculator.com/blog/how-to-calculate-the-thermal-resistance-of-a-pcb/}{How to calculate the thermal resistance of a PCB}}. Somit konnte nicht nur die Junction-Temperatur abgeschätzt werden, sondern auch der thermische Widerstand zwischen Junction und Umgebung, also welche Temperaturdifferenz pro Watt Verlustleistung entsteht.\\Abbildung \ref{pic:temp_calc} zeigt alle eingegebenen Daten, wovon einige zu diesem Zeitpunkt Schätzungen waren. Das Resultat (\ref{pic:temp_calc_result}) zeigte bei 0.5W Verlustleistung eine Junctiontemperatur von 36.7 °C. Im Datenblatt des LT8650S wird eine maximale Junctiontemperatur von 125° bis 150° C angegeben\footnote{Es gab verschiedene Modellnummern, welche zum Teil einen erweiterten Temperaturbereich besitzen.}.
+\begin{center}
+	\begin{minipage}{\textwidth*7/8}
+		\centering
+		\vspace{6mm}
+		{\large Somit wurde entschieden, dass der Schaltregler \textbf{kein Kühlkörper} braucht.}
+		\vspace{6mm}
+	\end{minipage}
+\end{center}
+\newpage
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth*11/13}
+		\includegraphics[width=\textwidth]{pictures/temp_calc_LT8650S_PCBdata.png}
+		\caption{Daten des PCBs}
+		\label{pic:temp_calc_pcbdata}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*11/13}
+		\includegraphics[width=\textwidth]{pictures/temp_calc_LT8650S_Airdata.png}
+		\caption{Daten der Umgebungsluft}
+		\label{pic:temp_calc_airdata}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*11/13}
+		\includegraphics[width=\textwidth]{pictures/temp_calc_LT8650S_Devicedata.png}
+		\caption{Daten des Chips}
+		\label{pic:temp_calc_devicedata}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*11/13}
+		\includegraphics[width=\textwidth]{pictures/temp_calc_LT8650S_Viadata.png}
+		\caption{Daten der Vias}
+		\label{pic:temp_calc_viadata}
+		\vspace{3mm}
+	\end{subfigure}\\
+\end{figure}
+\begin{figure}[H]\ContinuedFloat
+	\centering
+	\begin{subfigure}{\textwidth*11/13}
+		\includegraphics[width=\textwidth]{pictures/temp_calc_LT8650S_Heatsinkdata.png}
+		\caption{Daten des Kühlkörpers (nicht vorhanden)}
+		\label{pic:temp_calc_heatsindkdata}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*11/13}
+		\includegraphics[width=\textwidth]{pictures/temp_calc_LT8650S_Result.png}
+		\caption{Resultat der Temperaturberechnung}
+		\label{pic:temp_calc_result}
+		\vspace{3mm}
+	\end{subfigure}
+	\caption{Berechnungsdaten für die Temperaturberechnung}
+	\label{pic:temp_calc}
+\end{figure}

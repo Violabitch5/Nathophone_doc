@@ -124,20 +124,21 @@
 \contentsline {subsubsection}{\numberline {4.3.6}Bessere Stabilität durch Anpassung des FB-Kondensators}{61}{subsubsection.2.4.3.6}%
 \contentsline {subsubsection}{\numberline {4.3.7}Eingangsnetzwerk}{61}{subsubsection.2.4.3.7}%
 \contentsline {subsubsection}{\numberline {4.3.8}Efficiency Report}{63}{subsubsection.2.4.3.8}%
-\contentsline {subsection}{\numberline {4.4}Schema Driverboard}{64}{subsection.2.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Überwachungs-ADC}{64}{subsubsection.2.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Stiftleiste für externes Modul}{64}{subsubsection.2.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}Sicherungen}{64}{subsubsection.2.4.4.3}%
-\contentsline {subsubsection}{\numberline {4.4.4}Diode für die 5V-Speisung des Milan Moduls}{64}{subsubsection.2.4.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.5}Resetschaltung}{65}{subsubsection.2.4.4.5}%
-\contentsline {subsubsection}{\numberline {4.4.6}Endstufenkodierung}{65}{subsubsection.2.4.4.6}%
-\contentsline {subsubsection}{\numberline {4.4.7}Ausgangsfilter}{66}{subsubsection.2.4.4.7}%
-\contentsline {subsubsection}{\numberline {4.4.8}Speisungsumschaltung}{67}{subsubsection.2.4.4.8}%
-\contentsline {subsubsection}{\numberline {4.4.9}Testsignale}{68}{subsubsection.2.4.4.9}%
-\contentsline {subsection}{\numberline {4.5}Layout Driverboard}{68}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {4.6}Simulation der TDM-Reflektionen}{68}{subsection.2.4.6}%
-\contentsline {subsection}{\numberline {4.7}Herstellung Driverboard}{68}{subsection.2.4.7}%
-\contentsline {section}{\numberline {5}Tests}{68}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{69}{chapter.3}%
-\contentsline {section}{13 Tabellenverzeichnis}{70}{section*.104}%
-\contentsline {section}{Quellenverzeichnis}{72}{chapter*.105}%
+\contentsline {subsubsection}{\numberline {4.3.9}Kontrolle Wärmeverhalten}{64}{subsubsection.2.4.3.9}%
+\contentsline {subsection}{\numberline {4.4}Schema Driverboard}{66}{subsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Überwachungs-ADC}{66}{subsubsection.2.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Stiftleiste für externes Modul}{66}{subsubsection.2.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Sicherungen}{66}{subsubsection.2.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Diode für die 5V-Speisung des Milan Moduls}{67}{subsubsection.2.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}Resetschaltung}{67}{subsubsection.2.4.4.5}%
+\contentsline {subsubsection}{\numberline {4.4.6}Endstufenkodierung}{68}{subsubsection.2.4.4.6}%
+\contentsline {subsubsection}{\numberline {4.4.7}Ausgangsfilter}{68}{subsubsection.2.4.4.7}%
+\contentsline {subsubsection}{\numberline {4.4.8}Speisungsumschaltung}{69}{subsubsection.2.4.4.8}%
+\contentsline {subsubsection}{\numberline {4.4.9}Testsignale}{70}{subsubsection.2.4.4.9}%
+\contentsline {subsection}{\numberline {4.5}Layout Driverboard}{70}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {4.6}Simulation der TDM-Reflektionen}{70}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {4.7}Herstellung Driverboard}{70}{subsection.2.4.7}%
+\contentsline {section}{\numberline {5}Tests}{70}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{71}{chapter.3}%
+\contentsline {section}{13 Tabellenverzeichnis}{72}{section*.106}%
+\contentsline {section}{Quellenverzeichnis}{74}{chapter*.107}%

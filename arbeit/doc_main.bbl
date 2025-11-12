@@ -262,7 +262,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{pcb_temp_calculatr}{online}{}
+  \entry{pcbtemp_calculator}{online}{}
     \list{organization}{1}{%
       {HeatSinkCalculator}%
     }
@@ -271,11 +271,11 @@
     \field{sortinithash}{P}
     \field{title}{PCB Temperature Calculator}
     \verb{url}
-    \verb https://heatsinkcalculator.com/pcb-temperature-calculator.html
+    \verb https://www.heatsinkcalculator.com/pcb-temperature-calculator.html
     \endverb
     \field{year}{2025}
-    \field{urlday}{11}
-    \field{urlmonth}{10}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
     \field{urlyear}{2025}
   \endentry
 
