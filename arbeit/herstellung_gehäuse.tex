@@ -1,0 +1,41 @@
+\subsection{Herstellung Gehäuse}
+\paragraph{Plattenmaterial}Bei der Fertigstellung des Gehäusedesigns kam wurde eine Empfehlung für die Exciterverwendung auf der Herstellerseite gefunden. Dieser \textit{Buyers Guide} enthielt eine interessante Passage und Abbildung (\ref{pics:exciter_panel_mounting_options}) über die Befestigung von Exciterpanels. Darin wird empfohlen, mit Excitern ausgestattete Panels nicht fest an einen Rahmen zu montieren, sondern mittels eines Übergangs aus Schaum, Silikon oder Gummi.
+\begin{quotation}
+	As described earlier, prior to being radiated into the room by the vibrating panel surface, acoustic waves first travel through the material of the panel itself, as though it were its own acoustic environment, with its own speed of sound. When these traveling waves in the panel material encounter a different acoustic impedance (such as a different material or a panel edge), some or all of the traveling wave is reflected and propagates in a new direction across the panel. In some instances it may be desirable to reduce this reflected energy to improve clarity and transient response, and this can be achieved through controlled termination of the panel edge, or by applying a soft damping material to the panel itself.\\The benefit of compliantly suspending part or all of the panel is a reduction in the internally reflected energy, because some of the energy is transmitted into the compliant material and does not get reflected. Compliant suspension of the panel edges may be accomplished using a soft material like foam tape, a silicone adhesive bead, or a flexible rubber member.\\Aus: \cite{exciter_buyer_guid}
+\end{quotation}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth*5/9]{pictures/exciter_suspension_methods.png}
+	\caption{Methoden zur Befestigung der Exciterpanels}
+	\label{pics:exciter_panel_mounting_options}
+\end{figure}
+Daher wurde das Gehäusedesign dahingehend geändert das die Exciterplatten nicht fix an den Rahmen geleimt werden sondern mittels Gummidurchführungen (engl. \textit{Grommets}) auf den Rahmen geschraubt werden. Da diese meist nur für eine Plattendicke von ca. 1.5mm erhältlich waren, und nur Plexiglasplatten in dieser Dicke erhältlich waren, wurde das Panelmaterial kurzerhand von MDF auf Plexiglas geändert und entsprechende Aussparungen für die Grommets vorgesehen. Abbildung \ref{pics:rubber_grommet} zeigt eine solche Schraubentülle.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth*2/9]{pictures/rubber_grommet.png}
+	\caption{Eine Schraubentülle aus Gummi verhindert Reflektionen}
+	\label{pics:rubber_grommet}
+\end{figure}
+\paragraph{Lagenschichtung}
+Das 3D-Modell des Gehäuses wurde in 8 Schichten aufgeteilt, welche aus 8mm MDF hergestellt werden sollten. Dazu wurde wurde ein C02-Lasercutter des Fablab Winterthur\footnote{Siehe: \href{https://fablabwinti.ch/das-lab/ausstattung/lasercutter/lasersaur/}{Lasersaur - Fablab Winterthur}} verwendet. Abbildung \ref{pic:case_cutout_1} zeigt den Laser in Aktion und \ref{pic:case_cutout_2} das Resultat. Nach Herstellung der Schichten wurden diese mit Holzleim zusammengefügt. Für die genaue Positionierung wurden Durchgangslöcher vorgesehen, deren Durchmesser gerade genug Platz für eine M8-Schraube bietet. Für die Halterung der Exciterplatten wurden M6-Schraubmuttern vorgesehen.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{pictures/case_cutouts_2.jpg}
+		\caption{Der Lasercutter des Fablab}
+		\label{pic:case_cutout_1}
+		\vspace{3mm}
+	\end{subfigure}
+\end{figure}
+\begin{figure}[H]\ContinuedFloat
+\centering
+	\begin{subfigure}{\textwidth*2/5}
+		\centering
+		\includegraphics[width=\textwidth]{pictures/case_cutouts_1.jpg}
+		\caption{Detailansicht}
+		\label{pic:case_cutout_2}
+		\vspace{3mm}
+	\end{subfigure}
+	\caption{Herstellung des Gehäuses}
+\end{figure}

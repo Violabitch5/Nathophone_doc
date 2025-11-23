@@ -50,6 +50,74 @@
     \field{year}{2025}
   \endentry
 
+  \entry{SoundreinforcementforaudioEngineers}{book}{}
+    \name{author}{2}{}{%
+      {{hash=AW}{%
+         family={Ahnert},
+         familyi={A\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=ND}{%
+         family={Noy},
+         familyi={N\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Routledge}%
+    }
+    \strng{namehash}{AWND1}
+    \strng{fullhash}{AWND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.4324/9781003220268
+    \endverb
+    \field{isbn}{978-1-032-11518-4}
+    \field{title}{Sound Reinforcement for Audio Engineers}
+    \list{location}{1}{%
+      {4 Park Square, Milton Park, Abingdon, Oxon OX14 4RN}%
+    }
+    \field{year}{2023}
+  \endentry
+
+  \entry{TI_Audio_Serial_Configurations}{manual}{}
+    \name{author}{2}{}{%
+      {{hash=AJ}{%
+         family={Arbona},
+         familyi={A\bibinitperiod},
+         given={Jorge},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AU}{%
+         family={Agarwal},
+         familyi={A\bibinitperiod},
+         given={Uttam},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AJAU1}
+    \strng{fullhash}{AJAU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{SLAA469}
+    \field{title}{Audio Serial Interface Configurations for Audio Codecs}
+    \verb{url}
+    \verb https://www.ti.com/lit/an/slaa469/slaa469.pdf
+    \endverb
+    \field{urlday}{23}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
   \entry{aespar}{online}{}
     \name{author}{1}{}{%
       {{hash=BDA}{%
@@ -102,6 +170,49 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{kicad_transline_calc}{online}{}
+    \list{organization}{1}{%
+      {KiCAD}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Calculator Tools: TransLine}
+    \verb{url}
+    \verb https://docs.kicad.org/9.0/en/pcb_calculator/pcb_calculator.html#tran
+    \verb sline
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{16}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{KiCAD}{software}{}
+    \name{author}{1}{}{%
+      {{hash=CJP}{%
+         family={Charras},
+         familyi={C\bibinitperiod},
+         given={Jean-Pierre},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJP1}
+    \strng{fullhash}{CJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{KiCad}
+    \verb{url}
+    \verb https://www.kicad.org/
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{13}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{DAEX19QLP4spec}{online}{}
     \list{organization}{1}{%
       {Dayton Audio}%
@@ -136,6 +247,23 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{exciter_buyer_guid}{manual}{}
+    \list{organization}{1}{%
+      {Dayton Audio}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{EXCITERS and TACTILE TRANSDUCERS 101, An Introduction}
+    \verb{url}
+    \verb https://www.daytonaudio.com/topic/excitersbuyerguide
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{19}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{guidetopowerhandling}{online}{}
     \name{author}{1}{}{%
       {{hash=FA}{%
@@ -162,6 +290,26 @@
     \field{urlday}{21}
     \field{urlmonth}{09}
     \field{urlyear}{2025}
+  \endentry
+
+  \entry{NXP_I2S_bus_specification}{manual}{}
+    \list{organization}{1}{%
+      {NXP Semiconductors}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{number}{UM11732}
+    \field{title}{I2S bus specification}
+    \verb{url}
+    \verb https://www.nxp.com/docs/en/user-manual/UM11732.pdf
+    \endverb
+    \field{version}{3.0}
+    \field{urlday}{23}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
   \endentry
 
   \entry{joyned_store}{online}{}
@@ -230,36 +378,6 @@
     \field{urlday}{01}
     \field{urlmonth}{11}
     \field{urlyear}{2025}
-  \endentry
-
-  \entry{SoundreinforcementforaudioEngineers}{book}{}
-    \name{author}{1}{}{%
-      {{hash=NWAD}{%
-         family={Noy},
-         familyi={N\bibinitperiod},
-         given={Wolfgang Ahnert;\bibnamedelima Dirk},
-         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
-  D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Routledge}%
-    }
-    \strng{namehash}{NWAD1}
-    \strng{fullhash}{NWAD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{N}
-    \field{sortinithash}{N}
-    \verb{doi}
-    \verb 10.4324/9781003220268
-    \endverb
-    \field{isbn}{978-1-032-11518-4}
-    \field{title}{Sound Reinforcement for Audio Engineers}
-    \list{location}{1}{%
-      {4 Park Square, Milton Park, Abingdon, Oxon OX14 4RN}%
-    }
-    \field{year}{2023}
   \endentry
 
   \entry{pcbtemp_calculator}{online}{}
@@ -342,6 +460,72 @@
     \endverb
     \warn{\item Invalid format of field 'date' \item Invalid format of field
   'date' \item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Aisler_pcb_rules}{online}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Thea},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {AISLER B.V.}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{4 Layer 1.6mm ENIG Design Rules}
+    \verb{url}
+    \verb https://community.aisler.net/t/4-layer-1-6mm-enig-design-rules/3733
+    \endverb
+    \field{day}{07}
+    \field{month}{07}
+    \field{year}{2025}
+    \field{urlday}{13}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{via_impedance_calc}{online}{}
+    \list{organization}{1}{%
+      {Sierra Circuits}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Via Impedance Calculator}
+    \verb{url}
+    \verb https://designertools.app.protoexpress.com/?appid=VIAIMPCAL
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{16}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{xmos_programming_guide}{manual}{}
+    \list{organization}{1}{%
+      {XMOS}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{number}{XM004440A}
+    \field{title}{XMOS Programming Guide}
+    \verb{url}
+    \verb https://www.xmos.com/download/XMOS-Programming-Guide-(documentation)(
+    \verb F).pdf/
+    \endverb
+    \field{day}{18}
+    \field{month}{09}
+    \field{year}{2015}
+    \field{urlday}{20}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
   \endentry
 
   \entry{switchingreg_linreg}{online}{}

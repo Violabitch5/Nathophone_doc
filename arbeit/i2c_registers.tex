@@ -1,0 +1,84 @@
+\subsection{I2C-Register}
+Abbildung \ref{pic:registers_TAS5720} zeigt alle Register eines TAS5720. Diese beinhalten Steuersignale, I2S-Formatkonfiguration, Device ID sowie Verstärkungs- und Clip-Werte für die Signalkette. Nachfolgend sind alle Registerwerte nach Funktion hin erläutert.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth - 2mm]{pictures/registers_TAS5720.png}
+	\caption{Register des TAS5720}
+	\label{pic:registers_TAS5720}
+\end{figure}
+\subsubsection{Steuersignale}
+\paragraph{0x01, bit1: SLEEP}High-aktives Signal welches die Endstufe in einen Schlafmodus versetzt.\\\textbf{Wert: $0_b$}
+\paragraph{0x01, b0: SDZ}Low-aktives Signal zum Herunterfahren der Endstufe. Muss bei Fehlern getriggert werden.\\\textbf{Wert: $1_b$}
+\paragraph{0x03, b4: MUTE}High-aktives Signal zum Stummschalten des Ausgangs.\\\textbf{Wert: $0_b$}
+\paragraph{0x06, b4-6: PWM\_RATE} Setzt die interne Schaltgeschwindigkeit der Endstufe. Diese ist ein Mehrfaches der Sample-Rate. Eine höhere Schaltfrequenz führt zu (leicht) weniger Verzerrungen\footnote{Siehe \cite{TAS5720L/M_datasheet}, Figure 9 vs. 10 sowie 19 vs. 20}, jedoch auch zu einem höheren Stromverbrauch und somit weniger Effizienz \footnote{Siehe \cite{TAS5720L/M_datasheet}, Figure 37 und Figure 31 vs. 32}. Da die Endstufe in dieser Anwendung eher unter- als überbelastet ist, wurde die Schaltfrequenz auf das maximum erhöht.\\\textbf{Wert: $111_b$}
+\paragraph{0x08, b4-5: OC\_THRESH}Mit diesen Register kann der Schwellwert für den Überstrom eingestellt werden. In 25\%-Schritten des Maximalstroms (6A).\\\textbf{Wert: $00_b$}
+\subsubsection{Signalverarbeitung und Gains}
+Abbildung \ref{pic:signalpath_TAS5720} zeigt, wie das Signal im Chip verarbeitet wird. Daher werden nachfolgend die Register vom Ausgang her erläutert.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth - 2mm]{pictures/signal_path_TAS5720.png}
+	\caption{Register des TAS5720}
+	\label{pic:signalpath_TAS5720}
+\end{figure}
+\paragraph{0x06, b2-3: ANALOG\_GAIN}Dieser Wert stellt die effektive Verstärkung der Endstufe dar. 00 entspricht dabei einem Output von 19.2 dBV, also dB relativ zu 1Vrms. Dies entspricht $\dfrac{10^{\frac{19.2dBV}{20}\cdot2}}{8Ohm} = 10.4W$ und ist somit bereits doppelt so hoch wie die der Exciter aushält (5W cont.). Daher wurde die Verstärkung auf den niedrigsten Wert programmiert.
+\\\textbf{Wert: $00_b$}
+\paragraph{0x01, 0x10, 0x11: Digital Clipper}
+Ein 20-bit Digital Clipper ist auf drei Register verteilt. Dieser ist das letzte Glied vor dem Analog-Teil und bietet somit einen Schutz für den Exciter. Ein Problem dabei ist, dass hierbei nur der maximale Digitale Wert pro Sample begrenzt wird. Somit wird eine gleitende Berechnung nicht durchgeführt. Je nach Crest Faktor kann es somit vorkommen, dass zwar der Peak Wert nicht überschritten wird, aber jedoch der RMS-Wert.\\Bei einem Signal mit 6dB Crest Faktor entspricht die Spitzenleistung 4x der durchschnittlichen Leistung. Damit läge die Maximalleistung bei diesem Excitermodell bei 20W. Zur Sicherheit kann die Spitzenleistung um weitere 10\% begrenzt werden, was dann 18W entspricht. Bei einer Impedanz von 8 Ohm entspricht das $\sqrt{18W * 8Ohm} = 12V$. Dies entspricht $20 * log_{10}(12) = 21.58dBV$.\\Im Datenblatt des TAS5720 ist das Verhältnis von Clipper-Einstellung zur maximalen Ausgangsspannung der Endstufe wie folgt gegeben:
+\begin{equation}
+	V_{AMP} = 20 \cdot log_{10}(\dfrac{DC_{level}}{0xFFFFF}) + 0.5 + A_{AMP}
+\end{equation}
+\\mit\\
+$V_{AMP}$: Maximale Ausgangsspannung der Endstufe\\
+$DC_{level}$: Clipper Level\\
+$A_{AMP}$: Analog Gain Setting\\
+Somit kann das Clipper Level berechnet werden. 
+\begin{equation}
+	DC_{level} = 10^{\dfrac{Vmax_{AMP} - A_{AMP} - 0.5}{20}} \cdot 0xFFFFF \rightarrow DC_{level} = 10^{\dfrac{21.58dBV - 19.2dBV - 0.5}{20}} \cdot 0xFFFFF
+\end{equation}
+Allerdings zeigte sich, dass mit dieser Berechnung sich ein höherer Wert als 0xFFFFF ergibt. Somit müsste das Signal eigentlich gar nicht geclippt werden. Dies beruht allerdings auf der Annahme, dass der Exciter auch wirklich eine Spitzenleistung von 20W aushält.\\Um wirklich auf Nummer sicher zu gehen, wurde entschieden, dass die gesamte Berechnung neu mit 5W Spitzenleistung zu berechnen. Somit sind die Exciter in jedem Fall geschützt und bei Bedarf kann der Clipper-Wert vorsichtig erhöht werden. Berechnung wie oben: $\sqrt{5W * 8Ohm} = 6.324V$, $20 * log_{10}(6.324V) = 16.02dBV$
+\begin{equation}
+	 DC_{level} = 10^{\dfrac{16.02dBV - 19.2dBV - 0.5}{20}} \cdot 0xFFFFF = 0.655 \cdot 0xFFFFF \approx \textbf{0xA7AE1}
+\end{equation}
+\\\textbf{Wert: $0xA7AE1 \equiv 1010 0111 1010 1110 0001_b$}\\Top 6 Bits: 1010 01\\Middle 8 Bits: 11 1010 11\\Last 6 Bits: 10 0001
+\paragraph{0x04, b0-7: VOLUME\_CONTROL}8-Bit Register für die Volumenregelung. Diese kann in 0.5dB-Schritten von -100dB bis +24dB geregelt. Da dieser Teil vor dem Clipper liegt, kann die Volumeneinstellung den Exciter nicht gefährden. Änderungen werden über einen Zeitraum von 8 samples gerampt.\\Das Datenblatt gibt folgende Formel zur Berechnung des Werts:
+\begin{equation}
+	DVC_{value} = 0xCF + \frac{A_{dvc}}{0.5}
+\end{equation}
+\\\textbf{Wert: Variabel, standardmässig $0xCF$}
+\paragraph{0x02, b7: HPF\_BYPASS}Der Chip hat einen integrierten Hochpassfilter, dessen Grenzfrequenz von der Samplerate abhängig ist. Abbildung \ref{pic:hpf_TAS5720} zeigt die jeweiligen Grenzfrequenzen. Der Filter kann mit $1_b$ deaktiviert werden.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth - 5cm]{pictures/hpf_TAS5720.png}
+	\caption{Register des TAS5720}
+	\label{pic:hpf_TAS5720}
+\end{figure}\noindent\textbf{Wert: $0_b$}
+\subsubsection{I2S-Format}
+I2S ist ein von NXP spezifizierter flexibler Audiodaten-Bus und kann zum einen für ein reines Stereosignal mit zwei Kanälen oder mehr Kanälen mittels TDM genutzt werden. In dieser Anwendung kommt der TDM-Modus zum Einsatz. Dazu nutzt I2S drei oder vier Leitungen. Abbildung \ref{tab:I2S-Signals} erläutert die Signale und deren Funktion.
+\begin{table}[H]
+	\centering
+	\setstretch{1.5}
+	\begin{tabularx}{\textwidth*7/8}{>{\hsize=.35\hsize}XX}
+		\textbf{Signalbezeichnung} & \textbf{Funktion} \\
+		\toprule
+		BCLK & Synchronisiert mit pos. Flanke die Datenübertragung\\\midrule
+		LRCLK & Signalisiert in Stereo-Anwendung linker und rechter Kanal, in TDM-Anwendung start eines Datenpackets mit allen Kanälen.\\\midrule
+		SDIN & Datensignale, welche ab dem \textbf{zweiten} Clock mit dem MSB beginnen (I2S Format), oder ab dem \textbf{ersten} Clock mit dem MSB beginnen (Left-Justified), oder so dass das LSB immer auf den letzten Clock fällt (Right-Justified)\\\midrule
+		\textit{MCLK} & Zusätzliches Hilfssignal, welches dem internen DAC als Referenzclock dient. Dieses Signal kann allerdings auch vom BCLK-Signal abgeleitet falls dieses schnell genug ist. Nicht im offiziellen Standard enthalten\footnote{Vergleiche dazu \cite{NXP_I2S_bus_specification} mit \cite{TI_Audio_Serial_Configurations}}.\\
+		\bottomrule
+	\end{tabularx}
+	\caption{Signale des I2S-Bus}
+	\label{tab:I2S-Signals}
+\end{table}
+Alle diese Formate können nun in den Registern konfiguriert werden.
+\paragraph{0x02, b6: TDM\_CFG\_SRC}Einzelnes Bit, welches festlegt, ob der TDM-Slot über die I2C-Adresse (siehe \ref{pic:I2C_AddressCoding}) oder Register 0x03 (TDM\_SLOT\_SELECT) bestimmt werden soll.\\\textbf{Wert: $0_b$}
+\paragraph{0x02, b3: SSZ/DS}Einzelnes Bit, mit dem die Samplerate auf 88.2kHz bzw. 96kHz verdoppelt werden kann.\\\textbf{Wert: $0_b$}
+\paragraph{0x02, b0-2:  SAIF\_FORMAT}Legt das Datenformat für den I2S-Bus fest (siehe \ref{tab:I2S-Signals}). Nach Absprache mit Joyned wurde dies auf TDM-Left Justified gesetzt.\\\textbf{Wert: $101_b$}
+\paragraph{0x03, b0-2:  TDM\_SLOT\_SELECT}Legt fest, aus welchem TDM-Slot die Sampledaten bezogen werden sollen.\\\textbf{Wert: $000_b$ (irrelevant)}
+\subsubsection{Status}
+Der Chip enthält auch einige Statusbits, welche ausschliesslich gelesen werden können.
+\paragraph{0x00, b0-8: Device ID}
+Dieses Read-only Register ist schlichtweg mit dem Wert 0x01 beschrieben. Dies kann genutzt werden, ob ein Chip überhaupt aktiv ist.
+\paragraph{0x08, b3:  CLKE} Einzelnes Bit, welches signalisiert, ob Clock-Errors vorhanden sind.
+\paragraph{0x08, b2:  OCE} Einzelnes Bit, welches einen Überstromfehler signalisiert. Bleibt bestehen und muss mit einem Neustart zurückgesetzt werden.
+\paragraph{0x08, b1:   DCE} Einzelnes Bit, welches aktiv ist, wenn ein Gleichstromanteil auf dem Ausgang gemessen wurde. Bleibt bestehen und muss mit einem Neustart zurückgesetzt werden.
+\paragraph{0x08, b0:   OTE} Einzelnes Bit, welches einen Übertemperaturfehler anzeigt. Bleibt bestehen und muss mit einem Neustart zurückgesetzt werden.

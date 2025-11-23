@@ -11,16 +11,16 @@ Da das MILAN-Modul einen PoE-Baustein besitzt wäre es theoretisch möglich, das
 \begin{figure}[H]
 	\centering
 	\includegraphics{pictures/Ag9900_BlockDiagram.png}
-	\label{pic:Ag9900_BlockDia}
 	\caption{Das Blockschaltbild des Ag9900 PoE-Moduls}
+	\label{pic:Ag9900_BlockDia}
 \end{figure}
 \subsubsection{Resetschaltung}
 Anstatt einer fixen Lötbrücke wurde eine flexiblere Lösung eingesetzt: Es sollte sowohl die Möglichkeit erhalten bleiben, das Reset-Signal des Milan-Moduls mit dem Group-SDZ zu verbinden als auch manuell ein Reset auszulösen. Zu diesem Zweck wurde ein Logik-Buffer mit Open-Drain Ausgängen (74LVC2G07) eingesetzt, dessen Ausgänge kurzgeschlossen werden können. Zudem wurde ein Schalter eingebaut, der das Reset-Signal des Moduls vom Group-SDZ abtrennt. Somit bleibt volle Flexibilität erhalten. Abbildung \ref{pic:Reset_Schaltung} zeigt die Resetschaltung.
 \begin{figure}[H]
 	\centering
 	\includegraphics{pictures/Reset_Schaltung.png}
-	\label{pic:Reset_Schaltung}
 	\caption{Die Resetschaltung}
+	\label{pic:Reset_Schaltung}
 \end{figure}
 \subsubsection{Endstufenkodierung}
 Die Endstufen wurden grösstenteils gemäss den Angaben im Datenblatt beschaltet. Speziell zu beachten gab nur die I2C-Adresskonfiguration, für die bei jeder Endstufe die zwei \textit{ADR0} und \textit{ADR1}-Eingänge ein wenig anders beschaltet werden mussten. Abbildung \ref{pic:I2C_AddressCoding} zeigt, wie diese für die Addressen 0x6C bis 0x73 beschaltet werden können.
@@ -77,5 +77,8 @@ Es wurden mehrere Stiftleisten für die Testsignale definiert:
 		J8 & FAULT-Signale & FAULT\_0 bis FAULT\_5 \\
 		\bottomrule
 	\end{tabularx}
-	\caption{}
+	\caption{Die Verteilung der Testsignale}
 \end{table}
+\subsubsection{Schema komplett}
+Das komplette Schema ist im Anhang
+\ref{appendix:Schema_driverboard} \nameref{appendix:Schema_driverboard} zu sehen.

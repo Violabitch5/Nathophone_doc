@@ -1,0 +1,9 @@
+\subsection{XMOS}
+Beim Aufstarten des Systems mussten einige Register in den Endstufen-Chips beschrieben werden. Dazu sollte der XMOS-Chip des Milan-Moduls verwendet werden. XMOS ist eine RTOS-Umgebung, welche aber hier Hardwaremässig umgesetzt ist. Dazu werden Hardware-Ressourcen wie Memory, IOs, Clocks etc. auf so genannte \textit{Tiles} aufgeteilt. In diesen können ein oder Prozessoreinheiten, \textit{Cores}, platziert werden welche parallel laufen. Diese \textit{Cores} können nun einen oder mehrere \textit{Tasks} ausführen welche wiederum untereinander Daten mittels \textit{Interfaces} austauschen können. Abbildung \ref{pics:xmos_hardware_system} zeigt den Aufbau der XMOS Hardware-Architektur.\\Programmiert wird ein solcher Chip mit \textbf{xC}, welches eine Erweiterung von C darstellt. So wird zum Beispiel das \textit{select}-Statement genutzt um das Event-Handling abzuhandeln. Zudem werden verschiedene Konzepte genutzt, zum Beispiel \textit{Memory Ownership}, um Datenkorruption zu verhindern.\footnote{Für mehr Informationen zu XMOS siehe: \cite{xmos_programming_guide}}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth*7/9]{pictures/xmos_hardware_system.jpg}
+	\caption{Aufbau der XMOS Architektur}
+	\label{pics:xmos_hardware_system}
+\end{figure}
+Die Firma Joyned stellt Firmware für XMOS-Chips her, welche in einem Ethernet-Netzwerk als Milan-Endpoint agieren können und so Daten empfangen oder auch senden. Für diese Arbeit wurde ein fertiges Repository einer solchen Implementierung zur Verfügung gestellt. Diese Scripts mussten nun dahingehend verändert werden, dass beim Aufstarten die entsprechenden Register in den Endstufen korrekt beschrieben werden.

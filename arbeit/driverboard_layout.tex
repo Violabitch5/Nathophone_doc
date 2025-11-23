@@ -1,1 +1,143 @@
 \subsection{Layout Driverboard}
+Es wurde ein 4-Lagen PCB für das Driverboard vorgesehen. Die Firma Aisler stellt PCBs direkt in der EU her und bietet auch einen Bestückungsservice an. Für KiCAD bietet die Firma ein Plugin an, mit welchen die Daten mit einem einzigen Mausklick auf den Aisler-Server gespielt werden können. Dadurch erübrigt sich jegliches Erzeugen von Gerber-Daten. Das genaue Stack-up eines 4-Lagen PCBs von Aisler ist in Abbildung \ref{pic:pcb_stackup} zu sehen. Darüber hinaus liess sich von der Aisler-Webseite Parameter für den DRC-Check, also die Überprüfung der PCB-Regeln, herunterladen\footnote{Die kompletten Regeln können hier eingesehen werden: \cite{Aisler_pcb_rules}}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth*7/8]{pictures/pcb_stackup_aisler.jpeg}
+	\caption{Die 4-Lagen Schichtung des PCB}
+	\label{pic:pcb_stackup}
+\end{figure}
+\subsubsection{Platzierung und Dimensionen des Prints}
+Für das effektive Layout des Prints wurde zuerst im Schacht des Gehäuses (Siehe Abb. \ref{pics:render_box}) das MILAN-Modul (Abb. \ref{pics:mt32_TDM}) platziert und dann die Umrisse des Driverboards skizziert. Abbildung \ref{pic:placement_driverboard} zeigt die Platzierung. Anschliessend wurde dieser Umriss als .svg in KiCAD importiert.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth*5/8]{pictures/Sketch_PCB_placement.png}
+	\caption{Platzierung des Driverboards im Gehäuse}
+	\label{pic:placement_driverboard}
+\end{figure}
+\subsubsection{GND-Fläche}
+Es wurde zunächst eine GND-Fläche angelegt, welche möglichst Sternförmig aufgeteilt wurde: Idealerweise hat jedes einzelne Bauteil eine eigene, getrennte Rückführung zum zentralen GND-Punkt\footnote{Ob dies auch für Koppelungs-Cs der Fall ist kann gestritten werden. Es gibt Argumente dafür und dagegen.}. Da dies in der Realität nicht immer so umsetzbar ist, können zumindest grobe Schaltungsteile, wie z.B. zwei Endstufenschaltungen, zusammen zurückgeführt werden und von den anderen getrennt werden.\\Zusätzlich dazu wurde an den Rändern entlang eine weitere separat geführte GND-Leitung gelegt und mit zahlreichen Vias versehen. Auf der gegenüberliegenden Seite des GND-Punkts wurde diese Leitung wieder aufgeteilt, sodass eine Klammerförmige Aussenleitung entsteht. Diese wirkt als eine Art Faradayischer Käfig und leitet zumindest einen Teil von ein- oder austretenden Störungen ab.
+\begin{figure}[H]
+	\centering
+	\includegraphics[page=4, trim = {6cm 6cm 6cm 3cm}, clip, width=\textwidth*6/8]{pictures/Nathophone_driver_board_LAYOUT.pdf}
+	\caption{Das GND-Layer des Driverboards}
+	\label{pic:Layout_GND_Layer}
+\end{figure}
+\subsubsection{Bauteilplatzierung}
+Die Footprints aller Bauteile mussten korrekt importiert werden, und die Pin-Nummerierung und Belegung kontrolliert werden. In den Datenblättern des Schaltreglers und der Endstufe waren zudem Empfehlungen zur Platzierung der einzelnen Bauteile enthalten. Dies wurde so weit möglich beachtet.\\Bei der Anordnung der Endstufen ergab es sich, sie am einfachsten Ringförmig angeordnet sind. Es wurde auch beachtet, dass die Speisungspins gegen innen und die Ausgänge alle gegen aussen gerichtet sind. Abbildung \ref{pic:Layout_placement} zeigt die gesamte Platzierung der Bauteile und den Siebdruck.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = {6cm 6cm 6cm 3cm}, clip, width=\textwidth*6/8]{pictures/Nathophone_driver_board_FRONTASSEMBLY.pdf}
+	\caption{Die Bauteilplatzierung}
+	\label{pic:Layout_placement}
+\end{figure}
+\subsubsection{Signalführung}
+Grundsätzlich wurde versucht, wo immer möglich, folgende Grundsätze einzuhalten:
+\begin{itemize}
+	\item Ground Layer nie für Signalführung nutzen.
+	\item Auf Layer 2 eher nur horizontale Signalwege.
+	\item Auf Layer 3 eher nur vertikale Signalwege.
+	\item Hochfrequente Signale wie I2C oder TDM wo möglich auf Layer 2 und 3 führen.
+	\item Nicht sparen bei Vias, besonders auf Speisungen.
+	\item Koppelkondensatoren direkt mit den Speisungspins verbinden.
+	\item Bei hohen Strömen besser eine Fläche einsetzen als ein Trace.
+\end{itemize}
+Diese Regeln sollen vor allem dazu führen, dass A. GND-Rückführungen möglichst direkt verlaufen und B. Hochfrequente Stromspitzen möglichst lokal abgefangen werden.
+\subsubsection{Signal-Layers}
+Aus den beschriebenen Regeln ergaben sich die weiteren Layers. Abbildung \ref{pic:pcb_layers} zeigt die restlichen Layers.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth*11/13}
+		\centering
+		\includegraphics[page=1, trim = {6cm 6cm 6cm 3cm}, clip, width=\textwidth*6/8]{pictures/Nathophone_driver_board_LAYOUT.pdf}
+		\caption{Top Layer des PCB}
+		\label{pic:pcb_top_layer}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*11/13}
+		\centering
+		\includegraphics[page=2, trim = {6cm 6cm 6cm 3cm}, clip, width=\textwidth*6/8]{pictures/Nathophone_driver_board_LAYOUT.pdf}
+		\caption{Layer 2 des PCB}
+		\label{pic:pcb_layer_2}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*11/13}
+		\centering
+		\includegraphics[page=3, trim = {6cm 6cm 6cm 3cm}, clip, width=\textwidth*6/8]{pictures/Nathophone_driver_board_LAYOUT.pdf}
+		\caption{Layer 3 des PCB}
+		\label{pic:pcb_layer_3}
+		\vspace{3mm}
+	\end{subfigure}
+	\caption{Die restlichen Layers des PCB}
+	\label{pic:pcb_layers}
+\end{figure}
+\subsubsection{Reflektionen TDM-Signale}
+Aus der Platzierung ergab sich, dass die TDM-Signale in S-Form über das ganze PCB geführt werden musste. Hizu kam, dass die Chips jeweils 180° gedreht waren, was dazu führte, dass die Signale sich jeweils überkreuzten. Dazu mussten die Signale zwischen Layer 2 und 3 hin- und hergewechselt werden. Insbesondere das BCLK-Signal ist mit bis zu 25MHz getaktet. Bei diesen Frequenzen müssen Reflektionen beachtet werden. 
+Auf dem MILAN-Modul war bereits ein Serie-Termininierungswiderstand von 33 Ohm vorhanden. Somit war der Signalweg wie folgt:
+\begin{itemize}
+	\item XMOS-Prozessor (Signalquelle)
+	\item 33-Ohm Seriewiderstand
+	\item Trace auf MILAN-Board
+	\item System Connector
+	\item 10cm-Flachbandkabel
+	\item System Connector
+	\item evtl. weiterer Seriewiderstand
+	\item Via zu Layer 2
+	\item Via zu Layer 3, mit Stichleitung zum Chip
+	\item Via zu Layer 2, mit Stichleitung zum Chip
+	\item etc.
+\end{itemize}
+Dieser Aufbau ist physikalisch gesehen recht komplex. Es standen auch weder die genauen Leitungsparameter (z.B. vom Flachbandkabel) noch Simulationsprogramme zur Verfügung.\\Um jedoch trotzdem eine Aussage über das Reflektionsverhalten machen zu können, wurde in LTSpice der Aufbau mit Lossless Transmission Line-Elementen\footnote{Es standen auch Lossy Transmission Line Elemente zur Verfügung, deren Simulation bzw. Berechnung war allerdings wesentlich komplexer.} nachgebildet.\\Zur Berechnung der Impedanz- und Zeitwerte für Traces und Vias wurden zwei Tool verwendet und die entsprechenden Werte aus Abbildung \ref{pic:pcb_stackup} verwendet:
+\begin{itemize}
+	\item \textbf{Via Calculator}: \cite{via_impedance_calc}
+	\item \textbf{Traces}: Transmission Line Calculator von KiCAD \cite{kicad_transline_calc}. 
+\end{itemize}
+Danach wurde die Simulation aufgesetzt (siehe Abbildung \ref{pic:TDM_simulation_schematic_singleterm}). Die Enden von Vias wurde dabei als unterminierte Transmission Lines angesehen. Dabei zeigte sich, dass sehr viele Verzerrungen und Überschwinger entstehen, auch mit einem weiteren 33-Ohm Seriewiderstand auf dem Driverboard. Abbildung \ref{pic:TDM_simulation_singleterm} zeigt den Signalverlauf.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[trim = {0cm 4cm 0cm 4cm}, clip, width=\textwidth]{pictures/TDM_simulationwithoutTermination.pdf}
+		\caption{Simulationsaufbau mit einer Serieterminierung}
+		\label{pic:TDM_simulation_schematic_singleterm}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*11/13}
+		\centering
+		\includegraphics[trim = {0cm 0.5cm 0cm 0cm}, clip, width=\textwidth]{pictures/TDM_withoutTermination.pdf}
+		\caption{Signalverlauf mit einer Serieterminierung}
+		\label{pic:TDM_simulation_singleterm}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\caption{Die Simulation mit einer Serieterminierung zeigte ungenügendes Verhalten.}
+	\label{pic:TDM_simulation_v1}
+\end{figure}
+\noindent Ein optimales Resultat wurde gefunden, als zwischen dem 3. und 4. Ausgang ein weiterer Seriewiderstand eingefügt wurde und beide auf 40.2 Ohm gesetzt wurden. Der dadurch entstehende Signalverlauf (\ref{pic:TDM_simulation_doubleterm}) zeigte deutlich besseres Verhalten.
+\begin{center}
+	\begin{minipage}{\textwidth*7/8}
+		\centering
+		\vspace{6mm}
+		{\large Daher wurden für die TDM-Signale jeweils zwei Serieterminierungen\footnote{Widerstände R19-22 und R39-42} von 40.2Ohm eingefügt.}
+		\vspace{6mm}
+	\end{minipage}
+\end{center}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[trim = {0cm 4cm 0cm 4cm}, clip, width=\textwidth]{pictures/TDM_simulationwithTermination.pdf}
+		\caption{Simulationsaufbau mit zwei Serieterminierungen}
+		\label{pic:TDM_simulation_schematic_doubleterm}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\begin{subfigure}{\textwidth*11/13}
+		\centering
+		\includegraphics[trim = {0cm 0.5cm 0cm 0cm}, clip, width=\textwidth]{pictures/TDM_withTermination.pdf}
+		\caption{Signalverlauf mit zwei Serieterminierungen}
+		\label{pic:TDM_simulation_doubleterm}
+		\vspace{3mm}
+	\end{subfigure}\\
+	\caption{Mit zwei Serieterminierungen zeigte das Signal besseres Verhalten.}
+	\label{pic:TDM_simulation_v2}
+\end{figure}
+Des weiteren wurde die Länge der TDM-Signaltraces aufeinander abgestimmt. Dies verhindert Laufzeitunterschiede, welches zu falschen Samplewerten führen könnten.
+\newpage
