@@ -17,7 +17,7 @@ Abbildung \ref{pic:signalpath_TAS5720} zeigt, wie das Signal im Chip verarbeitet
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth - 2mm]{pictures/signal_path_TAS5720.png}
-	\caption{Register des TAS5720}
+	\caption{Signalpfad des TAS5720}
 	\label{pic:signalpath_TAS5720}
 \end{figure}
 \paragraph{0x06, b2-3: ANALOG\_GAIN}Dieser Wert stellt die effektive Verstärkung der Endstufe dar. 00 entspricht dabei einem Output von 19.2 dBV, also dB relativ zu 1Vrms. Dies entspricht $\dfrac{10^{\frac{19.2dBV}{20}\cdot2}}{8Ohm} = 10.4W$ und ist somit bereits doppelt so hoch wie die der Exciter aushält (5W cont.). Daher wurde die Verstärkung auf den niedrigsten Wert programmiert.
@@ -49,7 +49,7 @@ Allerdings zeigte sich, dass mit dieser Berechnung sich ein höherer Wert als 0x
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth - 5cm]{pictures/hpf_TAS5720.png}
-	\caption{Register des TAS5720}
+	\caption{Grenzfrequenzen des internen Hochpassfilters}
 	\label{pic:hpf_TAS5720}
 \end{figure}\noindent\textbf{Wert: $0_b$}
 \subsubsection{I2S-Format}
@@ -79,6 +79,6 @@ Der Chip enthält auch einige Statusbits, welche ausschliesslich gelesen werden 
 \paragraph{0x00, b0-8: Device ID}
 Dieses Read-only Register ist schlichtweg mit dem Wert 0x01 beschrieben. Dies kann genutzt werden, ob ein Chip überhaupt aktiv ist.
 \paragraph{0x08, b3:  CLKE} Einzelnes Bit, welches signalisiert, ob Clock-Errors vorhanden sind.
-\paragraph{0x08, b2:  OCE} Einzelnes Bit, welches einen Überstromfehler signalisiert. Bleibt bestehen und muss mit einem Neustart zurückgesetzt werden.
-\paragraph{0x08, b1:   DCE} Einzelnes Bit, welches aktiv ist, wenn ein Gleichstromanteil auf dem Ausgang gemessen wurde. Bleibt bestehen und muss mit einem Neustart zurückgesetzt werden.
-\paragraph{0x08, b0:   OTE} Einzelnes Bit, welches einen Übertemperaturfehler anzeigt. Bleibt bestehen und muss mit einem Neustart zurückgesetzt werden.
+\paragraph{0x08, b2:  OCE} Einzelnes Bit, welches einen Überstromfehler signalisiert. Zustand bleibt bestehen und muss mit einem Neustart zurückgesetzt werden.
+\paragraph{0x08, b1:   DCE} Einzelnes Bit, welches aktiv ist, wenn ein Gleichstromanteil auf dem Ausgang gemessen wurde. Zustand bleibt bestehen und muss mit einem Neustart zurückgesetzt werden.
+\paragraph{0x08, b0:   OTE} Einzelnes Bit, welches einen Übertemperaturfehler anzeigt. Zustand bleibt bestehen und muss mit einem Neustart zurückgesetzt werden.

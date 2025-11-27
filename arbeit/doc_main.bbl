@@ -247,6 +247,45 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{MeyerSound_DSP_Beam_Steering}{manual}{}
+    \list{organization}{1}{%
+      {MEYER SOUND LABORATORIES INC.}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{DSP Beam Steering with Modern Line Arrays}
+    \verb{url}
+    \verb https://www.fast-and-wide.com/images/stories/White_papers/beam_steeri
+    \verb ng.pdf
+    \endverb
+    \field{year}{2002}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{R-H_LineArrayTheory}{manual}{}
+    \list{organization}{1}{%
+      {Renkus-Heinz}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{RH577}
+    \field{title}{DSP-Driven Vertical Arrays}
+    \verb{url}
+    \verb https://www.renkus-heinz.com/wp-content/uploads/2020/08/IconyxWhitePa
+    \verb per-1.pdf
+    \endverb
+    \field{version}{Rev B}
+    \field{year}{17}
+    \field{endyear}{06}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{exciter_buyer_guid}{manual}{}
     \list{organization}{1}{%
       {Dayton Audio}%
