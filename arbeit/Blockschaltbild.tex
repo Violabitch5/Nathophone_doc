@@ -19,7 +19,7 @@ Mit der erarbeiteten Variante aus dem System Engineering wurde zunächst ein Blo
 	\caption{Das Blockschaltbild}
 	\label{pics:blockschaltbild}
 \end{figure}
-Bei der Erstellung wurde schnell klar, dass auch noch einige undefinierte Komponenten vorhanden waren. So muss unter Umständen die interne Spannungsregelung noch definiert werden, da die externe Speisung direkt als Endstufenspeisung zu verwenden in der Regel keine gute Idee ist, da z.B. so eine Überwachung und Regelung der Stromaufnahme nur passiv und mit einem Leistungsverlust realisiert werden kann.
+Bei der Erstellung wurde schnell klar, dass auch noch einige undefinierte Komponenten vorhanden waren. So musste noch bestimmt werden, was von wo gespiesen werden soll.
 \\Zudem war noch unklar, ob der USB-Milan Dongle direkt auf das Modul verbunden werden kann (evtl. über einen PoE-Injector\footnote{Ein Gerät, welches einer Ethernet-Verbindung eine PoE-Speisespannung hinzufügt und seriell in die Verbindung geschaltet wird.}) oder über einen Milan-fähigen Switch verbunden werden muss.
 \\Des weiteren war noch nicht klar, ob nebst den Datenleitungen des Moduls (Serial Audio Interface und I2C) auch noch die anderen Signale wie Master Clock etc. verwendet werden müssen.
 \\Als letzter Punkt musste noch abgeklärt werden, ob das Modul zwingend mit PoE, oder ob auch über den System Connector gespiesen werden kann. Also 3V- und 5V-Pins als Eingänge.

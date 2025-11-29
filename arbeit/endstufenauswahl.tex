@@ -39,7 +39,7 @@ Aus Erfahrungswerten war auch die Firma \href{https://www.cirrus.com/}{Cirrus Lo
 \subsubsection{Vergleich der Endstufen TAS2781 und TAS5720}Grundsätzlich wurde schnell klar, dass der \textbf{TAS2781} wesentlich komplexer und aufwändiger zu konfigurieren ist, aber einiges mehr an Features hat. Insbesondere die vier Speisungen, die teilweise auch vom Chip selber generiert werden können (Power Modes). Der \textbf{TAS5720} dagegen ist rudimentärer aufgebaut, hat aber einiges weniger an Features. Insbesondere der Limiter ist ein \textquotedbl harter\textquotedbl{} Limiter, begrenzt das Ausgangssignal pro Sample ohne einen zeitlichen Faktor. Somit wird das Signal lediglich begrenzt und es werden hörbare Verzerrungen erzeugt.
 \begin{table}[H]
 	\centering
-	\setstretch{1.5}
+	\setstretch{1.3}
 	\begin{tabularx}{\textwidth*7/8}{>{\hsize=.65\hsize}XXX}
 		&{\large \textbf{TAS2781}} & {\large \textbf{TAS5720}}\\\toprule
 		\textbf{Output Power}&25W\newline{\small @ 1\% THD+N into 4 Ohm}&20W\newline{\small @ 0.15\% THD+N into 4 Ohm}\\\midrule
@@ -67,7 +67,7 @@ Bei der Effizienz ist zu beachten, dass der TAS2781 verschiedene Power Modes hat
 		\caption{THD+N Diagramm des TAS2781 (4 Ohm Last)}
 		\label{pic:thdn_perf_TAS2781}
 		\vspace{8mm}
-	\end{subfigure}
+	\end{subfigure}\\
 	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=\textwidth*7/8]{pictures/tas5720l_THDN_Vmax.png}
@@ -86,17 +86,16 @@ Bei der Effizienz ist zu beachten, dass der TAS2781 verschiedene Power Modes hat
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}{\textwidth}
+	\begin{subfigure}{\textwidth*6/13}
 		\centering
-		\includegraphics[width=\textwidth*4/8]{pictures/TAS2781_efficiency_powermode0.png}
+		\includegraphics[width=\textwidth]{pictures/TAS2781_efficiency_powermode0.png}
 		\vspace{2mm}
 		\caption{Effizienz des TAS2781 (Power Mode 0)}
 		\label{pic:effizien_TAS2781_pwrmode0}
-		\vspace{8mm}
 	\end{subfigure}
-	\begin{subfigure}{\textwidth}
+	\begin{subfigure}{\textwidth*6/13}
 		\centering
-		\includegraphics[width=\textwidth*4/8]{pictures/TAS2781_efficiency_powermode1.png}
+		\includegraphics[width=\textwidth]{pictures/TAS2781_efficiency_powermode1.png}
 		\vspace{2mm}
 		\caption{Effizienz des TAS2781 (Power Mode 1)}
 		\label{pic:effizien_TAS2781_pwrmode1}
