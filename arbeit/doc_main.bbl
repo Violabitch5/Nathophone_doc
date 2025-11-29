@@ -118,6 +118,23 @@
   'date'}
   \endentry
 
+  \entry{SW_autodesk_fusion}{software}{}
+    \list{organization}{1}{%
+      {Autodesk Inc.}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Autodesk Fusion}
+    \verb{url}
+    \verb https://www.autodesk.com/ch-de/products/fusion-360/overview
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{29}
+    \field{urlmonth}{11}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{aespar}{online}{}
     \name{author}{1}{}{%
       {{hash=BDA}{%
