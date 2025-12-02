@@ -1,0 +1,17 @@
+Es wurde eine Methode gesucht, das Verhalten eines Line Arrays zumindest ansatzweise zu visualisieren. Insbesondere, ob und welche Signalbearbeitung nötig ist. Dabei wurden im Internet teils sehr komplexe physikalische Berechnungsmethoden gefunden. Die einfachste Berechnungsmethode wurde allerdings in einer Masterarbeit eines kolumbianischen Studenten entdeckt. Abbildung \ref{pic:Diagramm_Salazar} ist dabei die Grundlage für Gleichung \ref{equ_pressure} und entspricht der Gleichung \textbf{36} in der Arbeit.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth * 2/4]{pictures/Diagramm_salazar.png}
+	\caption{Diagramm zur Luftdruckberechnung}
+	\label{pic:Diagramm_Salazar}
+\end{figure}
+\begin{equation}
+	p(r, \theta, t) = j\rho_{0}c\frac{U_{0}}{\lambda}\int_{S}\frac{1}{r'}e^{j(\omega t-kr')}dS
+	\label{equ_pressure}
+\end{equation}
+mit\\$r$ = Distanz eines Punktes zum Membranenmittelpunkt\\$r'$ = Distanz eines Punktes zur Membranenoberfläche\\$p_{0}$ = Nominaldurck\\$c$ = Ausbreitungsgeschwindigkeit der Luft\\$S$ = Membranenoberfläche\\$U_{0}$ = Geschwindigkeit der Membranenoberfläche\\$\lambda$ = Wellenlänge\\$t$ = Zeit\\$k$ = Kreiswellenzahl\\Aus: \cite{Salazar_Line_array_Thesis}\\Für eine einfache Visualisierung spielten die Vorfaktoren keine Rolle, da nur die Verteilung dargestellt werden musste. Zudem wurde das Verhalten bei einer konstanten Frequenz simuliert, wodurch alle Vorfaktoren weggelassen werden konnten. Wenn ein Line-Array als Aufreihung von Punktschallquellen angesehen werden kann, verschwindet auch der Unterschied zwischen r und r'.\\Die bekannte Länge von 1.21m wurde in Punkte mit 1cm Distanz unterteilt (also $N = 121$) und dabei jeder Punkt als ideale Punktschallquelle angesehen. Nun wurde diese Punktlinie in sechs Abschnitte eingeteilt und allen Punkten innerhalb eines Abschnitts die gleiche Verzögerung und Verstärkung zugewiesen. Um den Luftdruck an einem Punkt im Raum zu berechnen, kann nun der Beitrag jeder Quelle mit Gleichung \ref{eq:pressure_calculation} als komplexe Zahl berechnet und summiert werden. Somit können die Auslöschungen durch Phasenverschiebungen abgebildet werden.
+\begin{equation}
+	p(t,r,\omega, k) = \abs{\sum_{1}^{N}a_{n}\frac{e^{j(\omega t_{delay} - r_{n} k)}}{r_{n}}}
+	\label{eq:pressure_calculation}
+\end{equation}
+mit\\$r$ = Distanz eines Punktes zur Quelle\\$t_{delay}$ = Verzögerungszeit pro Line-Array Abschnitt\\$a_{n}$ = Verstärkung des Line-Array-Abschnitts\\$k$ = Kreiswellenzahl

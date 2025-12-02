@@ -484,6 +484,45 @@
   'date'}
   \endentry
 
+  \entry{Salazar_Line_array_Thesis}{thesis}{}
+    \name{author}{2}{}{%
+      {{hash=SSC}{%
+         family={Salazar},
+         familyi={S\bibinitperiod},
+         given={Sebastian\bibnamedelima Carvalho},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SFC}{%
+         family={Sanchez},
+         familyi={S\bibinitperiod},
+         given={Felipe\bibnamedelima Carvajal},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSCSFC1}
+    \strng{fullhash}{SSCSFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Evaluacion del efecto de la variabilidad de los par´ametros
+  Thiele Small en un arreglo lineal de altavoces a trav´es de un modelo
+  analıtico de fuente acustica.}
+    \verb{url}
+    \verb https://bibliotecadigital.usb.edu.co/entities/publication/f44572ec-8d
+    \verb d0-4ca0-a699-97512906be03
+    \endverb
+    \list{institution}{1}{%
+      {Universidad de San Buenaventura Colombia}%
+    }
+    \field{type}{Trabajo de Grado presentado para optar al t´ ıtulo de
+  Ingeniero de Sonido}
+    \field{year}{2021}
+    \field{urlday}{02}
+    \field{urlmonth}{12}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{TAS5720L/M_datasheet}{manual}{}
     \list{organization}{1}{%
       {Texas Instruments Incorporated}%
