@@ -27,59 +27,59 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Simulation bei 1500 Hz}}{36}{figure.caption.59}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Simulation bei 2500 Hz}}{36}{figure.caption.60}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Simulation bei 9000 Hz}}{36}{figure.caption.61}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Das Milan-Modul der Firma Joyned GmbH}}{37}{figure.caption.63}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Das Milan-Modul der Firma Joyned GmbH}}{38}{figure.caption.63}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Das Gehäuse mit 6 Frontplatten}}{38}{figure.caption.65}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Das Blockschaltbild}}{38}{figure.caption.66}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Leistungsangaben eines Deckenlautsprechers, ohne Peak Power}}{40}{figure.caption.69}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces In den Fussnoten findet sich der Crest-Faktor}}{40}{figure.caption.70}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Quelle: \blx@tocontentsinit {0}\cite {DAEX25QLP4spec}}}{41}{figure.caption.71}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Quelle: \blx@tocontentsinit {0}\cite {DAEX19QLP4spec}}}{41}{figure.caption.72}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Eine Übersicht über die PoE-Klassen}}{42}{figure.caption.73}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Das Leistungsbudget}}{42}{figure.caption.74}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Blockschaltbilder der potentiellen Endstufen}}{45}{figure.caption.75}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces THD+N Vergleich der Endstufen}}{47}{figure.caption.77}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Power Modes des TAS2781}}{48}{figure.caption.78}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Vergleich der Effizienz der Endstufen}}{48}{figure.caption.80}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Effizienz des TAS5720 bei 4 Ohm}}{50}{figure.caption.81}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Aufbau der Lastsimulation}}{53}{figure.caption.84}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Leistungstransiente einer Last}}{53}{figure.caption.85}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Strom und Spannung bei einer Leistungstransiente (zwei Lasten parallel)}}{54}{figure.caption.86}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Kompletter Aufbau der Simulation}}{54}{figure.caption.87}%
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Lastspannung und Speisestrom bei 0F und 0-400uH}}{55}{figure.caption.88}%
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Lastspannung und Speisestrom bei 100uF und 0-400uH}}{55}{figure.caption.89}%
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Lastspannung und Speisestrom bei 200uF und 0-400uH}}{55}{figure.caption.90}%
-\contentsline {figure}{\numberline {2.27}{\ignorespaces Lastspannung und Speisestrom bei 300uF und 0-400uH}}{56}{figure.caption.91}%
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Lastspannung und Speisestrom bei 400uF und 0-400uH}}{56}{figure.caption.92}%
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Speisungsverhalten bei 150uH und 350uF}}{57}{figure.caption.93}%
-\contentsline {figure}{\numberline {2.30}{\ignorespaces Der Vergleich des Transientenverhalten zeigte einen leichten Unterschied.}}{61}{figure.caption.100}%
-\contentsline {figure}{\numberline {2.31}{\ignorespaces Erster Entwurf des Blockschaltbildes}}{62}{figure.caption.101}%
-\contentsline {figure}{\numberline {2.32}{\ignorespaces Aufbau der Beispielsimulation des LT8650S}}{66}{figure.caption.102}%
-\contentsline {figure}{\numberline {2.33}{\ignorespaces Adaptierte Simulation des LT8650S}}{66}{figure.caption.103}%
-\contentsline {figure}{\numberline {2.34}{\ignorespaces Das Eingangsnetzwerk}}{68}{figure.caption.104}%
-\contentsline {figure}{\numberline {2.35}{\ignorespaces Der Snubber stabilisiert das System}}{69}{figure.caption.105}%
-\contentsline {figure}{\numberline {2.36}{\ignorespaces Der Efficiency Report der Simulation}}{70}{figure.caption.106}%
-\contentsline {figure}{\numberline {2.37}{\ignorespaces Berechnungsdaten für die Temperaturberechnung}}{72}{figure.caption.108}%
-\contentsline {figure}{\numberline {2.38}{\ignorespaces Das Blockschaltbild des Ag9900 PoE-Moduls}}{73}{figure.caption.109}%
-\contentsline {figure}{\numberline {2.39}{\ignorespaces Die Resetschaltung}}{74}{figure.caption.110}%
-\contentsline {figure}{\numberline {2.40}{\ignorespaces Die I2C-Adresse bestimmt auch den Standardmässigen TDM-Slot}}{74}{figure.caption.111}%
-\contentsline {figure}{\numberline {2.41}{\ignorespaces Der Vergleich zwischen verschiedenen Anwendungen des TAS5720 zeigt Unterschiede}}{75}{figure.caption.112}%
-\contentsline {figure}{\numberline {2.42}{\ignorespaces Die Umschaltungsschaltung}}{76}{figure.caption.113}%
-\contentsline {figure}{\numberline {2.43}{\ignorespaces Die 4-Lagen Schichtung des PCB}}{77}{figure.caption.115}%
-\contentsline {figure}{\numberline {2.44}{\ignorespaces Platzierung des Driverboards im Gehäuse}}{77}{figure.caption.116}%
-\contentsline {figure}{\numberline {2.45}{\ignorespaces Das GND-Layer des Driverboards}}{78}{figure.caption.117}%
-\contentsline {figure}{\numberline {2.46}{\ignorespaces Die Bauteilplatzierung}}{79}{figure.caption.118}%
-\contentsline {figure}{\numberline {2.47}{\ignorespaces Die restlichen Layers des PCB}}{80}{figure.caption.119}%
-\contentsline {figure}{\numberline {2.48}{\ignorespaces Die Simulation mit einer Serieterminierung zeigte ungenügendes Verhalten.}}{82}{figure.caption.120}%
-\contentsline {figure}{\numberline {2.49}{\ignorespaces Mit zwei Serieterminierungen zeigte das Signal besseres Verhalten.}}{83}{figure.caption.121}%
-\contentsline {figure}{\numberline {2.50}{\ignorespaces Render des Driverboards}}{84}{figure.caption.122}%
-\contentsline {figure}{\numberline {2.51}{\ignorespaces Renderings mit Gehäuse}}{84}{figure.caption.123}%
-\contentsline {figure}{\numberline {2.52}{\ignorespaces Methoden zur Befestigung der Exciterpanels}}{85}{figure.caption.125}%
-\contentsline {figure}{\numberline {2.53}{\ignorespaces Eine Schraubentülle aus Gummi verhindert Reflektionen}}{86}{figure.caption.126}%
-\contentsline {figure}{\numberline {2.54}{\ignorespaces Herstellung des Gehäuses}}{87}{figure.caption.129}%
-\contentsline {figure}{\numberline {2.55}{\ignorespaces Aufbau der XMOS Architektur}}{88}{figure.caption.130}%
-\contentsline {figure}{\numberline {2.56}{\ignorespaces Register des TAS5720}}{88}{figure.caption.131}%
-\contentsline {figure}{\numberline {2.57}{\ignorespaces Signalpfad des TAS5720}}{89}{figure.caption.137}%
-\contentsline {figure}{\numberline {2.58}{\ignorespaces Grenzfrequenzen des internen Hochpassfilters}}{91}{figure.caption.142}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Das Blockschaltbild}}{39}{figure.caption.66}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Leistungsangaben eines Deckenlautsprechers, ohne Peak Power}}{41}{figure.caption.69}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces In den Fussnoten findet sich der Crest-Faktor}}{41}{figure.caption.70}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Quelle: \blx@tocontentsinit {0}\cite {DAEX25QLP4spec}}}{42}{figure.caption.71}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Quelle: \blx@tocontentsinit {0}\cite {DAEX19QLP4spec}}}{42}{figure.caption.72}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Eine Übersicht über die PoE-Klassen}}{43}{figure.caption.73}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Das Leistungsbudget}}{43}{figure.caption.74}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Blockschaltbilder der potentiellen Endstufen}}{46}{figure.caption.75}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces THD+N Vergleich der Endstufen}}{48}{figure.caption.77}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Power Modes des TAS2781}}{49}{figure.caption.78}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Vergleich der Effizienz der Endstufen}}{49}{figure.caption.80}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Effizienz des TAS5720 bei 4 Ohm}}{51}{figure.caption.81}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Aufbau der Lastsimulation}}{54}{figure.caption.84}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Leistungstransiente einer Last}}{54}{figure.caption.85}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Strom und Spannung bei einer Leistungstransiente (zwei Lasten parallel)}}{55}{figure.caption.86}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Kompletter Aufbau der Simulation}}{55}{figure.caption.87}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Lastspannung und Speisestrom bei 0F und 0-400uH}}{56}{figure.caption.88}%
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Lastspannung und Speisestrom bei 100uF und 0-400uH}}{56}{figure.caption.89}%
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Lastspannung und Speisestrom bei 200uF und 0-400uH}}{56}{figure.caption.90}%
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Lastspannung und Speisestrom bei 300uF und 0-400uH}}{57}{figure.caption.91}%
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Lastspannung und Speisestrom bei 400uF und 0-400uH}}{57}{figure.caption.92}%
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Speisungsverhalten bei 150uH und 350uF}}{58}{figure.caption.93}%
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Der Vergleich des Transientenverhalten zeigte einen leichten Unterschied.}}{62}{figure.caption.100}%
+\contentsline {figure}{\numberline {2.31}{\ignorespaces Erster Entwurf des Blockschaltbildes}}{63}{figure.caption.101}%
+\contentsline {figure}{\numberline {2.32}{\ignorespaces Aufbau der Beispielsimulation des LT8650S}}{67}{figure.caption.102}%
+\contentsline {figure}{\numberline {2.33}{\ignorespaces Adaptierte Simulation des LT8650S}}{67}{figure.caption.103}%
+\contentsline {figure}{\numberline {2.34}{\ignorespaces Das Eingangsnetzwerk}}{69}{figure.caption.104}%
+\contentsline {figure}{\numberline {2.35}{\ignorespaces Der Snubber stabilisiert das System}}{70}{figure.caption.105}%
+\contentsline {figure}{\numberline {2.36}{\ignorespaces Der Efficiency Report der Simulation}}{71}{figure.caption.106}%
+\contentsline {figure}{\numberline {2.37}{\ignorespaces Berechnungsdaten für die Temperaturberechnung}}{73}{figure.caption.108}%
+\contentsline {figure}{\numberline {2.38}{\ignorespaces Das Blockschaltbild des Ag9900 PoE-Moduls}}{74}{figure.caption.109}%
+\contentsline {figure}{\numberline {2.39}{\ignorespaces Die Resetschaltung}}{75}{figure.caption.110}%
+\contentsline {figure}{\numberline {2.40}{\ignorespaces Die I2C-Adresse bestimmt auch den Standardmässigen TDM-Slot}}{75}{figure.caption.111}%
+\contentsline {figure}{\numberline {2.41}{\ignorespaces Der Vergleich zwischen verschiedenen Anwendungen des TAS5720 zeigt Unterschiede}}{76}{figure.caption.112}%
+\contentsline {figure}{\numberline {2.42}{\ignorespaces Die Umschaltungsschaltung}}{77}{figure.caption.113}%
+\contentsline {figure}{\numberline {2.43}{\ignorespaces Die 4-Lagen Schichtung des PCB}}{78}{figure.caption.115}%
+\contentsline {figure}{\numberline {2.44}{\ignorespaces Platzierung des Driverboards im Gehäuse}}{78}{figure.caption.116}%
+\contentsline {figure}{\numberline {2.45}{\ignorespaces Das GND-Layer des Driverboards}}{79}{figure.caption.117}%
+\contentsline {figure}{\numberline {2.46}{\ignorespaces Die Bauteilplatzierung}}{80}{figure.caption.118}%
+\contentsline {figure}{\numberline {2.47}{\ignorespaces Die restlichen Layers des PCB}}{81}{figure.caption.119}%
+\contentsline {figure}{\numberline {2.48}{\ignorespaces Die Simulation mit einer Serieterminierung zeigte ungenügendes Verhalten.}}{83}{figure.caption.120}%
+\contentsline {figure}{\numberline {2.49}{\ignorespaces Mit zwei Serieterminierungen zeigte das Signal besseres Verhalten.}}{84}{figure.caption.121}%
+\contentsline {figure}{\numberline {2.50}{\ignorespaces Render des Driverboards}}{85}{figure.caption.122}%
+\contentsline {figure}{\numberline {2.51}{\ignorespaces Renderings mit Gehäuse}}{85}{figure.caption.123}%
+\contentsline {figure}{\numberline {2.52}{\ignorespaces Methoden zur Befestigung der Exciterpanels}}{86}{figure.caption.125}%
+\contentsline {figure}{\numberline {2.53}{\ignorespaces Eine Schraubentülle aus Gummi verhindert Reflektionen}}{87}{figure.caption.126}%
+\contentsline {figure}{\numberline {2.54}{\ignorespaces Herstellung des Gehäuses}}{88}{figure.caption.129}%
+\contentsline {figure}{\numberline {2.55}{\ignorespaces Aufbau der XMOS Architektur}}{89}{figure.caption.130}%
+\contentsline {figure}{\numberline {2.56}{\ignorespaces Register des TAS5720}}{89}{figure.caption.131}%
+\contentsline {figure}{\numberline {2.57}{\ignorespaces Signalpfad des TAS5720}}{90}{figure.caption.137}%
+\contentsline {figure}{\numberline {2.58}{\ignorespaces Grenzfrequenzen des internen Hochpassfilters}}{92}{figure.caption.142}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

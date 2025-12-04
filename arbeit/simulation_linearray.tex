@@ -125,3 +125,14 @@ mit\\$r_{n}$ = Distanz eines Punktes zur Quelle\\$t_{delay}$ = Verzögerungszeit
 	The upper limit of a vertical array’s pattern control is always set by the inter-driver spacing: the design
 	challenge is to minimize this dimension while optimizing frequency response and maximum output, and do it without imposing excessive cost. Line arrays become increasingly directional as frequency increases: at high frequencies they are too directional to be acoustically useful. However, if we have individual DSP available for each driver, we can use it to make the array acoustically “shorter” as frequency increases – this will keep the vertical directivity more consistent.\\Aus: \cite{R-H_LineArrayTheory}
 \end{quote}
+Die Simulation geht an dieser Stelle davon aus, dass sich ein Element 100\% gleichmässig und ohne Reflektionen bewegt. Zudem wird der Einfluss des Gehäuses vernachlässigt. Somit stellt diese Berechnung eine reine Veranschaulichung dar.\\Ein weiterer Punkt, welcher auch schon in \cite{R-H_LineArrayTheory} beschrieben wird, ist, dass durch die Gehäusedimensionen dem Beam-steering eine physikalische Grenze\footnote{Idealerweise würde ein Line-Array undendlich lang sein und aus unendlich kleinen Punktquellen bestehen. Dies ist jedoch schwierig herzustellen.} gesetzt wird:
+\begin{itemize}
+	\item Um genügend Direktionalität zu erreichen, muss das Line Array mindestens \textbf{$2\lambda$} lang sein.
+	\item Um keine Side-Lobes zu haben, dürfen die Elemente maximal \textbf{$\frac{\lambda}{2}$} voneinander entfernt sein.
+\end{itemize} 
+Mit den bekannten Dimensionen können somit die Grenzen berechnet werden.
+\begin{multline}
+	f_{min} = \frac{c_{sound}}{\frac{l_{array}}{2}} \rightarrow \frac{343.5\frac{m}{s}}{\frac{1.21m}{2}} = \textbf{567.8Hz}\newline
+	f_{max} = \frac{c_{sound}}{2\cdot l_{element}} \rightarrow \frac{343.5\frac{m}{s}}{2\cdot 0.202m} = \textbf{850.2Hz}
+\end{multline}
+Dieser Frequenzbereich ist natürlich sehr eng. Durch mehr Elemente könnte dieser auf höhere Frequenzen erweitert werden. Im Rahmen dieser Arbeit wird jedoch darauf verzichtet.
