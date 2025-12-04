@@ -9,9 +9,119 @@ Es wurde eine Methode gesucht, das Verhalten eines Line Arrays zumindest ansatzw
 	p(r, \theta, t) = j\rho_{0}c\frac{U_{0}}{\lambda}\int_{S}\frac{1}{r'}e^{j(\omega t-kr')}dS
 	\label{equ_pressure}
 \end{equation}
-mit\\$r$ = Distanz eines Punktes zum Membranenmittelpunkt\\$r'$ = Distanz eines Punktes zur Membranenoberfläche\\$p_{0}$ = Nominaldurck\\$c$ = Ausbreitungsgeschwindigkeit der Luft\\$S$ = Membranenoberfläche\\$U_{0}$ = Geschwindigkeit der Membranenoberfläche\\$\lambda$ = Wellenlänge\\$t$ = Zeit\\$k$ = Kreiswellenzahl\\Aus: \cite{Salazar_Line_array_Thesis}\\Für eine einfache Visualisierung spielten die Vorfaktoren keine Rolle, da nur die Verteilung dargestellt werden musste. Zudem wurde das Verhalten bei einer konstanten Frequenz simuliert, wodurch alle Vorfaktoren weggelassen werden konnten. Wenn ein Line-Array als Aufreihung von Punktschallquellen angesehen werden kann, verschwindet auch der Unterschied zwischen r und r'.\\Die bekannte Länge von 1.21m wurde in Punkte mit 1cm Distanz unterteilt (also $N = 121$) und dabei jeder Punkt als ideale Punktschallquelle angesehen. Nun wurde diese Punktlinie in sechs Abschnitte eingeteilt und allen Punkten innerhalb eines Abschnitts die gleiche Verzögerung und Verstärkung zugewiesen. Um den Luftdruck an einem Punkt im Raum zu berechnen, kann nun der Beitrag jeder Quelle mit Gleichung \ref{eq:pressure_calculation} als komplexe Zahl berechnet und summiert werden. Somit können die Auslöschungen durch Phasenverschiebungen abgebildet werden.
+mit\\$r$ = Distanz eines Punktes zum Membranenmittelpunkt\\$r'$ = Distanz eines Punktes zur Membranenoberfläche\\$p_{0}$ = Nominaldurck\\$c$ = Ausbreitungsgeschwindigkeit der Luft\\$S$ = Membranenoberfläche\\$U_{0}$ = Geschwindigkeit der Membranenoberfläche\\$\lambda$ = Wellenlänge\\$t$ = Zeit\\$k$ = Kreiswellenzahl\\Aus: \cite{Salazar_Line_array_Thesis}\\Für eine einfache Visualisierung spielten die absoluten Werte keine Rolle, da nur die Verteilung dargestellt werden musste. Zudem wurde das Verhalten bei einer konstanten Frequenz simuliert. Somit konnten alle Vorfaktoren weggelassen werden. Wenn ein Line-Array als Aufreihung von Punktschallquellen angesehen werden kann, verschwindet zudem auch der Unterschied zwischen r und r'.\\In MATLAB R2023b wurde die Simulation berechnet. Dazu wurde die bekannte Länge von 121cm in Punkte mit 1cm Distanz unterteilt (also $N = 121$) und jeder Punkt als ideale Punktschallquelle angesehen. Nun wurde diese Punktlinie in sechs Abschnitte eingeteilt und allen Punkten innerhalb eines Abschnitts die gleiche Verzögerung und Verstärkung zugewiesen. Um den (relativen) Luftdruck an einem Punkt im Raum zu berechnen, kann nun der Beitrag jeder Quelle mit Gleichung \ref{eq:pressure_calculation} als komplexe Zahl berechnet und summiert werden. Somit konnten die Auslöschungen durch Phasenverschiebungen abgebildet werden. Zur besseren Darstellung kann das Ergebnis noch in dB umgerechnet werden.
 \begin{equation}
-	p(t,r,\omega, k) = \abs{\sum_{1}^{N}a_{n}\frac{e^{j(\omega t_{delay} - r_{n} k)}}{r_{n}}}
+	p_{dB}(t,r,\omega, k) = 10\cdot log_{10}( \abs{\sum_{1}^{N}a_{n}\frac{e^{j(\omega t_{delay} - r_{n} k)}}{r_{n}}})
 	\label{eq:pressure_calculation}
 \end{equation}
-mit\\$r$ = Distanz eines Punktes zur Quelle\\$t_{delay}$ = Verzögerungszeit pro Line-Array Abschnitt\\$a_{n}$ = Verstärkung des Line-Array-Abschnitts\\$k$ = Kreiswellenzahl
+mit\\$r_{n}$ = Distanz eines Punktes zur Quelle\\$t_{delay}$ = Verzögerungszeit pro Line-Array Abschnitt\\$a_{n}$ = Verstärkung des Line-Array-Abschnitts\\$k$ = Kreiswellenzahl\\Zur visuellen Darstellung wurde ein Feld aus 600x600 Punkten definiert und das Line-Array links mittig an den Rand platziert. Zunächst wurde der Gain für alle Elemente auf 1 gesetzt. Abbildungen \ref{pic:linearray_simu_500Hz} bis \ref{pic:linearray_simu_9000Hz} zeigen diese Simulation bei verschiedenen Frequenzen und Phasenverschiebungen (\Delta Phi) zwischen den Elementen. Deutlich zu sehen der Übergang von omnidirektionaler zu stark direktionaler Abstrahlung. Jedoch hat die Phasenverschiebung bei zunehmender Frequenz immer weniger Einfluss. Ausserdem sind \textit{Side-Lobes\footnote{Abstrahlungen ausserhalb der Haupt-Achse. Meistens sind diese unerwünscht.}} deutlich sichtbar (siehe \ref{pic:linearray_simu_2500Hz_dphi100}).
+\newpage
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_500Hz_dPhi0.png}
+		\caption{\Delta Phi = 0\textdegree}
+		\label{pic:linearray_simu_500Hz_dphi0}
+		\vspace{2mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_500Hz_dPhi50.png}
+		\caption{\Delta Phi = 50\textdegree}
+		\label{pic:linearray_simu_500Hz_dphi50}
+		\vspace{2mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_500Hz_dPhi100.png}
+		\caption{\Delta Phi = 100\textdegree}
+		\label{pic:linearray_simu_500Hz_dphi100}
+		\vspace{2mm}
+	\end{subfigure}
+	\caption{Simulation bei 500 Hz}
+	\label{pic:linearray_simu_500Hz}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_1500Hz_dPhi0.png}
+		\caption{\Delta Phi = 0\textdegree}
+		\label{pic:linearray_simu_1500Hz_dphi0}
+		\vspace{2mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_1500Hz_dPhi50.png}
+		\caption{\Delta Phi = 50\textdegree}
+		\label{pic:linearray_simu_1500Hz_dphi50}
+		\vspace{2mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_1500Hz_dPhi100.png}
+		\caption{\Delta Phi = 100\textdegree}
+		\label{pic:linearray_simu_1500Hz_dphi100}
+		\vspace{2mm}
+	\end{subfigure}
+	\caption{Simulation bei 1500 Hz}
+	\label{pic:linearray_simu_1500Hz}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_2500Hz_dPhi0.png}
+		\caption{\Delta Phi = 0\textdegree}
+		\label{pic:linearray_simu_2500Hz_dphi0}
+		\vspace{2mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_2500Hz_dPhi50.png}
+		\caption{\Delta Phi = 50\textdegree}
+		\label{pic:linearray_simu_2500Hz_dphi50}
+		\vspace{2mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_2500Hz_dPhi100.png}
+		\caption{\Delta Phi = 100\textdegree}
+		\label{pic:linearray_simu_2500Hz_dphi100}
+		\vspace{2mm}
+	\end{subfigure}
+	\caption{Simulation bei 2500 Hz}
+	\label{pic:linearray_simu_2500Hz}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_9000Hz_dPhi0.png}
+		\caption{\Delta Phi = 0\textdegree}
+		\label{pic:linearray_simu_9000Hz_dphi0}
+		\vspace{2mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_9000Hz_dPhi50.png}
+		\caption{\Delta Phi = 50\textdegree}
+		\label{pic:linearray_simu_9000Hz_dphi50}
+		\vspace{2mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth/3-3mm}
+		\centering
+		\includegraphics[width=\textwidth-2mm]{pictures/Matlab_Simulation_9000Hz_dPhi100.png}
+		\caption{\Delta Phi = 100\textdegree}
+		\label{pic:linearray_simu_9000Hz_dphi100}
+		\vspace{2mm}
+	\end{subfigure}
+	\caption{Simulation bei 9000 Hz}
+	\label{pic:linearray_simu_9000Hz}
+\end{figure}\newpage
+\noindent Diese Simulation konnte nun als Grundlage dienen, um die Verzögerungszeiten (\textit{delays}) jedes Arrayelements zu berechnen. Zudem könnten die Side-Lobes durch Tiefpass-Filter an den Enden weiter reduziert werden.
+\begin{quote}
+	The upper limit of a vertical array’s pattern control is always set by the inter-driver spacing: the design
+	challenge is to minimize this dimension while optimizing frequency response and maximum output, and do it without imposing excessive cost. Line arrays become increasingly directional as frequency increases: at high frequencies they are too directional to be acoustically useful. However, if we have individual DSP available for each driver, we can use it to make the array acoustically “shorter” as frequency increases – this will keep the vertical directivity more consistent.\\Aus: \cite{R-H_LineArrayTheory}
+\end{quote}
