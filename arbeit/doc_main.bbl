@@ -118,6 +118,24 @@
   'date'}
   \endentry
 
+  \entry{audacity_website}{software}{}
+    \list{organization}{2}{%
+      {Muse Group}%
+      {contributors}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Audacity}
+    \verb{url}
+    \verb https://www.audacityteam.org/
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{07}
+    \field{urlmonth}{12}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{SW_autodesk_fusion}{software}{}
     \list{organization}{1}{%
       {Autodesk Inc.}%
