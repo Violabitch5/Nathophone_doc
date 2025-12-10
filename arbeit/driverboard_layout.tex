@@ -15,7 +15,7 @@ Für das effektive Layout des Prints wurde zuerst im Schacht des Gehäuses (Sieh
 	\label{pic:placement_driverboard}
 \end{figure}
 \subsubsection{GND-Fläche}
-Es wurde zunächst eine GND-Fläche angelegt, welche möglichst Sternförmig aufgeteilt wurde: Idealerweise hat jedes einzelne Bauteil eine eigene, getrennte Rückführung zum zentralen GND-Punkt\footnote{Ob dies auch für Koppelungs-Cs der Fall ist kann gestritten werden. Es gibt Argumente dafür und dagegen.}. Da dies in der Realität nicht immer so umsetzbar ist, können zumindest grobe Schaltungsteile, wie z.B. zwei Endstufenschaltungen, zusammen zurückgeführt werden und von den anderen getrennt werden.\\Zusätzlich dazu wurde an den Rändern entlang eine weitere separat geführte GND-Leitung gelegt und mit zahlreichen Vias versehen. Auf der gegenüberliegenden Seite des GND-Punkts wurde diese Leitung wieder aufgeteilt, sodass eine Klammerförmige Aussenleitung entsteht. Diese wirkt als eine Art Faradayischer Käfig und leitet zumindest einen Teil von ein- oder austretenden Störungen ab.
+Es wurde zunächst eine GND-Fläche angelegt, welche möglichst Sternförmig aufgeteilt wurde: Idealerweise hat jedes einzelne Bauteil eine eigene, getrennte Rückführung zum zentralen GND-Punkt\footnote{Ob dies auch für Koppelungs-Cs der Fall ist kann gestritten werden. Es gibt Argumente dafür und dagegen.}. Da dies in der Realität nicht immer so umsetzbar ist, können zumindest grobe Schaltungsteile, wie z.B. zwei Endstufenschaltungen, zusammen zurückgeführt werden und von den anderen getrennt werden.\\Zusätzlich dazu wurde an den Rändern entlang eine weitere separat geführte GND-Leitung gelegt und mit zahlreichen Vias versehen. Auf der gegenüberliegenden Seite des GND-Punkts wurde diese Leitung wieder aufgeteilt, sodass eine klammerförmige Aussenleitung entsteht. Diese wirkt als eine Art faradayischer Käfig und leitet zumindest einen Teil der ein- oder austretenden Elektromagnetischen Wellen ab.
 \begin{figure}[H]
 	\centering
 	\includegraphics[page=4, trim = {6cm 6cm 6cm 3cm}, clip, width=\textwidth*6/8]{pictures/Nathophone_driver_board_LAYOUT.pdf}
@@ -23,7 +23,7 @@ Es wurde zunächst eine GND-Fläche angelegt, welche möglichst Sternförmig auf
 	\label{pic:Layout_GND_Layer}
 \end{figure}
 \subsubsection{Bauteilplatzierung}
-Die Footprints aller Bauteile mussten korrekt importiert werden, und die Pin-Nummerierung und Belegung kontrolliert werden. In den Datenblättern des Schaltreglers und der Endstufe waren zudem Empfehlungen zur Platzierung der einzelnen Bauteile enthalten. Dies wurde so weit möglich beachtet.\\Bei der Anordnung der Endstufen ergab es sich, sie am einfachsten Ringförmig angeordnet sind. Es wurde auch beachtet, dass die Speisungspins gegen innen und die Ausgänge alle gegen aussen gerichtet sind. Abbildung \ref{pic:Layout_placement} zeigt die gesamte Platzierung der Bauteile und den Siebdruck.
+Die Footprints aller Bauteile mussten korrekt importiert, und sowohl die Pin-Nummerierung als auch die Belegung kontrolliert werden. In den Datenblättern des Schaltreglers und der Endstufe waren zudem Empfehlungen zur Platzierung der einzelnen Bauteile enthalten. Dies wurde so weit möglich beachtet.\\Bei der Anordnung der Endstufen ergab es sich, sie am einfachsten Ringförmig angeordnet wurden. Es wurde auch beachtet, dass die Speisungspins gegen innen und die Ausgänge alle gegen aussen gerichtet sind. Abbildung \ref{pic:Layout_placement} zeigt die gesamte Platzierung der Bauteile und den Siebdruck.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim = {6cm 6cm 6cm 3cm}, clip, width=\textwidth*6/8]{pictures/Nathophone_driver_board_FRONTASSEMBLY.pdf}
@@ -43,7 +43,7 @@ Grundsätzlich wurde versucht, wo immer möglich, folgende Grundsätze einzuhalt
 \end{itemize}
 Diese Regeln sollen vor allem dazu führen, dass A. GND-Rückführungen möglichst direkt verlaufen und B. Hochfrequente Stromspitzen möglichst lokal abgefangen werden.
 \subsubsection{Signal-Layers}
-Aus den beschriebenen Regeln ergaben sich die weiteren Layers. Abbildung \ref{pic:pcb_layers} zeigt die restlichen Layers.
+ Abbildung \ref{pic:pcb_layers} zeigt die restlichen Layers, welche gemäss den beschriebenen Regeln designt wurden.
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{\textwidth*11/13}
@@ -71,7 +71,7 @@ Aus den beschriebenen Regeln ergaben sich die weiteren Layers. Abbildung \ref{pi
 	\label{pic:pcb_layers}
 \end{figure}
 \subsubsection{Reflektionen TDM-Signale}
-Aus der Platzierung ergab sich, dass die TDM-Signale in S-Form über das ganze PCB geführt werden musste. Hizu kam, dass die Chips jeweils 180° gedreht waren, was dazu führte, dass die Signale sich jeweils überkreuzten. Dazu mussten die Signale zwischen Layer 2 und 3 hin- und hergewechselt werden. Insbesondere das BCLK-Signal ist mit bis zu 25MHz getaktet. Bei diesen Frequenzen müssen Reflektionen beachtet werden. 
+Aus der Platzierung ergab sich, dass die TDM-Signale in S-Form über das ganze PCB geführt werden mussten. Hinzu kam, dass die Chips jeweils 180° gedreht waren, was dazu führte, dass die Signale sich jeweils überkreuzten. Um eine möglichst kompakte Signalführung zu erreichen, mussten die Signale zwischen Layer 2 und 3 hin- und hergewechselt werden.\\Nun war insbesondere das BCLK-Signal mit bis zu 25MHz getaktet. Bei diesen Frequenzen mussten elektrische Signalreflektionen beachtet werden. 
 Auf dem MILAN-Modul war bereits ein Serie-Termininierungswiderstand von 33 Ohm vorhanden. Somit war der Signalweg wie folgt:
 \begin{itemize}
 	\item XMOS-Prozessor (Signalquelle)
@@ -86,10 +86,10 @@ Auf dem MILAN-Modul war bereits ein Serie-Termininierungswiderstand von 33 Ohm v
 	\item Via zu Layer 2, mit Stichleitung zum Chip
 	\item etc.
 \end{itemize}
-Dieser Aufbau ist physikalisch gesehen recht komplex. Es standen auch weder die genauen Leitungsparameter (z.B. vom Flachbandkabel) noch Simulationsprogramme zur Verfügung.\\Um jedoch trotzdem eine Aussage über das Reflektionsverhalten machen zu können, wurde in LTSpice der Aufbau mit Lossless Transmission Line-Elementen\footnote{Es standen auch Lossy Transmission Line Elemente zur Verfügung, deren Simulation bzw. Berechnung war allerdings wesentlich komplexer.} nachgebildet.\\Zur Berechnung der Impedanz- und Zeitwerte für Traces und Vias wurden zwei Tool verwendet und die entsprechenden Werte aus Abbildung \ref{pic:pcb_stackup} verwendet:
+Dieser Aufbau war physikalisch gesehen recht komplex. Es standen auch weder die genauen Leitungsparameter aller Teile (z.B. vom Flachbandkabel) noch ein Simulationssoftware zur Verfügung.\\Um jedoch trotzdem eine Aussage über das Reflektionsverhalten machen zu können, wurde in LTSpice der Aufbau mit Lossless Transmission Line-Elementen\footnote{Es standen auch Lossy Transmission Line Elemente zur Verfügung, deren Simulation bzw. Berechnung war allerdings wesentlich Zeitaufwändiger.} nachgebildet.\\Zur Berechnung der Impedanz- und Zeitwerte für Traces und Vias wurden zwei Tool verwendet und die entsprechenden Werte aus Abbildung \ref{pic:pcb_stackup} verwendet:
 \begin{itemize}
-	\item \textbf{Via Calculator}: \cite{via_impedance_calc}
-	\item \textbf{Traces}: Transmission Line Calculator von KiCAD \cite{kicad_transline_calc}. 
+	\item \textbf{Via Calculator}: \cite{via_impedance_calc}, ein Online-Tool von Sierra Circuits
+	\item \textbf{Traces}: Transmission Line Calculator von KiCAD. Siehe: \cite{kicad_transline_calc}. 
 \end{itemize}
 Danach wurde die Simulation aufgesetzt (siehe Abbildung \ref{pic:TDM_simulation_schematic_singleterm}). Die Enden von Vias wurde dabei als unterminierte Transmission Lines angesehen. Dabei zeigte sich, dass sehr viele Verzerrungen und Überschwinger entstehen, auch mit einem weiteren 33-Ohm Seriewiderstand auf dem Driverboard. Abbildung \ref{pic:TDM_simulation_singleterm} zeigt den Signalverlauf.
 \begin{figure}[H]
@@ -116,7 +116,7 @@ Danach wurde die Simulation aufgesetzt (siehe Abbildung \ref{pic:TDM_simulation_
 	\begin{minipage}{\textwidth*7/8}
 		\centering
 		\vspace{6mm}
-		{\large Daher wurden für die TDM-Signale jeweils zwei Serieterminierungen\footnote{Widerstände R19-22 und R39-42} von 40.2Ohm eingefügt.}
+		{\large Daher wurden für die TDM-Signale jeweils zwei Serieterminierungen\footnote{Widerstände R19-22 und R39-42} von 40.2 Ohm eingefügt.}
 		\vspace{6mm}
 	\end{minipage}
 \end{center}
@@ -139,5 +139,5 @@ Danach wurde die Simulation aufgesetzt (siehe Abbildung \ref{pic:TDM_simulation_
 	\caption{Mit zwei Serieterminierungen zeigte das Signal besseres Verhalten.}
 	\label{pic:TDM_simulation_v2}
 \end{figure}
-Des weiteren wurde die Länge der TDM-Signaltraces aufeinander abgestimmt. Dies verhindert Laufzeitunterschiede, welches zu falschen Samplewerten führen könnten.
+Des weiteren wurde die Länge der TDM-Signaltraces aufeinander abgestimmt. Dies verhinderte Laufzeitunterschiede, welche zu falschen Samplewerten führen könnten.
 \newpage

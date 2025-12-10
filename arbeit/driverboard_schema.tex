@@ -1,11 +1,11 @@
 \subsection{Schema Driverboard}
 Nun konnte mit dem Schema begonnen werden. Die Bauteile wurden weitgehend gemäss dem Blockschaltbild in Abbildung \ref{pic:blockschaltbild_pcb} eingefügt. Jedoch wurden im Zuge der Arbeit einige Änderungen vorgenommen:
 \subsubsection{Überwachungs-ADC}
-Dieser Teil wurde nicht übernommen, da mit genug Testpunkten alle Spannungen gut genug zugänglich waren. Zudem hätte ein Multiplexer eingesetzt werden müssen, was alles kompliziert gemacht und wenig Nutzen gebracht hätte.
+Dieser Teil wurde nicht umgesetzt, da mit Testpunkten alle Spannungen gut genug zugänglich waren. Zudem hätte ein Multiplexer eingesetzt werden müssen, was alles kompliziert gemacht und wenig Nutzen gebracht hätte.
 \subsubsection{Stiftleiste für externes Modul}
 Eine eigene Stiftleiste für den Anschluss eines externen Modules wurde vorgesehen. Auf dieser sind alle TDM-Signale, I2C sowie 5V und 3.3V-Speisungen enthalten.
 \subsubsection{Sicherungen}
-Speisespannungen wurden nicht direkt auf die Testpins verbunden. Stattdessen wurden  rücksetzbaren PTC-Sicherungen verwendet. Diese besitzen eine Polymer-Schicht mit Kohlenstoff-Granulaten, welche bei Erhitzung aufquillt und den Kontakt zwischen den Granulaten unterbrechen. Sobald die Temperatur wieder unter ein Limit fällt, fällt der Widerstand wieder unter den Nominalwert. Somit ist die Gefahr einer unabsichtlichen Zerstörung deutlich verringert. Für das externe Modul wurden Sicherungen mit 1.25A vorgesehen, für reine Testpins 0.25A-Sicherungen.
+Speisespannungen wurden nicht direkt auf die Testpins verbunden. Stattdessen wurden  rücksetzbaren PTC-Sicherungen verwendet. Diese besitzen eine Polymer-Schicht mit Kohlenstoff-Granulaten, welche bei Erhitzung aufquillt und die Kontakte zwischen den einzelnen Granulaten unterbrechen. Sobald die Temperatur wieder unter ein Limit fällt, fällt der elektrische Widerstand wieder unter den Nominalwert. Somit ist die Gefahr einer unabsichtlichen Zerstörung deutlich verringert. Für das externe Modul wurden Sicherungen mit 1.25A vorgesehen, für reine Testpins 0.25A-Sicherungen.
 \subsubsection{Diode für die 5V-Speisung des Milan Moduls}
 Da das MILAN-Modul einen PoE-Baustein besitzt wäre es theoretisch möglich, dass dieses an einen Switch mit PoE angeschlossen könnte. In diesem Fall würden plötzlich zwei 5V-Speisungen kurzgeschlossen. Man hätte hier auch eine Speisungs-Umschaltung realisieren können. Jedoch gab es eine einfachere Möglichkeit: Nach kurzer Recherche konnte das dort verwendete PoE-Modul eruiert werden (AG9905LP). In dessen Datenblatt ist klar ersichtlich, dass am Ausgang eine Diode in Serie verwendet wird (Abbildung \ref{pic:Ag9900_BlockDia}). Somit kann die interne 5V-Speisung ebenfalls mit einer 5V-Diode geschützt werden.
 \begin{figure}[H]
@@ -15,7 +15,7 @@ Da das MILAN-Modul einen PoE-Baustein besitzt wäre es theoretisch möglich, das
 	\label{pic:Ag9900_BlockDia}
 \end{figure}
 \subsubsection{Resetschaltung}
-Anstatt einer fixen Lötbrücke wurde eine flexiblere Lösung eingesetzt: Es sollte sowohl die Möglichkeit erhalten bleiben, das Reset-Signal des Milan-Moduls mit dem Group-SDZ zu verbinden als auch manuell ein Reset auszulösen. Zu diesem Zweck wurde ein Logik-Buffer mit Open-Drain Ausgängen (74LVC2G07) eingesetzt, dessen Ausgänge kurzgeschlossen werden können. Zudem wurde ein Schalter eingebaut, der das Reset-Signal des Moduls vom Group-SDZ abtrennt. Somit bleibt volle Flexibilität erhalten. Abbildung \ref{pic:Reset_Schaltung} zeigt die Resetschaltung.
+Anstatt einer fixen Lötbrücke wurde eine flexiblere Lösung eingesetzt: Es sollte sowohl die Möglichkeit erhalten bleiben, das Reset-Signal des Milan-Moduls mit dem Group-SDZ zu verbinden oder zu trennen als auch manuell einen Reset auszulösen. Zu diesem Zweck wurde ein Logik-Buffer mit Open-Drain Ausgängen (74LVC2G07) eingesetzt, dessen Ausgänge kurzgeschlossen werden können. Zudem wurde ein Schalter eingebaut, der das Reset-Signal des Moduls vom Group-SDZ abtrennt. Somit bleibt volle Flexibilität erhalten. Abbildung \ref{pic:Reset_Schaltung} zeigt die Resetschaltung.
 \begin{figure}[H]
 	\centering
 	\includegraphics{pictures/Reset_Schaltung.png}
@@ -23,7 +23,7 @@ Anstatt einer fixen Lötbrücke wurde eine flexiblere Lösung eingesetzt: Es sol
 	\label{pic:Reset_Schaltung}
 \end{figure}
 \subsubsection{Endstufenkodierung}
-Die Endstufen wurden grösstenteils gemäss den Angaben im Datenblatt beschaltet. Speziell zu beachten gab nur die I2C-Adresskonfiguration, für die bei jeder Endstufe die zwei \textit{ADR0} und \textit{ADR1}-Eingänge ein wenig anders beschaltet werden mussten. Abbildung \ref{pic:I2C_AddressCoding} zeigt, wie diese für die Addressen 0x6C bis 0x73 beschaltet werden können.
+Die Endstufen wurden grösstenteils gemäss den Angaben im Datenblatt beschaltet. Speziell zu beachten gab nur die I2C-Adresskonfiguration, für die bei jeder Endstufe die zwei \textit{ADR0} und \textit{ADR1}-Eingänge ein wenig anders beschaltet werden mussten. Abbildung \ref{pic:I2C_AddressCoding} zeigt, wie diese für die Addressen 0x6C bis 0x73 konfiguriert werden können.
 \begin{figure}[H]
 	\centering
 	\includegraphics{pictures/I2C_Adress_Setting.png}
