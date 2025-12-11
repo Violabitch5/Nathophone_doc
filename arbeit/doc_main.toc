@@ -74,9 +74,10 @@
 \contentsline {paragraph}{Anzahl Exciter: 6}{40}{section*.67}%
 \contentsline {paragraph}{Leistung (Continous) pro Exciter: 0.5 bis 150 Watt}{40}{section*.68}%
 \contentsline {subsubsection}{\numberline {3.1.1}Leistungsangaben bei Lautsprechern}{40}{subsubsection.2.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Entscheid Exciterleistung}{41}{subsubsection.2.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}PoE}{42}{subsubsection.2.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}Gesamtes Leisungsbudget}{43}{subsubsection.2.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.2}Endstufenleistung}{41}{subsubsection.2.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Entscheid Exciterleistung}{41}{subsubsection.2.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}PoE}{42}{subsubsection.2.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Gesamtes Leisungsbudget}{43}{subsubsection.2.3.1.5}%
 \contentsline {section}{\numberline {4}Bauteilevaluation}{44}{section.2.4}%
 \contentsline {subsection}{\numberline {4.1}Evaluation der Endstufe(n)}{44}{subsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Kurzevaluation}{45}{subsubsection.2.4.1.1}%
@@ -166,21 +167,21 @@
 \contentsline {paragraph}{0x04, b0-7: VOLUME\_CONTROL}{92}{section*.140}%
 \contentsline {paragraph}{0x02, b7: HPF\_BYPASS}{92}{section*.141}%
 \contentsline {subsubsection}{\numberline {7.2.3}I2S-Format}{92}{subsubsection.2.7.2.3}%
-\contentsline {paragraph}{0x02, b6: TDM\_CFG\_SRC}{93}{section*.144}%
-\contentsline {paragraph}{0x02, b3: SSZ/DS}{93}{section*.145}%
-\contentsline {paragraph}{0x02, b0-2: SAIF\_FORMAT}{93}{section*.146}%
-\contentsline {paragraph}{0x03, b0-2: TDM\_SLOT\_SELECT}{93}{section*.147}%
-\contentsline {subsubsection}{\numberline {7.2.4}Status}{93}{subsubsection.2.7.2.4}%
-\contentsline {paragraph}{0x00, b0-8: Device ID}{93}{section*.148}%
-\contentsline {paragraph}{0x08, b3: CLKE}{93}{section*.149}%
-\contentsline {paragraph}{0x08, b2: OCE}{94}{section*.150}%
-\contentsline {paragraph}{0x08, b1: DCE}{94}{section*.151}%
-\contentsline {paragraph}{0x08, b0: OTE}{94}{section*.152}%
+\contentsline {paragraph}{0x02, b6: TDM\_CFG\_SRC}{93}{section*.145}%
+\contentsline {paragraph}{0x02, b3: SSZ/DS}{93}{section*.146}%
+\contentsline {paragraph}{0x02, b0-2: SAIF\_FORMAT}{94}{section*.147}%
+\contentsline {paragraph}{0x03, b0-2: TDM\_SLOT\_SELECT}{94}{section*.148}%
+\contentsline {subsubsection}{\numberline {7.2.4}Status}{94}{subsubsection.2.7.2.4}%
+\contentsline {paragraph}{0x00, b0-8: Device ID}{94}{section*.149}%
+\contentsline {paragraph}{0x08, b3: CLKE}{94}{section*.150}%
+\contentsline {paragraph}{0x08, b2: OCE}{94}{section*.151}%
+\contentsline {paragraph}{0x08, b1: DCE}{94}{section*.152}%
+\contentsline {paragraph}{0x08, b0: OTE}{94}{section*.153}%
 \contentsline {section}{\numberline {8}Tests}{94}{section.2.8}%
 \contentsline {subsection}{\numberline {8.1}Funktionstest Driverboard}{94}{subsection.2.8.1}%
 \contentsline {subsubsection}{\numberline {8.1.1}Aufstartverhalten}{94}{subsubsection.2.8.1.1}%
 \contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{95}{chapter.3}%
-\contentsline {section}{13 Tabellenverzeichnis}{96}{section*.153}%
-\contentsline {section}{Quellenverzeichnis}{98}{chapter*.154}%
+\contentsline {section}{13 Tabellenverzeichnis}{96}{section*.154}%
+\contentsline {section}{Quellenverzeichnis}{98}{chapter*.155}%
 \contentsline {chapter}{\numberline {A}Schema Driverboard}{99}{appendix.A}%
 \contentsline {chapter}{\numberline {B}BOM Driverboard}{105}{appendix.B}%
