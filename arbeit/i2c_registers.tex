@@ -73,7 +73,7 @@ I2S ist ein von NXP spezifizierter flexibler Audiodaten-Bus und kann zum einen f
 \noindent Alle diese Formate können nun in den Registern konfiguriert werden. Zu beachten ist hier, dass eine fixe Auflösung von 32 Bit pro Sample pro Kanal gegeben ist. Es können im TDM-Modus pro Übertragung 4 oder 8 Kanäle übertragen werden. Somit muss ein Verhältnis zwischen BCLK- zu LRCLK-Perdiodendauer von entweder 128 (4x32) oder 256(8x32) eingehalten werden. Die Samplerate selber wird aus der BCLK-Frequenz abgeleitet, welche aber nur bestimmte Werte annehmen darf. Abbildung \ref{pic:sample_rates_TAS5720} zeigt die möglichen Einstellungen für Sample Rates und BCLK-Frequenz.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth - 5cm]{pictures/Sample_rates_TAS5720.png}
+	\includegraphics[width=\textwidth - 2cm]{pictures/Sample_rates_TAS5720.png}
 	\caption{Es sind Sample Rates zwischen 44.1 und 96kHz möglich.}
 	\label{pic:sample_rates_TAS5720}
 \end{figure}
@@ -81,7 +81,7 @@ I2S ist ein von NXP spezifizierter flexibler Audiodaten-Bus und kann zum einen f
 \paragraph{0x02, b3: SSZ/DS}Einzelnes Bit, mit dem die Samplerate auf 88.2kHz bzw. 96kHz verdoppelt werden kann. Hier wurde Single speed operation (44.1 kHz/48 kHz) beibehalten. \\\textbf{Wert: $0_b$}
 \paragraph{0x02, b0-2:  SAIF\_FORMAT}Legt das Datenformat für den I2S-Bus fest (siehe \ref{tab:I2S-Signals}). Nach Absprache mit Joyned wurde dies auf TDM-Left Justified gesetzt.\\\textbf{Wert: $101_b$}
 \paragraph{0x03, b0-2:  TDM\_SLOT\_SELECT}Legt fest, aus welchem TDM-Slot die Sampledaten bezogen werden sollen. Hier irrelevant, da der Slot bereits über die I2C-Adresse bestimmt wird.\\\textbf{Wert: $000_b$}
-\subsubsection{Status}
+\subsubsection{Status}\label{i2c_device_status_registers}
 Der Chip enthält auch einige Statusbits, welche ausschliesslich gelesen werden können.
 \paragraph{0x00, b0-8: Device ID}
 Dieses Read-only Register ist schlichtweg mit dem Wert 0x01 beschrieben. Dieses kann genutzt werden, um zu prüfen, ob ein Chip überhaupt aktiv und ansprechbar ist.

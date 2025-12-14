@@ -179,9 +179,10 @@
 \contentsline {paragraph}{0x08, b0: OTE}{94}{section*.153}%
 \contentsline {section}{\numberline {8}Tests}{94}{section.2.8}%
 \contentsline {subsection}{\numberline {8.1}Funktionstest Driverboard}{94}{subsection.2.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Aufstartverhalten}{94}{subsubsection.2.8.1.1}%
-\contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{95}{chapter.3}%
-\contentsline {section}{13 Tabellenverzeichnis}{96}{section*.154}%
-\contentsline {section}{Quellenverzeichnis}{98}{chapter*.155}%
-\contentsline {chapter}{\numberline {A}Schema Driverboard}{99}{appendix.A}%
-\contentsline {chapter}{\numberline {B}BOM Driverboard}{105}{appendix.B}%
+\contentsline {subsubsection}{\numberline {8.1.1}Aufstartverhalten}{95}{subsubsection.2.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}I2C-Verhalten}{95}{subsubsection.2.8.1.2}%
+\contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{96}{chapter.3}%
+\contentsline {section}{13 Tabellenverzeichnis}{97}{section*.155}%
+\contentsline {section}{Quellenverzeichnis}{99}{chapter*.156}%
+\contentsline {chapter}{\numberline {A}Schema Driverboard}{100}{appendix.A}%
+\contentsline {chapter}{\numberline {B}BOM Driverboard}{106}{appendix.B}%
