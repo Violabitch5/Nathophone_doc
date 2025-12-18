@@ -9,7 +9,7 @@ In dieser Variante wird möglichst alles via analoge Signalpfade geführt. So ka
 \paragraph{Nachteile} Fehlersuche ist rein messtechnisch möglich. Nachträgliche Änderungen sehr teuer und Zeitaufwändig. Der Überwachung sind starke Grenzen gesetzt: So muss bei einem Unterbruch der gesamte Signalpfad durchgemessen werden. Ein weiterer Nachteil ist die Schwingspule, deren Befestigung an der Saite noch genauer ausgearbeitet werden muss.
 \newpage
 \paragraph{Risikoanalyse}
-Durch sich bewegende Teile, welche unter Umständen durch den Benutzer berührt werden können entsteht zum einen ein Risiko einer leichten Verletzung. Zum anderen könnte die physikalische Montage von analoger Leistungselektronik auf MDF zu einer Brandgefahr führen. Zudem können sehr leicht durch fehlende, unsaubere oder falsche Steckverbindungen Funktionsfehler auftreten. Mit der noch offenen Montagetechnik der Schwingspule besteht zudem die Gefahr, dass die Klangerzeugung nicht überzeugend funktioniert, insbesondere im Dauereinsatz.
+Durch sich bewegende Teile, welche unter Umständen durch den Benutzer berührt werden können entsteht zum einen ein Risiko einer körperlichen Verletzung. Zum anderen könnte die physikalische Montage von analoger Leistungselektronik auf MDF zu einer Brandgefahr führen. Zudem können sehr leicht durch fehlende, unsaubere oder falsche Steckverbindungen Funktionsfehler auftreten. Mit der noch offenen Montagetechnik der Schwingspule besteht zudem die Gefahr, dass die Klangerzeugung nicht überzeugend funktioniert, insbesondere im Dauereinsatz.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth*4/5]{pictures/risks-Variante A_ Alles analog.png}
@@ -24,7 +24,7 @@ Der Hauptfokus dieser Variante ist maximale mobilität und minimale Steckverbind
 	\caption{Variante B}
 \end{figure}
 \paragraph{Vorteile} Da hier die Datenübertragung ohne Stecker auskommt, kann hier im Einsatz komplett auf Kabel verzichtet werden. Somit vereinfachen sich insbesondere weiträumigere Setups, in dem das Gerät weiter weg aufgestellt ist. Als einziger Stecker bleibt ein Ladestecker für die Batterie übrig. Für die Einbindung von Batterien bzw. deren Ladezyklus gibt es zudem bereits sehr viele fertige Komponenten.
-\paragraph{Nachteile} Die korrekte Implementierung des Signalpfades von Bluetooth oder Wifi über DSP, den DAC und die D-Klasse Endstufe wird wohl einiges an Aufwand brauchen, insbesondere bei zeitkritischen Anwendungen wie dieser. Zudem entsteht je nach Batterietyp eine Brandgefahr, die zwar durch das Plexiglas vermindert ist aber dennoch z.B. andere Materialien im Raum in Brand setzen kann.
+\paragraph{Nachteile} Die korrekte Implementierung des Signalpfades von Bluetooth oder Wifi über DSP, den DAC und die D-Klasse Endstufe wird wohl einiges an Aufwand brauchen, insbesondere wenn Signale zeitlich aufeinander abgestimmt werden müssen. Zudem entsteht je nach Batterietyp eine Brandgefahr, die zwar durch das Plexiglas vermindert ist aber dennoch z.B. andere Materialien im Raum in Brand setzen kann.
 \newpage
 \paragraph{Risikoanalyse}
 Zwar entfällt hier das Risiko einer falschen Steckverbindung komplett, jedoch erhöht sich durch die Anwesenheit einer Batterie die Brandgefahr deutlich. Dies auch wenn PMMA als Material verwendet wird, da sich die Batterie selbst schon entzünden kann. Zudem entsteht durch den komplexen Aufbau ein unter Umständen zeitintensive Designphase, welche auch mit HF-Layoutfehlern verbunden sein können.
@@ -43,7 +43,7 @@ Maximale Kontrolle steht bei dieser Variante im Zentrum. Nur bewährte und zuver
 	\caption{Variante C}
 \end{figure}
 \paragraph{Vorteile} Die Audioqualität als oberste Priorität begünstigt ein beeindruckendes Hörerlebnis. Zudem ist die Auswahl an bewährten Methoden und robusten Materialien ein Garant für eine lange Lebensdauer.
-\paragraph{Nachteile} Als erstes ist hier sicher auch die Komplexität zu nennen, da sehr spezifische Bauteile ausgewählt werden müssen, die unter Umständen nicht weit verbreitet sind. Zum anderen wird hier auch das Budget sehr strapaziert, wohl über die Belastungsgrenzen hinaus.
+\paragraph{Nachteile} Als erstes ist hier die Komplexität dieser Variante zu nennen, da unter Umständen spezifische Bauteile ausgewählt werden müssen, deren Verfügbarkeit nicht garantiert ist. Zum anderen würde hier auch das Budget deutlich stärker belastet, wahrscheinlich über den noch vertretbaren Rahmen.
 \newpage
 \paragraph{Risikoanalyse}
 Die grosse Anzahl verschiedener eigens entworfenen Komponenten führt nebst der Gefahr eines \textit{Scope Creeps} auch eventuell zu Ungenauigkeiten oder unvorhergesehenen negativen Effekten. Zudem kommt zur Leistungselektronik der Endstufe auch die Leistungselektronik des Netzteils hinzu. Auch der Lautsprecher an sich kann überhitzen und zu Brandursachen führen.
@@ -62,7 +62,7 @@ Möglichst einfache Anwendung ist zentral für ein überzeugendes Benutzererlebn
 	\caption{Variante D}
 \end{figure}
 \paragraph{Vorteile} Da Datensignale und Speisung auf einem RJ45-Stecker geliefert werden, muss nur diese eine Verbindung hergestellt werden. Zudem ist mit dem MILAN-Protokoll eine automatische Bandbreitenreservation und somit keine Benutzerkonfiguration notwendig. Da DAC und Treiberstufe in einem Chip integriert ist, bleibt die Programmierung begrenzt. 
-\paragraph{Nachteile} Da das Signal direkt vom PC generiert wird, muss dieses zuerst in das MILAN-Protokoll verpackt werden. Zudem muss ein AVB-fähiger Switch verwendet werden.
+\paragraph{Nachteile} Da das Signal direkt vom PC generiert wird, muss dieses über eine Schnittstelle in das MILAN-Protokoll umgewandelt werden. Zudem benötigt MILAN für den Transport AVB-zertifizierte Switches\footnote{Siehe \cite{MilanHowDoesItWork}}.
 \newpage
 \paragraph{Risikoanalyse}
 Die Brandgefahr bleibt nach wie vor ein Hauptfaktor in der Risikoauswertung, bedingt durch die Verbindung von Holzfasern und Leistungsendstufen. Der noch nicht weitum verbreitete MILAN-Standard könnte hier auch zu Inkompatibilitäten, oder zumindest zu einem komplexen Setup führen. Auch könnte die Implementierung eines neuen Standards schnell \textit{Scope Creep} führen, da keine fix fertigen Lösungen bereitstehen.

@@ -53,9 +53,7 @@
 \usepackage[backend=bibtex,style=authortitle]{biblatex}
 \nocite{*} 
 \addbibresource{bibliography.bib}
-
 \captionsetup{justification=centering}
-
 
 % Language setting
 \usepackage[german]{babel}
@@ -146,11 +144,9 @@
 \listoffigures
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}  % Fügt es zum Inhaltsverzeichnis hinzu
 
-% Hauptkapitel
 %\setstretch{1.5}
 \setstretch{1.6}
 %\setstretch{2}
-%--- Projektbeschreibung ------------------------------------
 \newpage
 \vspace{2mm}
 \section{Einleitung}
@@ -167,7 +163,12 @@
 \chapter{Umsetzung}
 \input{umsetzung.tex}
 \chapter{Auswertung \& Fazit}
-%\input{doc_fazit.tex}
+\section{Lieferverzögerung MILAN-Modul}\label{Lieferverzögerung_JOYNED}
+\input{Lieferverzögerung.tex}
+\section{Tests}
+\input{tests.tex}
+\section{Fazit}
+\input{Fazit.tex}
 %--- Hilfsmittelverzeichnis ---------------------------
 %\newpage
 %\section{Hilfsmittelverzeichnis}

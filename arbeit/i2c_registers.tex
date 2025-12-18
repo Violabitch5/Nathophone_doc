@@ -63,8 +63,8 @@ I2S ist ein von NXP spezifizierter flexibler Audiodaten-Bus und kann zum einen f
 		\toprule
 		BCLK & Synchronisiert mit pos. Flanke die Datenübertragung eines Bits.\\\midrule
 		LRCLK & Signalisiert in einer Stereo-Anwendung die Abschnitte für linken bzw. rechten Kanal und in einer TDM-Anwendung den Start eines Datenpakets.\\\midrule
-		SDIN & Datenleitung. Daten können ab dem \textbf{zweiten} Clock mit dem MSB beginnen (I2S Format), oder ab dem \textbf{ersten} Clock mit dem MSB (Left-Justified), oder so dass das LSB immer auf den letzten Clock fällt (Right-Justified)\\\midrule
-		\textit{MCLK} & Zusätzliches Hilfssignal, welches dem internen DAC als Referenzclock dient. Dieses Signal kann allerdings auch vom BCLK-Signal abgeleitet falls dieses schnell genug ist. Nicht im offiziellen Standard enthalten\footnote{Vergleiche dazu \cite{NXP_I2S_bus_specification} mit \cite{TI_Audio_Serial_Configurations}}.\\
+		SDIN & Die Datenleitung. Daten können ab dem \textbf{zweiten} Clock mit dem MSB beginnen (I2S Format), oder ab dem \textbf{ersten} Clock mit dem MSB (Left-Justified), oder so dass das LSB immer auf den letzten Clock fällt (Right-Justified)\\\midrule
+		\textit{MCLK} & Zusätzliches Hilfssignal, welches dem internen DAC als Referenzclock dient. Dieses Signal kann allerdings auch vom BCLK-Signal abgeleitet falls dieses schnell genug ist. Nicht im offiziellen Standard enthalten (Siehe \cite{NXP_I2S_bus_specification} im Vergleich mit \cite{TI_Audio_Serial_Configurations}).\\
 		\bottomrule
 	\end{tabularx}
 	\caption{Signale des I2S-Bus}
@@ -82,7 +82,7 @@ I2S ist ein von NXP spezifizierter flexibler Audiodaten-Bus und kann zum einen f
 \paragraph{0x02, b0-2:  SAIF\_FORMAT}Legt das Datenformat für den I2S-Bus fest (siehe \ref{tab:I2S-Signals}). Nach Absprache mit Joyned wurde dies auf TDM-Left Justified gesetzt.\\\textbf{Wert: $101_b$}
 \paragraph{0x03, b0-2:  TDM\_SLOT\_SELECT}Legt fest, aus welchem TDM-Slot die Sampledaten bezogen werden sollen. Hier irrelevant, da der Slot bereits über die I2C-Adresse bestimmt wird.\\\textbf{Wert: $000_b$}
 \subsubsection{Status}\label{i2c_device_status_registers}
-Der Chip enthält auch einige Statusbits, welche ausschliesslich gelesen werden können.
+Der Chip enthielt auch einige Statusbits, welche ausschliesslich gelesen werden konnten.
 \paragraph{0x00, b0-8: Device ID}
 Dieses Read-only Register ist schlichtweg mit dem Wert 0x01 beschrieben. Dieses kann genutzt werden, um zu prüfen, ob ein Chip überhaupt aktiv und ansprechbar ist.
 \paragraph{0x08, b3:  CLKE} Einzelnes Bit, welches signalisiert, ob aktuell Clock-Errors (z.B. ein falsches Verhältnis von BLCK zu LRCLK) vorhanden sind (siehe \ref{section:I2s}). Dieses Bit löscht sich selber sobald der Fehler behoben ist.

@@ -52,17 +52,17 @@ Aus Zeitgründen und um genug Headroom für hohe Signalpegel zu haben, wurde dar
 	\includegraphics[width=\textwidth*7/8]{pictures/DAEX19QLP4_freqresp.png}
 	\caption{Quelle: \cite{DAEX19QLP4spec}}
 	\label{pics:DAEX19QLP4_freqresp}
-\end{figure}
-\subsubsection{PoE}
-In der Netzwerktechnik als weit verbreiteter Standard zur gleichzeitigen Übertragung von Speisung und Daten etabliert, bietet PoE (\textit{Power over Ethernet}) eine extrem einfache und attraktive Lösung für dieses Projekt. Jedoch hat der Standard auch einige Tücken, und gerade die höheren Leistungsklassen (PoE++) können schnell extrem kostenintensiv werden. Zudem hängt das ganze nochmals vom verwendeten Kabel, und dessen Querschnitt ab. Abbildung \ref{pic:poe_overview} zeigt eine anschauliche Übersicht über den Standard und die verfügbaren Leistungen (Quelle: \cite{PoE_overview_doc}).
-\begin{figure}[H]
+\end{figure}\newpage
+\begin{wrapfigure}{r}{0.6\textwidth}
 	\centering
-	\includegraphics[width=\textwidth*3/4]{pictures/PoE_overview.png}
+	\includegraphics[width=\textwidth*6/10]{pictures/PoE_overview.png}
 	\caption{Eine Übersicht über die PoE-Klassen}
 	\label{pic:poe_overview}
-\end{figure}
+\end{wrapfigure}
+\subsubsection{PoE}
+In der Netzwerktechnik als weit verbreiteter Standard zur gleichzeitigen Übertragung von Speisung und Daten etabliert, bietet PoE (\textit{Power over Ethernet}) eine extrem einfache und attraktive Lösung für dieses Projekt. Jedoch hat der Standard auch einige Tücken, und gerade die höheren Leistungsklassen (PoE++) können schnell extrem kostenintensiv werden. Zudem hängt das ganze nochmals vom verwendeten Kabel, und dessen Querschnitt ab. Abbildung \ref{pic:poe_overview} zeigt eine anschauliche Übersicht über den Standard und die verfügbaren Leistungen (Quelle: \cite{PoE_overview_doc}).
 \subsubsection{Gesamtes Leisungsbudget}
-Mit dem Wissen aus \ref{chap:leistungsangaben} konnte nun eine Aussage über die voraussichtlich benötigte Nominalleistung der Endstufe und der Speisung gemacht werden. Zu beachten war hier, dass die gesamte Endstufe sechs Kanäle enthält, die (ideale) Gesamtleistung sechs mal der Leistung eines Kanals entspricht. In einer Grafik konnten nun alle Leistungswerte als Balken dargestellt und verglichen werden (Abbildung \ref{pic:Leistungsbudget}). Darin sind zum Vergleich auch die am Gerät verfügbaren Nennleistungen der PoE-Klassen (PoE, PoE+ und PoE++). Es zeigt sich somit, dass auch die höchste PoE-Klasse nur sehr knapp die geforderte Gesamtleistung für sechs Kanäle zu erbringen vermag (bzw. nur mit einem sehr aufwändigem Puffer) und daher als alleinige Speisung für das komplette Gerät nicht infrage kommt. Die Stromaufnahme des Milan-Moduls betrug laut Herstellerangaben zwischen 350-500mA, also 1.75-2.5W bei 5V. Diese Leistung ist relativ gering im Vergleich zu den Endstufenkanälen.
+Mit dem Wissen aus \ref{chap:leistungsangaben} konnte nun eine Aussage über die voraussichtlich benötigte Nominalleistung der Endstufe und der Speisung gemacht werden. Zu beachten war hier, dass die gesamte Endstufe sechs Kanäle enthielt. In einer Grafik konnten nun alle Leistungswerte als Balken dargestellt und verglichen werden (Abbildung \ref{pic:Leistungsbudget}). Darin sind zum Vergleich auch die am Gerät verfügbaren Nennleistungen der PoE-Klassen (PoE, PoE+ und PoE++). Es zeigte sich somit, dass auch die höchste PoE-Klasse nur sehr knapp die geforderte Gesamtleistung für sechs Kanäle zu erbringen vermochte (bzw. nur mit einem sehr aufwändigem Puffer) und daher als alleinige Speisung für das komplette Gerät nicht infrage kam. Die Stromaufnahme des Milan-Moduls betrug laut Herstellerangaben zwischen 350-500mA, also 1.75-2.5W bei 5V. Diese Leistung war also relativ gering im Vergleich zu den Endstufenkanälen.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{pictures/Leistungsbudget.pdf}

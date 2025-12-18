@@ -1,6 +1,6 @@
 \subsection{Funktionstest Driverboard}
 Nach Eintreffen des Driverboards wurde das Board zuerst optisch kontrolliert. Leider war SW2 nicht bestückt, was allerdings die Funktion nicht direkt beeinträchtigte.\\Zudem waren die I2C-Pullup Widerstände R23 und R24 bestückt, obwohl sie eigentlich nicht bestückt sein sollten. Dies war kein so grosses Problem im Standalone-Betrieb, jedoch würden mit dem Milan-Modul zusammen mehrere Pullups parallel geschaltet werden, was zu einem zu grossen Stromfluss auf den I2C-Leitungen führen könnte. Also mussten diese Widerstände vor Betrieb mit dem Modul zuerst entfernt werden.
-\subsubsection{Aufstartverhalten}Es wurde als Speisung ein Netzteil mit +24V und 0.5A Strombegrenzung eingestellt und an die Speisespannung (Main Power IN) angelegt. Dabei wurde beobachtet, dass die Stromaufnahme sofort 0.5A betrug, ohne dass überhaupt eine Last angehängt war. Die Ursache dafür wurde gefunden, als bemerkt wurde, dass dieser Strom auch floss wenn der Hauptschalter (SW1) noch gar nicht umgelegt war: Die TVS-Diode schien bereits im Durchbruchbereich zu sein.\\Ein genauerer Blick in das Datenblatt zeigte, dass diese TVS-Diode tatsächlich ein asymetrisches Modell war, also unterschiedliche Standoff- und Durchbruchsspannungen hatte je nach Polarisierung (siehe Abblidung \ref{pic:datasheet_TPSMB2616CA})\footnote{Da die Bauteile in der Regel parametrisch gesucht wurden, war diese Eigenschaft bei der tabellarischen Anzeige nicht sichtbar. Auch auf der Produkteseite war nichts dahingehend vermerkt.}. Im Gegensatz zu einer symetrischen TVS-Diode war es also sehr wichtig, in welche Richtung das Bauteil ausgerichtet war. Leider kam die Ausrichtung genau so zu liegen, dass die K-Seite auf GND verbunden war, also die Standoff-Spannung bei 16V lag und daher die Diode bereits hier im Durchbruch lag.
+\subsubsection{Verpolung TVS-Diode}Es wurde als Speisung ein Netzteil mit +24V und 0.5A Strombegrenzung eingestellt und an die Speisespannung (Main Power IN) angelegt. Dabei wurde beobachtet, dass die Stromaufnahme sofort 0.5A betrug, ohne dass überhaupt eine Last angehängt war. Die Ursache dafür wurde gefunden, als bemerkt wurde, dass dieser Strom auch floss wenn der Hauptschalter (SW1) noch gar nicht umgelegt war: Die TVS-Diode schien bereits im Durchbruchbereich zu sein.\\Ein genauerer Blick in das Datenblatt zeigte, dass diese TVS-Diode tatsächlich ein asymetrisches Modell war, also unterschiedliche Standoff- und Durchbruchsspannungen hatte je nach Polarisierung (siehe Abblidung \ref{pic:datasheet_TPSMB2616CA})\footnote{Da die Bauteile in der Regel parametrisch gesucht wurden, war diese Eigenschaft bei der tabellarischen Anzeige nicht sichtbar. Auch auf der Produkteseite war nichts dahingehend vermerkt.}. Im Gegensatz zu einer symetrischen TVS-Diode war es also sehr wichtig, in welche Richtung das Bauteil ausgerichtet war. Leider kam die Ausrichtung genau so zu liegen, dass die K-Seite auf GND verbunden war, also die Standoff-Spannung bei 16V lag und daher die Diode bereits hier im Durchbruch lag.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth - 2cm]{pictures/TPSMB2616CA_breakdowndata.png}
@@ -8,4 +8,46 @@ Nach Eintreffen des Driverboards wurde das Board zuerst optisch kontrolliert. Le
 	\label{pic:datasheet_TPSMB2616CA}
 \end{figure}
 Da dieses Bauteil mit relativ grossen Kupferflächen verbunden war, musste spezielles Werkzeug verwendet werden, um das Bauteil zu entlöten und zu drehen.
-\subsubsection{I2C-Verhalten}Wie in \ref{i2c_device_status_registers} beschrieben, besitzt jeder Endstufen-Chip ein Device-ID Register, welches schlichtweg mit 0x01 beschrieben ist. Dieses konnte erfolgreich aus allen sechs Chips ausgelesen werden, auch ohne angeschlossenes Milan-Modul. Dies bedeutete, dass die 3.3V-Speisung stabil arbeitet, also auch die 5V-Speisung stabil arbeitet.
+\subsubsection{Stromaufnahme}
+Nach der korrigierten Ausrichtung der TVS-Diode reduzierte sich die Stromaufnahme deutlich. Jedoch betrug diese immer noch ca. 55mA, was ohne jegliche Last ein eher hoher Wert war. Dies konnte allerdings durch die drei Betriebsmodi des Schaltreglers erklärt bzw. behoben werden:
+\begin{itemize}
+	\item \textbf{Forced Continuous Mode (FCM)} Standardmässig arbeitet der Schaltregler in diesem Modus, welcher sich durch eine fixe Schaltfrequenz auszeichnet. Dadurch werden beide interne MOSFETs unabhängig von der Last gemäss dem Duty-Cycle, also dem Verhältnis von Ausgangs- zu Eingangsspannung durchgeschaltet und ohne Änderung der Schaltfrequenz.
+	\item \textbf{Burst Mode}In diesem Modus wird, im Gegensatz zum FCM, bei kleinen Lasten die MOSFETs nur in \textit{Bursts}, also kleinen \textquotedbl{}Paketen\textquotedbl{} aus sehr kurzen Sequenzen geschaltet, welche danach von Ruhezeiten gefolgt werden. Abbildung \ref{pic:burstmode_vs_forcedcontinuous} zeigt den Signalverlauf von FCM und Burst Mode.
+	\item \textbf{Spread Spectrum Mode}Dieser Modus ist sehr ähnlich zum FCM, mit dem Unterschied dass die Schaltfrequenz mit 5kHz moduliert wird. Dies hat den Vorteil, dass die Elektromagnetische Verträglichkeit verbessert wird, spielte aber in dieser Anwendung keine Rolle.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth - 2cm]{pictures/burstmode_vs_forcedcontinuous.png}
+	\caption{Die Breakdown-Daten der TPSMB2616CA}
+	\label{pic:burstmode_vs_forcedcontinuous}
+\end{figure}
+Der Burst Mode konnte nun sehr einfach durch eine Lötbrücke auf \textbf{JP1} aktiviert werden. Dadurch reduzierte sich die Stromaufnahme des Prints auf ca. \textbf{5-8mA} (Ohne Last und ohne MILAN-Modul).
+\subsubsection{Aufstartverhalten}
+Mittels einem \cite{AnalogDiscovery3} konnte nun das Aufstartverhalten ausgemessen werden. Dieses ist ein USB-Oszilloskop mit Digitalen Eingängen. Da die PG\_1 und PG\_2-Signale als Testpins vorhanden waren, konnten diese direkt mit den Digitalen Eingängen DIO0 und DIO1 verbunden und darauf getriggert werden. Daher wurde das in \ref{ext_supply} bestimmte Netzteil angeschlossen, der Hauptschalter umgelegt und die Speisungen gemessen\footnote{Zuvor wurde beobachtet, dass ein Labornetzteil die Speisespannung über einige ms Hochfährt und dadurch die Stabilität der Speisungen beeinflusst.}. Abbildung \ref{pics:supplies_startup} zeigt das so gemessene Aufstartverhalten aller Speisungen. Es wurde einzig auf der +24V einige kleinere Einbrüche beobachtet, welche jedoch keinerlei Überschwinger, Spannungseinbrüche oder andere Störungen auf den restlichen Speisungen verursachten. Dies allerdings nach wie vor ohne Last und MILAN-Modul. Dies wurde daher soweit als zufriedenstellend befunden.
+\subsubsection{I2C-Verhalten}Wie in \ref{i2c_device_status_registers} beschrieben, besitzt jeder Endstufen-Chip ein Device-ID Register, welches schlichtweg mit 0x01 beschrieben ist. Dieses konnte erfolgreich aus allen sechs Chips ausgelesen werden, auch ohne angeschlossenes Milan-Modul.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth-1.5cm]{pictures/supplies24V_5p3V_startup_PG_Netzteil.png}
+		\caption{Aufstartverhalten der +24V (gelb) und +5.3V (blau) Speisung}
+		\label{pic:startup_24V_5.3V}
+		\vspace{3mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth-1.5cm]{pictures/supplies15V_5p3V_startup_PG_Netzteil.png}
+		\caption{Aufstartverhalten der +15V (gelb, gemessen an TP7) und +5.3V (blau) Speisung}
+		\label{pic:startup_15V_5.3V}
+		\vspace{3mm}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth-1.5cm]{pictures/supplies3p3V_5p3V_startup_PG_Netzteil.png}
+		\caption{Aufstartverhalten der +3.3V (gelb) und +5.3V (blau) Speisung}
+		\label{pic:startup_3.3V_5.3V}
+		\vspace{3mm}
+	\end{subfigure}
+	\caption{Aufstartverhalten der Speisungen}
+	\label{pics:supplies_startup}
+\end{figure}

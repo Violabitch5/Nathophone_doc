@@ -2,81 +2,78 @@
 \contentsline {section}{Abbildungsverzeichnis}{7}{Doc-Start}%
 \contentsline {section}{\numberline {1}Einleitung}{8}{section.0.1}%
 \contentsline {subsection}{\numberline {1.1}Abstract}{8}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {1.2}Theorie}{8}{subsection.0.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Das Prinzip des Linienstrahlers}{8}{subsubsection.0.1.2.1}%
+\contentsline {subsection}{\numberline {1.2}Fragestellung}{8}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {1.3}Theorie}{8}{subsection.0.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Das Prinzip des Linienstrahlers}{8}{subsubsection.0.1.3.1}%
 \contentsline {paragraph}{Beam Steering}{9}{section*.2}%
-\contentsline {paragraph}{Dreidimensionales Beam Steering}{9}{section*.4}%
-\contentsline {subsubsection}{\numberline {1.2.2}Das Prinzip des Monochord}{9}{subsubsection.0.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.3}Signaltransport}{9}{subsubsection.0.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.4}Elektronische Klangerzeugung}{9}{subsubsection.0.1.2.4}%
-\contentsline {subsection}{\numberline {1.3}Vorarbeiten}{10}{subsection.0.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Konstruktion und Herstellung Prototyp}{10}{subsubsection.0.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Schwingspulen}{10}{subsubsection.0.1.3.2}%
-\contentsline {paragraph}{Anregung mittels Schwingspule}{10}{section*.6}%
-\contentsline {paragraph}{Anregung mittels blanker Saite}{12}{section*.8}%
-\contentsline {paragraph}{Anregung mittels Exciter}{12}{section*.10}%
-\contentsline {subsubsection}{\numberline {1.3.3}Erkenntnisse}{12}{subsubsection.0.1.3.3}%
-\contentsline {subsubsection}{\numberline {1.3.4}Konstruktion Korpus mit sechs Elementen}{12}{subsubsection.0.1.3.4}%
-\contentsline {chapter}{\numberline {1}System Engineering}{14}{chapter.1}%
-\contentsline {section}{\numberline {1}Situationsanalyse}{14}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1}SWOT Analyse}{15}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.2}Ishikawa Diagramm}{15}{subsection.1.1.2}%
-\contentsline {paragraph}{Physik}{15}{section*.13}%
-\contentsline {paragraph}{Material}{15}{section*.14}%
-\contentsline {paragraph}{Engineering}{15}{section*.15}%
-\contentsline {paragraph}{Zeit}{15}{section*.16}%
-\contentsline {paragraph}{Budget}{16}{section*.17}%
-\contentsline {paragraph}{Produktesicherheit}{16}{section*.18}%
-\contentsline {section}{\numberline {2}Zieldefinition}{16}{section.1.2}%
-\contentsline {subsection}{\numberline {2.1}Zielbeziehungen}{17}{subsection.1.2.1}%
-\contentsline {paragraph}{C vs. D.2}{17}{section*.21}%
-\contentsline {paragraph}{I vs. G}{17}{section*.22}%
-\contentsline {paragraph}{B vs. E}{17}{section*.23}%
-\contentsline {section}{\numberline {3}Zielgewichtung}{18}{section.1.3}%
-\contentsline {subsection}{\numberline {3.1}Primärziele}{18}{subsection.1.3.1}%
-\contentsline {paragraph}{G Reduziertes Brandrisiko}{18}{section*.25}%
-\contentsline {paragraph}{D.2 Mobilität}{18}{section*.26}%
-\contentsline {paragraph}{A Direktionale Abstrahlung}{18}{section*.27}%
-\contentsline {section}{\numberline {4}Variantendefinition}{19}{section.1.4}%
-\contentsline {subsection}{\numberline {4.1}Morphologischer Kasten}{19}{subsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Variante A: Alles Analog}{20}{subsubsection.1.4.1.1}%
-\contentsline {paragraph}{Vorteile}{20}{section*.30}%
-\contentsline {paragraph}{Nachteile}{20}{section*.31}%
-\contentsline {paragraph}{Risikoanalyse}{21}{section*.32}%
-\contentsline {subsubsection}{\numberline {4.1.2}Variante B: Drahtlos \& Portabel}{22}{subsubsection.1.4.1.2}%
-\contentsline {paragraph}{Vorteile}{22}{section*.35}%
-\contentsline {paragraph}{Nachteile}{22}{section*.36}%
-\contentsline {paragraph}{Risikoanalyse}{23}{section*.37}%
-\contentsline {subsubsection}{\numberline {4.1.3}Variante C: High-End Audiophil}{24}{subsubsection.1.4.1.3}%
-\contentsline {paragraph}{Vorteile}{24}{section*.40}%
-\contentsline {paragraph}{Nachteile}{24}{section*.41}%
-\contentsline {paragraph}{Risikoanalyse}{25}{section*.42}%
-\contentsline {subsubsection}{\numberline {4.1.4}Variante D: Einfache Anwendung, Plug'n'Play}{26}{subsubsection.1.4.1.4}%
-\contentsline {paragraph}{Vorteile}{26}{section*.45}%
-\contentsline {paragraph}{Nachteile}{26}{section*.46}%
-\contentsline {paragraph}{Risikoanalyse}{27}{section*.47}%
-\contentsline {subsubsection}{\numberline {4.1.5}Variante E: Neu ist besser}{28}{subsubsection.1.4.1.5}%
-\contentsline {paragraph}{Vorteile}{28}{section*.50}%
-\contentsline {paragraph}{Nachteile}{28}{section*.51}%
-\contentsline {paragraph}{Risikoanalyse}{29}{section*.52}%
-\contentsline {section}{\numberline {5}Variantenauswertung}{30}{section.1.5}%
-\contentsline {subsubsection}{\numberline {5.0.1}Nutzwertanalyse}{30}{subsubsection.1.5.0.1}%
-\contentsline {subsubsection}{\numberline {5.0.2}Kosten-Nutzen Analyse}{30}{subsubsection.1.5.0.2}%
-\contentsline {section}{\numberline {6}Variantenauswahl}{32}{section.1.6}%
-\contentsline {section}{\numberline {7}Terminplanung}{32}{section.1.7}%
-\contentsline {chapter}{\numberline {2}Umsetzung}{34}{chapter.2}%
-\contentsline {section}{\numberline {1}2D-Simulation Line Array}{34}{section.2.1}%
-\contentsline {section}{\numberline {2}Blockschaltbild}{38}{section.2.2}%
-\contentsline {paragraph}{MILAN Modul MT32-TDM to MILAN}{38}{section*.62}%
-\contentsline {paragraph}{Gehäuse}{38}{section*.64}%
+\contentsline {paragraph}{Dreidimensionales Beam Steering}{10}{section*.4}%
+\contentsline {subsection}{\numberline {1.4}Vorarbeiten}{11}{subsection.0.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Konstruktion und Herstellung Prototyp}{11}{subsubsection.0.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Schwingspulen}{11}{subsubsection.0.1.4.2}%
+\contentsline {paragraph}{Anregung mittels Schwingspule}{11}{section*.6}%
+\contentsline {paragraph}{Anregung mittels blanker Saite}{13}{section*.8}%
+\contentsline {paragraph}{Anregung mittels Exciter}{13}{figure.caption.10}%
+\contentsline {subsubsection}{\numberline {1.4.3}Erkenntnisse}{13}{subsubsection.0.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}Konstruktion Korpus mit sechs Elementen}{14}{subsubsection.0.1.4.4}%
+\contentsline {chapter}{\numberline {1}System Engineering}{15}{chapter.1}%
+\contentsline {section}{\numberline {1}Situationsanalyse}{15}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1}SWOT Analyse}{16}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.2}Ishikawa Diagramm}{16}{subsection.1.1.2}%
+\contentsline {paragraph}{Physik}{16}{section*.14}%
+\contentsline {paragraph}{Material}{16}{section*.15}%
+\contentsline {paragraph}{Engineering}{16}{section*.16}%
+\contentsline {paragraph}{Zeit}{16}{section*.17}%
+\contentsline {paragraph}{Budget}{17}{section*.18}%
+\contentsline {paragraph}{Produktesicherheit}{17}{section*.19}%
+\contentsline {section}{\numberline {2}Zieldefinition}{17}{section.1.2}%
+\contentsline {subsection}{\numberline {2.1}Zielbeziehungen}{18}{subsection.1.2.1}%
+\contentsline {paragraph}{C vs. D.2}{18}{section*.22}%
+\contentsline {paragraph}{I vs. G}{18}{section*.23}%
+\contentsline {paragraph}{B vs. E}{18}{section*.24}%
+\contentsline {section}{\numberline {3}Zielgewichtung}{19}{section.1.3}%
+\contentsline {subsection}{\numberline {3.1}Primärziele}{19}{subsection.1.3.1}%
+\contentsline {paragraph}{G Reduziertes Brandrisiko}{19}{section*.26}%
+\contentsline {paragraph}{D.2 Mobilität}{19}{section*.27}%
+\contentsline {paragraph}{A Direktionale Abstrahlung}{19}{section*.28}%
+\contentsline {section}{\numberline {4}Variantendefinition}{20}{section.1.4}%
+\contentsline {subsection}{\numberline {4.1}Morphologischer Kasten}{20}{subsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Variante A: Alles Analog}{21}{subsubsection.1.4.1.1}%
+\contentsline {paragraph}{Vorteile}{21}{section*.31}%
+\contentsline {paragraph}{Nachteile}{21}{section*.32}%
+\contentsline {paragraph}{Risikoanalyse}{22}{section*.33}%
+\contentsline {subsubsection}{\numberline {4.1.2}Variante B: Drahtlos \& Portabel}{23}{subsubsection.1.4.1.2}%
+\contentsline {paragraph}{Vorteile}{23}{section*.36}%
+\contentsline {paragraph}{Nachteile}{23}{section*.37}%
+\contentsline {paragraph}{Risikoanalyse}{24}{section*.38}%
+\contentsline {subsubsection}{\numberline {4.1.3}Variante C: High-End Audiophil}{25}{subsubsection.1.4.1.3}%
+\contentsline {paragraph}{Vorteile}{25}{section*.41}%
+\contentsline {paragraph}{Nachteile}{25}{section*.42}%
+\contentsline {paragraph}{Risikoanalyse}{26}{section*.43}%
+\contentsline {subsubsection}{\numberline {4.1.4}Variante D: Einfache Anwendung, Plug'n'Play}{27}{subsubsection.1.4.1.4}%
+\contentsline {paragraph}{Vorteile}{27}{section*.46}%
+\contentsline {paragraph}{Nachteile}{27}{section*.47}%
+\contentsline {paragraph}{Risikoanalyse}{28}{section*.48}%
+\contentsline {subsubsection}{\numberline {4.1.5}Variante E: Neu ist besser}{29}{subsubsection.1.4.1.5}%
+\contentsline {paragraph}{Vorteile}{29}{section*.51}%
+\contentsline {paragraph}{Nachteile}{29}{section*.52}%
+\contentsline {paragraph}{Risikoanalyse}{30}{section*.53}%
+\contentsline {section}{\numberline {5}Variantenauswertung}{31}{section.1.5}%
+\contentsline {subsubsection}{\numberline {5.0.1}Nutzwertanalyse}{31}{subsubsection.1.5.0.1}%
+\contentsline {subsubsection}{\numberline {5.0.2}Kosten-Nutzen Analyse}{31}{subsubsection.1.5.0.2}%
+\contentsline {section}{\numberline {6}Variantenauswahl}{33}{section.1.6}%
+\contentsline {section}{\numberline {7}Terminplanung}{33}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Umsetzung}{35}{chapter.2}%
+\contentsline {section}{\numberline {1}2D-Simulation Line Array}{35}{section.2.1}%
+\contentsline {section}{\numberline {2}Blockschaltbild}{39}{section.2.2}%
+\contentsline {paragraph}{MILAN Modul MT32-TDM to MILAN}{39}{section*.65}%
 \contentsline {section}{\numberline {3}Kennzahlen}{40}{section.2.3}%
 \contentsline {subsection}{\numberline {3.1}Leisungsbudget}{40}{subsection.2.3.1}%
-\contentsline {paragraph}{Anzahl Exciter: 6}{40}{section*.67}%
-\contentsline {paragraph}{Leistung (Continous) pro Exciter: 0.5 bis 150 Watt}{40}{section*.68}%
+\contentsline {paragraph}{Anzahl Exciter: 6}{40}{section*.66}%
+\contentsline {paragraph}{Leistung (Continous) pro Exciter: 0.5 bis 150 Watt}{40}{section*.67}%
 \contentsline {subsubsection}{\numberline {3.1.1}Leistungsangaben bei Lautsprechern}{40}{subsubsection.2.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Endstufenleistung}{41}{subsubsection.2.3.1.2}%
 \contentsline {subsubsection}{\numberline {3.1.3}Entscheid Exciterleistung}{41}{subsubsection.2.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}PoE}{42}{subsubsection.2.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4}PoE}{43}{subsubsection.2.3.1.4}%
 \contentsline {subsubsection}{\numberline {3.1.5}Gesamtes Leisungsbudget}{43}{subsubsection.2.3.1.5}%
 \contentsline {section}{\numberline {4}Bauteilevaluation}{44}{section.2.4}%
 \contentsline {subsection}{\numberline {4.1}Evaluation der Endstufe(n)}{44}{subsection.2.4.1}%
@@ -87,18 +84,18 @@
 \contentsline {subsection}{\numberline {4.2}Evaluation der Spannungsregelung}{51}{subsection.2.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Kennzahlen}{51}{subsubsection.2.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Speisungsaufbau}{52}{subsubsection.2.4.2.2}%
-\contentsline {paragraph}{Speisung mit nur Linearreglern}{53}{section*.82}%
+\contentsline {paragraph}{Speisung mit nur Linearreglern}{53}{section*.81}%
 \contentsline {subsection}{\numberline {4.3}Simulation der Last und passiven Entkopplung}{53}{subsection.2.4.3}%
-\contentsline {paragraph}{Keine Simulationsmodelle des TAS5720}{53}{section*.83}%
+\contentsline {paragraph}{Keine Simulationsmodelle des TAS5720}{53}{section*.82}%
 \contentsline {subsubsection}{\numberline {4.3.1}Parameter-Sweep}{55}{subsubsection.2.4.3.1}%
-\contentsline {paragraph}{Kapazität}{58}{section*.94}%
-\contentsline {paragraph}{Induktivität}{59}{section*.95}%
-\contentsline {paragraph}{Alle 6 Kanäle zusammen entkoppeln?}{59}{section*.96}%
+\contentsline {paragraph}{Kapazität}{58}{section*.93}%
+\contentsline {paragraph}{Induktivität}{59}{section*.94}%
+\contentsline {paragraph}{Alle 6 Kanäle zusammen entkoppeln?}{59}{section*.95}%
 \contentsline {subsubsection}{\numberline {4.3.2}Simulation 3x2 Kanäle und 15V-Kennwerte}{59}{subsubsection.2.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}Schaltregler}{59}{subsection.2.4.4}%
-\contentsline {paragraph}{Kurzevaluation}{60}{section*.97}%
+\contentsline {subsection}{\numberline {4.4}Schaltregler}{60}{subsection.2.4.4}%
+\contentsline {paragraph}{Kurzevaluation}{60}{section*.96}%
 \contentsline {subsubsection}{\numberline {4.4.1}Direktvergleich von LT8650S und TPSM64406}{61}{subsubsection.2.4.4.1}%
-\contentsline {paragraph}{Fazit}{61}{section*.99}%
+\contentsline {paragraph}{Fazit}{61}{section*.98}%
 \contentsline {section}{\numberline {5}Systemaufbau}{62}{section.2.5}%
 \contentsline {subsection}{\numberline {5.1}Blockschaltbild PCB}{62}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {5.2}Evaluation Einzelkomponenten}{64}{subsection.2.5.2}%
@@ -128,7 +125,7 @@
 \contentsline {subsubsection}{\numberline {5.3.7}Eingangsnetzwerk}{69}{subsubsection.2.5.3.7}%
 \contentsline {subsubsection}{\numberline {5.3.8}Efficiency Report}{70}{subsubsection.2.5.3.8}%
 \contentsline {subsubsection}{\numberline {5.3.9}Kontrolle Wärmeverhalten}{71}{subsubsection.2.5.3.9}%
-\contentsline {subsection}{\numberline {5.4}Schema Driverboard}{73}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {5.4}Schema Driverboard}{74}{subsection.2.5.4}%
 \contentsline {subsubsection}{\numberline {5.4.1}Überwachungs-ADC}{74}{subsubsection.2.5.4.1}%
 \contentsline {subsubsection}{\numberline {5.4.2}Stiftleiste für externes Modul}{74}{subsubsection.2.5.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.3}Sicherungen}{74}{subsubsection.2.5.4.3}%
@@ -150,39 +147,43 @@
 \contentsline {section}{\numberline {6}Herstellung/Zusammenbau}{86}{section.2.6}%
 \contentsline {subsection}{\numberline {6.1}Herstellung/Bestellung von Milan-Modul und Driverboard}{86}{subsection.2.6.1}%
 \contentsline {subsection}{\numberline {6.2}Herstellung Gehäuse}{86}{subsection.2.6.2}%
-\contentsline {paragraph}{Plattenmaterial}{86}{section*.124}%
-\contentsline {paragraph}{Lagenschichtung}{87}{section*.127}%
+\contentsline {paragraph}{Plattenmaterial}{86}{section*.123}%
+\contentsline {paragraph}{Lagenschichtung}{87}{section*.126}%
 \contentsline {section}{\numberline {7}Firmware}{88}{section.2.7}%
 \contentsline {subsection}{\numberline {7.1}XMOS}{88}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {7.2}I2C-Register}{89}{subsection.2.7.2}%
 \contentsline {subsubsection}{\numberline {7.2.1}Steuersignale}{90}{subsubsection.2.7.2.1}%
-\contentsline {paragraph}{0x01, bit1: SLEEP}{90}{section*.132}%
-\contentsline {paragraph}{0x01, b0: SDZ}{90}{section*.133}%
-\contentsline {paragraph}{0x03, b4: MUTE}{90}{section*.134}%
-\contentsline {paragraph}{0x06, b4-6: PWM\_RATE}{90}{section*.135}%
-\contentsline {paragraph}{0x08, b4-5: OC\_THRESH}{90}{section*.136}%
+\contentsline {paragraph}{0x01, bit1: SLEEP}{90}{section*.131}%
+\contentsline {paragraph}{0x01, b0: SDZ}{90}{section*.132}%
+\contentsline {paragraph}{0x03, b4: MUTE}{90}{section*.133}%
+\contentsline {paragraph}{0x06, b4-6: PWM\_RATE}{90}{section*.134}%
+\contentsline {paragraph}{0x08, b4-5: OC\_THRESH}{90}{section*.135}%
 \contentsline {subsubsection}{\numberline {7.2.2}Signalverarbeitung und Gains}{90}{subsubsection.2.7.2.2}%
-\contentsline {paragraph}{0x06, b2-3: ANALOG\_GAIN}{90}{section*.138}%
-\contentsline {paragraph}{0x01, 0x10, 0x11: Digital Clipper}{91}{section*.139}%
-\contentsline {paragraph}{0x04, b0-7: VOLUME\_CONTROL}{92}{section*.140}%
-\contentsline {paragraph}{0x02, b7: HPF\_BYPASS}{92}{section*.141}%
+\contentsline {paragraph}{0x06, b2-3: ANALOG\_GAIN}{90}{section*.137}%
+\contentsline {paragraph}{0x01, 0x10, 0x11: Digital Clipper}{91}{section*.138}%
+\contentsline {paragraph}{0x04, b0-7: VOLUME\_CONTROL}{92}{section*.139}%
+\contentsline {paragraph}{0x02, b7: HPF\_BYPASS}{92}{section*.140}%
 \contentsline {subsubsection}{\numberline {7.2.3}I2S-Format}{92}{subsubsection.2.7.2.3}%
-\contentsline {paragraph}{0x02, b6: TDM\_CFG\_SRC}{93}{section*.145}%
-\contentsline {paragraph}{0x02, b3: SSZ/DS}{93}{section*.146}%
-\contentsline {paragraph}{0x02, b0-2: SAIF\_FORMAT}{94}{section*.147}%
-\contentsline {paragraph}{0x03, b0-2: TDM\_SLOT\_SELECT}{94}{section*.148}%
+\contentsline {paragraph}{0x02, b6: TDM\_CFG\_SRC}{93}{section*.144}%
+\contentsline {paragraph}{0x02, b3: SSZ/DS}{94}{section*.145}%
+\contentsline {paragraph}{0x02, b0-2: SAIF\_FORMAT}{94}{section*.146}%
+\contentsline {paragraph}{0x03, b0-2: TDM\_SLOT\_SELECT}{94}{section*.147}%
 \contentsline {subsubsection}{\numberline {7.2.4}Status}{94}{subsubsection.2.7.2.4}%
-\contentsline {paragraph}{0x00, b0-8: Device ID}{94}{section*.149}%
-\contentsline {paragraph}{0x08, b3: CLKE}{94}{section*.150}%
-\contentsline {paragraph}{0x08, b2: OCE}{94}{section*.151}%
-\contentsline {paragraph}{0x08, b1: DCE}{94}{section*.152}%
-\contentsline {paragraph}{0x08, b0: OTE}{94}{section*.153}%
-\contentsline {section}{\numberline {8}Tests}{94}{section.2.8}%
-\contentsline {subsection}{\numberline {8.1}Funktionstest Driverboard}{94}{subsection.2.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Aufstartverhalten}{95}{subsubsection.2.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}I2C-Verhalten}{95}{subsubsection.2.8.1.2}%
-\contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{96}{chapter.3}%
-\contentsline {section}{13 Tabellenverzeichnis}{97}{section*.155}%
-\contentsline {section}{Quellenverzeichnis}{99}{chapter*.156}%
-\contentsline {chapter}{\numberline {A}Schema Driverboard}{100}{appendix.A}%
-\contentsline {chapter}{\numberline {B}BOM Driverboard}{106}{appendix.B}%
+\contentsline {paragraph}{0x00, b0-8: Device ID}{94}{section*.148}%
+\contentsline {paragraph}{0x08, b3: CLKE}{94}{section*.149}%
+\contentsline {paragraph}{0x08, b2: OCE}{94}{section*.150}%
+\contentsline {paragraph}{0x08, b1: DCE}{94}{section*.151}%
+\contentsline {paragraph}{0x08, b0: OTE}{94}{section*.152}%
+\contentsline {chapter}{\numberline {3}Auswertung \& Fazit}{95}{chapter.3}%
+\contentsline {section}{\numberline {1}Lieferverzögerung MILAN-Modul}{95}{section.3.1}%
+\contentsline {section}{\numberline {2}Tests}{95}{section.3.2}%
+\contentsline {subsection}{\numberline {2.1}Funktionstest Driverboard}{95}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Verpolung TVS-Diode}{95}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Stromaufnahme}{96}{subsubsection.3.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Aufstartverhalten}{97}{subsubsection.3.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}I2C-Verhalten}{97}{subsubsection.3.2.1.4}%
+\contentsline {section}{\numberline {3}Fazit}{99}{section.3.3}%
+\contentsline {section}{13 Tabellenverzeichnis}{100}{section.3.3}%
+\contentsline {section}{Quellenverzeichnis}{103}{chapter*.156}%
+\contentsline {chapter}{\numberline {A}Schema Driverboard}{104}{appendix.A}%
+\contentsline {chapter}{\numberline {B}BOM Driverboard}{110}{appendix.B}%

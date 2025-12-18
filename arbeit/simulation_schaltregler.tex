@@ -54,9 +54,7 @@ Es wurde zudem beobachtet, dass die Schwinganfälligkeit erheblich verbessert we
 \subsubsection{Eingangsnetzwerk}
 Im Datenblatt wird am Ende des Kapitels \textit{Input Capacitor} eine Überspannung erwähnt, die durch eine Kombination von Keramikkondensatoren mit niedrigem ESR und einer parasitären Kabelinduktion entsteht:
 \begin{quote}
-	A second precaution regarding the ceramic 
-	input capacitor concerns the maximum input voltage rating of the LT8650S. A ceramic input capacitor combined with trace or cable inductance forms a high quality (under 
-	damped) tank circuit. If the LT8650S circuit is plugged into a live supply, the input voltage can ring to twice its nominal value, possibly exceeding the LT8650S’s voltage rating. This situation is easily avoided (see Analog Devices Application Note 88).
+	[...] A second precaution regarding the ceramic input capacitor concerns the maximum input voltage rating of the LT8650S. A ceramic input capacitor combined with trace or cable inductance forms a high quality (under damped) tank circuit. If the LT8650S circuit is plugged into a live supply, the input voltage can ring to twice its nominal value, possibly exceeding the LT8650S’s voltage rating. This situation is easily avoided (see Analog Devices Application Note 88).
 	- \cite{LT8650S_Datasheet}
 \end{quote}
 Die erwähnte Überspannung entsteht genau dann, wenn ein Netzteil über ein langes Kabel und einem Schalter mit noch ungeladenen Keramikkondensatoren verbunden ist. Genau das ist ja die Situation hier! In der Application Note\footnote{Siehe: \cite{OvervoltageWithCerCaps}} wird die Anwendung eines Snubber-Netzwerkes, also eines grösseren Kondensators mit einem kleinen (0.5Ohm) Widerstand in Serie. Dieser sozusagen künstlich verschlechterte Kondensator sorgt dafür, dass Energie weiterhin aus dem Netzwerk entzogen sobald die Keramikkondensatoren geladen sind. Ansonsten würde die Spule einen stark abfallenden Strom \textquotedbl{}sehen\textquotedbl{} und eine Spannung erzeugen, welche sich zu den bereits vorhandenen 24V hinzuaddiert. In Abbildung \ref{pic:startup_comparision} ist der direkte Vergleich zwischen dem Aufstartverhalten mit und ohne Snubber zu sehen. Dabei wurde ein 47uH-Kondensator und einem 0.5Ohm-Widerstand in Serie ausgewählt. Zu beachten ist, dass bei \ref{pic:startup_nosnubber} nicht nur eine Spannungsüberhöhung stattfindet sondern auch Strom zurück in die Speisung fliesst! Das in \ref{pic:startup_withsnubber} zu sehende Aufstartverhalten wird allerdings erkauft mit einem erhöhtem Eingangsstrom. Da dieser Strom allerdings nur wenige $\mu$s andauert, kann dieser als unproblematisch erachtet werden bzw. sollten Netzteile mit einem Einschaltstrom umgehen können.\\
@@ -82,11 +80,7 @@ Die erwähnte Überspannung entsteht genau dann, wenn ein Netzteil über ein lan
 	\caption{Der Snubber stabilisiert das System}
 	\label{pic:startup_comparision}
 \end{figure}
-Zusätzlich wurden zwei 4.7uH Keramikkondensatoren gemäss dem Datenblatt verwendet:
-\begin{quote}
-	Bypass the input of the LT8650S circuit with a ceramic capacitor of X7R or X5R type placed as close as possible to the VIN and GND pins. Y5V types have poor performance over temperature and applied voltage, and should not be used. A 4.7μF to 10μF ceramic capacitor is adequate to bypass the LT8650S and will easily handle the ripple current. Note that larger input capacitance is required when a lower switching frequency is used. If the input power source has high impedance, or there is significant inductance due to long wires or cables, additional bulk capacitance may be necessary. This can be provided with a low performance electrolytic capacitor.
-	- \cite{LT8650S_Datasheet}
-\end{quote}
+\noindent Zusätzlich wurden zwei 4.7uH Keramikkondensatoren gemäss dem Datenblatt\footnote{Siehe Input Capacitor aus \cite{LT8650S_Datasheet}} verwendet.
 \subsubsection{Efficiency Report}
 LTSpice bietet auch die Möglichkeit, einen Efficiency Report zu generieren. Bei diesem wird für jedes Bauteil sowohl RMS- und Peak-Ströme als auch die Verlustleistung berechnet. Dabei werden bei reaktiven Bauteilen ein gesondertes Verfahren angewandt. In Abbilung \ref{pic:efficiency_report} ist der gesamte Report zu sehen.
 \begin{figure}[H]

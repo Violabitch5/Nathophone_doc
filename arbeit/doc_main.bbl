@@ -85,6 +85,24 @@
     \field{year}{2023}
   \endentry
 
+  \entry{AnalogDiscovery3}{online}{}
+    \list{organization}{1}{%
+      {Digilent co NI}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Analog Discovery 3}
+    \verb{url}
+    \verb https://digilent.com/reference/test-and-measurement/analog-discovery-
+    \verb 3/start
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{18}
+    \field{urlmonth}{12}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{TI_Audio_Serial_Configurations}{manual}{}
     \name{author}{2}{}{%
       {{hash=AJ}{%
@@ -454,6 +472,23 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{MilanHowDoesItWork}{online}{}
+    \list{organization}{1}{%
+      {Avnu Alliance®}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Milan - How Does it Work}
+    \verb{url}
+    \verb https://milanav.com/how-does-it-work/
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{18}
+    \field{urlmonth}{12}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{pcbtemp_calculator}{online}{}
     \list{organization}{1}{%
       {HeatSinkCalculator}%
@@ -500,6 +535,23 @@
     \field{urlyear}{2025}
     \warn{\item Invalid format of field 'date' \item Invalid format of field
   'date'}
+  \endentry
+
+  \entry{MatlabR2023b}{software}{}
+    \list{organization}{1}{%
+      {The MathWorks, Inc.}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{R2023b Release Highlights - MATLAB and Simulink}
+    \verb{url}
+    \verb https://ch.mathworks.com/products/new_products/release2023b.html
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{18}
+    \field{urlmonth}{12}
+    \field{urlyear}{2025}
   \endentry
 
   \entry{Salazar_Line_array_Thesis}{thesis}{}
