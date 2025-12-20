@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2025.1.12)  20 DEC 2025 12:52
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2025.1.12)  20 DEC 2025 15:24
  restricted system commands enabled.
 **doc_main.tex
 (./doc_main.tex
@@ -4138,7 +4138,7 @@ Package fancyhdr Warning: \headheight is too small (22.76219pt):
 (fancyhdr)                \addtolength{\topmargin}{-16.42584pt}.
 
 [95<./pictures/TPSMB2616CA_breakdowndata.png>]
-<pictures/supplies24V_5p3V_startup_PG_Netzteil.png, id=2984, 1153.911pt x 540.2
+<pictures/supplies24V_5p3V_startup_PG_Netzteil.png, id=2986, 1153.911pt x 540.2
 1825pt>
 File: pictures/supplies24V_5p3V_startup_PG_Netzteil.png Graphic file (type png)
 
@@ -4146,7 +4146,7 @@ File: pictures/supplies24V_5p3V_startup_PG_Netzteil.png Graphic file (type png)
 Package luatex.def Info: pictures/supplies24V_5p3V_startup_PG_Netzteil.png  use
 d on input line 32.
 (luatex.def)             Requested size: 435.32686pt x 203.80132pt.
-<pictures/supplies15V_5p3V_startup_PG_Netzteil.png, id=2985, 1153.911pt x 540.2
+<pictures/supplies15V_5p3V_startup_PG_Netzteil.png, id=2987, 1153.911pt x 540.2
 1825pt>
 File: pictures/supplies15V_5p3V_startup_PG_Netzteil.png Graphic file (type png)
 
@@ -4154,7 +4154,7 @@ File: pictures/supplies15V_5p3V_startup_PG_Netzteil.png Graphic file (type png)
 Package luatex.def Info: pictures/supplies15V_5p3V_startup_PG_Netzteil.png  use
 d on input line 39.
 (luatex.def)             Requested size: 435.32686pt x 203.80132pt.
-<pictures/supplies3p3V_5p3V_startup_PG_Netzteil.png, id=2986, 1153.911pt x 540.
+<pictures/supplies3p3V_5p3V_startup_PG_Netzteil.png, id=2988, 1153.911pt x 540.
 21825pt>
 File: pictures/supplies3p3V_5p3V_startup_PG_Netzteil.png Graphic file (type png
 )
@@ -4271,14 +4271,14 @@ Anhang A.
 [103
 
 ]
-<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3109, 845.05312pt x 597.528
+<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3112, 845.05312pt x 597.528
 37pt>
 File: pictures/Nathophone_driver_board_SCHEMATIC.pdf Graphic file (type pdf)
 <use pictures/Nathophone_driver_board_SCHEMATIC.pdf>
 Package luatex.def Info: pictures/Nathophone_driver_board_SCHEMATIC.pdf  used o
 n input line 214.
 (luatex.def)             Requested size: 845.05104pt x 597.5269pt.
-<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3111, page=2, 845.05312pt x
+<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3114, page=2, 845.05312pt x
  597.52837pt>
 File: pictures/Nathophone_driver_board_SCHEMATIC.pdf Graphic file (type pdf)
 <use pictures/Nathophone_driver_board_SCHEMATIC.pdf, page 2>
@@ -4309,7 +4309,7 @@ Package luatex.def Info: pictures/Nathophone_driver_board_SCHEMATIC.pdf , page2
 
 
 <./pictures/Nathophone_driver_board_SCHEMATIC.pdf>]
-<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3122, page=3, 845.05312pt x
+<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3125, page=3, 845.05312pt x
  597.52837pt>
 File: pictures/Nathophone_driver_board_SCHEMATIC.pdf Graphic file (type pdf)
 <use pictures/Nathophone_driver_board_SCHEMATIC.pdf, page 3>
@@ -4329,7 +4329,7 @@ Package luatex.def Info: pictures/Nathophone_driver_board_SCHEMATIC.pdf , page3
  [105
 
 <./pictures/Nathophone_driver_board_SCHEMATIC.pdf>]
-<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3127, page=4, 845.05312pt x
+<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3130, page=4, 845.05312pt x
  597.52837pt>
 File: pictures/Nathophone_driver_board_SCHEMATIC.pdf Graphic file (type pdf)
 <use pictures/Nathophone_driver_board_SCHEMATIC.pdf, page 4>
@@ -4349,7 +4349,7 @@ Package luatex.def Info: pictures/Nathophone_driver_board_SCHEMATIC.pdf , page4
  [106
 
 <./pictures/Nathophone_driver_board_SCHEMATIC.pdf>]
-<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3132, page=5, 845.05312pt x
+<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3135, page=5, 845.05312pt x
  597.52837pt>
 File: pictures/Nathophone_driver_board_SCHEMATIC.pdf Graphic file (type pdf)
 <use pictures/Nathophone_driver_board_SCHEMATIC.pdf, page 5>
@@ -4369,7 +4369,7 @@ Package luatex.def Info: pictures/Nathophone_driver_board_SCHEMATIC.pdf , page5
  [107
 
 <./pictures/Nathophone_driver_board_SCHEMATIC.pdf>]
-<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3137, page=6, 845.05312pt x
+<pictures/Nathophone_driver_board_SCHEMATIC.pdf, id=3140, page=6, 845.05312pt x
  597.52837pt>
 File: pictures/Nathophone_driver_board_SCHEMATIC.pdf Graphic file (type pdf)
 <use pictures/Nathophone_driver_board_SCHEMATIC.pdf, page 6>
@@ -4397,7 +4397,7 @@ Anhang B.
 ]
 warning  (file pictures/Nathophone_driver_board_BOM.pdf) (pdf inclusion): PDF in
 clusion: found PDF version '1.7', but at most version '1.5' allowed
-<pictures/Nathophone_driver_board_BOM.pdf, id=3148, 845.07724pt x 597.55246pt>
+<pictures/Nathophone_driver_board_BOM.pdf, id=3151, 845.07724pt x 597.55246pt>
 File: pictures/Nathophone_driver_board_BOM.pdf Graphic file (type pdf)
 <use pictures/Nathophone_driver_board_BOM.pdf>
 Package luatex.def Info: pictures/Nathophone_driver_board_BOM.pdf  used on inpu
@@ -4409,7 +4409,7 @@ clusion: found PDF version '1.7', but at most version '1.5' allowed
 
 warning  (file pictures/Nathophone_driver_board_BOM.pdf) (pdf inclusion): PDF in
 clusion: found PDF version '1.7', but at most version '1.5' allowed
-<pictures/Nathophone_driver_board_BOM.pdf, id=3150, page=1, 845.07724pt x 597.5
+<pictures/Nathophone_driver_board_BOM.pdf, id=3153, page=1, 845.07724pt x 597.5
 5246pt>
 File: pictures/Nathophone_driver_board_BOM.pdf Graphic file (type pdf)
 <use pictures/Nathophone_driver_board_BOM.pdf, page 1>
@@ -4442,7 +4442,7 @@ on input line 218.
 <./pictures/Nathophone_driver_board_BOM.pdf>]
 warning  (file pictures/Nathophone_driver_board_BOM.pdf) (pdf inclusion): PDF in
 clusion: found PDF version '1.7', but at most version '1.5' allowed
-<pictures/Nathophone_driver_board_BOM.pdf, id=3172, page=2, 845.07724pt x 597.5
+<pictures/Nathophone_driver_board_BOM.pdf, id=3175, page=2, 845.07724pt x 597.5
 5246pt>
 File: pictures/Nathophone_driver_board_BOM.pdf Graphic file (type pdf)
 <use pictures/Nathophone_driver_board_BOM.pdf, page 2>
@@ -4481,16 +4481,18 @@ Package logreq Info: Writing requests to 'doc_main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 50127 strings out of 476497
+ 50128 strings out of 476497
  244178,2848258 words of node,token memory allocated
- 2071 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 56 glue, 4 kern, 1 glyph, 254 attribute, 108 glue_s
-pec, 128 attribute_list, 4 write, 30 pdf_action nodes
-   avail lists: 1:8,2:25270,3:10117,4:194,5:1449,6:178,7:8500,8:149,9:1409,10:19
+ 2084 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 57 glue, 4 kern, 1 glyph, 256 attribute, 108 glue_s
+pec, 129 attribute_list, 4 write, 30 pdf_action nodes
+   avail lists: 1:8,2:25267,3:10117,4:194,5:1449,6:178,7:8500,8:149,9:1409,10:19
 ,11:880,12:1
  69636 multiletter control sequences out of 65536+600000
  78 fonts using 16868167 bytes
  95i,17n,97p,1863b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.55'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.54'
 
@@ -4624,9 +4626,9 @@ e1/public/amsfonts/cm/cmsy5.pfb><C:/Users/natha/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/natha/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/natha/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on doc_main.pdf (112 pages, 48469543 bytes).
+Output written on doc_main.pdf (112 pages, 48470156 bytes).
 
-PDF statistics: 3280 PDF objects out of 3580 (max. 8388607)
- 500 named destinations out of 1000 (max. 131072)
+PDF statistics: 3283 PDF objects out of 3580 (max. 8388607)
+ 501 named destinations out of 1000 (max. 131072)
  1197 words of extra memory for PDF output out of 10000 (max. 100000000)
 
