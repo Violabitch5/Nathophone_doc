@@ -85,6 +85,20 @@
     \field{year}{2023}
   \endentry
 
+  \entry{aisler_webpage}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{AISLER}
+    \verb{url}
+    \verb https://aisler.net/de
+    \endverb
+    \field{year}{2025}
+    \field{urlday}{20}
+    \field{urlmonth}{12}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{AnalogDiscovery3}{online}{}
     \list{organization}{1}{%
       {Digilent co NI}%
@@ -281,6 +295,25 @@
     \field{urlday}{24}
     \field{urlmonth}{09}
     \field{urlyear}{2025}
+  \endentry
+
+  \entry{DAEX25}{manual}{}
+    \list{organization}{1}{%
+      {Dayton Audio}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{DAEX25 Sound Exciter Pair}
+    \verb{url}
+    \verb https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DAEX25/pdf_Dayt
+    \verb on%20Audio_DAEX25_1.pdf
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{12}
+    \field{urlyear}{2025}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
   \endentry
 
   \entry{DAEX25QLP4spec}{online}{}

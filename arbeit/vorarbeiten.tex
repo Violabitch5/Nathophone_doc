@@ -1,5 +1,6 @@
 Vorgängig zu dieser Arbeit wurden einige Teile davon in Vorleistung angegangen. Dies mit dem Ziel, sich in der eigentlichen Projektzeit voll und ganz auf die Elektronik und ggf. die Software zu konzentrieren. Diese Vorarbeiten beinhalten darum hauptsächlich Konstruktions- sowie Testaufbauten und werden im folgenden aufgezeigt. Dementsprechend sind alle in Kapitel \ref{vorarbeiten} behandelten Komponenten und Tests als bereits vorhanden, bzw. als Ausgangslage anzusehen.
-\subsubsection{Konstruktion und Herstellung Prototyp}
+\addcontentsline{toc}{subsubsection}{Konstruktion und Herstellung Prototyp}
+\subsubsection*{Konstruktion und Herstellung Prototyp}
 Um das mechanische Verhalten einer Saite und die Herstellungsmethode mit Lasergeschnittenem MDF zu testen, wurde ein Prototyp konstruiert und hergestellt. Dieser bestand aus einem Resonanzkasten mit einer einzelnen Saite, Steg sowie einer Halterung für einen Rundmagneten. Abbildung \ref{pics:prototype} zeigt ein 3D-Rendering der Konstruktion, welche in \cite{SW_autodesk_fusion} konstruiert wurde. Anschliessend wurden MDF-Platten mit einem CO2-Lasercutter des Fablab Winterthur zugeschnitten und diese dann aufeinander geleimt. Somit konnten schon erste Tests durchgeführt werden.
 \begin{figure}[H]
 	\centering
@@ -7,7 +8,8 @@ Um das mechanische Verhalten einer Saite und die Herstellungsmethode mit Laserge
 	\caption{Rendering des Prototyps}
 	\label{pics:prototype}
 \end{figure}
-\subsubsection{Schwingspulen}
+\addcontentsline{toc}{subsubsection}{Schwingspulen}
+\subsubsection*{Schwingspulen}
 Da noch unklar war, wie eine Saite am besten in Schwingung versetzt werden kann, wurden verschiedene Methoden getestet. Dabei wurden hauptsächlich drei Ansätze verfolgt:
 \paragraph{Anregung mittels Schwingspule} Hierfür wurde Kupferdraht verschiedener Dicke um verschiedene Bobinen gewickelt und dann mittels hitzebeständigem Kautschuk auf der Saite befestigt. Durch die Anwesenheit eines Magnetfeldes bewegt sich die Spule in Abhängigkeit des durchflossenen Stromes\footnote{Diese Kraft ist durch die Lorentzkraft definiert und kann bei gekrümmten Leitern mit der Formel $\vec{F_{L}} = I \int \vec{dl} \times \vec{B}$ bestimmt werden.}. In Abbildung \ref{pics:all_voicecoils} sind einige Varianten aufgeführt. Getrieben wurde der Aufbau von einer D-Klasse Endstufe\footnote{Eine Verstärkertyp, bei dem das Ausgangssignal durch Pulsweitenmodulation einer Halbbrücke erzeugt wird.} mit analogen Eingängen. Hier zeigten sich schnell einige Herausforderungen: Oftmals war die Impedanz zu niedrig, oder die Hitzeentwicklung war zu stark. Ausserdem war ein grundsätzliches Problem, dass die Schwingspule sehr schnell zu rotieren begann, anstatt zu vibrieren und somit die Zuleitungen aufwickelte.
 \begin{figure}[H]
@@ -48,10 +50,12 @@ Eine sehr einfache Methode war es dann, den Signalstrom schlichtweg direkt durch
 	\label{pics:exciter}
 \end{wrapfigure}
 Ein weiterer Versuch bestand darin, einen Exciter, also einen Lautsprecher, welcher nur Schwingungen erzeugt und eine beliebige Fläche als Membrane nutzt, auf dem Prototypen zu montieren. Somit wäre natürlich die Saite obsolet und der Begriff eines Saiteninstrument wohl nicht mehr zutreffend. Nichtsdestotrotz zeigte sich, dass dieser Aufbau um einiges effektiver, also bisweilen auch ohrenbetäubend laut war. Auf der Innenseite montiert wäre das ganze Instrument schlichtweg eine unscheinbare Box welche auf Knopfdruck Klang abstrahlt\footnote{Das Prinzip existiert bereits als dekorative \textit{Flat Panel} oder \textit{Invisible Loudspeakers}.}.
-\subsubsection{Erkenntnisse}
+\addcontentsline{toc}{subsubsection}{Erkenntnisse}
+\subsubsection*{Erkenntnisse}
 Nach ersten Tests mit diesen drei Anregungsmethoden zeigte sich, dass alle drei prinzipiell möglich waren. Jedoch war klar, dass für die Variante mit der Schwingspule noch sehr viel Arbeit nötig wäre, um die Rotation zu verhindern. Mit der blanken Saite stellen sich Fragen bezüglich Sicherheit, da ein stromführender Leiter direkt berührt werden kann und am Gehäuse anliegt.\\Mit dem Exciter waren fix-fertige Komponenten verfügbar, die bloss noch montiert werden mussten und darüber hinaus ein vielfaches effizienter waren.
 \newpage
-\subsubsection{Konstruktion Korpus mit sechs Elementen}
+\addcontentsline{toc}{subsubsection}{Konstruktion Korpus mit sechs Elementen}
+\subsubsection*{Konstruktion Korpus mit sechs Elementen}
 In \cite{SW_autodesk_fusion} wurde ein Gehäuse konstruiert, welches mittels des CO2-Lasers des Fablab Winterthur hergestellt werden konnte. Dieses enthielt einen möglichst grossen Resonanzkörper und ein Fach zur Montage der Elektronik sowie sechs abgetrennte Platten, welche als Membrane dienen konnten. Abbildung \ref{pics:nathophone_corpus_v1} zeigt diese erste Version des Gehäuses und Abbildung \ref{pics:render_box} ein Rendering davon.
 \begin{figure}[H]
 	\centering

@@ -21,7 +21,7 @@ Abbildung \ref{pic:signalpath_TAS5720} zeigt, wie das Signal im Chip verarbeitet
 	\label{pic:signalpath_TAS5720}
 \end{figure}
 \paragraph{0x06, b2-3: ANALOG\_GAIN}Dieser Wert stellt die effektive Verstärkung der Endstufe dar. $00_b$ entspricht dabei einem Output von 19.2 dBV, also dB relativ zu 1Vrms. Dies entspricht $\dfrac{10^{\frac{19.2dBV}{20}\cdot2}}{8Ohm} = 10.4W$ und ist somit bereits doppelt so hoch wie die der Exciter aushält (5W cont.). Daher wurde die Verstärkung auf den niedrigsten Wert (19.2 dBV) programmiert.
-\\\textbf{Wert: $00_b$}
+\\\textbf{Wert: $00_b$}\newpage
 \paragraph{0x01, 0x10, 0x11: Digital Clipper}
 Ein 20-bit Digital Clipper ist auf drei Register verteilt. Dieser ist das letzte Glied vor dem Analog-Teil und bietet somit einen Schutz für den Exciter. Ein Problem dabei ist, dass hierbei nur der maximale digitale Wert pro Sample begrenzt wird. Somit wird eine zeitliche (RMS) Berechnung nicht durchgeführt. Je nach Crest Faktor kann es somit vorkommen, dass zwar der eingestellte Peak Wert nicht überschritten wird, aber jedoch der RMS-Wert.\\Bei einem Signal mit 6dB Crest Faktor entspricht die Spitzenleistung 4x der durchschnittlichen Leistung. Damit läge die Maximalleistung bei diesem Excitermodell bei 20W. Zur Sicherheit kann die Spitzenleistung um weitere 10\% begrenzt werden, was dann 18W entspricht. Bei einer Impedanz von 8 Ohm entspricht das $\sqrt{18W \cdot 8Ohm} = 12V$. Dies entspricht $20 \cdot log_{10}(\frac{12V}{1V}) = 21.58dBV$.\\Im Datenblatt des TAS5720 ist das Verhältnis von Clipper-Einstellung zur maximalen Ausgangsspannung der Endstufe wie folgt gegeben:
 \begin{equation}

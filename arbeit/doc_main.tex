@@ -1,3 +1,4 @@
+%\documentclass[demo]{report}
 \documentclass{report}
 
 %--- Packages ---
@@ -84,7 +85,6 @@
 \pagestyle{fancy}  	% Aktiviert fancyhdr für Kopf- und Fußzeilen
 \fancyhf{}  		% Alle vorherigen Kopf- und Fußzeilen löschen
 
-
 % Logo in der Kopfzeile rechts
 \fancyhead[R]{
 	\includegraphics[width=6cm]{./pictures/JuventusLogo.pdf}
@@ -97,12 +97,30 @@
 
 % Fußzeile: links, mitte und rechts
 \fancyfoot[C]{Seite \thepage~von~\pageref{LastPage}}   	% Fußzeile in der Mitte
-\fancyfoot[R]{\today}           						% Fußzeile rechts
+\fancyfoot[R]{\begin{minipage}{6cm}\begin{flushright}
+			{\small\today\\N.Gubler, HF Elektrotechnik, v1.0}
+		\end{flushright}\end{minipage}}           						% Fußzeile rechts
 \fancyfoot[L]{
 	\begin{minipage}{6cm}
-		Design und Herstellung eines \textit{Beam Steering}-fähigen Saiteninstruments
+		{\small Design und Herstellung eines \textit{Beam Steering}-fähigen Saiteninstruments}
 	\end{minipage}
 	}      				% Fußzeile links
+
+\fancypagestyle{plain}{%
+	\fancyhf{}
+	\fancyfoot[C]{Seite \thepage~von~\pageref{LastPage}}   	% Fußzeile in der Mitte
+	\fancyfoot[R]{\begin{minipage}{6cm}\begin{flushright}
+				{\small\today\\N.Gubler, HF Elektrotechnik, v1.0}
+	\end{flushright}\end{minipage}}           						% Fußzeile rechts
+	\fancyfoot[L]{
+		\begin{minipage}{6cm}
+			{\small Design und Herstellung eines \textit{Beam Steering}-fähigen Saiteninstruments}
+		\end{minipage}
+	}%
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{2pt}}
+
+%\renewcommand{\includegraphics}[2][]{bild} %keine Bilder
 
 \begin{document}
 %--- Title Page with Image
@@ -149,20 +167,23 @@
 %\setstretch{2}
 \newpage
 \vspace{2mm}
-\section{Einleitung}
+\addcontentsline{toc}{section}{Einleitung}
+\section*{Einleitung}
 \input{Einleitung.tex}
 \newpage
-\subsection{Vorarbeiten}\label{vorarbeiten}
+\addcontentsline{toc}{subsection}{Vorarbeiten}
+\subsection*{Vorarbeiten}\label{vorarbeiten}
 \input{vorarbeiten.tex}
-\chapter{System Engineering}
+\addcontentsline{toc}{chapter}{System Engineering}
+\chapter*{System Engineering}
 \input{sys_eng.tex}
 \vspace{-4mm}
-%--- Theory -------------------------------------
-
 %--- Umsetzung -----------------------------------------
-\chapter{Umsetzung}
+\addcontentsline{toc}{chapter}{Umsetzung}
+\chapter*{Umsetzung}
 \input{umsetzung.tex}
-\chapter{Auswertung \& Fazit}
+\addcontentsline{toc}{chapter}{Auswertung \& Fazit}
+\chapter*{Auswertung \& Fazit}
 \section{Lieferverzögerung MILAN-Modul}\label{Lieferverzögerung_JOYNED}
 \input{Lieferverzögerung.tex}
 \section{Tests}
@@ -178,7 +199,7 @@
 \setlength{\cftbeforelottitleskip}{0pt} % Abstand vor dem Titel des Tabellenverzeichnisses
 \setlength{\cftafterlottitleskip}{15pt} % Abstand nach dem Titel des Tabellenverzeichnisses
 \listoftables
-\addcontentsline{toc}{section}{13 Tabellenverzeichnis}  % Fügt es zum Inhaltsverzeichnis hinzu
+\addcontentsline{toc}{section}{Tabellenverzeichnis}  % Fügt es zum Inhaltsverzeichnis hinzu
 
 % --- Quellenverzeichnis ------------------------------
 %\newpage

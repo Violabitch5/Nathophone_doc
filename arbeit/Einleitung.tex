@@ -1,8 +1,14 @@
-\subsection{Abstract}
-\subsection{Fragestellung}
-Die Grundlage dieser Arbeit war die Frage, ob es möglich war, ein Beam-Steering fähiges Saiteninstrument zu entwickeln und herzustellen. Mittels Methoden des System Engineering sollten dabei Varianten zur Umsetzung erarbeitet werden und gemäss verschiedenen Analysemethoden verglichen werden.
-\subsection{Theorie}
-\subsubsection{Das Prinzip des Linienstrahlers}
+\addcontentsline{toc}{subsection}{Abstract}
+\subsection*{Abstract}
+\textit{Diese Diplomarbeit dokumentiert die Entwicklung eines Line-Array-Systems zur gerichteten Schallabstrahlung (Beam Steering). Die Grundlage bildete die Frage, ob ein Beam-Steering-fähiges Saiteninstrument entwickelt und hergestellt werden konnte.
+Mittels den Methoden des System Engineerings wurden fünf Varianten zur Umsetzung erarbeitet und bewertet. Dabei zeigte sich, dass eine Konstruktion mit einer Saite nur sehr aufwändig und mit gewissen Risiken realisiert werden konnte. Die ausgewählte Variante kombinierte daher anstatt den Saiten sechs DAEX25-Exciter in einem MDF-Gehäuse, ein PCB mit TAS5720 Class-D Endstufen, einem LT8650S Dual-Output Schaltregler sowie ein MILAN-Modul für die Datenübertragung.\\Das System wurde konstruiert und das Verhalten mit den vorhandenen Mitteln simuliert. Ein 4-Lagen-PCB wurde hergestellt und getestet. Aufgrund von Lieferverzögerungen des MILAN-Moduls konnte die Inbetriebnahme nicht mehr innerhalb dieser Arbeit dokumentiert werden. Das Projekt bietet dennoch eine solide Grundlage für weitere Entwicklungen.}
+\addcontentsline{toc}{subsection}{Fragestellung}
+\subsection*{Fragestellung}
+Die Grundlage dieser Arbeit war die Frage, ob es möglich war, ein Beam-Steering-fähiges Saiteninstrument zu entwickeln und herzustellen. Mittels Methoden des System Engineering sollten dabei Varianten zur Umsetzung erarbeitet werden und gemäss verschiedenen Analysemethoden verglichen werden.
+\addcontentsline{toc}{subsection}{Theorie}
+\subsection*{Theorie}
+\addcontentsline{toc}{subsubsection}{Das Prinzip des Linienstrahlers}
+\subsubsection*{Das Prinzip des Linienstrahlers}
 Lieberhaber grösserer Eventveranstalltungen sind wohl Vertraut mit dem Anblick der markanten, J-förmigen Lautsprechersysteme neben der Hauptbühne. Jedoch kennen nur die wenigsten deren Wirkungsweise, da oft die visuellen Effekte im Vordergrund stehen. Jedoch könnte ein Stadion ohne diese Technologie wohl kaum effizient und in genügender Audioqualität beschallt werden.\\Die Wirkungsweise eines solchen \textit{Line Arrays} ist schnell erklärt: Lautsprecherelemente werden gleichmässig auf einer Linie angeordnet so dass sich die Schallwellen gezielt gegenseitig auslöschen und dadurch akustische Energie nur in eine bestimmte Richtung abgestrahlt wird. Das ganze kann man sich sozusagen als \textquotedbl{}akustischen Scheinwerfer\textquotedbl{} vorstellen.\\Wie so oft ist dieser Effekt allerdings von mehreren Faktoren abhängig und nur innerhalb eines bestimmten Frequenzbandes wirksam. Dieses wird im wesentlichen durch die Arraylänge und den Abstand zwischen den Arrayelementen bestimmt. Abbildung \ref{pics:RH_linearray_simu} zeigt die Simulation des Herstellers
 \href{https://renkus-heinz.com/}{Renkus-Heinz}.
 \begin{figure}[H]
@@ -18,7 +24,10 @@ Lieberhaber grösserer Eventveranstalltungen sind wohl Vertraut mit dem Anblick 
 		\includegraphics[width=\textwidth]{pictures/RH_whitepaper_simulation.png}
 		\caption{Verhalten bei einer \textbf{Arraylänge} von $2\lambda$}
 		\vspace{2mm}
-	\end{subfigure}\\
+	\end{subfigure}
+\end{figure}
+\begin{figure}[H]\ContinuedFloat
+	\centering
 	\begin{subfigure}{\textwidth*6/13}
 		\centering
 		\includegraphics[width=\textwidth]{pictures/RH_whitepaper_simulation3.png}
@@ -32,12 +41,12 @@ Lieberhaber grösserer Eventveranstalltungen sind wohl Vertraut mit dem Anblick 
 	\caption{Simulation des Herstellers Renkus-Heinz. Siehe: \cite{R-H_LineArrayTheory}}
 	\label{pics:RH_linearray_simu}
 \end{figure}
-\paragraph{Beam Steering}
-Wenn alle Elemente des Line Arrays das genau gleiche Signal, mit der gleichen Phasenlage erhalten entsteht das in Abbildung \ref{pics:RH_linearray_simu} zu sehende Verhalten, also im Idealfall eine Ausrichtung von 90°. Wenn aber nun jedes Element ein eigenes Signal erhält, kann durch geschickte Verzögerungen und Filterungen die Ausrichtung verändert werden. Abbildung \ref{pics:MeyerSoung_BeamSteering} zeigt eine Simulation des Herstellers \href{https://meyersound.com/}{Meyer Sound}. Da diese Ausrichtung sich mit der Frequenz ändert (In der Abbildung zu sehen), müssen die Verzögerungen für jede Frequenz neu berechnet werden.
-\begin{figure}[H]
+\begin{wrapfigure}{r}{\textwidth*1/2}
 	\centering
-	\includegraphics[width=\textwidth-4cm]{pictures/meyersound_beemsteering_simulation.png}
+	\includegraphics[width=\textwidth*1/2]{pictures/meyersound_beemsteering_simulation.png}
 	\caption{Beam Steering Simulation. Quelle: \cite{MeyerSound_DSP_Beam_Steering}}
 	\label{pics:MeyerSoung_BeamSteering}
-\end{figure}
-\paragraph{Dreidimensionales Beam Steering} Das beschriebene Prinzip beruht auf einer Linienförmigen Anordnung der Elemente und ermöglicht eine steuerbare Ausrichtung auf einer Achse. Es können natürlich ohne weiteres auch mehrere Line Arrays nebeneinander aufgebaut werden, wodurch eine zweidimensionale Anordnung entsteht und Schall in jede beliebige Richtung ausgesendet werden kann. Dies ist allerdings nicht Bestandteil dieser Arbeit.
+\end{wrapfigure}
+\paragraph{Beam Steering}
+Wenn alle Elemente des Line Arrays das genau gleiche Signal, mit der gleichen Phasenlage erhalten entsteht das in Abbildung \ref{pics:RH_linearray_simu} zu sehende Verhalten, also im Idealfall eine Ausrichtung von 90°. Wenn aber nun jedes Element ein eigenes Signal erhält, kann durch geschickte Verzögerungen und Filterungen die Ausrichtung verändert werden. Abbildung \ref{pics:MeyerSoung_BeamSteering} zeigt eine Simulation des Herstellers \href{https://meyersound.com/}{Meyer Sound}. Da diese Ausrichtung sich mit der Frequenz ändert (In der Abbildung zu sehen), müssen die Verzögerungen für jede Frequenz neu berechnet werden.
+%\paragraph{Dreidimensionales Beam Steering} Das beschriebene Prinzip beruht auf einer Linienförmigen Anordnung der Elemente und ermöglicht eine steuerbare Ausrichtung auf einer Achse. Es können natürlich ohne weiteres auch mehrere Line Arrays nebeneinander aufgebaut werden, wodurch eine zweidimensionale Anordnung entsteht und Schall in jede beliebige Richtung ausgesendet werden kann. Dies ist allerdings nicht Bestandteil dieser Arbeit.

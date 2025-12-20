@@ -7,13 +7,13 @@ Nach Eintreffen des Driverboards wurde das Board zuerst optisch kontrolliert. Le
 	\caption{Die Breakdown-Daten der TPSMB2616CA}
 	\label{pic:datasheet_TPSMB2616CA}
 \end{figure}
-Da dieses Bauteil mit relativ grossen Kupferflächen verbunden war, musste spezielles Werkzeug verwendet werden, um das Bauteil zu entlöten und zu drehen.
+\noindent Da dieses Bauteil mit relativ grossen Kupferflächen verbunden war, musste spezielles Werkzeug verwendet werden, um das Bauteil zu entlöten, zu drehen und wieder einzulöten.
 \subsubsection{Stromaufnahme}
 Nach der korrigierten Ausrichtung der TVS-Diode reduzierte sich die Stromaufnahme deutlich. Jedoch betrug diese immer noch ca. 55mA, was ohne jegliche Last ein eher hoher Wert war. Dies konnte allerdings durch die drei Betriebsmodi des Schaltreglers erklärt bzw. behoben werden:
 \begin{itemize}
 	\item \textbf{Forced Continuous Mode (FCM)} Standardmässig arbeitet der Schaltregler in diesem Modus, welcher sich durch eine fixe Schaltfrequenz auszeichnet. Dadurch werden beide interne MOSFETs unabhängig von der Last gemäss dem Duty-Cycle, also dem Verhältnis von Ausgangs- zu Eingangsspannung durchgeschaltet und ohne Änderung der Schaltfrequenz.
-	\item \textbf{Burst Mode}In diesem Modus wird, im Gegensatz zum FCM, bei kleinen Lasten die MOSFETs nur in \textit{Bursts}, also kleinen \textquotedbl{}Paketen\textquotedbl{} aus sehr kurzen Sequenzen geschaltet, welche danach von Ruhezeiten gefolgt werden. Abbildung \ref{pic:burstmode_vs_forcedcontinuous} zeigt den Signalverlauf von FCM und Burst Mode.
-	\item \textbf{Spread Spectrum Mode}Dieser Modus ist sehr ähnlich zum FCM, mit dem Unterschied dass die Schaltfrequenz mit 5kHz moduliert wird. Dies hat den Vorteil, dass die Elektromagnetische Verträglichkeit verbessert wird, spielte aber in dieser Anwendung keine Rolle.
+	\item \textbf{Burst Mode} In diesem Modus wird, im Gegensatz zum FCM, bei kleinen Lasten die MOSFETs nur in \textit{Bursts}, also kleinen \textquotedbl{}Paketen\textquotedbl{} aus sehr kurzen Sequenzen geschaltet, welche danach von Ruhezeiten gefolgt werden. Abbildung \ref{pic:burstmode_vs_forcedcontinuous} zeigt den Signalverlauf von FCM und Burst Mode.
+	\item \textbf{Spread Spectrum Mode} Dieser Modus ist sehr ähnlich zum FCM, mit dem Unterschied dass die Schaltfrequenz mit 5kHz moduliert wird. Dies hat den Vorteil, dass die Elektromagnetische Verträglichkeit verbessert wird, spielte aber in dieser Anwendung keine Rolle.
 \end{itemize}
 \begin{figure}[H]
 	\centering
