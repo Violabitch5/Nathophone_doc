@@ -90,8 +90,6 @@
 	\includegraphics[width=6cm]{./pictures/JuventusLogo.pdf}
 	%\vspace{3mm}
 	} % Logo rechts
-\fancyfoot[C]{\thepage}
-% Kopfzeilenlinie entfernen
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1.5pt}
 
@@ -145,7 +143,11 @@
 		
 	\end{center}
 \end{titlepage}
+\pagenumbering{roman}
 
+\addcontentsline{toc}{section}{Management Summary}
+\section*{Management Summary}
+\input{management_summary.tex}
 %--- Inhaltsverzeichnis -------------------------------------
 \newpage
 % Inhaltsverzeichnis sichtbar machen
@@ -155,18 +157,10 @@
 \setlength{\cftaftertoctitleskip}{15pt} % Abstand nach dem Titel des Inhaltsverzeichnisses
 \tableofcontents
 
-%--- Abbildungsverzeichnis ----------------------------
-\newpage
-\setlength{\cftbeforeloftitleskip}{0pt} % Abstand vor dem Titel des Abbildungsverzeichnisses
-\setlength{\cftafterloftitleskip}{15pt} % Abstand nach dem Titel des Abbildungsverzeichnisses
-\listoffigures
-\addcontentsline{toc}{section}{Abbildungsverzeichnis}  % Fügt es zum Inhaltsverzeichnis hinzu
-
 %\setstretch{1.5}
 \setstretch{1.6}
 %\setstretch{2}
 \newpage
-\vspace{2mm}
 \addcontentsline{toc}{section}{Einleitung}
 \section*{Einleitung}
 \input{Einleitung.tex}
@@ -174,6 +168,7 @@
 \addcontentsline{toc}{subsection}{Vorarbeiten}
 \subsection*{Vorarbeiten}\label{vorarbeiten}
 \input{vorarbeiten.tex}
+\clearpage\pagenumbering{arabic}
 \addcontentsline{toc}{chapter}{System Engineering}
 \chapter*{System Engineering}
 \input{sys_eng.tex}
@@ -193,19 +188,24 @@
 %--- Hilfsmittelverzeichnis ---------------------------
 %\newpage
 %\section{Hilfsmittelverzeichnis}
+% --- Quellenverzeichnis ------------------------------
+%\newpage
+\renewcommand{\bibname}{Quellenverzeichnis}
+\printbibliography[title={Quellenverzeichnis}]
+\addcontentsline{toc}{section}{Quellenverzeichnis}  
 
+%--- Abbildungsverzeichnis ----------------------------
+\newpage
+\setlength{\cftbeforeloftitleskip}{0pt} % Abstand vor dem Titel des Abbildungsverzeichnisses
+\setlength{\cftafterloftitleskip}{15pt} % Abstand nach dem Titel des Abbildungsverzeichnisses
+\listoffigures
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}  % Fügt es zum Inhaltsverzeichnis hinzu
 %--- Tabellenverzeichnis ------------------------------
 \newpage
 \setlength{\cftbeforelottitleskip}{0pt} % Abstand vor dem Titel des Tabellenverzeichnisses
 \setlength{\cftafterlottitleskip}{15pt} % Abstand nach dem Titel des Tabellenverzeichnisses
 \listoftables
 \addcontentsline{toc}{section}{Tabellenverzeichnis}  % Fügt es zum Inhaltsverzeichnis hinzu
-
-% --- Quellenverzeichnis ------------------------------
-%\newpage
-\renewcommand{\bibname}{Quellenverzeichnis}
-\printbibliography[title={Quellenverzeichnis}]
-\addcontentsline{toc}{section}{Quellenverzeichnis}  
 
 \appendix
 

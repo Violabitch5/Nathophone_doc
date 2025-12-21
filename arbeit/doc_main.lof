@@ -1,86 +1,86 @@
 \babel@toc {german}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Simulation des Herstellers Renkus-Heinz. Siehe: \blx@tocontentsinit {0}\cite {R-H_LineArrayTheory}}}{9}{figure.caption.7}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Beam Steering Simulation. Quelle: \blx@tocontentsinit {0}\cite {MeyerSound_DSP_Beam_Steering}}}{9}{figure.caption.8}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Rendering des Prototyps}}{10}{figure.caption.12}%
-\contentsline {figure}{\numberline {4}{\ignorespaces verschiedene Schwingspulentypen}}{11}{figure.caption.15}%
-\contentsline {figure}{\numberline {5}{\ignorespaces DAEX25QLP-4 Exciter von Dayton Audio}}{12}{figure.caption.18}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Das Gehäuse mit 6 Frontplatten}}{13}{figure.caption.21}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Dimensionen des Gehäuses (in mm)}}{13}{figure.caption.22}%
-\contentsline {figure}{\numberline {8}{\ignorespaces SWOT-Analyse}}{15}{figure.caption.24}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Ishikawa-Analyse}}{16}{figure.caption.31}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Der morphologische Kasten}}{19}{figure.caption.40}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Variante A}}{20}{figure.caption.41}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Risikoanalyse der Variante A}}{21}{figure.caption.45}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Variante B}}{22}{figure.caption.46}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Risikoanalyse der Variante B}}{23}{figure.caption.50}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Variante C}}{24}{figure.caption.51}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Risikoanalyse der Variante C}}{25}{figure.caption.55}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Variante D}}{26}{figure.caption.56}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Risikoanalyse der Variante D}}{27}{figure.caption.60}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Variante E}}{28}{figure.caption.61}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Risikoanalyse der Variante E}}{29}{figure.caption.65}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Kosten-Nutzen Analyse}}{30}{figure.caption.66}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Nutzwertanalyse}}{31}{figure.caption.67}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Diagramm zur Luftdruckberechnung}}{34}{figure.caption.70}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Simulation bei 500 Hz}}{36}{figure.caption.71}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Simulation bei 1500 Hz}}{36}{figure.caption.72}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Simulation bei 2500 Hz}}{36}{figure.caption.73}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Simulation bei 9000 Hz}}{36}{figure.caption.74}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Das Blockschaltbild}}{38}{figure.caption.75}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Das Milan-Modul der Firma Joyned GmbH}}{38}{figure.caption.76}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Leistungsangaben eines Deckenlautsprechers, ohne Peak Power}}{40}{figure.caption.80}%
-\contentsline {figure}{\numberline {31}{\ignorespaces In den Fussnoten findet sich der Crest-Faktor}}{40}{figure.caption.81}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Quelle: \blx@tocontentsinit {0}\cite {DAEX25QLP4spec}}}{41}{figure.caption.82}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Quelle: \blx@tocontentsinit {0}\cite {DAEX19QLP4spec}}}{41}{figure.caption.83}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Eine Übersicht über die PoE-Klassen}}{42}{figure.caption.84}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Das Leistungsbudget}}{42}{figure.caption.85}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Blockschaltbilder der potentiellen Endstufen}}{45}{figure.caption.86}%
-\contentsline {figure}{\numberline {37}{\ignorespaces THD+N Vergleich der Endstufen}}{47}{figure.caption.88}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Power Modes des TAS2781}}{48}{figure.caption.89}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Vergleich der Effizienz der Endstufen}}{48}{figure.caption.91}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Effizienz des TAS5720 bei 4 Ohm}}{50}{figure.caption.92}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Aufbau der Lastsimulation}}{53}{figure.caption.95}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Leistungstransiente einer Last}}{53}{figure.caption.96}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Strom und Spannung bei einer Leistungstransiente (zwei Lasten parallel)}}{54}{figure.caption.97}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Kompletter Aufbau der Simulation}}{54}{figure.caption.98}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Lastspannung und Speisestrom bei 0F und 0-400uH}}{55}{figure.caption.99}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Lastspannung und Speisestrom bei 100uF und 0-400uH}}{55}{figure.caption.100}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Lastspannung und Speisestrom bei 200uF und 0-400uH}}{55}{figure.caption.101}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Lastspannung und Speisestrom bei 300uF und 0-400uH}}{56}{figure.caption.102}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Lastspannung und Speisestrom bei 400uF und 0-400uH}}{56}{figure.caption.103}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Speisungsverhalten bei 150uH und 350uF}}{57}{figure.caption.104}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Der Vergleich des Transientenverhalten zeigte einen leichten Unterschied.}}{61}{figure.caption.111}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Erster Entwurf des Blockschaltbildes}}{62}{figure.caption.112}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Aufbau der Beispielsimulation des LT8650S}}{66}{figure.caption.113}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Adaptierte Simulation des LT8650S}}{66}{figure.caption.114}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Das Eingangsnetzwerk}}{69}{figure.caption.115}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Der Snubber stabilisiert das System}}{69}{figure.caption.116}%
-\contentsline {figure}{\numberline {57}{\ignorespaces Der Efficiency Report der Simulation}}{70}{figure.caption.117}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Berechnungsdaten für die Temperaturberechnung}}{72}{figure.caption.119}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Das Blockschaltbild des Ag9900 PoE-Moduls}}{73}{figure.caption.120}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Die Resetschaltung}}{74}{figure.caption.121}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Die I2C-Adresse bestimmt auch den Standardmässigen TDM-Slot}}{74}{figure.caption.122}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Der Vergleich zwischen verschiedenen Anwendungen des TAS5720 zeigte Unterschiede}}{75}{figure.caption.123}%
-\contentsline {figure}{\numberline {63}{\ignorespaces Die Umschaltungsschaltung}}{75}{figure.caption.124}%
-\contentsline {figure}{\numberline {64}{\ignorespaces Die 4-Lagen Schichtung des PCB}}{77}{figure.caption.126}%
-\contentsline {figure}{\numberline {65}{\ignorespaces Platzierung des Driverboards im Gehäuse}}{77}{figure.caption.127}%
-\contentsline {figure}{\numberline {66}{\ignorespaces Das GND-Layer des Driverboards}}{78}{figure.caption.128}%
-\contentsline {figure}{\numberline {67}{\ignorespaces Die Bauteilplatzierung}}{79}{figure.caption.129}%
-\contentsline {figure}{\numberline {68}{\ignorespaces Die restlichen Layers des PCB}}{80}{figure.caption.130}%
-\contentsline {figure}{\numberline {69}{\ignorespaces Die Simulation mit einer Serieterminierung zeigte ungenügendes Verhalten.}}{82}{figure.caption.131}%
-\contentsline {figure}{\numberline {70}{\ignorespaces Mit zwei Serieterminierungen zeigte das Signal besseres Verhalten.}}{83}{figure.caption.132}%
-\contentsline {figure}{\numberline {71}{\ignorespaces Render des Driverboards}}{84}{figure.caption.133}%
-\contentsline {figure}{\numberline {72}{\ignorespaces Renderings mit Gehäuse}}{84}{figure.caption.134}%
-\contentsline {figure}{\numberline {73}{\ignorespaces Methoden zur Befestigung der Exciterpanels}}{85}{figure.caption.136}%
-\contentsline {figure}{\numberline {74}{\ignorespaces Eine Schraubentülle aus Gummi verhindert Reflektionen}}{86}{figure.caption.137}%
-\contentsline {figure}{\numberline {75}{\ignorespaces Herstellung des Gehäuses}}{87}{figure.caption.140}%
-\contentsline {figure}{\numberline {76}{\ignorespaces Aufbau der XMOS Architektur}}{88}{figure.caption.141}%
-\contentsline {figure}{\numberline {77}{\ignorespaces Register des TAS5720}}{88}{figure.caption.142}%
-\contentsline {figure}{\numberline {78}{\ignorespaces Signalpfad des TAS5720}}{89}{figure.caption.148}%
-\contentsline {figure}{\numberline {79}{\ignorespaces Grenzfrequenzen des internen Hochpassfilters}}{91}{figure.caption.153}%
-\contentsline {figure}{\numberline {80}{\ignorespaces Es sind Sample Rates zwischen 44.1 und 96kHz möglich.}}{92}{figure.caption.155}%
-\contentsline {figure}{\numberline {81}{\ignorespaces Die Breakdown-Daten der TPSMB2616CA}}{95}{figure.caption.166}%
-\contentsline {figure}{\numberline {82}{\ignorespaces Die Breakdown-Daten der TPSMB2616CA}}{96}{figure.caption.167}%
-\contentsline {figure}{\numberline {83}{\ignorespaces Aufstartverhalten der Speisungen}}{97}{figure.caption.168}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Simulation des Herstellers Renkus-Heinz. Siehe: \blx@tocontentsinit {0}\cite {R-H_LineArrayTheory}}}{vii}{figure.caption.12}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Beam Steering Simulation. Quelle: \blx@tocontentsinit {0}\cite {MeyerSound_DSP_Beam_Steering}}}{vii}{figure.caption.13}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Rendering des Prototyps}}{viii}{figure.caption.17}%
+\contentsline {figure}{\numberline {4}{\ignorespaces verschiedene Schwingspulentypen}}{ix}{figure.caption.20}%
+\contentsline {figure}{\numberline {5}{\ignorespaces DAEX25QLP-4 Exciter von Dayton Audio}}{x}{figure.caption.23}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Das Gehäuse mit 6 Frontplatten}}{xi}{figure.caption.26}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Dimensionen des Gehäuses (in mm)}}{xi}{figure.caption.27}%
+\contentsline {figure}{\numberline {8}{\ignorespaces SWOT-Analyse}}{2}{figure.caption.29}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Ishikawa-Analyse}}{3}{figure.caption.36}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Der morphologische Kasten}}{6}{figure.caption.45}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Variante A}}{7}{figure.caption.46}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Risikoanalyse der Variante A}}{8}{figure.caption.50}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Variante B}}{9}{figure.caption.51}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Risikoanalyse der Variante B}}{10}{figure.caption.55}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Variante C}}{11}{figure.caption.56}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Risikoanalyse der Variante C}}{12}{figure.caption.60}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Variante D}}{13}{figure.caption.61}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Risikoanalyse der Variante D}}{14}{figure.caption.65}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Variante E}}{15}{figure.caption.66}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Risikoanalyse der Variante E}}{16}{figure.caption.70}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Kosten-Nutzen Analyse}}{17}{figure.caption.71}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Nutzwertanalyse}}{18}{figure.caption.72}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Diagramm zur Luftdruckberechnung}}{21}{figure.caption.75}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Simulation bei 500 Hz}}{23}{figure.caption.76}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Simulation bei 1500 Hz}}{23}{figure.caption.77}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Simulation bei 2500 Hz}}{23}{figure.caption.78}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Simulation bei 9000 Hz}}{23}{figure.caption.79}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Das Blockschaltbild}}{25}{figure.caption.80}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Das Milan-Modul der Firma Joyned GmbH}}{25}{figure.caption.81}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Leistungsangaben eines Deckenlautsprechers, ohne Peak Power}}{27}{figure.caption.85}%
+\contentsline {figure}{\numberline {31}{\ignorespaces In den Fussnoten findet sich der Crest-Faktor}}{27}{figure.caption.86}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Quelle: \blx@tocontentsinit {0}\cite {DAEX25QLP4spec}}}{28}{figure.caption.87}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Quelle: \blx@tocontentsinit {0}\cite {DAEX19QLP4spec}}}{28}{figure.caption.88}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Eine Übersicht über die PoE-Klassen}}{29}{figure.caption.89}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Das Leistungsbudget}}{29}{figure.caption.90}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Blockschaltbilder der potentiellen Endstufen}}{32}{figure.caption.91}%
+\contentsline {figure}{\numberline {37}{\ignorespaces THD+N Vergleich der Endstufen}}{34}{figure.caption.93}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Power Modes des TAS2781}}{35}{figure.caption.94}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Vergleich der Effizienz der Endstufen}}{35}{figure.caption.96}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Effizienz des TAS5720 bei 4 Ohm}}{37}{figure.caption.97}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Aufbau der Lastsimulation}}{40}{figure.caption.100}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Leistungstransiente einer Last}}{40}{figure.caption.101}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Strom und Spannung bei einer Leistungstransiente (zwei Lasten parallel)}}{41}{figure.caption.102}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Kompletter Aufbau der Simulation}}{41}{figure.caption.103}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Lastspannung und Speisestrom bei 0F und 0-400uH}}{42}{figure.caption.104}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Lastspannung und Speisestrom bei 100uF und 0-400uH}}{42}{figure.caption.105}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Lastspannung und Speisestrom bei 200uF und 0-400uH}}{42}{figure.caption.106}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Lastspannung und Speisestrom bei 300uF und 0-400uH}}{43}{figure.caption.107}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Lastspannung und Speisestrom bei 400uF und 0-400uH}}{43}{figure.caption.108}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Speisungsverhalten bei 150uH und 350uF}}{44}{figure.caption.109}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Der Vergleich des Transientenverhalten zeigte einen leichten Unterschied.}}{48}{figure.caption.116}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Erster Entwurf des Blockschaltbildes}}{49}{figure.caption.117}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Aufbau der Beispielsimulation des LT8650S}}{53}{figure.caption.118}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Adaptierte Simulation des LT8650S}}{53}{figure.caption.119}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Das Eingangsnetzwerk}}{56}{figure.caption.120}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Der Snubber stabilisiert das System}}{56}{figure.caption.121}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Der Efficiency Report der Simulation}}{57}{figure.caption.122}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Berechnungsdaten für die Temperaturberechnung}}{59}{figure.caption.124}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Das Blockschaltbild des Ag9900 PoE-Moduls}}{60}{figure.caption.125}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Die Resetschaltung}}{61}{figure.caption.126}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Die I2C-Adresse bestimmt auch den Standardmässigen TDM-Slot}}{61}{figure.caption.127}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Der Vergleich zwischen verschiedenen Anwendungen des TAS5720 zeigte Unterschiede}}{62}{figure.caption.128}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Die Umschaltungsschaltung}}{62}{figure.caption.129}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Die 4-Lagen Schichtung des PCB}}{64}{figure.caption.131}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Platzierung des Driverboards im Gehäuse}}{64}{figure.caption.132}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Das GND-Layer des Driverboards}}{65}{figure.caption.133}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Die Bauteilplatzierung}}{66}{figure.caption.134}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Die restlichen Layers des PCB}}{67}{figure.caption.135}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Die Simulation mit einer Serieterminierung zeigte ungenügendes Verhalten.}}{69}{figure.caption.136}%
+\contentsline {figure}{\numberline {70}{\ignorespaces Mit zwei Serieterminierungen zeigte das Signal besseres Verhalten.}}{70}{figure.caption.137}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Render des Driverboards}}{71}{figure.caption.138}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Renderings mit Gehäuse}}{71}{figure.caption.139}%
+\contentsline {figure}{\numberline {73}{\ignorespaces Methoden zur Befestigung der Exciterpanels}}{72}{figure.caption.141}%
+\contentsline {figure}{\numberline {74}{\ignorespaces Eine Schraubentülle aus Gummi verhindert Reflektionen}}{73}{figure.caption.142}%
+\contentsline {figure}{\numberline {75}{\ignorespaces Herstellung des Gehäuses}}{74}{figure.caption.145}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Aufbau der XMOS Architektur}}{75}{figure.caption.146}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Register des TAS5720}}{75}{figure.caption.147}%
+\contentsline {figure}{\numberline {78}{\ignorespaces Signalpfad des TAS5720}}{76}{figure.caption.153}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Grenzfrequenzen des internen Hochpassfilters}}{78}{figure.caption.158}%
+\contentsline {figure}{\numberline {80}{\ignorespaces Es sind Sample Rates zwischen 44.1 und 96kHz möglich.}}{79}{figure.caption.160}%
+\contentsline {figure}{\numberline {81}{\ignorespaces Die Breakdown-Daten der TPSMB2616CA}}{82}{figure.caption.171}%
+\contentsline {figure}{\numberline {82}{\ignorespaces Die Breakdown-Daten der TPSMB2616CA}}{83}{figure.caption.172}%
+\contentsline {figure}{\numberline {83}{\ignorespaces Aufstartverhalten der Speisungen}}{84}{figure.caption.173}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
