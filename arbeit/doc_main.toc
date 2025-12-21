@@ -183,6 +183,8 @@
 \contentsline {subsubsection}{\numberline {16.1.3}Aufstartverhalten}{83}{subsubsection.0.16.1.3}%
 \contentsline {subsubsection}{\numberline {16.1.4}I2C-Verhalten}{83}{subsubsection.0.16.1.4}%
 \contentsline {section}{\numberline {17}Fazit}{85}{section.0.17}%
+\contentsline {subsection}{\numberline {17.1}Teschnisches Fazit}{85}{subsection.0.17.1}%
+\contentsline {subsection}{\numberline {17.2}Persönliches Fazit}{85}{subsection.0.17.2}%
 \contentsline {section}{Quellenverzeichnis}{88}{chapter*.174}%
 \contentsline {section}{Abbildungsverzeichnis}{91}{chapter*.174}%
 \contentsline {section}{Tabellenverzeichnis}{92}{chapter*.174}%

@@ -82,26 +82,26 @@
 \date{\today}
 
 % Fußzeilen definieren
-\pagestyle{fancy}  	% Aktiviert fancyhdr für Kopf- und Fußzeilen
-\fancyhf{}  		% Alle vorherigen Kopf- und Fußzeilen löschen
-
-% Logo in der Kopfzeile rechts
-\fancyhead[R]{
-	\includegraphics[width=6cm]{./pictures/JuventusLogo.pdf}
-	%\vspace{3mm}
-	} % Logo rechts
-\renewcommand{\headrulewidth}{1pt}
-\renewcommand{\footrulewidth}{1.5pt}
-
-% Fußzeile: links, mitte und rechts
-\fancyfoot[C]{Seite \thepage~von~\pageref{LastPage}}   	% Fußzeile in der Mitte
-\fancyfoot[R]{\begin{minipage}{6cm}\begin{flushright}
-			{\small\today\\N.Gubler, HF Elektrotechnik, v1.0}
-		\end{flushright}\end{minipage}}           						% Fußzeile rechts
-\fancyfoot[L]{
-	\begin{minipage}{6cm}
-		{\small Design und Herstellung eines \textit{Beam Steering}-fähigen Saiteninstruments}
-	\end{minipage}
+\pagestyle{fancy}	% Aktiviert fancyhdr für Kopf- und Fußzeilen
+	\fancyhf{}  		% Alle vorherigen Kopf- und Fußzeilen löschen
+	
+	% Logo in der Kopfzeile rechts
+	\fancyhead[R]{
+		\includegraphics[width=6cm]{./pictures/JuventusLogo.pdf}
+		%\vspace{3mm}
+		} % Logo rechts
+	\renewcommand{\headrulewidth}{1pt}
+	\renewcommand{\footrulewidth}{1.5pt}
+	
+	% Fußzeile: links, mitte und rechts
+	\fancyfoot[C]{Seite \thepage~von~\pageref{LastPage}}   	% Fußzeile in der Mitte
+	\fancyfoot[R]{\begin{minipage}{6cm}\begin{flushright}
+				{\small\today\\N.Gubler, HF Elektrotechnik, v1.0}
+			\end{flushright}\end{minipage}}           						% Fußzeile rechts
+	\fancyfoot[L]{
+		\begin{minipage}{6cm}
+			{\small Design und Herstellung eines \textit{Beam Steering}-fähigen Saiteninstruments}
+		\end{minipage}
 	}      				% Fußzeile links
 
 \fancypagestyle{plain}{%
@@ -144,7 +144,7 @@
 	\end{center}
 \end{titlepage}
 \pagenumbering{roman}
-
+\fancyfoot[C]{\thepage} 
 \addcontentsline{toc}{section}{Management Summary}
 \section*{Management Summary}
 \input{management_summary.tex}
@@ -156,7 +156,6 @@
 \setlength{\cftbeforetoctitleskip}{5pt} % Abstand vor dem Titel des Inhaltsverzeichnisses
 \setlength{\cftaftertoctitleskip}{15pt} % Abstand nach dem Titel des Inhaltsverzeichnisses
 \tableofcontents
-
 %\setstretch{1.5}
 \setstretch{1.6}
 %\setstretch{2}
@@ -169,6 +168,7 @@
 \subsection*{Vorarbeiten}\label{vorarbeiten}
 \input{vorarbeiten.tex}
 \clearpage\pagenumbering{arabic}
+\fancyfoot[C]{Seite \thepage~von~\pageref{LastPage}} 
 \addcontentsline{toc}{chapter}{System Engineering}
 \chapter*{System Engineering}
 \input{sys_eng.tex}
