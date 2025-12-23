@@ -23,7 +23,7 @@ Nach der korrigierten Ausrichtung der TVS-Diode reduzierte sich die Stromaufnahm
 \end{figure}
 Der Burst Mode konnte nun sehr einfach durch eine Lötbrücke auf \textbf{JP1} aktiviert werden. Dadurch reduzierte sich die Stromaufnahme des Prints auf ca. \textbf{5-8mA} (Ohne Last und ohne MILAN-Modul).
 \subsubsection{Aufstartverhalten}
-Mittels einem \cite{AnalogDiscovery3} konnte nun das Aufstartverhalten ausgemessen werden. Dieses ist ein USB-Oszilloskop mit analogen und digitalen Eingängen. Da die PG\_1 und PG\_2-Signale als Testpins vorhanden waren, konnten diese direkt mit den digitalen Eingängen DIO0 und DIO1 verbunden und darauf getriggert werden. Danach wurde das in \ref{ext_supply} bestimmte Netzteil angeschlossen\footnote{Zuvor wurde beobachtet, dass ein Labornetzteil die +24V-Speisespannung über einige ms Hochfährt und dadurch die Stabilität der Speisungen beeinflusst.}, der Hauptschalter SW1 umgelegt und die Speisungen gemessen\footnote{Gemessen mit dem BNC-Adapter. Auflösung: 3.36mV, Genauigkeit: $\pm$ 100mV, CMMR: $\pm$ 0.5\%, DC-Offset Genauigkeit: $\pm$ 100mV $\pm$ 0.5\%. Quelle: \href{https://digilent.com/reference/test-and-measurement/analog-discovery-3/specifications}{Analog Discovery 3 Specifications}}. Abbildung \ref{pics:supplies_startup} zeigt das so gemessene Aufstartverhalten aller Speisungen. Es wurde einzig auf der +24V-Speisung einige kleinere Einbrüche beobachtet, welche jedoch keinerlei Überschwinger, Spannungseinbrüche oder andere Störungen auf den restlichen Speisungen verursachten. Dies allerdings nach wie vor ohne Last und MILAN-Modul. Das Resultat wurde daher soweit als zufriedenstellend befunden.
+Mittels einem \cite{AnalogDiscovery3} konnte nun das Aufstartverhalten ausgemessen werden. Dieses ist ein USB-Oszilloskop mit analogen und digitalen Eingängen. Da die PG\_1 und PG\_2-Signale als Testpins vorhanden waren, konnten diese direkt mit den digitalen Eingängen DIO0 und DIO1 verbunden und darauf getriggert werden. Danach wurde das in \ref{ext_supply} bestimmte Netzteil angeschlossen\footnote{Zuvor wurde beobachtet, dass ein Labornetzteil die +24V-Speisespannung über einige ms Hochfährt und dadurch die Stabilität der Speisungen beeinflusst.}, der Hauptschalter SW1 umgelegt und die Speisungen gemessen\footnote{Gemessen mit dem BNC-Adapter. Auflösung: 3.36mV, Genauigkeit: $\pm$ 100mV, CMMR: $\pm$ 0.5\%, DC-Offset Genauigkeit: $\pm$ 100mV $\pm$ 0.5\%. Quelle: \href{https://digilent.com/reference/test-and-measurement/analog-discovery-3/specifications}{Analog Discovery 3 Specifications}}. Abbildung \ref{pic:measurement_setup_supplies} zeigt den Messaufbau und Abbildung \ref{pics:supplies_startup} zeigt das so gemessene Aufstartverhalten aller Speisungen. Es wurde einzig auf der +24V-Speisung einige kleinere Einbrüche beobachtet, welche jedoch keinerlei Überschwinger, Spannungseinbrüche oder andere Störungen auf den restlichen Speisungen verursachten. Dies allerdings nach wie vor ohne Last und MILAN-Modul. Das Resultat wurde daher soweit als zufriedenstellend befunden.
 \subsubsection{I2C-Verhalten}Wie in \ref{i2c_device_status_registers} beschrieben, besitzt jeder Endstufen-Chip ein Device-ID Register, welches schlichtweg mit 0x01 beschrieben ist. Dieses konnte erfolgreich aus allen sechs Chips ausgelesen werden, auch ohne angeschlossenes Milan-Modul.
 \begin{figure}[H]
 	\centering
@@ -50,4 +50,11 @@ Mittels einem \cite{AnalogDiscovery3} konnte nun das Aufstartverhalten ausgemess
 	\end{subfigure}
 	\caption{Aufstartverhalten der Speisungen}
 	\label{pics:supplies_startup}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{pictures/Messaufbau_Speisungen.pdf}
+	\caption{Der Messaufbau der Speisungsmessungen}
+	\label{pic:measurement_setup_supplies}
+	\vspace{-4mm}
 \end{figure}
