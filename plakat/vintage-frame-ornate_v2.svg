@@ -1,0 +1,111 @@
+<svg viewBox="0 0 841 1189" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Paper texture gradient -->
+    <linearGradient id="paperTexture" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0e8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f9f5ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0e8d8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Aged spots pattern -->
+    <filter id="aged">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" />
+      <feColorMatrix type="saturate" values="0.1"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 0 0 0.05 0.1"/>
+      </feComponentTransfer>
+      <feBlend mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+  <!-- Background paper -->
+  <rect width="841" height="1189" fill="url(#paperTexture)" filter="url(#aged)"/>
+  
+  <!-- Outer straight border -->
+  <rect x="40" y="40" width="761" height="1109" fill="none" stroke="#8b7355" stroke-width="3"/>
+  
+  <!-- Inner straight border -->
+  <rect x="60" y="60" width="721" height="1069" fill="none" stroke="#a68968" stroke-width="1.5"/>
+  
+  <!-- Additional straight border -->
+  <rect x="80" y="80" width="681" height="1029" fill="none" stroke="#c9b896" stroke-width="0.5"/>
+  
+  <!-- Content area border -->
+  <rect x="120" y="120" width="601" height="949" fill="none" stroke="#8b7355" stroke-width="1"/>
+  
+  <!-- Top edge ornaments with curves -->
+  <path d="M 200 40 Q 200 50 210 50 L 230 50 Q 240 50 240 40" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="220" cy="50" r="3" fill="#8b7355"/>
+  
+  <path d="M 380 40 Q 380 50 390 50 L 410 50 Q 420 50 420 40" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="400" cy="50" r="3" fill="#8b7355"/>
+  
+  <path d="M 600 40 Q 600 50 610 50 L 630 50 Q 640 50 640 40" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="620" cy="50" r="3" fill="#8b7355"/>
+  
+  <!-- Bottom edge ornaments with curves -->
+  <path d="M 200 1149 Q 200 1139 210 1139 L 230 1139 Q 240 1139 240 1149" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="220" cy="1139" r="3" fill="#8b7355"/>
+  
+  <path d="M 380 1149 Q 380 1139 390 1139 L 410 1139 Q 420 1139 420 1149" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="400" cy="1139" r="3" fill="#8b7355"/>
+  
+  <path d="M 600 1149 Q 600 1139 610 1139 L 630 1139 Q 640 1139 640 1149" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="620" cy="1139" r="3" fill="#8b7355"/>
+  
+  <!-- Left edge ornaments -->
+  <path d="M 40 200 Q 50 200 50 210 L 50 230 Q 50 240 40 240" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="50" cy="220" r="3" fill="#8b7355"/>
+  
+  <path d="M 40 380 Q 50 380 50 390 L 50 410 Q 50 420 40 420" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <path d="M 45 400 L 55 395 L 55 405 Z" fill="#8b7355"/>
+  
+  <path d="M 40 560 Q 50 560 50 570 L 50 590 Q 50 600 40 600" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="50" cy="580" r="3" fill="#8b7355"/>
+  
+  <path d="M 40 740 Q 50 740 50 750 L 50 770 Q 50 780 40 780" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <path d="M 45 760 L 55 755 L 55 765 Z" fill="#8b7355"/>
+  
+  <path d="M 40 920 Q 50 920 50 930 L 50 950 Q 50 960 40 960" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="50" cy="940" r="3" fill="#8b7355"/>
+  
+  <!-- Right edge ornaments -->
+  <path d="M 801 200 Q 791 200 791 210 L 791 230 Q 791 240 801 240" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="791" cy="220" r="3" fill="#8b7355"/>
+  
+  <path d="M 801 380 Q 791 380 791 390 L 791 410 Q 791 420 801 420" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <path d="M 796 400 L 786 395 L 786 405 Z" fill="#8b7355"/>
+  
+  <path d="M 801 560 Q 791 560 791 570 L 791 590 Q 791 600 801 600" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="791" cy="580" r="3" fill="#8b7355"/>
+  
+  <path d="M 801 740 Q 791 740 791 750 L 791 770 Q 791 780 801 780" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <path d="M 796 760 L 786 755 L 786 765 Z" fill="#8b7355"/>
+  
+  <path d="M 801 920 Q 791 920 791 930 L 791 950 Q 791 960 801 960" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <circle cx="791" cy="940" r="3" fill="#8b7355"/>
+  
+  <!-- Corner flourishes -->
+  <path d="M 60 80 Q 70 70 80 80" fill="none" stroke="#8b7355" stroke-width="1.2"/>
+  <path d="M 761 80 Q 771 70 781 80" fill="none" stroke="#8b7355" stroke-width="1.2"/>
+  <path d="M 60 1109 Q 70 1119 80 1109" fill="none" stroke="#8b7355" stroke-width="1.2"/>
+  <path d="M 761 1109 Q 771 1119 781 1109" fill="none" stroke="#8b7355" stroke-width="1.2"/>
+  
+  <!-- Decorative corner blocks -->
+  <rect x="100" y="100" width="25" height="25" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <rect x="716" y="100" width="25" height="25" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <rect x="100" y="1064" width="25" height="25" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <rect x="716" y="1064" width="25" height="25" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  
+  <!-- Small decorative dots in corners -->
+  <circle cx="112.5" cy="112.5" r="2" fill="#8b7355"/>
+  <circle cx="728.5" cy="112.5" r="2" fill="#8b7355"/>
+  <circle cx="112.5" cy="1076.5" r="2" fill="#8b7355"/>
+  <circle cx="728.5" cy="1076.5" r="2" fill="#8b7355"/>
+  
+  <!-- Age marks and subtle stains -->
+  <circle cx="180" cy="140" r="8" fill="#d4c5b0" opacity="0.3"/>
+  <circle cx="680" cy="1020" r="12" fill="#d4c5b0" opacity="0.25"/>
+  <circle cx="450" cy="750" r="6" fill="#d4c5b0" opacity="0.2"/>
+  <circle cx="250" cy="950" r="7" fill="#d4c5b0" opacity="0.28"/>
+</svg>

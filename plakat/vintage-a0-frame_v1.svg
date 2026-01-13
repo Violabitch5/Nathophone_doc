@@ -1,0 +1,62 @@
+<svg viewBox="0 0 841 1189" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Paper texture gradient -->
+    <linearGradient id="paperTexture" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0e8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f9f5ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0e8d8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Aged spots pattern -->
+    <filter id="aged">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" />
+      <feColorMatrix type="saturate" values="0.1"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 0 0 0.05 0.1"/>
+      </feComponentTransfer>
+      <feBlend mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+  <!-- Background paper -->
+  <rect width="841" height="1189" fill="url(#paperTexture)" filter="url(#aged)"/>
+  
+  <!-- Outer border -->
+  <rect x="40" y="40" width="761" height="1109" fill="none" stroke="#8b7355" stroke-width="3"/>
+  
+  <!-- Inner decorative border -->
+  <rect x="60" y="60" width="721" height="1069" fill="none" stroke="#a68968" stroke-width="1.5"/>
+  
+  <!-- Corner decorations - top left -->
+  <line x1="60" y1="100" x2="100" y2="100" stroke="#8b7355" stroke-width="2"/>
+  <line x1="100" y1="60" x2="100" y2="100" stroke="#8b7355" stroke-width="2"/>
+  
+  <!-- Corner decorations - top right -->
+  <line x1="741" y1="100" x2="781" y2="100" stroke="#8b7355" stroke-width="2"/>
+  <line x1="741" y1="60" x2="741" y2="100" stroke="#8b7355" stroke-width="2"/>
+  
+  <!-- Corner decorations - bottom left -->
+  <line x1="60" y1="1089" x2="100" y2="1089" stroke="#8b7355" stroke-width="2"/>
+  <line x1="100" y1="1089" x2="100" y2="1129" stroke="#8b7355" stroke-width="2"/>
+  
+  <!-- Corner decorations - bottom right -->
+  <line x1="741" y1="1089" x2="781" y2="1089" stroke="#8b7355" stroke-width="2"/>
+  <line x1="741" y1="1089" x2="741" y2="1129" stroke="#8b7355" stroke-width="2"/>
+  
+  <!-- Additional straight line details -->
+  <rect x="80" y="80" width="681" height="1029" fill="none" stroke="#c9b896" stroke-width="0.5" stroke-dasharray="5,5"/>
+  
+  <!-- Center content area border -->
+  <rect x="120" y="120" width="601" height="949" fill="none" stroke="#8b7355" stroke-width="1"/>
+  
+  <!-- Vintage stamp-like corners -->
+  <rect x="100" y="100" width="30" height="30" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <rect x="711" y="100" width="30" height="30" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <rect x="100" y="1059" width="30" height="30" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  <rect x="711" y="1059" width="30" height="30" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+  
+  <!-- Age marks and subtle stains -->
+  <circle cx="200" cy="150" r="8" fill="#d4c5b0" opacity="0.3"/>
+  <circle cx="650" cy="1000" r="12" fill="#d4c5b0" opacity="0.25"/>
+  <circle cx="420" cy="800" r="6" fill="#d4c5b0" opacity="0.2"/>
+</svg>
