@@ -1,0 +1,66 @@
+function [angles, beam_pattern, directivity_index] = calculate_beam_pattern(delays, gains, f, array_geometry)
+    % Calculate the beam pattern for a line array
+    % 
+    % Inputs:
+    %   delays: Vector of delay times for each element [s]
+    %   gains: Vector of amplitude weights for each element
+    %   f: Frequency [Hz]
+    %   array_geometry: Structure with array parameters
+    %
+    % Outputs:
+    %   angles: Angle vector in degrees (-90 to 90)
+    %   beam_pattern: Normalized beam pattern in dB
+    %   directivity_index: Directivity index in dB
+    
+    c = 343.3; % Speed of sound [m/s]
+    lambda = c / f;
+    k = 2 * pi / lambda;
+    
+    % Extract array geometry
+    element_positions = array_geometry.element_positions; % y-positions of elements [m]
+    points_per_element = array_geometry.points_per_element;
+    point_distance = array_geometry.point_distance;
+    
+    % Angle range for beam pattern calculation
+    angles = linspace(-90, 90, 361);
+    beam_pattern = zeros(size(angles));
+    
+    % Calculate array response for each angle
+    for idx = 1:length(angles)
+        theta = angles(idx) * pi/180; % Convert to radians
+        array_factor = 0;
+        
+        % Sum contributions from all point sources
+        element_idx = 1;
+        for elem = 1:length(delays)
+            % Get the position and parameters for this element
+            y_pos = element_positions(elem);
+            delay = delays(elem);
+            gain = gains(elem);
+            
+            % For each point in this element
+            for pt = 1:points_per_element
+                y_source = y_pos + (pt - 1) * point_distance;
+                
+                % Phase contribution from this point source
+                % Steering: exp(j*w*delay) * exp(-j*k*y*sin(theta))
+                % phase = 2*pi*f*delay - k * y_source * sin(theta);
+                phase = 2*pi*f*delay - k * (cos(theta) - y_source) * sin(theta);
+                array_factor = array_factor + gain * exp(1i * phase);
+            end
+        end
+        
+        beam_pattern(idx) = abs(array_factor);
+    end
+    
+    % Normalize to 0 dB maximum
+    beam_pattern_dB = 20 * log10(beam_pattern / max(beam_pattern));
+    beam_pattern = beam_pattern_dB;
+    
+    % Calculate directivity index
+    % DI = 10*log10(4*pi / integral(P^2 d_omega))
+    % For 2D case (line array), simplified calculation
+    linear_pattern = 10.^(beam_pattern_dB/20);
+    integral_pattern = trapz(angles * pi/180, linear_pattern.^2);
+    directivity_index = 10 * log10(pi / integral_pattern);
+end
